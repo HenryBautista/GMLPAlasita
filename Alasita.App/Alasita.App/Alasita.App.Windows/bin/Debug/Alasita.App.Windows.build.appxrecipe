@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Machine>HENRYPC</Machine>
+    <WindowsUser>Henry Bautista</WindowsUser>
+    <TargetPlatformIdentifier>Windows</TargetPlatformIdentifier>
+    <SolutionConfiguration>Debug|AnyCPU</SolutionConfiguration>
+    <PackageArchitecture>neutral</PackageArchitecture>
+    <PackageIdentityName>f97b36cd-d3e3-4824-9318-ebefbc41bdd4</PackageIdentityName>
+    <IntermediateOutputPath>C:\Users\Henry Bautista\Documents\Visual Studio 2013\Projects\Alasita.App\Alasita.App\Alasita.App.Windows\obj\Debug\</IntermediateOutputPath>
+  </PropertyGroup>
+  <ItemGroup>
+    <AppXManifest Include="C:\Users\Henry Bautista\Documents\Visual Studio 2013\Projects\Alasita.App\Alasita.App\Alasita.App.Windows\bin\Debug\AppxManifest.xml">
+      <PackagePath>AppxManifest.xml</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppXManifest>
+  </ItemGroup>
+  <ItemGroup>
+    <AppxPackagedFile Include="C:\Users\Henry Bautista\Documents\Visual Studio 2013\Projects\Alasita.App\Alasita.App\Alasita.App.Windows\bin\Debug\Alasita.App.Windows.exe">
+      <PackagePath>Alasita.App.Windows.exe</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Henry Bautista\Documents\Visual Studio 2013\Projects\AnimeNexus.App\packages\Newtonsoft.Json.6.0.4\lib\portable-net45+wp80+win8+wpa81\Newtonsoft.Json.dll">
+      <PackagePath>Newtonsoft.Json.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Henry Bautista\Documents\Visual Studio 2013\Projects\Alasita.App\Alasita.App\Alasita.App.Windows\Assets\Logo.scale-100.png">
+      <PackagePath>Assets\Logo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Henry Bautista\Documents\Visual Studio 2013\Projects\Alasita.App\Alasita.App\Alasita.App.Windows\Assets\SmallLogo.scale-100.png">
+      <PackagePath>Assets\SmallLogo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Henry Bautista\Documents\Visual Studio 2013\Projects\Alasita.App\Alasita.App\Alasita.App.Windows\Assets\SplashScreen.scale-100.png">
+      <PackagePath>Assets\SplashScreen.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Henry Bautista\Documents\Visual Studio 2013\Projects\Alasita.App\Alasita.App\Alasita.App.Windows\Assets\StoreLogo.scale-100.png">
+      <PackagePath>Assets\StoreLogo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Henry Bautista\Documents\Visual Studio 2013\Projects\Alasita.App\Alasita.App\Alasita.App.Windows\bin\Debug\App.xbf">
+      <PackagePath>App.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Henry Bautista\Documents\Visual Studio 2013\Projects\Alasita.App\Alasita.App\Alasita.App.Windows\bin\Debug\Views\Main.xbf">
+      <PackagePath>Views\Main.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Henry Bautista\Documents\Visual Studio 2013\Projects\Alasita.App\Alasita.App\Alasita.App.Windows\bin\Debug\Alasita.App.Windows.xr.xml">
+      <PackagePath>Alasita.App.Windows.xr.xml</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Henry Bautista\Documents\Visual Studio 2013\Projects\Alasita.App\Alasita.App\Alasita.App.Windows\bin\Debug\resources.pri">
+      <PackagePath>resources.pri</PackagePath>
+    </AppxPackagedFile>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,1 @@
+C:\Users\Henry Bautista\Documents\Visual Studio 2013\Projects\Alasita.App\Alasita.App\Alasita.App.Windows\Alasita.App.Windows.csproj;neutral
