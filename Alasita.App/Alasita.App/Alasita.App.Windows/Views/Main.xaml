@@ -6,8 +6,11 @@
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d">
-
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
         <TextBlock Style="{StaticResource HeaderTextBlockStyle}" Text="Alasitas 2015" Margin="35"></TextBlock>
+        <StackPanel Orientation="Horizontal" VerticalAlignment="Center" HorizontalAlignment="Center">
+            <TextBox x:Name="txt_share" Header="que estas pensando?" Width="500" Height="70" Text="Share"></TextBox>
+            <AppBarButton x:Name="btn_share" Icon="People" Label="share" Click="btn_share_Click"/>
+        </StackPanel>
     </Grid>
 </Page>
