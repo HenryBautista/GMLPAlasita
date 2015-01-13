@@ -8,6 +8,6 @@
     mc:Ignorable="d">
 
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
-
+        <TextBlock Style="{StaticResource HeaderTextBlockStyle}" Text="Alasitas 2015" Margin="35"></TextBlock>
     </Grid>
 </Page>
