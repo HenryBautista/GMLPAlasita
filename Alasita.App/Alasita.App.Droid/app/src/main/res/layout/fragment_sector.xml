@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <!--Sector Key-->
+    <TextView
+        style="@style/SectorFragment.SectorKeyStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Sector 01" />
+
+    <!--Sector Name-->
+    <TextView
+        android:id="@+id/edit_sector_name"
+        style="@style/SectorFragment.SectorNameStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Name" />
+
+    <!--Sector Description-->
+    <TextView
+        style="@style/SectorFragment.SectorDescriptionStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Description"
+        android:minLines="2"/>
+
+</LinearLayout>
