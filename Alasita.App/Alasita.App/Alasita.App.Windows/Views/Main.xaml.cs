@@ -28,29 +28,7 @@ namespace Alasita.App.Views
         {
             this.InitializeComponent();
             //Share JV
-            RegisterForShare();
         }
 
-
-        //Share JV [
-        private string text_to_share = "";
-        private void RegisterForShare()
-        {
-            DataTransferManager dataTransferManager = DataTransferManager.GetForCurrentView();
-            dataTransferManager.DataRequested += new TypedEventHandler<DataTransferManager, DataRequestedEventArgs>(this.ShareTextHandler);
-        }
-        private void ShareTextHandler(DataTransferManager sender, DataRequestedEventArgs e)
-        {
-            DataRequest request = e.Request;
-            request.Data.Properties.Title = "Share";
-            request.Data.Properties.Description = "Que estas pensando";
-            request.Data.SetText(text_to_share + Environment.NewLine+Environment.NewLine+ "Share by Alasitas 2015");
-        }
-        private void btn_share_Click(object sender, RoutedEventArgs e)
-        {
-            text_to_share = txt_share.Text;
-            DataTransferManager.ShowShareUI();
-        }
-        //] End Share JV
     }
 }

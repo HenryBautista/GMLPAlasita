@@ -1,5 +1,6 @@
 <XamlCompilerSaveState>
   <ReferenceAssemblyList>
-    <LocalAssembly PathName="c:\users\henry bautista\documents\visual studio 2013\projects\alasita.app\alasita.app\alasita.app.windows\obj\debug\intermediatexaml\alasita.app.windows.exe" HashGuid="d125aa61-a4fc-606b-f4ae-23784d9831c4" />
+    <LocalAssembly PathName="c:\users\henry bautista\documents\github\gmlpalasita\alasita.app\alasita.app\alasita.app.windows\obj\debug\intermediatexaml\alasita.app.windows.exe" HashGuid="5212ec04-5fe4-5331-235e-8162174f81da" />
+    <ReferenceAssembly PathName="c:\users\henry bautista\documents\github\gmlpalasita\alasita.app\alasita.app.core\bin\debug\alasita.app.core.dll" HashGuid="971a8fb6-cd69-fec6-3a01-47781082e774" />
   </ReferenceAssemblyList>
 </XamlCompilerSaveState>

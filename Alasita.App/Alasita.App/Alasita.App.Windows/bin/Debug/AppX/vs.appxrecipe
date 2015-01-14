@@ -1,0 +1,82 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Machine>HENRYPC</Machine>
+    <WindowsUser>Henry Bautista</WindowsUser>
+    <TargetPlatformIdentifier>Windows</TargetPlatformIdentifier>
+    <SolutionConfiguration>Debug|AnyCPU</SolutionConfiguration>
+    <PackageArchitecture>neutral</PackageArchitecture>
+    <PackageIdentityName>f97b36cd-d3e3-4824-9318-ebefbc41bdd4</PackageIdentityName>
+    <IntermediateOutputPath>C:\Users\Henry Bautista\Documents\GitHub\GMLPAlasita\Alasita.App\Alasita.App\Alasita.App.Windows\obj\Debug\</IntermediateOutputPath>
+    <RegisteredManifestChecksum>F79BD30B0B3D9A701EB32FA859EFEAAB416094FAAA3CBE626D98529AB93AEA72</RegisteredManifestChecksum>
+    <RegisteredPackageMoniker>f97b36cd-d3e3-4824-9318-ebefbc41bdd4_1.0.0.0_neutral__pp9zxb3z662ke</RegisteredPackageMoniker>
+    <RegisteredUserModeAppID>f97b36cd-d3e3-4824-9318-ebefbc41bdd4_pp9zxb3z662ke!App</RegisteredUserModeAppID>
+    <RegisteredPackageID>f97b36cd-d3e3-4824-9318-ebefbc41bdd4</RegisteredPackageID>
+    <RegisteredPackagePublisher>CN=Henry Bautista</RegisteredPackagePublisher>
+    <RegisteredVersion>1.0.0.0</RegisteredVersion>
+    <JitOptimizationSuppressed>True</JitOptimizationSuppressed>
+  </PropertyGroup>
+  <ItemGroup>
+    <AppXManifest Include="C:\Users\Henry Bautista\Documents\GitHub\GMLPAlasita\Alasita.App\Alasita.App\Alasita.App.Windows\bin\Debug\AppxManifest.xml">
+      <PackagePath>AppxManifest.xml</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2015-01-14T00:16:36.764</Modified>
+    </AppXManifest>
+  </ItemGroup>
+  <ItemGroup>
+    <AppxPackagedFile Include="C:\Users\Henry Bautista\Documents\GitHub\GMLPAlasita\Alasita.App\Alasita.App\Alasita.App.Windows\bin\Debug\Alasita.App.Windows.exe">
+      <PackagePath>Alasita.App.Windows.exe</PackagePath>
+      <Modified>2015-01-14T00:16:36.019</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Henry Bautista\Documents\GitHub\GMLPAlasita\Alasita.App\Alasita.App.Core\bin\Debug\Alasita.App.Core.dll">
+      <PackagePath>Alasita.App.Core.dll</PackagePath>
+      <Modified>2015-01-14T00:16:34.026</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Henry Bautista\Documents\GitHub\GMLPAlasita\Alasita.App\Alasita.App.Core\bin\Debug\Newtonsoft.Json.dll">
+      <PackagePath>Newtonsoft.Json.dll</PackagePath>
+      <Modified>2015-01-13T13:57:40.266</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Henry Bautista\Documents\GitHub\GMLPAlasita\Alasita.App\Alasita.App\Alasita.App.Windows\Assets\Logo.scale-100.png">
+      <PackagePath>Assets\Logo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2014-03-13T01:06:34.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Henry Bautista\Documents\GitHub\GMLPAlasita\Alasita.App\Alasita.App\Alasita.App.Windows\Assets\SmallLogo.scale-100.png">
+      <PackagePath>Assets\SmallLogo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2014-03-13T01:06:34.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Henry Bautista\Documents\GitHub\GMLPAlasita\Alasita.App\Alasita.App\Alasita.App.Windows\Assets\SplashScreen.scale-100.png">
+      <PackagePath>Assets\SplashScreen.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2014-03-13T01:06:34.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Henry Bautista\Documents\GitHub\GMLPAlasita\Alasita.App\Alasita.App\Alasita.App.Windows\Assets\StoreLogo.scale-100.png">
+      <PackagePath>Assets\StoreLogo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2014-03-13T01:06:34.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Henry Bautista\Documents\GitHub\GMLPAlasita\Alasita.App\Alasita.App\Alasita.App.Windows\bin\Debug\App.xbf">
+      <PackagePath>App.xbf</PackagePath>
+      <Modified>2015-01-14T00:16:35.680</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Henry Bautista\Documents\GitHub\GMLPAlasita\Alasita.App\Alasita.App\Alasita.App.Windows\bin\Debug\UserControls\ShareFacebook.xbf">
+      <PackagePath>UserControls\ShareFacebook.xbf</PackagePath>
+      <Modified>2015-01-14T00:16:35.685</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Henry Bautista\Documents\GitHub\GMLPAlasita\Alasita.App\Alasita.App\Alasita.App.Windows\bin\Debug\Views\Main.xbf">
+      <PackagePath>Views\Main.xbf</PackagePath>
+      <Modified>2015-01-14T00:16:35.682</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Henry Bautista\Documents\GitHub\GMLPAlasita\Alasita.App\Alasita.App\Alasita.App.Windows\bin\Debug\Alasita.App.Windows.xr.xml">
+      <PackagePath>Alasita.App.Windows.xr.xml</PackagePath>
+      <Modified>2015-01-14T00:16:35.612</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Henry Bautista\Documents\GitHub\GMLPAlasita\Alasita.App\Alasita.App\Alasita.App.Windows\bin\Debug\resources.pri">
+      <PackagePath>resources.pri</PackagePath>
+      <Modified>2015-01-14T00:16:36.449</Modified>
+    </AppxPackagedFile>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+</Project>
