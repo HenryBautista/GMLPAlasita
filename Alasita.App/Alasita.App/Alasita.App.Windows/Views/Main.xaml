@@ -35,23 +35,22 @@
         </Grid.RowDefinitions>
         <!--<controls:ShareFacebook/> -->
         <ScrollViewer Grid.Row="1" Grid.Column="1" ZoomMode="Enabled" VerticalScrollBarVisibility="Auto" HorizontalScrollBarVisibility="Auto">
+            
             <Grid VerticalAlignment="Center" HorizontalAlignment="Center">
-                <Image Source="ms-appx:///Images/sectores/sector_a.png" Margin="85,166,-85,-166"></Image>
-                <Image Source="ms-appx:///Images/sectores/sector_b.png" Margin="-10,48,10,-48"></Image>
-                <Image Source="ms-appx:///Images/sectores/sector_c.png" Margin="-89.88,-99.916,128.597,120.091" RenderTransformOrigin="0.5,0.5" UseLayoutRounding="False" d:LayoutRounding="Auto">
-                    <Image.RenderTransform>
-                        <CompositeTransform Rotation="-1.637"/>
-                    </Image.RenderTransform>
-                </Image>
-                <Image Source="ms-appx:///Images/sectores/sector_d.png" Margin="64.249,-43.193,-5.019,70.846" RenderTransformOrigin="0.5,0.5" UseLayoutRounding="False" d:LayoutRounding="Auto">
-                    <Image.RenderTransform>
-                        <CompositeTransform Rotation="-0.373"/>
-                    </Image.RenderTransform>
-                </Image>
-                <Image Source="ms-appx:///Images/sectores/sector_e.png" Margin="212,-151,-212,151"></Image>
-                <Image Source="ms-appx:///Images/sectores/sector_f.png" Margin="212,-151,-212,151"></Image>
-
-
+                <Image Source="ms-appx:///Images/feria.png" ></Image>
+                <AppBarButton Label="A" Margin="396,436,0,0"></AppBarButton>
+                <AppBarButton Label="B" Margin="288,341,0,0"></AppBarButton>
+                <AppBarButton Label="C" Margin="103,211,0,0"></AppBarButton>
+                <AppBarButton Label="D" Margin="279,170,0,0"></AppBarButton>
+                <AppBarButton Label="E" Margin="310,133,0,0"></AppBarButton>
+                <AppBarButton Label="F" Margin="310,196,0,0"></AppBarButton>
+                <AppBarButton Label="G" Margin="442,267,0,0"></AppBarButton>
+                <AppBarButton Label="H" Margin="414,170,0,0"></AppBarButton>
+                <AppBarButton Label="I" Margin="244,133,0,0"></AppBarButton>
+                <AppBarButton Label="N" Margin="112,118,0,0"></AppBarButton>
+                <AppBarButton Label="R" Margin="436,107,0,0"></AppBarButton>
+                <AppBarButton Label="K" Margin="720,296,0,0"></AppBarButton>
+                
             </Grid>
         </ScrollViewer>
     </Grid>

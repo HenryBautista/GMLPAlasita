@@ -80,3 +80,47 @@ C:\Users\Henry Bautista\Documents\GitHub\GMLPAlasita\Alasita.App\Alasita.App\Ala
 C:\Users\Henry Bautista\Documents\GitHub\GMLPAlasita\Alasita.App\Alasita.App\Alasita.App.Windows\obj\Debug\UserControls\ShareFacebook.g.cs
 C:\Users\Henry Bautista\Documents\GitHub\GMLPAlasita\Alasita.App\Alasita.App\Alasita.App.Windows\obj\Debug\UserControls\ShareFacebook.xaml
 C:\Users\Henry Bautista\Documents\GitHub\GMLPAlasita\Alasita.App\Alasita.App\Alasita.App.Windows\obj\Debug\UserControls\ShareFacebook.xbf
+C:\Users\Jonathan\Documents\GitHub\GMLPAlasita\Alasita.App\Alasita.App\Alasita.App.Windows\bin\Debug\App.xbf
+C:\Users\Jonathan\Documents\GitHub\GMLPAlasita\Alasita.App\Alasita.App\Alasita.App.Windows\bin\Debug\UserControls\ShareFacebook.xbf
+C:\Users\Jonathan\Documents\GitHub\GMLPAlasita\Alasita.App\Alasita.App\Alasita.App.Windows\bin\Debug\Views\Main.xbf
+C:\Users\Jonathan\Documents\GitHub\GMLPAlasita\Alasita.App\Alasita.App\Alasita.App.Windows\bin\Debug\Alasita.App.Windows.xr.xml
+C:\Users\Jonathan\Documents\GitHub\GMLPAlasita\Alasita.App\Alasita.App\Alasita.App.Windows\bin\Debug\Alasita.App.Windows.exe
+C:\Users\Jonathan\Documents\GitHub\GMLPAlasita\Alasita.App\Alasita.App\Alasita.App.Windows\bin\Debug\Alasita.App.Windows.pdb
+C:\Users\Jonathan\Documents\GitHub\GMLPAlasita\Alasita.App\Alasita.App\Alasita.App.Windows\bin\Debug\resources.pri
+C:\Users\Jonathan\Documents\GitHub\GMLPAlasita\Alasita.App\Alasita.App\Alasita.App.Windows\bin\Debug\AppxManifest.xml
+C:\Users\Jonathan\Documents\GitHub\GMLPAlasita\Alasita.App\Alasita.App\Alasita.App.Windows\bin\Debug\Alasita.App.Windows.build.appxrecipe
+C:\Users\Jonathan\Documents\GitHub\GMLPAlasita\Alasita.App\Alasita.App\Alasita.App.Windows\bin\Debug\Alasita.App.Core.dll
+C:\Users\Jonathan\Documents\GitHub\GMLPAlasita\Alasita.App\Alasita.App\Alasita.App.Windows\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Jonathan\Documents\GitHub\GMLPAlasita\Alasita.App\Alasita.App\Alasita.App.Windows\bin\Debug\Alasita.App.Core.pdb
+C:\Users\Jonathan\Documents\GitHub\GMLPAlasita\Alasita.App\Alasita.App\Alasita.App.Windows\bin\Debug\Alasita.App.Core.pri
+C:\Users\Jonathan\Documents\GitHub\GMLPAlasita\Alasita.App\Alasita.App\Alasita.App.Windows\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Jonathan\Documents\GitHub\GMLPAlasita\Alasita.App\Alasita.App\Alasita.App.Windows\obj\Debug\Alasita.App.Windows.csprojResolveAssemblyReference.cache
+C:\Users\Jonathan\Documents\GitHub\GMLPAlasita\Alasita.App\Alasita.App\Alasita.App.Windows\obj\Debug\App.g.i.cs
+C:\Users\Jonathan\Documents\GitHub\GMLPAlasita\Alasita.App\Alasita.App\Alasita.App.Windows\obj\Debug\App.g.cs
+C:\Users\Jonathan\Documents\GitHub\GMLPAlasita\Alasita.App\Alasita.App\Alasita.App.Windows\obj\Debug\Views\Main.g.i.cs
+C:\Users\Jonathan\Documents\GitHub\GMLPAlasita\Alasita.App\Alasita.App\Alasita.App.Windows\obj\Debug\Views\Main.g.cs
+C:\Users\Jonathan\Documents\GitHub\GMLPAlasita\Alasita.App\Alasita.App\Alasita.App.Windows\obj\Debug\UserControls\ShareFacebook.g.i.cs
+C:\Users\Jonathan\Documents\GitHub\GMLPAlasita\Alasita.App\Alasita.App\Alasita.App.Windows\obj\Debug\UserControls\ShareFacebook.g.cs
+C:\Users\Jonathan\Documents\GitHub\GMLPAlasita\Alasita.App\Alasita.App\Alasita.App.Windows\obj\Debug\XamlTypeInfo.g.cs
+C:\Users\Jonathan\Documents\GitHub\GMLPAlasita\Alasita.App\Alasita.App\Alasita.App.Windows\obj\Debug\App.xaml
+C:\Users\Jonathan\Documents\GitHub\GMLPAlasita\Alasita.App\Alasita.App\Alasita.App.Windows\obj\Debug\UserControls\ShareFacebook.xaml
+C:\Users\Jonathan\Documents\GitHub\GMLPAlasita\Alasita.App\Alasita.App\Alasita.App.Windows\obj\Debug\App.xbf
+C:\Users\Jonathan\Documents\GitHub\GMLPAlasita\Alasita.App\Alasita.App\Alasita.App.Windows\obj\Debug\UserControls\ShareFacebook.xbf
+C:\Users\Jonathan\Documents\GitHub\GMLPAlasita\Alasita.App\Alasita.App\Alasita.App.Windows\obj\Debug\XamlSaveStateFile.xml
+C:\Users\Jonathan\Documents\GitHub\GMLPAlasita\Alasita.App\Alasita.App\Alasita.App.Windows\obj\Debug\Views\Main.xaml
+C:\Users\Jonathan\Documents\GitHub\GMLPAlasita\Alasita.App\Alasita.App\Alasita.App.Windows\obj\Debug\Views\Main.xbf
+C:\Users\Jonathan\Documents\GitHub\GMLPAlasita\Alasita.App\Alasita.App\Alasita.App.Windows\obj\Debug\Alasita.App.Windows.exe
+C:\Users\Jonathan\Documents\GitHub\GMLPAlasita\Alasita.App\Alasita.App\Alasita.App.Windows\obj\Debug\Alasita.App.Windows.pdb
+C:\Users\Jonathan\Documents\GitHub\GMLPAlasita\Alasita.App\Alasita.App\Alasita.App.Windows\obj\Debug\Alasita.App.Windows.csproj.GenerateResource.Cache
+C:\Users\Jonathan\Documents\GitHub\GMLPAlasita\Alasita.App\Alasita.App\Alasita.App.Windows\obj\Debug\priconfig.xml
+C:\Users\Jonathan\Documents\GitHub\GMLPAlasita\Alasita.App\Alasita.App\Alasita.App.Windows\obj\Debug\priconfig.xml.intermediate
+C:\Users\Jonathan\Documents\GitHub\GMLPAlasita\Alasita.App\Alasita.App\Alasita.App.Windows\obj\Debug\layout.resfiles
+C:\Users\Jonathan\Documents\GitHub\GMLPAlasita\Alasita.App\Alasita.App\Alasita.App.Windows\obj\Debug\layout.resfiles.intermediate
+C:\Users\Jonathan\Documents\GitHub\GMLPAlasita\Alasita.App\Alasita.App\Alasita.App.Windows\obj\Debug\resources.resfiles
+C:\Users\Jonathan\Documents\GitHub\GMLPAlasita\Alasita.App\Alasita.App\Alasita.App.Windows\obj\Debug\resources.resfiles.intermediate
+C:\Users\Jonathan\Documents\GitHub\GMLPAlasita\Alasita.App\Alasita.App\Alasita.App.Windows\obj\Debug\pri.resfiles
+C:\Users\Jonathan\Documents\GitHub\GMLPAlasita\Alasita.App\Alasita.App\Alasita.App.Windows\obj\Debug\pri.resfiles.intermediate
+C:\Users\Jonathan\Documents\GitHub\GMLPAlasita\Alasita.App\Alasita.App\Alasita.App.Windows\obj\Debug\qualifiers.txt
+C:\Users\Jonathan\Documents\GitHub\GMLPAlasita\Alasita.App\Alasita.App\Alasita.App.Windows\obj\Debug\qualifiers.txt.intermediate
+C:\Users\Jonathan\Documents\GitHub\GMLPAlasita\Alasita.App\Alasita.App\Alasita.App.Windows\obj\Debug\MultipleQualifiersPerDimensionFound.txt
+C:\Users\Jonathan\Documents\GitHub\GMLPAlasita\Alasita.App\Alasita.App\Alasita.App.Windows\obj\Debug\ProjectArchitectures.txt

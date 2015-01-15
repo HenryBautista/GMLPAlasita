@@ -1,2 +1,2 @@
-C:\Users\Henry Bautista\Documents\GitHub\GMLPAlasita\Alasita.App\Alasita.App.Core\Alasita.App.Core.csproj;neutral
-C:\Users\Henry Bautista\Documents\GitHub\GMLPAlasita\Alasita.App\Alasita.App\Alasita.App.Windows\Alasita.App.Windows.csproj;neutral
+C:\Users\Jonathan\Documents\GitHub\GMLPAlasita\Alasita.App\Alasita.App.Core\Alasita.App.Core.csproj;neutral
+C:\Users\Jonathan\Documents\GitHub\GMLPAlasita\Alasita.App\Alasita.App\Alasita.App.Windows\Alasita.App.Windows.csproj;neutral
