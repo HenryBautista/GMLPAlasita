@@ -71,6 +71,7 @@
     <RootType FullName="Windows.UI.Xaml.Controls.AppBarButton">
       <RootProperty Name="Label" />
       <RootProperty Name="Margin" />
+      <RootProperty Name="Width" />
       <RootProperty Name="Icon" />
       <RootProperty Name="HorizontalAlignment" />
       <RootEvent Name="Click" />

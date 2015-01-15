@@ -41,13 +41,13 @@
                 <AppBarButton Label="A" Margin="396,436,0,0"></AppBarButton>
                 <AppBarButton Label="B" Margin="288,341,0,0"></AppBarButton>
                 <AppBarButton Label="C" Margin="103,211,0,0"></AppBarButton>
-                <AppBarButton Label="D" Margin="279,170,0,0"></AppBarButton>
+                <AppBarButton Label="D" Margin="261,207,0,0" Width="75"></AppBarButton>
                 <AppBarButton Label="E" Margin="310,133,0,0"></AppBarButton>
                 <AppBarButton Label="F" Margin="310,196,0,0"></AppBarButton>
                 <AppBarButton Label="G" Margin="442,267,0,0"></AppBarButton>
                 <AppBarButton Label="H" Margin="414,170,0,0"></AppBarButton>
                 <AppBarButton Label="I" Margin="244,133,0,0"></AppBarButton>
-                <AppBarButton Label="N" Margin="105,115,0,0"></AppBarButton>
+                <AppBarButton Label="N" Margin="112,118,0,0"></AppBarButton>
                 <AppBarButton Label="R" Margin="436,107,0,0"></AppBarButton>
                 <AppBarButton Label="K" Margin="720,296,0,0"></AppBarButton>
                 

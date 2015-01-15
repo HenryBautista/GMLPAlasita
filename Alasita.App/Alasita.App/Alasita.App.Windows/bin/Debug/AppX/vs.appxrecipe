@@ -20,17 +20,17 @@
     <AppXManifest Include="C:\Users\Jonathan\Documents\GitHub\GMLPAlasita\Alasita.App\Alasita.App\Alasita.App.Windows\bin\Debug\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2015-01-15T19:59:32.065</Modified>
+      <Modified>2015-01-15T20:30:39.363</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\Jonathan\Documents\GitHub\GMLPAlasita\Alasita.App\Alasita.App\Alasita.App.Windows\bin\Debug\Alasita.App.Windows.exe">
       <PackagePath>Alasita.App.Windows.exe</PackagePath>
-      <Modified>2015-01-15T19:59:31.575</Modified>
+      <Modified>2015-01-15T20:30:38.670</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Jonathan\Documents\GitHub\GMLPAlasita\Alasita.App\Alasita.App.Core\bin\Debug\Alasita.App.Core.dll">
       <PackagePath>Alasita.App.Core.dll</PackagePath>
-      <Modified>2015-01-14T01:07:25.968</Modified>
+      <Modified>2015-01-15T20:30:35.501</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Jonathan\Documents\GitHub\GMLPAlasita\Alasita.App\Alasita.App.Core\bin\Debug\Newtonsoft.Json.dll">
       <PackagePath>Newtonsoft.Json.dll</PackagePath>
@@ -58,7 +58,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Jonathan\Documents\GitHub\GMLPAlasita\Alasita.App\Alasita.App\Alasita.App.Shared\Images\feria.png">
       <PackagePath>Images\feria.png</PackagePath>
-      <Modified>2015-01-15T19:53:02.276</Modified>
+      <Modified>2015-01-15T20:28:35.387</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Jonathan\Documents\GitHub\GMLPAlasita\Alasita.App\Alasita.App\Alasita.App.Windows\bin\Debug\App.xbf">
       <PackagePath>App.xbf</PackagePath>
@@ -70,15 +70,15 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Jonathan\Documents\GitHub\GMLPAlasita\Alasita.App\Alasita.App\Alasita.App.Windows\bin\Debug\Views\Main.xbf">
       <PackagePath>Views\Main.xbf</PackagePath>
-      <Modified>2015-01-15T19:59:31.318</Modified>
+      <Modified>2015-01-15T20:30:38.198</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Jonathan\Documents\GitHub\GMLPAlasita\Alasita.App\Alasita.App\Alasita.App.Windows\bin\Debug\Alasita.App.Windows.xr.xml">
       <PackagePath>Alasita.App.Windows.xr.xml</PackagePath>
-      <Modified>2015-01-15T19:59:31.253</Modified>
+      <Modified>2015-01-15T20:30:38.090</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Jonathan\Documents\GitHub\GMLPAlasita\Alasita.App\Alasita.App\Alasita.App.Windows\bin\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2015-01-15T19:59:31.872</Modified>
+      <Modified>2015-01-15T20:30:39.032</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>
