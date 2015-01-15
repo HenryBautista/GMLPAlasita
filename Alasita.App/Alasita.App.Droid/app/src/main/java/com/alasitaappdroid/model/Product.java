@@ -10,35 +10,38 @@ public class Product {
     private String mProductImage;               //If local then this becomes an integer
     private String mProductDescription;         //Can be deleted if no info is provided
 
-    public String getmProductName() {
+    public Product() {
+    }
+
+    public String getProductName() {
         return mProductName;
     }
 
-    public void setmProductName(String mProductName) {
-        this.mProductName = mProductName;
+    public void setProductName(String productName) {
+        mProductName = productName;
     }
 
-    public int getmProductKey() {
+    public int getProductKey() {
         return mProductKey;
     }
 
-    public void setmProductKey(int mProductKey) {
-        this.mProductKey = mProductKey;
+    public void setProductKey(int productKey) {
+        mProductKey = productKey;
     }
 
-    public String getmProductImage() {
+    public String getProductImage() {
         return mProductImage;
     }
 
-    public void setmProductImage(String mProductImage) {
-        this.mProductImage = mProductImage;
+    public void setProductImage(String productImage) {
+        mProductImage = productImage;
     }
 
-    public String getmProductDescription() {
+    public String getProductDescription() {
         return mProductDescription;
     }
 
-    public void setmProductDescription(String mProductDescription) {
-        this.mProductDescription = mProductDescription;
+    public void setProductDescription(String productDescription) {
+        mProductDescription = productDescription;
     }
 }

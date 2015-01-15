@@ -13,43 +13,54 @@ public class Carnival {
     private ArrayList<Sector> mCarnivalSectors;
     private String mCarnivalDescription;
 
-    public String getmCarnivalName() {
+    public Carnival() {
+    }
+
+    public Carnival(String carnivalName, String carnivalBannerImageUrl, ArrayList<String> carnivalAdditionalImages, ArrayList<Sector> carnivalSectors, String carnivalDescription) {
+        mCarnivalName = carnivalName;
+        mCarnivalBannerImageUrl = carnivalBannerImageUrl;
+        mCarnivalAdditionalImages = carnivalAdditionalImages;
+        mCarnivalSectors = carnivalSectors;
+        mCarnivalDescription = carnivalDescription;
+    }
+
+    public String getCarnivalName() {
         return mCarnivalName;
     }
 
-    public void setmCarnivalName(String mCarnivalName) {
-        this.mCarnivalName = mCarnivalName;
+    public void setCarnivalName(String carnivalName) {
+        mCarnivalName = carnivalName;
     }
 
-    public String getmCarnivalBannerImageUrl() {
+    public String getCarnivalBannerImageUrl() {
         return mCarnivalBannerImageUrl;
     }
 
-    public void setmCarnivalBannerImageUrl(String mCarnivalBannerImageUrl) {
-        this.mCarnivalBannerImageUrl = mCarnivalBannerImageUrl;
+    public void setCarnivalBannerImageUrl(String carnivalBannerImageUrl) {
+        mCarnivalBannerImageUrl = carnivalBannerImageUrl;
     }
 
-    public ArrayList<String> getmCarnivalAdditionalImages() {
+    public ArrayList<String> getCarnivalAdditionalImages() {
         return mCarnivalAdditionalImages;
     }
 
-    public void setmCarnivalAdditionalImages(ArrayList<String> mCarnivalAdditionalImages) {
-        this.mCarnivalAdditionalImages = mCarnivalAdditionalImages;
+    public void setCarnivalAdditionalImages(ArrayList<String> carnivalAdditionalImages) {
+        mCarnivalAdditionalImages = carnivalAdditionalImages;
     }
 
-    public ArrayList<Sector> getmCarnivalSectors() {
+    public ArrayList<Sector> getCarnivalSectors() {
         return mCarnivalSectors;
     }
 
-    public void setmCarnivalSectors(ArrayList<Sector> mCarnivalSectors) {
-        this.mCarnivalSectors = mCarnivalSectors;
+    public void setCarnivalSectors(ArrayList<Sector> carnivalSectors) {
+        mCarnivalSectors = carnivalSectors;
     }
 
-    public String getmCarnivalDescription() {
+    public String getCarnivalDescription() {
         return mCarnivalDescription;
     }
 
-    public void setmCarnivalDescription(String mCarnivalDescription) {
-        this.mCarnivalDescription = mCarnivalDescription;
+    public void setCarnivalDescription(String carnivalDescription) {
+        mCarnivalDescription = carnivalDescription;
     }
 }

@@ -2,11 +2,12 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#eee"
     android:orientation="vertical">
-
 
     <!--Sector Key-->
     <TextView
+        android:id="@+id/text_sector_key"
         style="@style/SectorFragment.SectorKeyStyle"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -14,18 +15,40 @@
 
     <!--Sector Name-->
     <TextView
-        android:id="@+id/edit_sector_name"
-        style="@style/SectorFragment.SectorNameStyle"
+        android:id="@+id/text_sector_name"
+        style="@style/SectorFragment.Sub.SectorNameStyle"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Name" />
+        android:text="Name:" />
 
     <!--Sector Description-->
     <TextView
-        style="@style/SectorFragment.SectorDescriptionStyle"
+        android:id="@+id/text_sector_description"
+        style="@style/SectorFragment.Sub.SectorDescriptionStyle"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Description"
-        android:minLines="2"/>
+        android:minLines="2"
+        android:text="Description:" />
+
+    <!--Sector Associations-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/text_sector_associations"
+            style="@style/SectorFragment.Sub.SectorAssociationsStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Associations:" />
+
+        <ListView
+            android:id="@+id/list_associations"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:visibility="invisible" />
+    </LinearLayout>
 
 </LinearLayout>

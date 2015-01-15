@@ -6,8 +6,16 @@
     </style>
 
     <style name="SectorFragment">
-        <item name="android:typeface">serif</item>
+        <item name="android:typeface">sans</item>
+    </style>
 
+    <style name="SectorFragment.Sub">
+        <item name="android:paddingTop">2.5dp</item>
+        <item name="android:paddingBottom">2.5dp</item>
+        <item name="android:paddingLeft">12dp</item>
+        <item name="android:paddingRight">12dp</item>
+        <item name="android:layout_marginTop">2.5dp</item>
+        <item name="android:layout_marginBottom">2.5dp</item>
     </style>
 
     <style name="SectorFragment.SectorKeyStyle">
@@ -16,24 +24,32 @@
         <item name="android:textSize">20sp</item>
         <item name="android:paddingTop">5dp</item>
         <item name="android:paddingBottom">5dp</item>
-        <item name="android:paddingLeft">20dp</item>
-        <item name="android:paddingRight">20dp</item>
-    </style>
-
-    <style name="SectorFragment.SectorNameStyle">
-        <item name="android:textSize">18sp</item>
-        <item name="android:paddingTop">1.5dp</item>
-        <item name="android:paddingBottom">1.5dp</item>
         <item name="android:paddingLeft">15dp</item>
         <item name="android:paddingRight">15dp</item>
     </style>
 
-    <style name="SectorFragment.SectorDescriptionStyle">
-        <item name="android:textSize">18sp</item>
-        <item name="android:paddingTop">1.5dp</item>
-        <item name="android:paddingBottom">1.5dp</item>
-        <item name="android:paddingLeft">15dp</item>
-        <item name="android:paddingRight">15dp</item>
+    <style name="SectorFragment.Sub.SectorNameStyle">
+        <item name="android:textSize">15sp</item>
     </style>
 
+    <style name="SectorFragment.Sub.SectorDescriptionStyle">
+        <item name="android:textSize">15sp</item>
+    </style>
+
+    <style name="SectorFragment.Sub.SectorAssociationsStyle">
+        <item name="android:textSize">15sp</item>
+    </style>
+
+
+    <!--Adapter Association-->
+    <style name="AssociationAdapter">
+        <item name="android:typeface">sans</item>
+    </style>
+
+    <style name="AssociationAdapter.AssociationNameStyle">
+        <item name="android:textSize">18sp</item>
+    </style>
+    <style name="AssociationAdapter.AssociationInfoStyle">
+        <item name="android:textSize">15sp</item>
+    </style>
 </resources>
