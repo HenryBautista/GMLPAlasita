@@ -7,8 +7,34 @@
     xmlns:controls="using:Alasita.App.UserControls"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d">
+    <Page.Resources>
+        <Flyout x:Name="FlyOutViewItem" Placement="Full">
+            <StackPanel Width="400">
+                <TextBlock Text="{Binding Title}"
+                           Style="{StaticResource TitleTextBlockStyle}"
+                           Margin="10,5"
+                           HorizontalAlignment="Left"
+                           Width="380"/>
+                </StackPanel>
+            <Flyout.FlyoutPresenterStyle>
+                <Style TargetType="FlyoutPresenter">
+                    <Setter Property="ScrollViewer.HorizontalScrollMode" Value="Disabled"/>
+                    <Setter Property="Width" Value="310"/>
+                </Style>
+            </Flyout.FlyoutPresenterStyle>
+        </Flyout>
+    </Page.Resources>
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
-        <controls:ShareFacebook/>
-            
+        <!--<controls:ShareFacebook/> -->
+        <ScrollViewer VerticalAlignment="Center" HorizontalAlignment="Center" HorizontalScrollBarVisibility="Auto" VerticalScrollBarVisibility="Auto">
+            <Grid>
+                <Image Source="ms-appx:///Images/sectores/sector_a.png" ></Image>
+                <Image Source="ms-appx:///Images/sectores/sector_b.png" ></Image>
+                <Image Source="ms-appx:///Images/sectores/sector_c.png" ></Image>
+                <Image Source="ms-appx:///Images/sectores/sector_d.png" ></Image>
+                <Image Source="ms-appx:///Images/sectores/sector_e.png" ></Image>
+                
+            </Grid>
+        </ScrollViewer>
     </Grid>
 </Page>
