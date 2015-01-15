@@ -15,7 +15,7 @@
                            Margin="10,5"
                            HorizontalAlignment="Left"
                            Width="380"/>
-                </StackPanel>
+            </StackPanel>
             <Flyout.FlyoutPresenterStyle>
                 <Style TargetType="FlyoutPresenter">
                     <Setter Property="ScrollViewer.HorizontalScrollMode" Value="Disabled"/>
@@ -25,15 +25,33 @@
         </Flyout>
     </Page.Resources>
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="1*"/>
+            <ColumnDefinition Width="8*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="5*"/>
+        </Grid.RowDefinitions>
         <!--<controls:ShareFacebook/> -->
-        <ScrollViewer VerticalAlignment="Center" HorizontalAlignment="Center" HorizontalScrollBarVisibility="Auto" VerticalScrollBarVisibility="Auto">
-            <Grid>
-                <Image Source="ms-appx:///Images/sectores/sector_a.png" ></Image>
-                <Image Source="ms-appx:///Images/sectores/sector_b.png" ></Image>
-                <Image Source="ms-appx:///Images/sectores/sector_c.png" ></Image>
-                <Image Source="ms-appx:///Images/sectores/sector_d.png" ></Image>
-                <Image Source="ms-appx:///Images/sectores/sector_e.png" ></Image>
-                
+        <ScrollViewer Grid.Row="1" Grid.Column="1" ZoomMode="Enabled" VerticalScrollBarVisibility="Auto" HorizontalScrollBarVisibility="Auto">
+            <Grid VerticalAlignment="Center" HorizontalAlignment="Center">
+                <Image Source="ms-appx:///Images/sectores/sector_a.png" Margin="85,166,-85,-166"></Image>
+                <Image Source="ms-appx:///Images/sectores/sector_b.png" Margin="-10,48,10,-48"></Image>
+                <Image Source="ms-appx:///Images/sectores/sector_c.png" Margin="-89.88,-99.916,128.597,120.091" RenderTransformOrigin="0.5,0.5" UseLayoutRounding="False" d:LayoutRounding="Auto">
+                    <Image.RenderTransform>
+                        <CompositeTransform Rotation="-1.637"/>
+                    </Image.RenderTransform>
+                </Image>
+                <Image Source="ms-appx:///Images/sectores/sector_d.png" Margin="64.249,-43.193,-5.019,70.846" RenderTransformOrigin="0.5,0.5" UseLayoutRounding="False" d:LayoutRounding="Auto">
+                    <Image.RenderTransform>
+                        <CompositeTransform Rotation="-0.373"/>
+                    </Image.RenderTransform>
+                </Image>
+                <Image Source="ms-appx:///Images/sectores/sector_e.png" Margin="212,-151,-212,151"></Image>
+                <Image Source="ms-appx:///Images/sectores/sector_f.png" Margin="212,-151,-212,151"></Image>
+
+
             </Grid>
         </ScrollViewer>
     </Grid>
