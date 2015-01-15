@@ -29,6 +29,15 @@ namespace Alasita.App.Views
             this.InitializeComponent();
             //Share JV
         }
+        private void SectorAppBarButton_Click(object sender, RoutedEventArgs e)
+        {
+            this.PopupSector.IsOpen = true;
+        }
+
+        private void ClosePopup_Click(object sender, RoutedEventArgs e)
+        {
+            this.PopupSector.IsOpen = false;
+        }
 
     }
 }

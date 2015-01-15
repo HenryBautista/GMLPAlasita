@@ -13,7 +13,14 @@ namespace Alasita.App.Core.Models
         private string associationInfo; //Ejem: Joyeria y plateria
         private string associationDescription;  //Tengo que escribirlo?
         private List<Product> associationProducts;  //Lista de Productos de la asociacion Ejem: gallito, billetes, canchitas, etc.
+        private int expoNumber;
 
+        public int ExpoNumber
+        {
+            get { return expoNumber; }
+            set { expoNumber = value; }
+        }
+        
         public List<Product> AssociationProducts
         {
             get { return associationProducts; }
