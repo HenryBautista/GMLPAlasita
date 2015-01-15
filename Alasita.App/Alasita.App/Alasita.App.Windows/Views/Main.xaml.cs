@@ -13,7 +13,7 @@ using Windows.UI.Xaml.Data;
 using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
-
+using Alasita.App.Core.Models;
 // The Blank Page item template is documented at http://go.microsoft.com/fwlink/?LinkId=234238
 
 namespace Alasita.App.Views
@@ -37,6 +37,14 @@ namespace Alasita.App.Views
         private void ClosePopup_Click(object sender, RoutedEventArgs e)
         {
             this.PopupSector.IsOpen = false;
+        }
+        private void Grid_Tapped(object sender, TappedRoutedEventArgs e)
+        {
+            Association asso = new Association();
+            asso.AssociationName = "Hola Se supone que esto funcione asi..";
+            //Data context Association 
+            this.GridDataAssociation.DataContext = asso;
+
         }
 
     }
