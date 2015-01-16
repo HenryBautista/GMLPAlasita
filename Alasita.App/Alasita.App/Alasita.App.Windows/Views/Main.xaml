@@ -24,18 +24,47 @@
             </Flyout.FlyoutPresenterStyle>
         </Flyout>
     </Page.Resources>
-    <Grid Background="#FFFFBF01">
+    <Grid Background="#FFFFBF01" RequestedTheme="Light">
             
         <Grid.RowDefinitions>
             <RowDefinition Height="1*"/>
             <RowDefinition Height="5*"/>
         </Grid.RowDefinitions>
-        <TextBlock Text="Alasita 2015" Style="{StaticResource HeaderTextBlockStyle}"
-                   VerticalAlignment="Center" Margin="30,0"/>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="200"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <TextBlock Text="ALASITA 2015" Style="{StaticResource HeaderTextBlockStyle}"
+                   VerticalAlignment="Center" FontFamily="Arial" FontWeight="Bold" 
+                   HorizontalAlignment="Center"
+                   Margin="30,0" Grid.Column="1"/>
         
         <!--<controls:ShareFacebook/> -->
-        
-        <ScrollViewer Grid.Row="1" Grid.Column="1" ZoomMode="Enabled" VerticalScrollBarVisibility="Auto" HorizontalScrollBarVisibility="Auto" Background="White">
+        <Grid Grid.Column="0" Background="#FF363636" Grid.Row="0" 
+              RequestedTheme="Dark"
+              Grid.RowSpan="2" Name="GridSectores">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="8*"/>
+                <RowDefinition Height="1*"/>
+            </Grid.RowDefinitions>
+            <TextBlock Text="Sectores" Style="{StaticResource SubheaderTextBlockStyle}"
+                       VerticalAlignment="Center" Margin="30,0" Grid.Row="1"/>
+            <ListView Name="ListViewSectores" Grid.Row="0" 
+                      ScrollViewer.VerticalScrollBarVisibility="Hidden"
+                      Margin="20,30,10,0">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <Grid Height="120" Width="150" RequestedTheme="Dark">
+                            <Image Source="ms-appx:///Images/feria.png" Stretch="Uniform"/>
+                            <Rectangle Fill="Black" Opacity="0.2"/>
+                            <TextBlock Text="{Binding SectorKey}" Style="{StaticResource HeaderTextBlockStyle}"
+                               FontWeight="SemiBold" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+                        </Grid>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+        </Grid>
+        <ScrollViewer Grid.Row="1" Grid.Column="1" MinZoomFactor="1" ZoomMode="Enabled" VerticalScrollBarVisibility="Auto" HorizontalScrollBarVisibility="Auto" Background="White">
             
             <Grid VerticalAlignment="Center" HorizontalAlignment="Center">
                 <Image Source="ms-appx:///Images/feria.png" ></Image>
@@ -57,7 +86,7 @@
         <Popup Grid.ColumnSpan="2" Grid.RowSpan="2" Name="PopupSector" IsOpen="False">
             <Popup.ChildTransitions>
                 <TransitionCollection>
-                    <PaneThemeTransition/>
+                    <PopupThemeTransition/>
                 </TransitionCollection>
             </Popup.ChildTransitions>
             <Grid RequestedTheme="Light" Height="{Binding ElementName=PopupSector,Path=ActualHeight}"
@@ -67,8 +96,8 @@
                     <RowDefinition Height="6*"/>
                     <RowDefinition/>
                 </Grid.RowDefinitions>
-                <Grid Background="Black" Opacity="0.2"/>
-                <Grid Background="Black" Opacity="0.2" Grid.Row="2"/>
+                <Grid Background="Black" Opacity="0.9"/>
+                <Grid Background="Black" Opacity="0.9" Grid.Row="2"/>
 
                 <Grid Grid.Row="1" Background="White">
                     <Grid.ColumnDefinitions>
@@ -78,8 +107,8 @@
                     <Grid>
 
                         <StackPanel Margin="30,50">
-                            <TextBlock Text="Sector N" Style="{StaticResource SubheaderTextBlockStyle}"/>
-                            <TextBlock Text="Asociaciones" Margin="0,20"/>
+                            <TextBlock Text="Sector " Name="TexBlockSectorName" Style="{StaticResource HeaderTextBlockStyle}"/>
+                            <TextBlock Text="Asociaciones" Style="{StaticResource SubheaderTextBlockStyle}" Margin="0,20"/>
                             <ListView Name="ListBoxAsociaciones" 
                                       SelectionMode="None"
                                       Width="350" HorizontalAlignment="Left">
@@ -106,4 +135,11 @@
         </Popup>
 
     </Grid>
+    <Page.BottomAppBar>
+        <AppBar Background="DarkGray" Height="100">
+            <StackPanel>
+                
+            </StackPanel>
+        </AppBar>
+    </Page.BottomAppBar>
 </Page>

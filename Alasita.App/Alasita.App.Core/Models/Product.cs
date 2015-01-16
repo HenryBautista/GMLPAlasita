@@ -9,15 +9,15 @@ namespace Alasita.App.Core.Models
     public class Product
     {
         private string productName; //Nombre del producto 
-        private int productKey; //Clave Numerica Ejem:1     2       3
+       // private int productKey; //Clave Numerica Ejem:1     2       3
         private string productImage;    // URL de la Imagen del Producto si es local "appx:///Images/nombreArchivo"
-        private string productDescription;  //  !!! Esta  variable puede ser eliminada si es que no se nos diera informacion !!!
+        //private string productDescription;  //  !!! Esta  variable puede ser eliminada si es que no se nos diera informacion !!!
 
-        public string ProductDescription
-        {
-            get { return productDescription; }
-            set { productDescription = value; }
-        }
+        //public string ProductDescription
+        //{
+        //    get { return productDescription; }
+        //    set { productDescription = value; }
+        //}
         
         public string ProductImage
         {
@@ -25,11 +25,11 @@ namespace Alasita.App.Core.Models
             set { productImage = value; }
         }
         
-        public int ProductKey
-        {
-            get { return productKey; }
-            set { productKey = value; }
-        }
+        //public int ProductKey
+        //{
+        //    get { return productKey; }
+        //    set { productKey = value; }
+        //}
         
         public string ProductName
         {

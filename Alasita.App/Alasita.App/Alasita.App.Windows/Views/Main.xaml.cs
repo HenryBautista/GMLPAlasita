@@ -14,6 +14,9 @@ using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
 using Alasita.App.Core.Models;
+using Alasita.App.Core.Data;
+using Alasita.App.Core.Util;
+using Windows.UI.Popups;
 // The Blank Page item template is documented at http://go.microsoft.com/fwlink/?LinkId=234238
 
 namespace Alasita.App.Views
@@ -32,6 +35,7 @@ namespace Alasita.App.Views
         private void SectorAppBarButton_Click(object sender, RoutedEventArgs e)
         {
             this.PopupSector.IsOpen = true;
+            this.TexBlockSectorName.Text = this.TexBlockSectorName.Text + (sender as AppBarButton).Label;
         }
 
         private void ClosePopup_Click(object sender, RoutedEventArgs e)
@@ -46,6 +50,26 @@ namespace Alasita.App.Views
             this.GridDataAssociation.DataContext = asso;
 
         }
+        protected async override void OnNavigatedTo(NavigationEventArgs e)
+        {
+            LoadData();
+        }
 
+        private async void LoadData()
+        {
+            try
+            {
+                if (DataProvider.StaticCarnival == null)
+                    DataProvider.StaticCarnival = await Utilities.LoadTheLastHope();
+                this.ListViewSectores.ItemsSource = DataProvider.StaticCarnival.CarnivalSectors;
+
+            }
+            catch (Exception e)
+            {
+
+                MessageDialog ms = new MessageDialog(e.ToString(), "Error");
+                ms.ShowAsync();
+            }
+        }
     }
 }

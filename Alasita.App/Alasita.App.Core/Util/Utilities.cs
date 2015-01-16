@@ -10,6 +10,11 @@ namespace Alasita.App.Core.Util
 {
     public static class Utilities
     {
+        /// <summary>
+        /// Devuelve un objeto Carnival Cargado desde el paquete instalado de la aplicacion
+        /// </summary>
+        /// <param name="filename"></param>
+        /// <returns></returns>
         public static async Task<Carnival> LoadFromLocalJson(string filename)
         {
             var folder = Windows.Storage.ApplicationData.Current.LocalFolder;
@@ -28,6 +33,20 @@ namespace Alasita.App.Core.Util
 
         }
 
+        /// <summary>
+        /// Devuelve Un objeto Carnival carrgado desde la carpeta JsonFiles
+        /// </summary>
+        /// <param></param>
+        /// <returns></returns>
+        public static async Task<Carnival> LoadTheLastHope()
+        {
+            var folder = Windows.ApplicationModel.Package.Current.InstalledLocation;
+            folder = await folder.GetFolderAsync("JsonFiles");
+            var file = await folder.GetFileAsync("Carnival.json");
+            var json = await Windows.Storage.FileIO.ReadTextAsync(file);
+            Carnival hope = JsonConvert.DeserializeObject<Carnival>(json);
+            return hope;
+        }
         public static async void SaveCarnivalToJson(string filename,Carnival carnival)
         {
             var folder = Windows.Storage.ApplicationData.Current.LocalFolder;
