@@ -1,0 +1,59 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    tools:context="com.alasitaappdroid.AssociationActivity">
+
+    <ImageView
+        android:id="@+id/image_association_logo"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:scaleType="fitCenter"
+        android:src="@drawable/map"/>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin">
+
+        <TextView
+            android:id="@+id/text_association_key"
+            style="@style/AssociationActivity.Key"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="10dp"
+            android:paddingTop="@dimen/activity_vertical_margin"
+            android:text="Association Key"/>
+
+        <TextView
+            android:id="@+id/text_association_info"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="7.5dp"
+            android:paddingTop="7.5dp"
+            android:text="Association Info"/>
+
+        <TextView
+            android:id="@+id/text_association_description"
+            style="@style/AssociationActivity.Description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minLines="3"
+            android:paddingBottom="3dp"
+            android:paddingTop="3dp"
+            android:text="Association Description"/>
+
+        <ListView
+            android:id="@+id/list_products"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+    </LinearLayout>
+
+</LinearLayout>

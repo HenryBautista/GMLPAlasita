@@ -22,6 +22,7 @@ public class Sector {
         mSectorDescription = sectorDescription;
         mSectorMapImage = sectorMapImage;
         mSectorAssociations = new ArrayList<Association>();
+        // Dummy Constructor
         mSectorAssociations.add(new Association("dummy1", 1, "dummy1", "dummy1"));
         mSectorAssociations.add(new Association("dummy2", 2, "dummy2", "dummy2"));
         mSectorAssociations.add(new Association("dummy3", 3, "dummy3", "dummy3"));

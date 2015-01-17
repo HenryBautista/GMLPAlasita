@@ -1,8 +1,9 @@
 package com.alasitaappdroid;
 
-import android.annotation.TargetApi;
+import android.os.Build;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.MotionEvent;
@@ -18,6 +19,7 @@ public class MapActivity extends ActionBarActivity {
 
     private ImageView mImageMap;
     private FrameLayout mFrameContainer;
+    private boolean mTap;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -30,21 +32,36 @@ public class MapActivity extends ActionBarActivity {
         mImageMap.setOnTouchListener(new View.OnTouchListener() {
             @Override
             public boolean onTouch(View v, MotionEvent event) {
-                Toast.makeText(getApplicationContext(), event.getX() + " " + event.getY(), Toast.LENGTH_SHORT).show();
-                hide(v);
-                InflateFragment();
+                if (event.getAction() == MotionEvent.ACTION_DOWN) {
+                    mTap = true;
+                }
+                if (event.getAction() == MotionEvent.ACTION_UP && mTap == true) {
+                    mTap = false;
+                    Toast.makeText(getApplicationContext(), event.getX() + " " + event.getY(), Toast.LENGTH_SHORT).show();
+
+                    // Implement getPixel()
+
+                    hide(v);
+                    InflateFragment();
+                }
+                if (event.getAction() == MotionEvent.ACTION_MOVE) {
+                    mTap = false;
+                }
                 return false;
             }
         });
     }
 
-    @TargetApi(11)
+
     private void hide(View v) {
         try {
-            v.setAlpha(0.2f);
-        }
-        catch (Exception e){
-
+            if (Build.VERSION.SDK_INT > 11) {
+                v.setAlpha(0.2f);
+            } else {
+                v.setVisibility(View.INVISIBLE);
+            }
+        } catch (Exception e) {
+            Log.d("Debug Error", e.getMessage());
         }
     }
 
@@ -74,5 +91,18 @@ public class MapActivity extends ActionBarActivity {
         }
 
         return super.onOptionsItemSelected(item);
+    }
+
+    public void hideFragment() {
+        mFrameContainer.setVisibility(View.INVISIBLE);
+        try {
+            if (Build.VERSION.SDK_INT > 11) {
+                mImageMap.setAlpha(1f);
+            } else {
+                mImageMap.setVisibility(View.VISIBLE);
+            }
+        } catch (Exception e) {
+            Log.d("Debug Error", e.getMessage());
+        }
     }
 }

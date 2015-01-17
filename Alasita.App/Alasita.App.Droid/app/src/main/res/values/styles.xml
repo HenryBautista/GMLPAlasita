@@ -49,7 +49,26 @@
     <style name="AssociationAdapter.AssociationNameStyle">
         <item name="android:textSize">18sp</item>
     </style>
+
     <style name="AssociationAdapter.AssociationInfoStyle">
         <item name="android:textSize">15sp</item>
     </style>
+
+    <!--AssociationActivity-->
+    <style name="AssociationActivity">
+        <item name="android:typeface">sans</item>
+    </style>
+
+    <style name="AssociationActivity.Key">
+        <item name="android:textSize">20sp</item>
+    </style>
+
+    <style name="AssociationActivity.Description">
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <style name="AssociationActivity.Info">
+        <item name="android:textSize">19sp</item>
+    </style>
+
 </resources>
