@@ -26,10 +26,5 @@ namespace Alasita.App.Views
         {
             this.InitializeComponent();
         }
-
-        private void BackBotton_Click(object sender, RoutedEventArgs e)
-        {
-            Frame.Navigate(typeof(Main));
-        }
     }
 }

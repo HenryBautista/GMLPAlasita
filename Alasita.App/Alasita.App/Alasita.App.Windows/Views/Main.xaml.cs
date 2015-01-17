@@ -39,13 +39,11 @@ namespace Alasita.App.Views
             {
                 this.TextBlockCronograma.Visibility = Visibility.Collapsed;
                 this.TextBlockWebSite.Visibility = Visibility.Collapsed;
-                this.TextBlockTitle.Visibility = Visibility.Collapsed;
             }
             else
             {
                 this.TextBlockCronograma.Visibility = Visibility.Visible;
                 this.TextBlockWebSite.Visibility = Visibility.Visible;
-                this.TextBlockTitle.Visibility = Visibility.Visible;
             }
         }
 
