@@ -27,10 +27,8 @@ public class AssociationAdapter extends ArrayAdapter<Association> {
     @Override
     public View getView(int position, View convertView, ViewGroup parent) {
         View v;
-
         if (convertView == null) {
             v = ((Activity) getContext()).getLayoutInflater().inflate(R.layout.adapter_association, null);
-            //v = View.inflate(getContext(), R.layout.adapter_association, parent);
         } else {
             v = convertView;
         }
@@ -43,5 +41,6 @@ public class AssociationAdapter extends ArrayAdapter<Association> {
 
         return v;
     }
+
 
 }

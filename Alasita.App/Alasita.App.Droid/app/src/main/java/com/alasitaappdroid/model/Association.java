@@ -62,4 +62,9 @@ public class Association {
     public void setAssociationProducts(ArrayList<Product> associationProducts) {
         mAssociationProducts = associationProducts;
     }
+
+    @Override
+    public String toString() {
+        return mAssociationName;
+    }
 }
