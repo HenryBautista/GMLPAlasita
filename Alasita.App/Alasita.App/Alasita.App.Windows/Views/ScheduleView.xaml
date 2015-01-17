@@ -1,5 +1,5 @@
 ﻿<Page
-    x:Class="Alasita.App.Views.HistoryView"
+    x:Class="Alasita.App.Views.ScheduleView"
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     xmlns:local="using:Alasita.App.Views"
@@ -8,8 +8,6 @@
     mc:Ignorable="d">
 
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
-        <TextBlock Text="History"/>
-        <Image Source="http://cdn.gq.com.mx/uploads/images/thumbs/201326/los_autos_del_futuro_y_la_tecnologia_automotriz_del_manana_310619824_900x600.jpg" Width="500" Height="500"/>
+
     </Grid>
 </Page>
-

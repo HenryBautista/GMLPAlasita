@@ -30,46 +30,41 @@ namespace Alasita.App.Views
         public Main()
         {
             this.InitializeComponent();
-            //Share JV
-        }
-        private void SectorAppBarButton_Click(object sender, RoutedEventArgs e)
-        {
-            this.PopupSector.IsOpen = true;
-            this.TexBlockSectorName.Text = this.TexBlockSectorName.Text + (sender as AppBarButton).Label;
+            SizeChanged += Main_SizeChanged;
         }
 
-        private void ClosePopup_Click(object sender, RoutedEventArgs e)
+        void Main_SizeChanged(object sender, SizeChangedEventArgs e)
         {
-            this.PopupSector.IsOpen = false;
-        }
-        private void Grid_Tapped(object sender, TappedRoutedEventArgs e)
-        {
-            Association asso = new Association();
-            asso.AssociationName = "Hola Se supone que esto funcione asi..";
-            //Data context Association 
-            this.GridDataAssociation.DataContext = asso;
-
-        }
-        protected async override void OnNavigatedTo(NavigationEventArgs e)
-        {
-            LoadData();
-        }
-
-        private async void LoadData()
-        {
-            try
+            if (e.NewSize.Width<=500)
             {
-                if (DataProvider.StaticCarnival == null)
-                    DataProvider.StaticCarnival = await Utilities.LoadTheLastHope();
-                this.ListViewSectores.ItemsSource = DataProvider.StaticCarnival.CarnivalSectors;
-
+                this.TextBlockCronograma.Visibility = Visibility.Collapsed;
+                this.TextBlockWebSite.Visibility = Visibility.Collapsed;
             }
-            catch (Exception e)
+            else
             {
-
-                MessageDialog ms = new MessageDialog(e.ToString(), "Error");
-                ms.ShowAsync();
+                this.TextBlockCronograma.Visibility = Visibility.Visible;
+                this.TextBlockWebSite.Visibility = Visibility.Visible;
             }
         }
+
+        private void AppBarButton_Click(object sender, RoutedEventArgs e)
+        {
+        }
+
+        private void GridMapa_Tapped(object sender, TappedRoutedEventArgs e)
+        {
+            Frame.Navigate(typeof(MapView));
+        }
+
+        private void GridCrograma_Tapped(object sender, TappedRoutedEventArgs e)
+        {
+            Frame.Navigate(typeof(ScheduleView));
+        }
+
+        private void GridHistoria_Tapped(object sender, TappedRoutedEventArgs e)
+        {
+            Frame.Navigate(typeof(HistoryView));
+        }
+        
     }
 }
