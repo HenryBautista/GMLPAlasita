@@ -9,14 +9,13 @@ public class Association {
 
     private String mAssociationName;
     private int mAssociationKey;
-    private ArrayList<String> mAssociationInfo;
     private String mAssociationDescription;
     private ArrayList<Product> mAssociationProducts;
-    private int mExpoNumber;
+    private int mAssociationExpoNumber;
     private String mAssociationImage;
 
+
     public Association() {
-        mAssociationInfo = new ArrayList<>();
         mAssociationProducts = new ArrayList<>();
     }
 
@@ -36,14 +35,6 @@ public class Association {
         mAssociationKey = associationKey;
     }
 
-    public ArrayList<String> getAssociationInfo() {
-        return mAssociationInfo;
-    }
-
-    public void setAssociationInfo(ArrayList<String> associationInfo) {
-        mAssociationInfo = associationInfo;
-    }
-
     public String getAssociationDescription() {
         return mAssociationDescription;
     }
@@ -60,12 +51,12 @@ public class Association {
         mAssociationProducts = associationProducts;
     }
 
-    public int getExpoNumber() {
-        return mExpoNumber;
+    public int getAssociationExpoNumber() {
+        return mAssociationExpoNumber;
     }
 
-    public void setExpoNumber(int expoNumber) {
-        mExpoNumber = expoNumber;
+    public void setAssociationExpoNumber(int associationExpoNumber) {
+        mAssociationExpoNumber = associationExpoNumber;
     }
 
     public String getAssociationImage() {

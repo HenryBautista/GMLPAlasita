@@ -6,7 +6,6 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.widget.Toast;
 
 import com.alasitaappdroid.controller.fragment.SectorFragment;
 import com.alasitaappdroid.model.Association;
@@ -79,7 +78,6 @@ public class AssociationActivity extends ActionBarActivity {
         return super.onOptionsItemSelected(item);
     }
 
-
     public String loadJSON() {
         String json = "";
         try {
@@ -88,8 +86,7 @@ public class AssociationActivity extends ActionBarActivity {
             byte[] buffer = new byte[size];
             inputStream.read(buffer);
             inputStream.close();
-            json = new String(buffer, "UTF-8");
-
+            json = new String(buffer);     //tireishon aca
         } catch (Exception e) {
             Log.d("Json Error", e.getMessage());
             return null;
@@ -97,11 +94,14 @@ public class AssociationActivity extends ActionBarActivity {
         return json;
     }
 
-    public void loadSectors() throws JSONException {
-        mCarnival = new Carnival();
-        JSONObject jsonObject = new JSONObject(loadJSON());
-        String CarnivalName = jsonObject.getString("CarnivalName");
 
+    public void loadSectors() throws JSONException {
+        String json = loadJSON();
+        mCarnival = new Carnival();
+
+        JSONObject jsonObject = new JSONObject(json.toString());
+
+        String CarnivalName = jsonObject.getString("CarnivalName");
         JSONArray array = jsonObject.getJSONArray("CarnivalSectors");
         ArrayList<Sector> SectorList = new ArrayList<Sector>();
         for (int i = 0; i < array.length(); i++) {
@@ -113,8 +113,14 @@ public class AssociationActivity extends ActionBarActivity {
             String SectorMapImage = jsector.getString("SectorMapImage");
             JSONArray associationArray = jsector.getJSONArray("SectorAssociations");
             ArrayList<Association> AssociationList = new ArrayList<>();
-            Association association = new Association();
+            JSONArray InfoArray = jsector.getJSONArray("Tags");
+            ArrayList<String> TagList = new ArrayList<>();
+            for (int k = 0; k < InfoArray.length(); k++) {
+                String Tag = InfoArray.getString(k);
+                TagList.add(Tag);
+            }
             for (int j = 0; j < associationArray.length(); j++) {
+                Association association = new Association();
                 JSONObject jAssociation = associationArray.getJSONObject(j);
                 String AssociationName = jAssociation.getString("AssociationName");
                 int AssociationKey = jAssociation.getInt("AssociationKey");
@@ -122,17 +128,10 @@ public class AssociationActivity extends ActionBarActivity {
                 String AssociationImage = jAssociation.getString("AssociationImage");
                 int ExpoNumber = jAssociation.getInt("ExpoNumber");
 
-                JSONArray InfoArray = jAssociation.getJSONArray("AssociationInfo");
-                ArrayList<String> InfoList = new ArrayList<>();
-                for (int k = 0; k < InfoArray.length(); k++) {
-                    String Info = InfoArray.getString(k);
-                    InfoList.add(Info);
-                }
-
                 JSONArray ProductArray = jAssociation.getJSONArray("AssociationProducts");
                 ArrayList<Product> ProductList = new ArrayList<>();
-                Product product = new Product();
                 for (int k = 0; k < ProductArray.length(); k++) {
+                    Product product = new Product();
                     JSONObject jProduct = ProductArray.getJSONObject(k);
                     String ProductName = jProduct.getString("ProductName");
                     String ProductImage = jProduct.getString("ProductImage");
@@ -146,11 +145,11 @@ public class AssociationActivity extends ActionBarActivity {
                 association.setAssociationKey(AssociationKey);
                 association.setAssociationDescription(AssociationDescription);
                 association.setAssociationImage(AssociationImage);
-                association.setExpoNumber(ExpoNumber);
-                association.setAssociationInfo(InfoList);
+                association.setAssociationExpoNumber(ExpoNumber);
                 association.setAssociationProducts(ProductList);
                 AssociationList.add(association);
             }
+            sector.setSectorTags(TagList);
             sector.setSectorAssociations(AssociationList);
             sector.setSectorName(SectorName);
             sector.setSectorKey(SectorKey);
@@ -161,4 +160,5 @@ public class AssociationActivity extends ActionBarActivity {
         mCarnival.setCarnivalName("CarnivalName");
         mCarnival.setCarnivalSectors(SectorList);
     }
+
 }

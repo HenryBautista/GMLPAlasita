@@ -12,7 +12,6 @@ import android.view.MotionEvent;
 import android.view.View;
 import android.widget.FrameLayout;
 import android.widget.ImageView;
-import android.widget.Toast;
 
 import com.alasitaappdroid.controller.fragment.SectorFragment;
 import com.alasitaappdroid.model.Association;
@@ -24,9 +23,7 @@ import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
-import java.io.BufferedReader;
 import java.io.InputStream;
-import java.nio.Buffer;
 import java.util.ArrayList;
 
 public class MapActivity extends ActionBarActivity {
@@ -200,7 +197,6 @@ public class MapActivity extends ActionBarActivity {
     }
 
 
-
     public void loadSectors() throws JSONException {
         String json = loadJSON();
         mCarnival = new Carnival();
@@ -219,8 +215,14 @@ public class MapActivity extends ActionBarActivity {
             String SectorMapImage = jsector.getString("SectorMapImage");
             JSONArray associationArray = jsector.getJSONArray("SectorAssociations");
             ArrayList<Association> AssociationList = new ArrayList<>();
-            Association association = new Association();
+            JSONArray InfoArray = jsector.getJSONArray("Tags");
+            ArrayList<String> TagList = new ArrayList<>();
+            for (int k = 0; k < InfoArray.length(); k++) {
+                String Tag = InfoArray.getString(k);
+                TagList.add(Tag);
+            }
             for (int j = 0; j < associationArray.length(); j++) {
+                Association association = new Association();
                 JSONObject jAssociation = associationArray.getJSONObject(j);
                 String AssociationName = jAssociation.getString("AssociationName");
                 int AssociationKey = jAssociation.getInt("AssociationKey");
@@ -228,17 +230,10 @@ public class MapActivity extends ActionBarActivity {
                 String AssociationImage = jAssociation.getString("AssociationImage");
                 int ExpoNumber = jAssociation.getInt("ExpoNumber");
 
-                JSONArray InfoArray = jAssociation.getJSONArray("AssociationInfo");
-                ArrayList<String> InfoList = new ArrayList<>();
-                for (int k = 0; k < InfoArray.length(); k++) {
-                    String Info = InfoArray.getString(k);
-                    InfoList.add(Info);
-                }
-
                 JSONArray ProductArray = jAssociation.getJSONArray("AssociationProducts");
                 ArrayList<Product> ProductList = new ArrayList<>();
-                Product product = new Product();
                 for (int k = 0; k < ProductArray.length(); k++) {
+                    Product product = new Product();
                     JSONObject jProduct = ProductArray.getJSONObject(k);
                     String ProductName = jProduct.getString("ProductName");
                     String ProductImage = jProduct.getString("ProductImage");
@@ -252,11 +247,11 @@ public class MapActivity extends ActionBarActivity {
                 association.setAssociationKey(AssociationKey);
                 association.setAssociationDescription(AssociationDescription);
                 association.setAssociationImage(AssociationImage);
-                association.setExpoNumber(ExpoNumber);
-                association.setAssociationInfo(InfoList);
+                association.setAssociationExpoNumber(ExpoNumber);
                 association.setAssociationProducts(ProductList);
                 AssociationList.add(association);
             }
+            sector.setSectorTags(TagList);
             sector.setSectorAssociations(AssociationList);
             sector.setSectorName(SectorName);
             sector.setSectorKey(SectorKey);
