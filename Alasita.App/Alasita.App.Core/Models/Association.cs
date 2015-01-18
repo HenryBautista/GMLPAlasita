@@ -10,7 +10,7 @@ namespace Alasita.App.Core.Models
     {
         private string associationName; //Nombre de la asociacion
         private int associationKey; //Clave numerica Ejem: 1    2   3......
-        private List<string> associationInfo; //Ejem: Joyeria y plateria
+        //private List<string> associationInfo; //Ejem: Joyeria y plateria
         private string associationDescription;  //Tengo que escribirlo?
         private List<Product> associationProducts;  //Lista de Productos de la asociacion Ejem: gallito, billetes, canchitas, etc.
         private int expoNumber;
@@ -40,11 +40,11 @@ namespace Alasita.App.Core.Models
             set { associationDescription = value; }
         }
         
-        public List<string> AssociationInfo
-        {
-            get { return associationInfo; }
-            set { associationInfo = value; }
-        }
+        //public List<string> AssociationInfo
+        //{
+        //    get { return associationInfo; }
+        //    set { associationInfo = value; }
+        //}
         
         public int AssociationKey
         {

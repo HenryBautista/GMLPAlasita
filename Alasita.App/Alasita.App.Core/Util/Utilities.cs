@@ -60,15 +60,9 @@ namespace Alasita.App.Core.Util
             List<Sector> respose = new List<Sector>();
             foreach (var sector in DataProvider.StaticCarnival.CarnivalSectors)
             {
-                foreach (var association in sector.SectorAssociations)
+                if (sector.Tags.Contains(query))
                 {
-                    foreach (var product in association.AssociationInfo)
-                    {
-                        if (product==query)
-                        {
-                            respose.Add(sector);
-                        }
-                    }
+                    respose.Add(sector);
                 }
             }
             return respose;

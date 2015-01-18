@@ -13,7 +13,14 @@ namespace Alasita.App.Core.Models
         private string sectorDescription;   //Tengo que escribirlo?
         private string sectorMapImage;  //La Imagen es el pedazo correspondiente del sector en el mapa (un URL) si es local "appx:///Images/nombreArchivo"
         private List<Association> sectorAssociations;   //lista de associaciones del sector
-            
+        private List<string> tags;
+
+        public List<string> Tags
+        {
+            get { return tags; }
+            set { tags = value; }
+        }
+        
         public List<Association> SectorAssociations
         {
             get { return sectorAssociations; }
