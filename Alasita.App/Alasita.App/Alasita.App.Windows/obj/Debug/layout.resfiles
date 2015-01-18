@@ -1,4 +1,7 @@
+Images\EkekoLigth.png
 Images\feria.png
+JsonFiles\Carnival.Json
+Temp\Alasita.json
 Assets\Logo.scale-100.png
 Assets\SmallLogo.scale-100.png
 Assets\SplashScreen.scale-100.png
@@ -6,4 +9,8 @@ Assets\StoreLogo.scale-100.png
 Alasita.App.Windows.xr.xml
 App.xbf
 UserControls\ShareFacebook.xbf
+Views\AssociationsView.xbf
+Views\HistoryView.xbf
 Views\Main.xbf
+Views\MapView.xbf
+Views\ScheduleView.xbf

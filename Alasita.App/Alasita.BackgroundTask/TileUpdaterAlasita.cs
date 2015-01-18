@@ -7,7 +7,7 @@ using Windows.ApplicationModel.Background;
 
 namespace Alasita.BackgroundTask
 {
-    class TileUpdaterAlasita:IBackgroundTask 
+    class TileUpdaterAlasita : IBackgroundTask
     {
     }
 }

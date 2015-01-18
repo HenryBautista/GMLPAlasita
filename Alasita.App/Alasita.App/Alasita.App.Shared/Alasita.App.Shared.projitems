@@ -15,12 +15,19 @@
     <Compile Include="$(MSBuildThisFileDirectory)App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)Services\EventService.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Services\NotificationService.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Services\PageInvocationService.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Temp\Class\Alasitas.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Temp\Class\Asociacion.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Temp\Class\Evento.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Temp\Class\Parrafo.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Temp\Class\Programa.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Temp\Class\Sector.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Temp\Service.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)UserControls\ShareFacebook.xaml.cs">
       <DependentUpon>ShareFacebook.xaml</DependentUpon>
     </Compile>
-  </ItemGroup>
-  <ItemGroup>
-    <Folder Include="$(MSBuildThisFileDirectory)JsonFiles\" />
   </ItemGroup>
   <ItemGroup>
     <Page Include="$(MSBuildThisFileDirectory)UserControls\ShareFacebook.xaml">
@@ -29,6 +36,9 @@
     </Page>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="$(MSBuildThisFileDirectory)Images\EkekoLigth.png" />
     <Content Include="$(MSBuildThisFileDirectory)Images\feria.png" />
+    <Content Include="$(MSBuildThisFileDirectory)JsonFiles\Carnival.Json" />
+    <Content Include="$(MSBuildThisFileDirectory)Temp\Alasita.json" />
   </ItemGroup>
 </Project>
