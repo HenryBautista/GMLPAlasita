@@ -12,6 +12,7 @@ import android.view.MotionEvent;
 import android.view.View;
 import android.widget.FrameLayout;
 import android.widget.ImageView;
+import android.widget.Toast;
 
 import com.alasitaappdroid.controller.fragment.SectorFragment;
 import com.alasitaappdroid.model.Association;
@@ -23,7 +24,9 @@ import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
+import java.io.BufferedReader;
 import java.io.InputStream;
+import java.nio.Buffer;
 import java.util.ArrayList;
 
 public class MapActivity extends ActionBarActivity {
@@ -43,8 +46,9 @@ public class MapActivity extends ActionBarActivity {
         try {
             loadSectors();
         } catch (Exception e) {
-            Log.d("JSON Error", e.getMessage());
+
         }
+
 
         mImageMap = (ImageView) findViewById(R.id.image_map);
         mFrameContainer = (FrameLayout) findViewById(R.id.container);
@@ -62,10 +66,12 @@ public class MapActivity extends ActionBarActivity {
                     int greenValue = Color.green(pixelColor);
                     int blueValue = Color.blue(pixelColor);
                     String tappedSector = getTappedSector(redValue, greenValue, blueValue);
-                    findSector(tappedSector);
-                    Log.d("Color", tappedSector);
-                    hideMap(v);
-                    InflateFragment();
+                    if (!tappedSector.equals("")) {
+                        findSector(tappedSector);
+                        hideMap(v);
+                        InflateFragment();
+                    }
+
                 }
                 if (event.getAction() == MotionEvent.ACTION_MOVE) {
                     mTap = false;
@@ -102,8 +108,7 @@ public class MapActivity extends ActionBarActivity {
             sectorKey = "G";
         } else if (isInRange(redValue, 33) && isInRange(greenValue, 181) && isInRange(blueValue, 229)) {
             sectorKey = "H";
-        }
-
+        } else sectorKey = "";
 
         return sectorKey;
     }
@@ -131,7 +136,9 @@ public class MapActivity extends ActionBarActivity {
         mImageMap.setClickable(false);
         mBackMenu.setVisible(true);
         mFrameContainer.setVisibility(View.VISIBLE);
-        getSupportFragmentManager().beginTransaction().replace(R.id.container, new SectorFragment()).commit();
+        SectorFragment sectorFragment = new SectorFragment();
+        sectorFragment.setCurrentSector(mCurrentSector);
+        getSupportFragmentManager().beginTransaction().replace(R.id.container, sectorFragment).commit();
     }
 
 
@@ -184,8 +191,7 @@ public class MapActivity extends ActionBarActivity {
             byte[] buffer = new byte[size];
             inputStream.read(buffer);
             inputStream.close();
-            json = new String(buffer, "UTF-8");
-
+            json = new String(buffer);     //tireishon aca
         } catch (Exception e) {
             Log.d("Json Error", e.getMessage());
             return null;
@@ -193,11 +199,15 @@ public class MapActivity extends ActionBarActivity {
         return json;
     }
 
-    public void loadSectors() throws JSONException {
-        mCarnival = new Carnival();
-        JSONObject jsonObject = new JSONObject(loadJSON());
-        String CarnivalName = jsonObject.getString("CarnivalName");
 
+
+    public void loadSectors() throws JSONException {
+        String json = loadJSON();
+        mCarnival = new Carnival();
+
+        JSONObject jsonObject = new JSONObject(json.toString());
+
+        String CarnivalName = jsonObject.getString("CarnivalName");
         JSONArray array = jsonObject.getJSONArray("CarnivalSectors");
         ArrayList<Sector> SectorList = new ArrayList<Sector>();
         for (int i = 0; i < array.length(); i++) {
@@ -253,7 +263,6 @@ public class MapActivity extends ActionBarActivity {
             sector.setSectorDescription(SectorDescription);
             sector.setSectorMapImage(SectorMapImage);
             SectorList.add(i, sector);
-            Log.d("as", i + "");
         }
         mCarnival.setCarnivalName("CarnivalName");
         mCarnival.setCarnivalSectors(SectorList);
