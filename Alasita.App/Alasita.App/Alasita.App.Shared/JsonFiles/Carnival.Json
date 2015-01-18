@@ -92,7 +92,7 @@
               {"ProductName": "Hojalateria","ProductImage": "appx:///Images"},
               {"ProductName": "Lampara","ProductImage": "appx:///Images"},
               {"ProductName": "Llavero con tu fotografia","ProductImage": "appx:///Images"},
-              {"ProductName": "Ropa de Bebe","ProductImage": "appx:///Images"},
+              {"ProductName": "Ropa de Bebe","ProductImage": "appx:///Images"}
           ]
          },
           {"AssociationName": "ASOCIACION EXPOSITORES MINIATURA SECTOR A", "AssociationKey": 2, "AssociationDescription":"Artesanos realizan aluminio, cuero","AssociationImage": "appx:///Images","ExpoNumber":128,
@@ -317,53 +317,111 @@
          }
      ]
     },
-    {"SectorName": "Pedro Domingo Murillo","SectorKey": "R","SectorDescription": "Entrada Av. Ejercito","SectorMapImage": "appx:///Images",
-     "Tags": [],
+    
+    {"SectorName": "Parque Roosevelt","SectorKey": "R","SectorDescription": "Entrada Av. Simón Bolivar","SectorMapImage": "appx:///Images",
+     "Tags": ["orfebreria","orfebre","tejido","tejidos","miniatura","miniaturas","fantasia","juegos","billetito","billetitos"],
      "SectorAssociations": [
-        {"AssociationName": "ASOC.EXPOSITORES SECTOR MASITAS", "AssociationKey": 3, "AssociationDescription":"Artesanos realizan","AssociationImage": "appx:///Images","ExpoNumber":86,
+        {"AssociationName": "ASOC. DE ARTESANOS ORFEBRES SAN ELOY", "AssociationKey": 1, "AssociationDescription":"Manejo de Orfebreria y tejidos","AssociationImage": "appx:///Images","ExpoNumber":20,
           "AssociationProducts": [
-              {"ProductName": "MASITAS","ProductImage": "appx:///Images"},
-              {"ProductName": "Capuchino","ProductImage": "appx:///Images"},
-              {"ProductName": "Cereales","ProductImage": "appx:///Images"},
-              {"ProductName": "Churros","ProductImage": "appx:///Images"},
-              {"ProductName": "Confites","ProductImage": "appx:///Images"},
-              {"ProductName": "Helado","ProductImage": "appx:///Images"},
-              {"ProductName": "Palomitas de Maiz","ProductImage": "appx:///Images"},
-              {"ProductName": "Refrescos","ProductImage": "appx:///Images"}
+              {"ProductName": "Orfebreria","ProductImage": "appx:///Images"},
+              {"ProductName": "Tejidos","ProductImage": "appx:///Images"}
+          ]
+         },
+		 {"AssociationName": "ASOCIACION CREATIVOS LA PAZ", "AssociationKey": 2, "AssociationDescription":"Artesanias en miniaturas","AssociationImage": "appx:///Images","ExpoNumber":23,
+          "AssociationProducts": [
+              {"ProductName": "Artesania en miniaturas","ProductImage": "appx:///Images"}
+          ]
+         },{"AssociationName": "KORI AMPARA", "AssociationKey": 3, "AssociationDescription":"Artesanias, Billetes, juegos","AssociationImage": "appx:///Images","ExpoNumber":94,
+          "AssociationProducts": [
+              {"ProductName": "Artesanias en miniaturas","ProductImage": "appx:///Images"},
+			  {"ProductName": "Billetitos","ProductImage": "appx:///Images"},
+			  {"ProductName": "Fantasia","ProductImage": "appx:///Images"},
+			  {"ProductName": "Juegos","ProductImage": "appx:///Images"},
+              {"ProductName": "Tejidos","ProductImage": "appx:///Images"}
           ]
          }
      ]
     },
-    {"SectorName": "Pedro Domingo Murillo","SectorKey": "N","SectorDescription": "Entrada Av. Ejercito","SectorMapImage": "appx:///Images",
-     "Tags": [],
+    {"SectorName": "Ingreso Norte","SectorKey": "N","SectorDescription": "Entrada Intendencia Municipal","SectorMapImage": "appx:///Images",
+     "Tags": ["juegos","juegos","futbolin","futbolines","magia","pipocas","pipoca","joyeria","joya","tejidos","juegos de mesa","juego de mesa"],
      "SectorAssociations": [
-        {"AssociationName": "ASOC.EXPOSITORES SECTOR MASITAS", "AssociationKey": 3, "AssociationDescription":"Artesanos realizan","AssociationImage": "appx:///Images","ExpoNumber":86,
+        {"AssociationName": "ASOCIACION DE JUEGOS POPULARES 4 DE JULIO", "AssociationKey": 1, "AssociationDescription":"Juegos Recreativos","AssociationImage": "appx:///Images","ExpoNumber":4,
           "AssociationProducts": [
-              {"ProductName": "MASITAS","ProductImage": "appx:///Images"},
-              {"ProductName": "Capuchino","ProductImage": "appx:///Images"},
-              {"ProductName": "Cereales","ProductImage": "appx:///Images"},
-              {"ProductName": "Churros","ProductImage": "appx:///Images"},
-              {"ProductName": "Confites","ProductImage": "appx:///Images"},
-              {"ProductName": "Helado","ProductImage": "appx:///Images"},
-              {"ProductName": "Palomitas de Maiz","ProductImage": "appx:///Images"},
-              {"ProductName": "Refrescos","ProductImage": "appx:///Images"}
+              {"ProductName": "Juegos","ProductImage": "appx:///Images"}
+          ]
+         },
+		 {"AssociationName": "NUESTRA SEÑORA DE LA PAZ", "AssociationKey": 2, "AssociationDescription":"Comercialización de Artesanias en miniatura","AssociationImage": "appx:///Images","ExpoNumber":72,
+          "AssociationProducts": [
+              {"ProductName": "Artesanias en Miniatura","ProductImage": "appx:///Images"},
+			  {"ProductName": "Refrescos","ProductImage": "appx:///Images"}
+          ]
+         },
+		 {"AssociationName": "FUTBOLINES DECANOS", "AssociationKey": 3, "AssociationDescription":"Futbolines para jugar","AssociationImage": "appx:///Images","ExpoNumber":1,
+          "AssociationProducts": [
+              {"ProductName": "Futbolines","ProductImage": "appx:///Images"}
+          ]
+         },
+		 {"AssociationName": "UNION DE ARTESANOS 20 DE OCTUBRE", "AssociationKey": 4, "AssociationDescription":"Juegos recreativos y refrigerios","AssociationImage": "appx:///Images","ExpoNumber":37,
+          "AssociationProducts": [
+              {"ProductName": "Billetitos","ProductImage": "appx:///Images"},
+			  {"ProductName": "Futbolines","ProductImage": "appx:///Images"},
+			  {"ProductName": "Joyeria","ProductImage": "appx:///Images"},
+			  {"ProductName": "Juegos de mesa","ProductImage": "appx:///Images"},
+			  {"ProductName": "Magia","ProductImage": "appx:///Images"},
+			  {"ProductName": "Pipocas","ProductImage": "appx:///Images"},
+			  {"ProductName": "Tejidos","ProductImage": "appx:///Images"}
           ]
          }
      ]
     },
-    {"SectorName": "Pedro Domingo Murillo","SectorKey": "K","SectorDescription": "Entrada Av. Ejercito","SectorMapImage": "appx:///Images",
-     "Tags": [],
+    {"SectorName": "Kusillo","SectorKey": "K","SectorDescription": "Entrada Kusillo","SectorMapImage": "appx:///Images",
+     "Tags": ["plantas","planta","macetas","maceta","carruseles","carrusel","futbolin","futbolines","vivandera","vivanderas","cafe","te","mate","apis","api","pasteles","pasteles","instrumento","instrumentos"],
      "SectorAssociations": [
-        {"AssociationName": "ASOC.EXPOSITORES SECTOR MASITAS", "AssociationKey": 3, "AssociationDescription":"Artesanos realizan","AssociationImage": "appx:///Images","ExpoNumber":86,
+        {"AssociationName": "ASOC. ARTESANOS FLORICULTORES URKUPIÑA", "AssociationKey": 1, "AssociationDescription":"Comercialización de Plantas","AssociationImage": "appx:///Images","ExpoNumber":91,
           "AssociationProducts": [
-              {"ProductName": "MASITAS","ProductImage": "appx:///Images"},
-              {"ProductName": "Capuchino","ProductImage": "appx:///Images"},
-              {"ProductName": "Cereales","ProductImage": "appx:///Images"},
-              {"ProductName": "Churros","ProductImage": "appx:///Images"},
-              {"ProductName": "Confites","ProductImage": "appx:///Images"},
-              {"ProductName": "Helado","ProductImage": "appx:///Images"},
-              {"ProductName": "Palomitas de Maiz","ProductImage": "appx:///Images"},
-              {"ProductName": "Refrescos","ProductImage": "appx:///Images"}
+              {"ProductName": "Plantas y Macetas","ProductImage": "appx:///Images"},
+              {"ProductName": "Artesanias en miniatura","ProductImage": "appx:///Images"},
+              {"ProductName": "Cafe, Te, Mate y similares","ProductImage": "appx:///Images"},
+              {"ProductName": "Carruseles","ProductImage": "appx:///Images"},
+              {"ProductName": "Futbolines","ProductImage": "appx:///Images"},
+              {"ProductName": "Refrigerio","ProductImage": "appx:///Images"},
+              {"ProductName": "Refrescos","ProductImage": "appx:///Images"},
+              {"ProductName": "Vivandera","ProductImage": "appx:///Images"}
+          ]
+         },
+		 {"AssociationName": "ASOC. DE INSTRUMENTOS DE VIENTOS WALATA", "AssociationKey": 2, "AssociationDescription":"Comercialización de Artesanias en miniatura","AssociationImage": "appx:///Images","ExpoNumber":17,
+          "AssociationProducts": [
+              {"ProductName": "Artesanias en miniatura","ProductImage": "appx:///Images"}
+          ]
+         },
+		 {"AssociationName": "ASOC. FLORICULTORES 24 DE ENERO", "AssociationKey": 3, "AssociationDescription":"Comercialización de Plantas","AssociationImage": "appx:///Images","ExpoNumber":78,
+          "AssociationProducts": [
+              {"ProductName": "Plantas y Macetas","ProductImage": "appx:///Images"},
+              {"ProductName": "Comidas","ProductImage": "appx:///Images"}
+          ]
+         },
+		 {"AssociationName": "SECTOR APIS 10 DE FEBRERO", "AssociationKey": 4, "AssociationDescription":"Venta de Apis y pasteles","AssociationImage": "appx:///Images","ExpoNumber":17,
+          "AssociationProducts": [
+              {"ProductName": "Apis y Pasteles","ProductImage": "appx:///Images"}
+          ]
+         },
+		 {"AssociationName": "ASOC. DE EXPOSITORES SECTOR COCHABAMBA", "AssociationKey": 5, "AssociationDescription":"Comercialización de artesanías y refrigerios","AssociationImage": "appx:///Images","ExpoNumber":154,
+          "AssociationProducts": [
+              {"ProductName": "Artesanias en miniatura","ProductImage": "appx:///Images"},
+              {"ProductName": "Refrigerio","ProductImage": "appx:///Images"},
+              {"ProductName": "Comidas","ProductImage": "appx:///Images"},
+              {"ProductName": "Cafe, Te, Mate","ProductImage": "appx:///Images"}
+          ]
+         },
+		 {"AssociationName": "ASOC. DE FLORICULTORES 'LA PAZ'", "AssociationKey": 6, "AssociationDescription":"Comercialización de Plantas y flores","AssociationImage": "appx:///Images","ExpoNumber":89,
+          "AssociationProducts": [
+              {"ProductName": "Plantas y Macetas","ProductImage": "appx:///Images"},
+              {"ProductName": "Comidas","ProductImage": "appx:///Images"}
+          ]
+         },
+		 {"AssociationName": "ASOC. DE ARTESANOS Y EXPOSITORES LISTA DE CARRUSEL", "AssociationKey": 7, "AssociationDescription":"Juegos Recreativos y Carruseles","AssociationImage": "appx:///Images","ExpoNumber":25,
+          "AssociationProducts": [
+              {"ProductName": "Juegos","ProductImage": "appx:///Images"}
           ]
          }
      ]
