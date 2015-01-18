@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using Alasita.App.Core.Models;
 using Windows.Storage;
 using Newtonsoft.Json;
+using Alasita.App.Core.Data;
 namespace Alasita.App.Core.Util
 {
     public static class Utilities
@@ -53,6 +54,24 @@ namespace Alasita.App.Core.Util
             var file = await folder.CreateFileAsync(filename, Windows.Storage.CreationCollisionOption.ReplaceExisting);
             var json = JsonConvert.SerializeObject(carnival);
             await Windows.Storage.FileIO.WriteTextAsync(file, json);
+        }
+
+        public static List<Sector> SearchProduct(string query) {
+            List<Sector> respose = new List<Sector>();
+            foreach (var sector in DataProvider.StaticCarnival.CarnivalSectors)
+            {
+                foreach (var association in sector.SectorAssociations)
+                {
+                    foreach (var product in association.AssociationInfo)
+                    {
+                        if (product==query)
+                        {
+                            respose.Add(sector);
+                        }
+                    }
+                }
+            }
+            return respose;
         }
     }
 }
