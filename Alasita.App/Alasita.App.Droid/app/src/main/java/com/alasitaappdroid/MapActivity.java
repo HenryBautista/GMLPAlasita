@@ -1,5 +1,7 @@
 package com.alasitaappdroid;
 
+import android.graphics.Bitmap;
+import android.graphics.Color;
 import android.os.Build;
 import android.os.Bundle;
 import android.support.v7.app.ActionBarActivity;
@@ -10,10 +12,10 @@ import android.view.MotionEvent;
 import android.view.View;
 import android.widget.FrameLayout;
 import android.widget.ImageView;
-import android.widget.Toast;
 
 import com.alasitaappdroid.controller.fragment.SectorFragment;
 import com.alasitaappdroid.model.Association;
+import com.alasitaappdroid.model.Carnival;
 import com.alasitaappdroid.model.Product;
 import com.alasitaappdroid.model.Sector;
 
@@ -31,6 +33,9 @@ public class MapActivity extends ActionBarActivity {
     private boolean mTap;
     private MenuItem mBackMenu;
 
+    private Carnival mCarnival;
+    public Sector mCurrentSector;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -40,6 +45,7 @@ public class MapActivity extends ActionBarActivity {
         } catch (Exception e) {
             Log.d("JSON Error", e.getMessage());
         }
+
         mImageMap = (ImageView) findViewById(R.id.image_map);
         mFrameContainer = (FrameLayout) findViewById(R.id.container);
 
@@ -51,8 +57,13 @@ public class MapActivity extends ActionBarActivity {
                 }
                 if (event.getAction() == MotionEvent.ACTION_UP && mTap == true) {
                     mTap = false;
-                    Toast.makeText(getApplicationContext(), event.getX() + " " + event.getY(), Toast.LENGTH_SHORT).show();
-                    //TODO Implement getPixel()
+                    int pixelColor = getColor((int) event.getX(), (int) event.getY());
+                    int redValue = Color.red(pixelColor);
+                    int greenValue = Color.green(pixelColor);
+                    int blueValue = Color.blue(pixelColor);
+                    String tappedSector = getTappedSector(redValue, greenValue, blueValue);
+                    findSector(tappedSector);
+                    Log.d("Color", tappedSector);
                     hideMap(v);
                     InflateFragment();
                 }
@@ -62,6 +73,45 @@ public class MapActivity extends ActionBarActivity {
                 return false;
             }
         });
+    }
+
+    private void findSector(String tappedSector) {
+        for (Sector sector : mCarnival.getCarnivalSectors()) {
+            if (sector.getSectorKey().equals(tappedSector)) {
+                mCurrentSector = sector;
+            }
+        }
+    }
+
+    private String getTappedSector(int redValue, int greenValue, int blueValue) {
+        String sectorKey = "";
+        Log.d("Color", redValue + " " + greenValue + " " + blueValue);
+        if (isInRange(redValue, 63) && isInRange(greenValue, 132) && isInRange(blueValue, 204)) {
+            sectorKey = "A";
+        } else if (isInRange(redValue, 255) && isInRange(greenValue, 68) && isInRange(blueValue, 68)) {
+            sectorKey = "B";
+        } else if (isInRange(redValue, 135) && isInRange(greenValue, 79) && isInRange(blueValue, 177)) {
+            sectorKey = "C";
+        } else if (isInRange(redValue, 255) && isInRange(greenValue, 136) && isInRange(blueValue, 0)) {
+            sectorKey = "D";
+        } else if (isInRange(redValue, 216) && isInRange(greenValue, 255) && isInRange(blueValue, 79)) {
+            sectorKey = "E";
+        } else if (isInRange(redValue, 0) && isInRange(greenValue, 255) && isInRange(blueValue, 40)) {
+            sectorKey = "F";
+        } else if (isInRange(redValue, 255) && isInRange(greenValue, 204) && isInRange(blueValue, 67)) {
+            sectorKey = "G";
+        } else if (isInRange(redValue, 33) && isInRange(greenValue, 181) && isInRange(blueValue, 229)) {
+            sectorKey = "H";
+        }
+
+
+        return sectorKey;
+    }
+
+    private boolean isInRange(int color, int trueValue) {
+        if (color >= trueValue - 5 && color <= trueValue + 5)
+            return true;
+        return false;
     }
 
 
@@ -144,11 +194,12 @@ public class MapActivity extends ActionBarActivity {
     }
 
     public void loadSectors() throws JSONException {
+        mCarnival = new Carnival();
         JSONObject jsonObject = new JSONObject(loadJSON());
+        String CarnivalName = jsonObject.getString("CarnivalName");
 
         JSONArray array = jsonObject.getJSONArray("CarnivalSectors");
         ArrayList<Sector> SectorList = new ArrayList<Sector>();
-
         for (int i = 0; i < array.length(); i++) {
             Sector sector = new Sector();
             JSONObject jsector = array.getJSONObject(i);
@@ -204,5 +255,14 @@ public class MapActivity extends ActionBarActivity {
             SectorList.add(i, sector);
             Log.d("as", i + "");
         }
+        mCarnival.setCarnivalName("CarnivalName");
+        mCarnival.setCarnivalSectors(SectorList);
+    }
+
+    private int getColor(int x, int y) {
+        mImageMap.setDrawingCacheEnabled(true);
+        Bitmap hotspots = Bitmap.createBitmap(mImageMap.getDrawingCache());
+        mImageMap.setDrawingCacheEnabled(false);
+        return hotspots.getPixel(x, y);
     }
 }

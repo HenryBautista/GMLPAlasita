@@ -41,6 +41,7 @@ public class SectorFragment extends Fragment {
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
+        mCurrentSector = ((MapActivity) getActivity()).mCurrentSector;
         View v;
         if (getView() == null) {
             v = inflater.inflate(R.layout.fragment_sector, container, false);
@@ -54,7 +55,7 @@ public class SectorFragment extends Fragment {
         mListAssociations = (ListView) v.findViewById(R.id.list_associations);
 
         mTextName.setText(mCurrentSector.getSectorName());
-        mTextKey.setText(mCurrentSector.getSectorKey());
+        mTextKey.setText("Sector " + mCurrentSector.getSectorKey());
         mTextDescription.setText(mCurrentSector.getSectorDescription());
         mTextAssociations.setText("Asociaciones:");
 
