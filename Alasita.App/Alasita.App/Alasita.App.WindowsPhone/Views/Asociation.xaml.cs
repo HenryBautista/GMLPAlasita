@@ -1,5 +1,5 @@
 ﻿using Alasita.App.Common;
-using Alasita.App.Services;
+using Alasita.App.ViewModel;
 using System;
 using System.Collections.Generic;
 using System.IO;
@@ -24,12 +24,12 @@ namespace Alasita.App.Views
     /// <summary>
     /// An empty page that can be used on its own or navigated to within a Frame.
     /// </summary>
-    public sealed partial class Map : Page
+    public sealed partial class Asociation : Page
     {
         private NavigationHelper navigationHelper;
         private ObservableDictionary defaultViewModel = new ObservableDictionary();
 
-        public Map()
+        public Asociation()
         {
             this.InitializeComponent();
 
@@ -99,6 +99,8 @@ namespace Alasita.App.Views
         /// handlers that cannot cancel the navigation request.</param>
         protected override void OnNavigatedTo(NavigationEventArgs e)
         {
+            AsociationVM data = DataContext as AsociationVM;
+            data.Name = e.Parameter.ToString();
             this.navigationHelper.OnNavigatedTo(e);
         }
 
@@ -108,30 +110,5 @@ namespace Alasita.App.Views
         }
 
         #endregion
-
-        private void Button_Click(object sender, RoutedEventArgs e)
-        {
-            if (Mapa.Visibility == Visibility.Collapsed)
-            {
-                Mapa.Visibility = Visibility.Visible;
-                Semantic.Visibility = Visibility.Collapsed;
-                btn.Content = "Lista";
-            }
-            else
-            {
-                Mapa.Visibility = Visibility.Collapsed;
-                Semantic.Visibility = Visibility.Visible;
-                btn.Content = "Mapa";
-            }
-        }
-
-        private void Button_Click_1(object sender, RoutedEventArgs e)
-        {
-            Button temp = sender as Button;
-            if (temp != null)
-            {
-                PageInvocationService.Navigate("Sectors", temp.Content);
-            }
-        }
     }
 }

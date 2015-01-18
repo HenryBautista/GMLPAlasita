@@ -24,10 +24,12 @@ Alasita.App.WindowsPhone.xr.xml
 App.xbf
 UserControls\SemanticZoomControl.xbf
 UserControls\ShareFacebook.xbf
+Views\Asociation.xbf
 Views\Credits.xbf
 Views\History.xbf
 Views\Main.xbf
 Views\Map.xbf
 Views\Program.xbf
 Views\Search.xbf
+Views\Sectors.xbf
 Common\ReadMe.txt

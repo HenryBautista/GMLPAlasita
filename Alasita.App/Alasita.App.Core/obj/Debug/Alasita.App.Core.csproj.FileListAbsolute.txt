@@ -54,4 +54,3 @@ C:\Users\Yolger\Documents\GitHub\GMLPAlasita\Alasita.App\Alasita.App.Core\obj\De
 C:\Users\Yolger\Documents\GitHub\GMLPAlasita\Alasita.App\Alasita.App.Core\obj\Debug\qualifiers.txt
 C:\Users\Yolger\Documents\GitHub\GMLPAlasita\Alasita.App\Alasita.App.Core\obj\Debug\qualifiers.txt.intermediate
 C:\Users\Yolger\Documents\GitHub\GMLPAlasita\Alasita.App\Alasita.App.Core\obj\Debug\MultipleQualifiersPerDimensionFound.txt
-C:\Users\Yolger\Documents\GitHub\GMLPAlasita\Alasita.App\Alasita.App.Core\obj\Debug\Alasita.App.Core.csprojResolveAssemblyReference.cache

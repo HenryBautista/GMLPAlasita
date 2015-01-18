@@ -7,6 +7,9 @@
     <RootPropertyPathName Name="ActualWidth" />
     <RootPropertyPathName Name="ActualHeight" />
     <RootPropertyPathName Name="Group" />
+    <RootPropertyPathName Name="Asociacion" />
+    <RootPropertyPathName Name="Productos" />
+    <RootPropertyPathName Name="Nombre" />
     <RootPropertyPathName Name="Historia" />
     <RootPropertyPathName Name="texto" />
     <RootPropertyPathName Name="Hora" />
@@ -16,10 +19,11 @@
     <RootPropertyPathName Name="Programa" />
     <RootPropertyPathName Name="Exposiciones" />
     <RootPropertyPathName Name="Actividades" />
-    <RootPropertyPathName Name="Asociacion" />
     <RootPropertyPathName Name="NroExpositores" />
-    <RootPropertyPathName Name="Nombre" />
     <RootPropertyPathName Name="Producto" />
+    <RootPropertyPathName Name="Sector" />
+    <RootPropertyPathName Name="Asociaciones" />
+    <RootPropertyPathName Name="Inicial" />
   </Roots.PropertyPathNames>
   <Roots.RootTypes>
     <RootType FullName="Windows.UI.Xaml.Application" />
@@ -43,12 +47,13 @@
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.ListView">
       <RootProperty Name="ItemsSource" />
-      <RootProperty Name="SelectionMode" />
       <RootProperty Name="ItemTemplate" />
       <RootProperty Name="GroupStyle" />
-      <RootProperty Name="Background" />
       <RootProperty Name="Margin" />
+      <RootProperty Name="Background" />
+      <RootProperty Name="SelectionMode" />
       <RootProperty Name="HeaderTemplate" />
+      <RootEvent Name="SelectionChanged" />
     </RootType>
     <RootType FullName="Microsoft.Xaml.Tools.DirectUI.ProxyTypes.StaticResourceExtension" />
     <RootType FullName="Windows.UI.Xaml.DataTemplate">
@@ -66,6 +71,7 @@
       <RootProperty Name="Foreground" />
       <RootProperty Name="Inlines" />
       <RootProperty Name="FontFamily" />
+      <RootEvent Name="Tapped" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.GroupStyle">
       <RootProperty Name="HeaderTemplate" />
@@ -77,6 +83,9 @@
       <RootProperty Name="RowDefinitions" />
       <RootProperty Name="Background" />
       <RootProperty Name="ColumnDefinitions" />
+      <RootProperty Name="Width" />
+      <RootProperty Name="Height" />
+      <RootProperty Name="Visibility" />
       <RootMethod Name="GetRow" />
       <RootMethod Name="SetRow" />
       <RootMethod Name="GetColumn" />
@@ -86,6 +95,8 @@
       <RootProperty Name="Fill" />
       <RootProperty Name="Width" />
       <RootProperty Name="Height" />
+      <RootProperty Name="HorizontalAlignment" />
+      <RootProperty Name="VerticalAlignment" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.GridView">
       <RootProperty Name="ItemsSource" />
@@ -112,30 +123,17 @@
     <RootType FullName="Alasita.App.UserControls.SemanticZoomControl" />
     <RootType FullName="Windows.UI.Xaml.Controls.Page">
       <RootProperty Name="Background" />
-      <RootProperty Name="Content" />
       <RootProperty Name="RequestedTheme" />
       <RootProperty Name="DataContext" />
+      <RootProperty Name="Content" />
       <RootProperty Name="Resources" />
     </RootType>
-    <RootType FullName="Microsoft.Xaml.Tools.DirectUI.ProxyTypes.ThemeResourceExtension" />
+    <RootType FullName="Alasita.App.ViewModel.AsociationVM" />
     <RootType FullName="Windows.UI.Xaml.Media.Animation.TransitionCollection" />
     <RootType FullName="Windows.UI.Xaml.Media.Animation.EntranceThemeTransition" />
     <RootType FullName="Windows.UI.Xaml.Controls.RowDefinition">
       <RootProperty Name="Height" />
     </RootType>
-    <RootType FullName="Windows.UI.Xaml.Controls.StackPanel">
-      <RootProperty Name="Margin" />
-      <RootProperty Name="Children" />
-      <RootProperty Name="VerticalAlignment" />
-      <RootProperty Name="Orientation" />
-      <RootProperty Name="HorizontalAlignment" />
-    </RootType>
-    <RootType FullName="Windows.UI.Xaml.Documents.Typography">
-      <RootMethod Name="GetCapitals" />
-      <RootMethod Name="SetCapitals" />
-    </RootType>
-    <RootType FullName="Alasita.App.Views.Credits" />
-    <RootType FullName="Alasita.App.ViewModel.HistoryVM" />
     <RootType FullName="Windows.UI.Xaml.Controls.Border">
       <RootProperty Name="Background" />
       <RootProperty Name="Margin" />
@@ -148,6 +146,21 @@
       <RootProperty Name="Width" />
       <RootProperty Name="CornerRadius" />
     </RootType>
+    <RootType FullName="Windows.UI.Xaml.Documents.Typography">
+      <RootMethod Name="GetCapitals" />
+      <RootMethod Name="SetCapitals" />
+    </RootType>
+    <RootType FullName="Alasita.App.Views.Asociation" />
+    <RootType FullName="Microsoft.Xaml.Tools.DirectUI.ProxyTypes.ThemeResourceExtension" />
+    <RootType FullName="Windows.UI.Xaml.Controls.StackPanel">
+      <RootProperty Name="Margin" />
+      <RootProperty Name="Children" />
+      <RootProperty Name="VerticalAlignment" />
+      <RootProperty Name="Orientation" />
+      <RootProperty Name="HorizontalAlignment" />
+    </RootType>
+    <RootType FullName="Alasita.App.Views.Credits" />
+    <RootType FullName="Alasita.App.ViewModel.HistoryVM" />
     <RootType FullName="Microsoft.Xaml.Tools.DirectUI.ProxyTypes.NullExtension" />
     <RootType FullName="Windows.UI.Xaml.Controls.RichTextBlock">
       <RootProperty Name="TextAlignment" />
@@ -167,6 +180,9 @@
     <RootType FullName="Windows.UI.Xaml.FrameworkElement">
       <RootProperty Name="Margin" />
       <RootProperty Name="HorizontalAlignment" />
+      <RootProperty Name="MinHeight" />
+      <RootProperty Name="MinWidth" />
+      <RootProperty Name="VerticalAlignment" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.ListBoxItem" />
     <RootType FullName="Windows.UI.Xaml.Controls.Control">
@@ -175,6 +191,12 @@
       <RootProperty Name="Padding" />
       <RootProperty Name="HorizontalContentAlignment" />
       <RootProperty Name="Template" />
+      <RootProperty Name="BorderBrush" />
+      <RootProperty Name="Foreground" />
+      <RootProperty Name="BorderThickness" />
+      <RootProperty Name="FontFamily" />
+      <RootProperty Name="FontWeight" />
+      <RootProperty Name="FontSize" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Setter">
       <RootProperty Name="Property" />
@@ -234,6 +256,8 @@
       <RootProperty Name="HorizontalAlignment" />
       <RootProperty Name="Margin" />
       <RootProperty Name="VerticalAlignment" />
+      <RootProperty Name="Foreground" />
+      <RootProperty Name="FontWeight" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.ListBox">
       <RootProperty Name="Background" />
@@ -261,6 +285,21 @@
       <RootProperty Name="Margin" />
     </RootType>
     <RootType FullName="Alasita.App.Views.Main" />
+    <RootType FullName="Windows.UI.Xaml.Thickness" />
+    <RootType FullName="Windows.UI.Xaml.Media.FontFamily" />
+    <RootType FullName="Windows.UI.Text.FontWeight" />
+    <RootType FullName="System.Double" />
+    <RootType FullName="Windows.UI.Xaml.Controls.Button">
+      <RootProperty Name="HorizontalAlignment" />
+      <RootProperty Name="Content" />
+      <RootProperty Name="Margin" />
+      <RootProperty Name="Style" />
+      <RootEvent Name="Click" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Automation.AutomationProperties">
+      <RootMethod Name="GetAccessibilityView" />
+      <RootMethod Name="SetAccessibilityView" />
+    </RootType>
     <RootType FullName="Alasita.App.Views.Map" />
     <RootType FullName="Windows.UI.Xaml.Documents.LineBreak" />
     <RootType FullName="Alasita.App.ViewModel.ProgramVM" />
@@ -271,6 +310,8 @@
       <RootEvent Name="TextChanged" />
     </RootType>
     <RootType FullName="Alasita.App.Views.Search" />
+    <RootType FullName="Alasita.App.ViewModel.SectorsVM" />
+    <RootType FullName="Alasita.App.Views.Sectors" />
     <RootType FullName="Windows.UI.Xaml.Controls.TextBox">
       <RootProperty Name="Header" />
       <RootProperty Name="Width" />

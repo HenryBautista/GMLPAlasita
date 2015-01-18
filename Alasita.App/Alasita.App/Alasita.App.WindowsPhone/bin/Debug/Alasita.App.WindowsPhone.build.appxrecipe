@@ -109,6 +109,9 @@
     <AppxPackagedFile Include="C:\Users\Yolger\Documents\GitHub\GMLPAlasita\Alasita.App\Alasita.App\Alasita.App.WindowsPhone\bin\Debug\UserControls\SemanticZoomControl.xbf">
       <PackagePath>UserControls\SemanticZoomControl.xbf</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Yolger\Documents\GitHub\GMLPAlasita\Alasita.App\Alasita.App\Alasita.App.WindowsPhone\bin\Debug\Views\Asociation.xbf">
+      <PackagePath>Views\Asociation.xbf</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Yolger\Documents\GitHub\GMLPAlasita\Alasita.App\Alasita.App\Alasita.App.WindowsPhone\bin\Debug\Views\Credits.xbf">
       <PackagePath>Views\Credits.xbf</PackagePath>
     </AppxPackagedFile>
@@ -126,6 +129,9 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Yolger\Documents\GitHub\GMLPAlasita\Alasita.App\Alasita.App\Alasita.App.WindowsPhone\bin\Debug\Views\Search.xbf">
       <PackagePath>Views\Search.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Yolger\Documents\GitHub\GMLPAlasita\Alasita.App\Alasita.App\Alasita.App.WindowsPhone\bin\Debug\Views\Sectors.xbf">
+      <PackagePath>Views\Sectors.xbf</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Yolger\Documents\GitHub\GMLPAlasita\Alasita.App\Alasita.App\Alasita.App.WindowsPhone\bin\Debug\Alasita.App.WindowsPhone.xr.xml">
       <PackagePath>Alasita.App.WindowsPhone.xr.xml</PackagePath>

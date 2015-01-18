@@ -88,10 +88,15 @@
     <Compile Include="UserControls\SemanticZoomControl.xaml.cs">
       <DependentUpon>SemanticZoomControl.xaml</DependentUpon>
     </Compile>
+    <Compile Include="ViewModel\AsociationVM.cs" />
     <Compile Include="ViewModel\HistoryVM.cs" />
     <Compile Include="ViewModel\ProgramVM.cs" />
     <Compile Include="ViewModel\SearchVM.cs" />
+    <Compile Include="ViewModel\SectorsVM.cs" />
     <Compile Include="ViewModel\SemanticZoomVM.cs" />
+    <Compile Include="Views\Asociation.xaml.cs">
+      <DependentUpon>Asociation.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Views\Credits.xaml.cs">
       <DependentUpon>Credits.xaml</DependentUpon>
     </Compile>
@@ -109,6 +114,9 @@
     </Compile>
     <Compile Include="Views\Search.xaml.cs">
       <DependentUpon>Search.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Sectors.xaml.cs">
+      <DependentUpon>Sectors.xaml</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
@@ -144,6 +152,10 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="Views\Asociation.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Views\Credits.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -165,6 +177,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Views\Search.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\Sectors.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

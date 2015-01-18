@@ -20,12 +20,10 @@
 
     <SemanticZoom x:Name="SemanticZoom">
         <SemanticZoom.ZoomedInView>
-            <ListView x:Name="gridView" 
-				ItemsSource="{Binding Source={StaticResource cv}}"
-				SelectionMode="None">
+            <ListView x:Name="lst" ItemsSource="{Binding Source={StaticResource cv}}">
                 <ListView.ItemTemplate>
                     <DataTemplate>
-                        <TextBlock Text="{Binding}" Margin="20,0,0,0" FontSize="15" TextWrapping="WrapWholeWords"/>
+                        <TextBlock Text="{Binding}" Margin="20,0,0,0" FontSize="15" TextWrapping="WrapWholeWords" Tapped="TextBlock_Tapped"/>
                     </DataTemplate>
                 </ListView.ItemTemplate>
                 <ListView.GroupStyle>

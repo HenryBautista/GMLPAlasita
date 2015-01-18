@@ -19,6 +19,35 @@ namespace Alasita.App.Temp
             get { return _alasita; }
         }
 
+        public static async Task<Asociacion> GetAsociations(string name)
+        {
+            await service.GetServiceAsync();
+            foreach (var item in service.alasita.Sector)
+            {
+                foreach (var i in item.Asociaciones)
+                {
+                    if (i.Nombre == name)
+                    {
+                        return i;
+                    }
+                }
+            }
+            return null;
+        }
+
+        public static async Task<Sector> GetAsociation(string key)
+        {
+            await service.GetServiceAsync();
+            foreach (var item in service.alasita.Sector)
+            {
+                if (item.Inicial == key)
+                {
+                    return item;
+                }
+            }
+            return null;
+        }
+
         // Obtiene una lista de Parrafos
         public static async Task<List<Parrafo>> GetHistory()
         {
