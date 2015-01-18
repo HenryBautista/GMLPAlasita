@@ -1,63 +1,52 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
 
-    <RelativeLayout
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <!--Sector Key-->
+    <TextView
+        android:id="@+id/text_sector_key"
+        style="@style/SectorFragment.SectorKeyStyle"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-        <!--Sector Key-->
-        <TextView
-            android:id="@+id/text_sector_key"
-            style="@style/SectorFragment.SectorKeyStyle"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sector 01"/>
 
-            android:text="Sector 01"/>
+    <!--Sector Name-->
+    <TextView
+        android:id="@+id/text_sector_name"
+        style="@style/SectorFragment.Sub.SectorNameStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/text_sector_key"
+        android:text="Name:"/>
 
-        <!--Sector Name-->
-        <TextView
-            android:id="@+id/text_sector_name"
-            style="@style/SectorFragment.Sub.SectorNameStyle"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_below="@id/text_sector_key"
-            android:text="Name:"/>
+    <!--Sector Description-->
+    <TextView
+        android:id="@+id/text_sector_description"
+        style="@style/SectorFragment.Sub.SectorDescriptionStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/text_sector_name"
+        android:minLines="2"
+        android:text="Description:"/>
 
-        <!--Sector Description-->
-        <TextView
-            android:id="@+id/text_sector_description"
-            style="@style/SectorFragment.Sub.SectorDescriptionStyle"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_below="@id/text_sector_name"
-            android:minLines="2"
-            android:text="Description:"/>
+    <!--Sector Associations-->
+    <TextView
+        android:id="@+id/text_sector_associations"
+        style="@style/SectorFragment.Sub.SectorAssociationsStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/text_sector_description"
+        android:text="Associations:"/>
 
-        <!--Sector Associations-->
-        <TextView
-            android:id="@+id/text_sector_associations"
-            style="@style/SectorFragment.Sub.SectorAssociationsStyle"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_below="@id/text_sector_description"
-            android:text="Associations:"/>
+    <ListView
+        android:id="@+id/list_associations"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/text_sector_associations"
+        android:layout_marginLeft="10dp"/>
 
-        <ListView
-            android:id="@+id/list_associations"
-            android:layout_width="match_parent"
-            android:layout_height="fill_parent"
-            android:layout_below="@id/text_sector_associations"
-            android:layout_marginLeft="10dp"
-            />
-        <!--TODO expand this ListView to the MAX-->
 
-        <Button
-            android:id="@+id/button_hide_fragment"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_alignParentBottom="true"
-            android:layout_below="@id/list_associations"
-            android:text="Cerrar"/>
-    </RelativeLayout>
-</ScrollView>
+</RelativeLayout>

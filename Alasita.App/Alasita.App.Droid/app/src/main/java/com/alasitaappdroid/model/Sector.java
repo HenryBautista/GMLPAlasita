@@ -14,19 +14,7 @@ public class Sector {
     private ArrayList<Association> mSectorAssociations;
 
     public Sector() {
-    }
-
-    public Sector(String sectorName, String sectorKey, String sectorDescription, String sectorMapImage) {
-        mSectorName = sectorName;
-        mSectorKey = sectorKey;
-        mSectorDescription = sectorDescription;
-        mSectorMapImage = sectorMapImage;
-        mSectorAssociations = new ArrayList<Association>();
-        // Dummy Constructor
-        mSectorAssociations.add(new Association("dummy1", 1, "dummy1", "dummy1"));
-        mSectorAssociations.add(new Association("dummy2", 2, "dummy2", "dummy2"));
-        mSectorAssociations.add(new Association("dummy3", 3, "dummy3", "dummy3"));
-        mSectorAssociations.add(new Association("dummy4", 4, "dummy4", "dummy4"));
+        mSectorAssociations = new ArrayList<>();
     }
 
     public String getSectorName() {
