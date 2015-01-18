@@ -9,18 +9,15 @@ public class Association {
 
     private String mAssociationName;
     private int mAssociationKey;
-    private String mAssociationInfo;
+    private ArrayList<String> mAssociationInfo;
     private String mAssociationDescription;
     private ArrayList<Product> mAssociationProducts;
+    private int mExpoNumber;
+    private String mAssociationImage;
 
     public Association() {
-    }
-
-    public Association(String associationName, int associationKey, String associationInfo, String associationDescription) {
-        mAssociationName = associationName;
-        mAssociationKey = associationKey;
-        mAssociationInfo = associationInfo;
-        mAssociationDescription = associationDescription;
+        mAssociationInfo = new ArrayList<>();
+        mAssociationProducts = new ArrayList<>();
     }
 
     public String getAssociationName() {
@@ -39,11 +36,11 @@ public class Association {
         mAssociationKey = associationKey;
     }
 
-    public String getAssociationInfo() {
+    public ArrayList<String> getAssociationInfo() {
         return mAssociationInfo;
     }
 
-    public void setAssociationInfo(String associationInfo) {
+    public void setAssociationInfo(ArrayList<String> associationInfo) {
         mAssociationInfo = associationInfo;
     }
 
@@ -61,6 +58,22 @@ public class Association {
 
     public void setAssociationProducts(ArrayList<Product> associationProducts) {
         mAssociationProducts = associationProducts;
+    }
+
+    public int getExpoNumber() {
+        return mExpoNumber;
+    }
+
+    public void setExpoNumber(int expoNumber) {
+        mExpoNumber = expoNumber;
+    }
+
+    public String getAssociationImage() {
+        return mAssociationImage;
+    }
+
+    public void setAssociationImage(String associationImage) {
+        mAssociationImage = associationImage;
     }
 
     @Override

@@ -8,6 +8,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.Button;
+import android.widget.ImageButton;
 import android.widget.ListView;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -29,25 +30,28 @@ public class SectorFragment extends Fragment {
     private TextView mTextDescription;
     private TextView mTextAssociations;
     private ListView mListAssociations;
-    private Button mButtonHideFragment;
 
     private Sector mCurrentSector;
 
     public static final String ASSOCIATION_NAME = "association";
 
     public SectorFragment() {
-        mCurrentSector = new Sector("Artesanias", "Sector 01", "Aca se encuentran artesanias de todo tipo.", "000");
+        mCurrentSector = new Sector();
     }
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-        View v = inflater.inflate(R.layout.fragment_sector, container, false);
+        View v;
+        if (getView() == null) {
+            v = inflater.inflate(R.layout.fragment_sector, container, false);
+        } else {
+            v = getView();
+        }
         mTextName = (TextView) v.findViewById(R.id.text_sector_name);
         mTextKey = (TextView) v.findViewById(R.id.text_sector_key);
         mTextDescription = (TextView) v.findViewById(R.id.text_sector_description);
         mTextAssociations = (TextView) v.findViewById(R.id.text_sector_associations);
         mListAssociations = (ListView) v.findViewById(R.id.list_associations);
-        mButtonHideFragment = (Button) v.findViewById(R.id.button_hide_fragment);
 
         mTextName.setText(mCurrentSector.getSectorName());
         mTextKey.setText(mCurrentSector.getSectorKey());
@@ -57,13 +61,6 @@ public class SectorFragment extends Fragment {
         AssociationAdapter adapter = new AssociationAdapter(getActivity(), R.layout.adapter_association, mCurrentSector.getSectorAssociations());
         mListAssociations.setAdapter(adapter);
 
-
-        mButtonHideFragment.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                ((MapActivity) getActivity()).hideFragment();
-            }
-        });
 
         mListAssociations.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
@@ -79,5 +76,9 @@ public class SectorFragment extends Fragment {
             }
         });
         return v;
+    }
+
+    private void hideThisFragment() {
+        getActivity().getSupportFragmentManager().beginTransaction().replace(R.id.container, null);
     }
 }

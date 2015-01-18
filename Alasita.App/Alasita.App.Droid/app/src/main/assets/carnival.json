@@ -1,0 +1,145 @@
+﻿{
+"CarnivalDescription": "",
+"CarnivalSectors": [
+    {"SectorName": "Pedro Domingo Murillo","SectorKey": "A","SectorDescription": "Entrada Av. Ejercito","SectorMapImage": "appx:///Images",
+     "SectorAssociations": [
+         {"AssociationName": "SECTOR DE EXPOSITORES DE JOYERIA Y PLATERIA", "AssociationKey": 1,"AssociationInfo": ["joyeria", "tejido"],"AssociationDescription":"Artesanos realizan","AssociationImage": "appx:///Images","ExpoNumber":43,
+          "AssociationProducts": [
+              {"ProductName": "joyeria","ProductImage": "appx:///Images"},
+              {"ProductName": "tejido a mano","ProductImage": "appx:///Images"}
+          ]
+         },
+         {"AssociationName": "ASOCIACION DE VENDEDORES DE BILLETITOS DE ALASITA", "AssociationKey": 1,"AssociationInfo": ["billetito", "billetes"],"AssociationDescription":"Artesanos realizan","AssociationImage": "appx:///Images","ExpoNumber":52,
+          "AssociationProducts": [
+              {"ProductName": "Billetitos","ProductImage": "appx:///Images"}
+          ]
+         },
+         {"AssociationName": "ASOC PROD EXPOSITORES EN MINIATURA UNION ARTESANAL", "AssociationKey": 1,"AssociationInfo": ["cuero", "billete", "billetito", "bromas", "comida", "cuadro", "flores", "fruta", "tejido", "yesos"], "AssociationDescription":"Artesanos realizan","AssociationImage": "appx:///Images","ExpoNumber":87,
+          "AssociationProducts": [
+              {"ProductName": "Articulos en Cuero","ProductImage": "appx:///Images"},
+              {"ProductName": "Billetitos","ProductImage": "appx:///Images"},
+              {"ProductName": "Bromas y Magia","ProductImage": "appx:///Images"},
+              {"ProductName": "Comida","ProductImage": "appx:///Images"},
+              {"ProductName": "Cuadros","ProductImage": "appx:///Images"},
+              {"ProductName": "Fruta Acaramelada","ProductImage": "appx:///Images"},
+              {"ProductName": "Tejido a Mano","ProductImage": "appx:///Images"},
+              {"ProductName": "Yeso","ProductImage": "appx:///Images"}
+          ]
+         }
+     ]
+    },
+    {"SectorName": "Juan Antonio Figueroa","SectorKey": "B","SectorDescription": "Entrada Av. Ejercito","SectorMapImage": "appx:///Images",
+     "SectorAssociations": [
+          {"AssociationName": "SECTOR DE EXPOSITORES DE JOYERIA Y PLATERIA", "AssociationKey": 1,"AssociationInfo": ["joyeria", "tejido"],"AssociationDescription":"Artesanos realizan","AssociationImage": "appx:///Images","ExpoNumber":43,
+          "AssociationProducts": [
+              {"ProductName": "joyeria","ProductImage": "appx:///Images"},
+              {"ProductName": "tejido a mano","ProductImage": "appx:///Images"}
+          ]
+         }
+     ]
+    },
+    {"SectorName": "Pedro Domingo Murillo","SectorKey": "C","SectorDescription": "Entrada Av. Ejercito","SectorMapImage": "appx:///Images",
+     "SectorAssociations": [
+         {"AssociationName": "SECTOR DE EXPOSITORES DE JOYERIA Y PLATERIA", "AssociationKey": 1,"AssociationInfo": ["joyeria", "tejido"],"AssociationDescription":"Artesanos realizan","AssociationImage": "appx:///Images","ExpoNumber":43,
+          "AssociationProducts": [
+              {"ProductName": "joyeria","ProductImage": "appx:///Images"},
+              {"ProductName": "tejido a mano","ProductImage": "appx:///Images"}
+          ]
+         }
+     ]
+    },
+    {"SectorName": "Pedro Domingo Murillo","SectorKey": "D","SectorDescription": "Entrada Av. Ejercito","SectorMapImage": "appx:///Images",
+     "SectorAssociations": [
+        {"AssociationName": "SECTOR DE EXPOSITORES DE JOYERIA Y PLATERIA", "AssociationKey": 1,"AssociationInfo": ["joyeria", "tejido"],"AssociationDescription":"Artesanos realizan","AssociationImage": "appx:///Images","ExpoNumber":43,
+          "AssociationProducts": [
+              {"ProductName": "joyeria","ProductImage": "appx:///Images"},
+              {"ProductName": "tejido a mano","ProductImage": "appx:///Images"}
+          ]
+         }
+     ]
+    },
+    {"SectorName": "Pedro Domingo Murillo","SectorKey": "E","SectorDescription": "Entrada Av. Ejercito","SectorMapImage": "appx:///Images",
+     "SectorAssociations": [
+         {"AssociationName": "SECTOR DE EXPOSITORES DE JOYERIA Y PLATERIA", "AssociationKey": 1,"AssociationInfo": ["joyeria", "tejido"],"AssociationDescription":"Artesanos realizan","AssociationImage": "appx:///Images","ExpoNumber":43,
+          "AssociationProducts": [
+              {"ProductName": "joyeria","ProductImage": "appx:///Images"},
+              {"ProductName": "tejido a mano","ProductImage": "appx:///Images"}
+          ]
+         }
+     ]
+    },
+    {"SectorName": "Pedro Domingo Murillo","SectorKey": "F","SectorDescription": "Entrada Av. Ejercito","SectorMapImage": "appx:///Images",
+     "SectorAssociations": [
+        {"AssociationName": "SECTOR DE EXPOSITORES DE JOYERIA Y PLATERIA", "AssociationKey": 1,"AssociationInfo": ["joyeria", "tejido"],"AssociationDescription":"Artesanos realizan","AssociationImage": "appx:///Images","ExpoNumber":43,
+          "AssociationProducts": [
+              {"ProductName": "joyeria","ProductImage": "appx:///Images"},
+              {"ProductName": "tejido a mano","ProductImage": "appx:///Images"}
+          ]
+         }
+     ]
+    },
+    {"SectorName": "Pedro Domingo Murillo","SectorKey": "G","SectorDescription": "Entrada Av. Ejercito","SectorMapImage": "appx:///Images",
+     "SectorAssociations": [
+         {"AssociationName": "SECTOR DE EXPOSITORES DE JOYERIA Y PLATERIA", "AssociationKey": 1,"AssociationInfo": ["joyeria", "billete", "tejido"],"AssociationDescription":"Artesanos realizan","AssociationImage": "appx:///Images","ExpoNumber":43,
+          "AssociationProducts": [
+              {"ProductName": "joyeria","ProductImage": "appx:///Images"},
+              {"ProductName": "tejido a mano","ProductImage": "appx:///Images"}
+          ]
+         }
+     ]
+    },
+    {"SectorName": "Pedro Domingo Murillo","SectorKey": "H","SectorDescription": "Entrada Av. Ejercito","SectorMapImage": "appx:///Images",
+     "SectorAssociations": [
+         {"AssociationName": "SECTOR DE EXPOSITORES DE JOYERIA Y PLATERIA", "AssociationKey": 1,"AssociationInfo": ["joyeria", "tejido"],"AssociationDescription":"Artesanos realizan","AssociationImage": "appx:///Images","ExpoNumber":43,
+          "AssociationProducts": [
+              {"ProductName": "joyeria","ProductImage": "appx:///Images"},
+              {"ProductName": "tejido a mano","ProductImage": "appx:///Images"}
+          ]
+         }
+     ]
+    },
+    {"SectorName": "Pedro Domingo Murillo","SectorKey": "I","SectorDescription": "Entrada Av. Ejercito","SectorMapImage": "appx:///Images",
+     "SectorAssociations": [
+        {"AssociationName": "SECTOR DE EXPOSITORES DE JOYERIA Y PLATERIA", "AssociationKey": 1,"AssociationInfo": ["joyeria", "tejido"],"AssociationDescription":"Artesanos realizan","AssociationImage": "appx:///Images","ExpoNumber":43,
+          "AssociationProducts": [
+              {"ProductName": "joyeria","ProductImage": "appx:///Images"},
+              {"ProductName": "tejido a mano","ProductImage": "appx:///Images"}
+          ]
+         }
+     ]
+    },
+    {"SectorName": "Pedro Domingo Murillo","SectorKey": "R","SectorDescription": "Entrada Av. Ejercito","SectorMapImage": "appx:///Images",
+     "SectorAssociations": [
+        {"AssociationName": "SECTOR DE EXPOSITORES DE JOYERIA Y PLATERIA", "AssociationKey": 1,"AssociationInfo": ["joyeria", "tejido"],"AssociationDescription":"Artesanos realizan","AssociationImage": "appx:///Images","ExpoNumber":43,
+          "AssociationProducts": [
+              {"ProductName": "joyeria","ProductImage": "appx:///Images"},
+              {"ProductName": "tejido a mano","ProductImage": "appx:///Images"}
+          ]
+         }
+     ]
+    },
+    {"SectorName": "Pedro Domingo Murillo","SectorKey": "N","SectorDescription": "Entrada Av. Ejercito","SectorMapImage": "appx:///Images",
+     "SectorAssociations": [
+         {"AssociationName": "SECTOR DE EXPOSITORES DE JOYERIA Y PLATERIA", "AssociationKey": 1,"AssociationInfo": ["joyeria", "tejido"],"AssociationDescription":"Artesanos realizan","AssociationImage": "appx:///Images","ExpoNumber":43,
+          "AssociationProducts": [
+              {"ProductName": "joyeria","ProductImage": "appx:///Images"},
+              {"ProductName": "tejido a mano","ProductImage": "appx:///Images"}
+          ]
+         }
+     ]
+    },
+    {"SectorName": "Pedro Domingo Murillo","SectorKey": "K","SectorDescription": "Entrada Av. Ejercito","SectorMapImage": "appx:///Images",
+     "SectorAssociations": [
+         {"AssociationName": "SECTOR DE EXPOSITORES DE JOYERIA Y PLATERIA", "AssociationKey": 1,"AssociationInfo": ["joyeria", "tejido"],"AssociationDescription":"Artesanos realizan","AssociationImage": "appx:///Images","ExpoNumber":43,
+          "AssociationProducts": [
+              {"ProductName": "joyeria","ProductImage": "appx:///Images"},
+              {"ProductName": "tejido a mano","ProductImage": "appx:///Images"}
+          ]
+         }
+     ]
+    }
+],
+"CarnivalAditionalImages": [],
+"CarnivalBannerImageUrl": "",
+"CarnivalName": "ALASITAS 2015"
+}

@@ -33,7 +33,6 @@ public class ProductAdapter extends ArrayAdapter<Product> {
         } else {
             v = convertView;
         }
-
         //TODO Implement view
 
 

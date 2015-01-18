@@ -14,14 +14,8 @@ public class Carnival {
     private String mCarnivalDescription;
 
     public Carnival() {
-    }
-
-    public Carnival(String carnivalName, String carnivalBannerImageUrl, ArrayList<String> carnivalAdditionalImages, ArrayList<Sector> carnivalSectors, String carnivalDescription) {
-        mCarnivalName = carnivalName;
-        mCarnivalBannerImageUrl = carnivalBannerImageUrl;
-        mCarnivalAdditionalImages = carnivalAdditionalImages;
-        mCarnivalSectors = carnivalSectors;
-        mCarnivalDescription = carnivalDescription;
+        mCarnivalAdditionalImages = new ArrayList<>();
+        mCarnivalSectors = new ArrayList<>();
     }
 
     public String getCarnivalName() {
