@@ -163,7 +163,6 @@
                 <ListView.ItemTemplate>
                     <DataTemplate>
                         <Grid Height="120" Name="GridSector" Tapped="GridSector_Tapped" Width="150" RequestedTheme="Dark">
-                            <Image Source="ms-appx:///Images/feria.png" Stretch="Uniform"/>
                             <Rectangle Fill="Black" Opacity="0.2"/>
                             <TextBlock Text="{Binding SectorKey}" Style="{StaticResource HeaderTextBlockStyle}"
                                FontWeight="SemiBold" VerticalAlignment="Center" HorizontalAlignment="Center"/>
