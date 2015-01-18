@@ -5,7 +5,7 @@
     <RootPropertyPathName Name="ActualHeight" />
     <RootPropertyPathName Name="ActualWidth" />
     <RootPropertyPathName Name="AssociationName" />
-    <RootPropertyPathName Name="AssociationInfo" />
+    <RootPropertyPathName Name="AssociationDescription" />
     <RootPropertyPathName Name="SectorKey" />
   </Roots.PropertyPathNames>
   <Roots.RootTypes>
@@ -15,7 +15,6 @@
       <RootProperty Name="RequestedTheme" />
       <RootProperty Name="TopAppBar" />
       <RootProperty Name="Resources" />
-      <RootProperty Name="BottomAppBar" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.Grid">
       <RootProperty Name="Background" />
@@ -74,6 +73,7 @@
       <RootProperty Name="Margin" />
       <RootProperty Name="Width" />
       <RootProperty Name="VerticalAlignment" />
+      <RootProperty Name="RequestedTheme" />
       <RootProperty Name="HorizontalAlignment" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.Button">
@@ -81,7 +81,6 @@
       <RootProperty Name="Style" />
       <RootProperty Name="VerticalAlignment" />
       <RootProperty Name="Margin" />
-      <RootProperty Name="RequestedTheme" />
       <RootEvent Name="Click" />
     </RootType>
     <RootType FullName="Microsoft.Xaml.Tools.DirectUI.ProxyTypes.StaticResourceExtension" />
@@ -101,14 +100,16 @@
       <RootProperty Name="Margin" />
       <RootProperty Name="HorizontalAlignment" />
       <RootProperty Name="Name" />
+      <RootEvent Name="Tapped" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Media.Animation.TransitionCollection" />
     <RootType FullName="Windows.UI.Xaml.Media.Animation.EntranceThemeTransition" />
     <RootType FullName="Windows.UI.Xaml.Controls.ScrollViewer">
       <RootProperty Name="VerticalScrollBarVisibility" />
-      <RootProperty Name="Content" />
-      <RootProperty Name="MinZoomFactor" />
       <RootProperty Name="ZoomMode" />
+      <RootProperty Name="Content" />
+      <RootProperty Name="Name" />
+      <RootProperty Name="MinZoomFactor" />
       <RootProperty Name="HorizontalScrollBarVisibility" />
       <RootProperty Name="Background" />
       <RootMethod Name="GetHorizontalScrollMode" />
@@ -128,6 +129,21 @@
       <RootProperty Name="Placement" />
       <RootProperty Name="Content" />
       <RootProperty Name="FlyoutPresenterStyle" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Media.Animation.Storyboard">
+      <RootProperty Name="RepeatBehavior" />
+      <RootProperty Name="Children" />
+      <RootMethod Name="GetTargetProperty" />
+      <RootMethod Name="SetTargetProperty" />
+      <RootMethod Name="GetTargetName" />
+      <RootMethod Name="SetTargetName" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Media.Animation.DoubleAnimationUsingKeyFrames">
+      <RootProperty Name="KeyFrames" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Media.Animation.EasingDoubleKeyFrame">
+      <RootProperty Name="KeyTime" />
+      <RootProperty Name="Value" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Data.Binding">
       <RootProperty Name="ElementName" />
@@ -152,9 +168,13 @@
       <RootProperty Name="Name" />
       <RootProperty Name="Icon" />
       <RootProperty Name="HorizontalAlignment" />
-      <RootProperty Name="Label" />
       <RootProperty Name="Margin" />
+      <RootProperty Name="Background" />
+      <RootProperty Name="BorderBrush" />
+      <RootProperty Name="Foreground" />
       <RootProperty Name="Width" />
+      <RootProperty Name="Height" />
+      <RootProperty Name="Label" />
       <RootEvent Name="Click" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.ListView">
@@ -162,12 +182,39 @@
       <RootProperty Name="SelectionMode" />
       <RootProperty Name="Width" />
       <RootProperty Name="HorizontalAlignment" />
-      <RootProperty Name="Items" />
-      <RootProperty Name="Margin" />
       <RootProperty Name="ItemTemplate" />
+      <RootProperty Name="Margin" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.DataTemplate">
       <RootProperty Name="Template" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Shapes.Ellipse">
+      <RootProperty Name="Margin" />
+      <RootProperty Name="Fill" />
+      <RootProperty Name="Opacity" />
+      <RootProperty Name="RenderTransformOrigin" />
+      <RootProperty Name="RenderTransform" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.FontIcon">
+      <RootProperty Name="Glyph" />
+      <RootProperty Name="FontWeight" />
+      <RootProperty Name="FontSize" />
+      <RootProperty Name="FontFamily" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Media.CompositeTransform">
+      <RootProperty Name="ScaleY" />
+      <RootProperty Name="ScaleX" />
+    </RootType>
+    <RootType FullName="Microsoft.Xaml.Tools.DirectUI.ProxyTypes.NullExtension" />
+    <RootType FullName="Windows.UI.Xaml.Media.Animation.PaneThemeTransition" />
+    <RootType FullName="Windows.UI.Xaml.Controls.SearchBox">
+      <RootProperty Name="Name" />
+      <RootProperty Name="Height" />
+      <RootProperty Name="Margin" />
+      <RootProperty Name="Width" />
+      <RootProperty Name="PlaceholderText" />
+      <RootProperty Name="HorizontalAlignment" />
+      <RootEvent Name="QuerySubmitted" />
     </RootType>
     <RootType FullName="Alasita.App.Views.MapView" />
     <RootType FullName="Alasita.App.Views.ScheduleView" />

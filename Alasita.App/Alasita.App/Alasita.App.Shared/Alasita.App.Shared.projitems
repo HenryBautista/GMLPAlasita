@@ -37,7 +37,11 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="$(MSBuildThisFileDirectory)Images\EkekoLigth.png" />
-    <Content Include="$(MSBuildThisFileDirectory)Images\feria.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Images\Icons\AlcaldiaLogo.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Images\Icons\Calendar.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Images\Icons\Historia.jpg" />
+    <Content Include="$(MSBuildThisFileDirectory)Images\Icons\Web.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Images\MapaLightColor.jpg" />
     <Content Include="$(MSBuildThisFileDirectory)JsonFiles\Carnival.Json" />
     <Content Include="$(MSBuildThisFileDirectory)Temp\Alasita.json" />
   </ItemGroup>

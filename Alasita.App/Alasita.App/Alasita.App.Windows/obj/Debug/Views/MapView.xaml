@@ -23,6 +23,114 @@
                 </Style>
             </Flyout.FlyoutPresenterStyle>
         </Flyout>
+        <Storyboard x:Name="ElipseAnimA" RepeatBehavior="forever">
+        	<DoubleAnimationUsingKeyFrames x:Name="MyDoubleAnimA" Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="EllipseA">
+        		<EasingDoubleKeyFrame KeyTime="0" Value="0"/>
+        		<EasingDoubleKeyFrame KeyTime="0:0:0.5" Value="0.5"/>
+        		<EasingDoubleKeyFrame KeyTime="0:0:1" Value="0"/>
+        		<EasingDoubleKeyFrame KeyTime="0:0:1.5" Value="0.5"/>
+        		<EasingDoubleKeyFrame KeyTime="0:0:2" Value="0"/>
+        	</DoubleAnimationUsingKeyFrames>
+        </Storyboard>
+        <Storyboard x:Name="ElipseAnimB" RepeatBehavior="forever">
+            <DoubleAnimationUsingKeyFrames x:Name="MyDoubleAnimB" Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="EllipseB">
+                <EasingDoubleKeyFrame KeyTime="0" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.5" Value="0.5"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:1" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:1.5" Value="0.5"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:2" Value="0"/>
+            </DoubleAnimationUsingKeyFrames>
+        </Storyboard>
+        <Storyboard x:Name="ElipseAnimC" RepeatBehavior="forever">
+            <DoubleAnimationUsingKeyFrames x:Name="MyDoubleAnimC" Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="EllipseC">
+                <EasingDoubleKeyFrame KeyTime="0" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.5" Value="0.5"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:1" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:1.5" Value="0.5"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:2" Value="0"/>
+            </DoubleAnimationUsingKeyFrames>
+        </Storyboard>
+        <Storyboard x:Name="ElipseAnimD" RepeatBehavior="forever">
+            <DoubleAnimationUsingKeyFrames x:Name="MyDoubleAnimD" Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="EllipseD">
+                <EasingDoubleKeyFrame KeyTime="0" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.5" Value="0.5"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:1" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:1.5" Value="0.5"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:2" Value="0"/>
+            </DoubleAnimationUsingKeyFrames>
+        </Storyboard>
+        <Storyboard x:Name="ElipseAnimE" RepeatBehavior="forever">
+            <DoubleAnimationUsingKeyFrames x:Name="MyDoubleAnimE" Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="EllipseE">
+                <EasingDoubleKeyFrame KeyTime="0" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.5" Value="0.5"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:1" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:1.5" Value="0.5"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:2" Value="0"/>
+            </DoubleAnimationUsingKeyFrames>
+        </Storyboard>
+        <Storyboard x:Name="ElipseAnimF" RepeatBehavior="forever">
+            <DoubleAnimationUsingKeyFrames x:Name="MyDoubleAnimF" Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="EllipseF">
+                <EasingDoubleKeyFrame KeyTime="0" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.5" Value="0.5"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:1" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:1.5" Value="0.5"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:2" Value="0"/>
+            </DoubleAnimationUsingKeyFrames>
+        </Storyboard>
+        <Storyboard x:Name="ElipseAnimG" RepeatBehavior="forever">
+            <DoubleAnimationUsingKeyFrames x:Name="MyDoubleAnimG" Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="EllipseG">
+                <EasingDoubleKeyFrame KeyTime="0" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.5" Value="0.5"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:1" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:1.5" Value="0.5"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:2" Value="0"/>
+            </DoubleAnimationUsingKeyFrames>
+        </Storyboard>
+        <Storyboard x:Name="ElipseAnimH" RepeatBehavior="forever">
+            <DoubleAnimationUsingKeyFrames x:Name="MyDoubleAnimH" Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="EllipseH">
+                <EasingDoubleKeyFrame KeyTime="0" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.5" Value="0.5"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:1" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:1.5" Value="0.5"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:2" Value="0"/>
+            </DoubleAnimationUsingKeyFrames>
+        </Storyboard>
+        <Storyboard x:Name="ElipseAnimI" RepeatBehavior="forever">
+            <DoubleAnimationUsingKeyFrames x:Name="MyDoubleAnimI" Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="EllipseI">
+                <EasingDoubleKeyFrame KeyTime="0" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.5" Value="0.5"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:1" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:1.5" Value="0.5"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:2" Value="0"/>
+            </DoubleAnimationUsingKeyFrames>
+        </Storyboard>
+        <Storyboard x:Name="ElipseAnimN" RepeatBehavior="forever">
+            <DoubleAnimationUsingKeyFrames x:Name="MyDoubleAnimN" Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="EllipseN">
+                <EasingDoubleKeyFrame KeyTime="0" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.5" Value="0.5"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:1" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:1.5" Value="0.5"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:2" Value="0"/>
+            </DoubleAnimationUsingKeyFrames>
+        </Storyboard>
+        <Storyboard x:Name="ElipseAnimR" RepeatBehavior="forever">
+            <DoubleAnimationUsingKeyFrames x:Name="MyDoubleAnimR" Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="EllipseR">
+                <EasingDoubleKeyFrame KeyTime="0" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.5" Value="0.5"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:1" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:1.5" Value="0.5"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:2" Value="0"/>
+            </DoubleAnimationUsingKeyFrames>
+        </Storyboard>
+        <Storyboard x:Name="ElipseAnimK" RepeatBehavior="forever">
+            <DoubleAnimationUsingKeyFrames x:Name="MyDoubleAnimK" Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="EllipseK">
+                <EasingDoubleKeyFrame KeyTime="0" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.5" Value="0.5"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:1" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:1.5" Value="0.5"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:2" Value="0"/>
+            </DoubleAnimationUsingKeyFrames>
+        </Storyboard>
     </Page.Resources>
     <Grid Background="#FFFFBF01" RequestedTheme="Light">
 
@@ -51,10 +159,10 @@
                        VerticalAlignment="Center" Margin="30,0" Grid.Row="1"/>
             <ListView Name="ListViewSectores" Grid.Row="0" 
                       ScrollViewer.VerticalScrollBarVisibility="Hidden"
-                      Margin="20,30,10,0">
+                      Margin="20,30,10,0" SelectionMode="None">
                 <ListView.ItemTemplate>
                     <DataTemplate>
-                        <Grid Height="120" Width="150" RequestedTheme="Dark">
+                        <Grid x:ConnectionId='16' Height="120" Name="GridSector"                            Width="150" RequestedTheme="Dark">
                             <Image Source="ms-appx:///Images/feria.png" Stretch="Uniform"/>
                             <Rectangle Fill="Black" Opacity="0.2"/>
                             <TextBlock Text="{Binding SectorKey}" Style="{StaticResource HeaderTextBlockStyle}"
@@ -64,23 +172,107 @@
                 </ListView.ItemTemplate>
             </ListView>
         </Grid>
-        <ScrollViewer Grid.Row="1" Grid.Column="1" MinZoomFactor="1" ZoomMode="Enabled" VerticalScrollBarVisibility="Auto" HorizontalScrollBarVisibility="Auto" Background="White">
+        <ScrollViewer Grid.Row="1" Grid.Column="1" 
+                      Name="ScrollViewerMapa"
+                      MinZoomFactor="1" ZoomMode="Enabled" VerticalScrollBarVisibility="Auto" HorizontalScrollBarVisibility="Auto" Background="White">
 
             <Grid VerticalAlignment="Center" HorizontalAlignment="Center">
-                <Image Source="ms-appx:///Images/feria.png" ></Image>
-                <AppBarButton x:ConnectionId='3' Label="A" Margin="396,436,0,0"                                 ></AppBarButton>
-                <AppBarButton x:ConnectionId='4' Label="B" Margin="288,341,0,0"                                 ></AppBarButton>
-                <AppBarButton x:ConnectionId='5' Label="C" Margin="103,211,0,0"                                 ></AppBarButton>
-                <AppBarButton x:ConnectionId='6' Label="D" Margin="261,207,0,0" Width="75"                                  ></AppBarButton>
-                <AppBarButton x:ConnectionId='7' Label="E" Margin="310,133,0,0"                                  ></AppBarButton>
-                <AppBarButton x:ConnectionId='8' Label="F" Margin="310,196,0,0"                                  ></AppBarButton>
-                <AppBarButton x:ConnectionId='9' Label="G" Margin="442,267,0,0"                                  ></AppBarButton>
-                <AppBarButton x:ConnectionId='10' Label="H" Margin="414,170,0,0"                                  ></AppBarButton>
-                <AppBarButton x:ConnectionId='11' Label="I" Margin="244,133,0,0"                                 ></AppBarButton>
-                <AppBarButton x:ConnectionId='12' Label="N" Margin="112,118,0,0"                                 ></AppBarButton>
-                <AppBarButton x:ConnectionId='13' Label="R" Margin="436,107,0,0"                                 ></AppBarButton>
-                <AppBarButton x:ConnectionId='14' Label="K" Margin="720,296,0,0"                                 ></AppBarButton>
+                <Image x:ConnectionId='3' Source="ms-appx:///Images/MapaLightColor.jpg" Name="ImageMap"                         ></Image>
+                <Ellipse x:Name="EllipseA" Margin="380,445,758,75" Fill="Green" Opacity="0"/>
 
+                <Ellipse x:Name="Ellipsep"
+                         Margin="380,445,798,115" Fill="Green" Opacity="0"/>
+                <AppBarButton x:ConnectionId='4' x:Name="A" Margin="350,431,0,0"                                  Background="{x:Null}" BorderBrush="{x:Null}" Foreground="Black">
+                    <AppBarButton.Icon>
+                        <FontIcon Glyph="A" FontWeight="Bold" FontSize="25" FontFamily="Segoe"/>
+                    </AppBarButton.Icon>
+                </AppBarButton>
+
+                <Ellipse x:Name="EllipseB" Margin="241,333,897,187" Fill="Green" Opacity="0"/>
+                <AppBarButton x:ConnectionId='5' Name="B" Margin="211,319,0,0"                                 >
+                    <AppBarButton.Icon>
+                        <FontIcon Glyph="B" FontWeight="Bold" FontSize="25" FontFamily="Segoe"/>
+                    </AppBarButton.Icon>
+                </AppBarButton>
+
+                <Ellipse x:Name="EllipseC" Margin="129,230,1009,290" Fill="Green" Opacity="0"/>
+                <AppBarButton x:ConnectionId='6' Name="C" Margin="99,216,0,0"                                 >
+                    <AppBarButton.Icon>
+                        <FontIcon Glyph="C" FontWeight="Bold" FontSize="25" FontFamily="Segoe"/>
+                    </AppBarButton.Icon>
+                </AppBarButton>
+
+                <Ellipse x:Name="EllipseD" Margin="256,230,882,290" Fill="Green" Opacity="0"/>
+                <AppBarButton x:ConnectionId='7' Name="D" Margin="226,216,0,0"                                   Width="73">
+                    <AppBarButton.Icon>
+                        <FontIcon Glyph="D" FontWeight="Bold" FontSize="25" FontFamily="Segoe"/>
+                    </AppBarButton.Icon>
+                </AppBarButton>
+
+                <Ellipse x:Name="EllipseE" Margin="355,190,783,330" Fill="Green" Opacity="0"/>
+                <AppBarButton x:ConnectionId='8' Name="E" Margin="325,176,0,0"                                   Height="69">
+                    <AppBarButton.Icon>
+                        <FontIcon Glyph="E" FontWeight="Bold" FontSize="25" FontFamily="Segoe"/>
+                    </AppBarButton.Icon>
+                </AppBarButton>
+
+                <Ellipse x:Name="EllipseF" Margin="355,256,783,264" Fill="Green" Opacity="0"/>
+                <AppBarButton x:ConnectionId='9' Name="F" Margin="325,242,0,0"                                   Height="69" Width="78">
+                    <AppBarButton.Icon>
+                        <FontIcon Glyph="F" FontWeight="Bold" FontSize="25" FontFamily="Segoe"/>
+                    </AppBarButton.Icon>
+                </AppBarButton>
+
+                <Ellipse x:Name="EllipseG" Margin="439,306,699,214" Fill="Green" Opacity="0"/>
+                <AppBarButton x:ConnectionId='10' Name="G" Margin="409,292,0,0"                                   Height="75" Width="81">
+                    <AppBarButton.Icon>
+                        <FontIcon Glyph="G" FontWeight="Bold" FontSize="25" FontFamily="Segoe"/>
+                    </AppBarButton.Icon>
+                </AppBarButton>
+
+                <Ellipse x:Name="EllipseH" Margin="518,230,620,290" Fill="Green" Opacity="0"/>
+                <AppBarButton x:ConnectionId='11' Name="H" Margin="488,216,0,0"                                   Height="67">
+                    <AppBarButton.Icon>
+                        <FontIcon Glyph="H" FontWeight="Bold" FontSize="25" FontFamily="Segoe"/>
+                    </AppBarButton.Icon>
+                </AppBarButton>
+
+                <Ellipse x:Name="EllipseI" Margin="241,150,897,370" Fill="Green" Opacity="0"/>
+                <AppBarButton x:ConnectionId='12' Name="I" Margin="211,136,0,0"                                  Height="75" Width="74">
+                    <AppBarButton.Icon>
+                        <FontIcon Glyph="I" FontWeight="Bold" FontSize="25" FontFamily="Segoe"/>
+                    </AppBarButton.Icon>
+                </AppBarButton>
+
+                <Ellipse x:Name="EllipseN" Margin="23,121,1115,399" Fill="Green" Opacity="0"/>
+                <AppBarButton x:ConnectionId='13' Name="N" Margin="-7,107,0,0"                                 >
+                    <AppBarButton.Icon>
+                        <FontIcon Glyph="N" FontWeight="Bold" FontSize="25" FontFamily="Segoe"/>
+                    </AppBarButton.Icon>
+                </AppBarButton>
+
+                <Ellipse x:Name="EllipseR" Margin="476,106,662,414" Fill="Green" Opacity="0"/>
+                <AppBarButton x:ConnectionId='14' Name="R" Margin="446,92,0,0"                                 >
+                    <AppBarButton.Icon>
+                        <FontIcon Glyph="R" FontWeight="Bold" FontSize="25" FontFamily="Segoe"/>
+                    </AppBarButton.Icon>
+                </AppBarButton>
+
+                <Ellipse x:Name="EllipseK" Margin="790,283,348,237" Fill="Green" Opacity="0" RenderTransformOrigin="0.5,0.5">
+                    <Ellipse.RenderTransform>
+                        <CompositeTransform ScaleY="-1" ScaleX="-1"/>
+                    </Ellipse.RenderTransform>
+                </Ellipse>
+                <AppBarButton x:ConnectionId='15' Name="K" Margin="760,269,0,0"                                 >
+                    <AppBarButton.Icon>
+                        <FontIcon Glyph="K" FontWeight="Bold" FontSize="25" FontFamily="Segoe"/>
+                    </AppBarButton.Icon>
+                </AppBarButton>
+                <Grid.ChildrenTransitions>
+                    <TransitionCollection>
+                        <PaneThemeTransition/>
+                    </TransitionCollection>
+                </Grid.ChildrenTransitions>
             </Grid>
         </ScrollViewer>
         <Popup Grid.ColumnSpan="2" Grid.RowSpan="2" Name="PopupSector" IsOpen="False">
@@ -107,22 +299,27 @@
                     <Grid>
 
                         <StackPanel Margin="30,50">
-                            <TextBlock Text="Sector " Name="TexBlockSectorName" Style="{StaticResource HeaderTextBlockStyle}"/>
-                            <TextBlock Text="Asociaciones" Style="{StaticResource SubheaderTextBlockStyle}" Margin="0,20"/>
-                            <ListView Name="ListBoxAsociaciones" 
+                            <TextBlock Text="{Binding}" Name="TexBlockSectorKey" Style="{StaticResource HeaderTextBlockStyle}"/>
+                            <TextBlock Text="{Binding}" Name="TextBlockSectorName" Style="{StaticResource SubheaderTextBlockStyle}" Margin="0,10"/>
+                            <TextBlock Text="Asociaciones" Style="{StaticResource TitleTextBlockStyle}" Margin="0,10"/>
+                            <ListView Name="ListViewAsociaciones" 
                                       SelectionMode="None"
                                       Width="350" HorizontalAlignment="Left">
-                                <Grid x:ConnectionId='2' Width="300" Height="80"                     >
-                                    <Grid.ColumnDefinitions>
-                                        <ColumnDefinition/>
-                                        <ColumnDefinition Width="3*"/>
-                                    </Grid.ColumnDefinitions>
-                                    <Image Name="ImageAssociation" Stretch="UniformToFill" Source="ms-appx:///Assets/Logo.png" />
-                                    <StackPanel>
-                                        <TextBlock Style="{StaticResource TitleTextBlockStyle}" Text="{Binding AssociationName}"/>
-                                        <TextBlock Style="{StaticResource SubtitleTextBlockStyle}" Text="{Binding AssociationInfo}"/>
-                                    </StackPanel>
-                                </Grid>
+                                <ListView.ItemTemplate>
+                                    <DataTemplate>
+                                        <Grid x:ConnectionId='2' Width="300" Height="80"                     >
+                                            <Grid.ColumnDefinitions>
+                                                <ColumnDefinition/>
+                                                <ColumnDefinition Width="3*"/>
+                                            </Grid.ColumnDefinitions>
+                                            <Image Name="ImageAssociation" Stretch="UniformToFill" Source="ms-appx:///Assets/Logo.png" />
+                                            <StackPanel Grid.Column="1">
+                                                <TextBlock Style="{StaticResource TitleTextBlockStyle}" Text="{Binding AssociationName}"/>
+                                                <TextBlock Style="{StaticResource SubtitleTextBlockStyle}" Text="{Binding AssociationDescription}"/>
+                                            </StackPanel>
+                                        </Grid>
+                                    </DataTemplate>
+                                </ListView.ItemTemplate>
                             </ListView>
                         </StackPanel>
                         <AppBarButton x:ConnectionId='1' Icon="Cancel" Grid.Row="1" HorizontalAlignment="Right" Name="ClosePopup"                         />
@@ -133,20 +330,22 @@
                 </Grid>
             </Grid>
         </Popup>
-
     </Grid>
-    <Page.BottomAppBar>
-        <AppBar Background="DarkOrange" Height="100">
-            <AppBarButton/>
-        </AppBar>
-    </Page.BottomAppBar>
     <Page.TopAppBar>
-        <AppBar Background="DarkOrange" Height="150">
-            <StackPanel Orientation="Horizontal" VerticalAlignment="Center"
-                        Margin="30,0">
-                <Button x:ConnectionId='15' Style="{StaticResource NavigationBackButtonNormalStyle}" Name="BackButton"
-                                                 RequestedTheme="Dark"/>
-            </StackPanel>
+        <AppBar Background="DarkOrange" Height="120">
+            <Grid>
+                <StackPanel Orientation="Horizontal" VerticalAlignment="Center"
+                        Margin="30,0" RequestedTheme="Light">
+                    <Button x:ConnectionId='18' Style="{StaticResource NavigationBackButtonNormalStyle}" Name="BackButton"
+                                                />
+                    <TextBlock Margin="30,0" Text="Mapa Recorrido" Style="{StaticResource HeaderTextBlockStyle}"/>
+                </StackPanel>
+                <SearchBox x:ConnectionId='17' Height="40" Margin="30,0" Width="280" Name="SearchProduct" 
+                           PlaceholderText="Busca un producto Ejem: billete"
+                           HorizontalAlignment="Right"
+                                                                        >
+                </SearchBox>
+            </Grid>
         </AppBar>
     </Page.TopAppBar>
 </Page>

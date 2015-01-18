@@ -30,7 +30,7 @@
                    RequestedTheme="Light"
                    />
         <Grid Grid.Row="0" Grid.RowSpan="2" Grid.Column="1" Background="White" >
-            <ScrollViewer ScrollViewer.VerticalScrollBarVisibility="Auto">
+            <ScrollViewer ScrollViewer.VerticalScrollBarVisibility="Auto" ZoomMode="Disabled">
                 <StackPanel Style="{StaticResource SettingsFlyoutSectionStyle}" Margin="30">
                     <TextBlock Text="Reseña de la feria de Alasita" FontSize="40" FontWeight="Bold"
                        HorizontalAlignment="Center" Style="{StaticResource HeaderTextBlockStyle}"

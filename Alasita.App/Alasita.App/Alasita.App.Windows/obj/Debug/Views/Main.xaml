@@ -32,7 +32,7 @@
             </Grid.RowDefinitions>
             <Grid x:ConnectionId='1' Background="White" Grid.ColumnSpan="3" Margin="5"
                   Name="GridMapa" Grid.RowSpan="2"                         >
-                <Image Source="ms-appx:///Images/feria.png"/>
+                <Image Source="ms-appx:///Images/MapaLightColor.jpg"/>
                 <StackPanel Margin="25,10">
                     <TextBlock Text="Mapa recorrido" Style="{StaticResource TitleTextBlockStyle}"/>
                     <TextBlock Text="ALASITAS 2015" Margin="0,10,0,0"/>
