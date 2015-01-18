@@ -85,9 +85,13 @@
     <Compile Include="Common\RelayCommand.cs" />
     <Compile Include="Common\SuspensionManager.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UserControls\SemanticZoomControl.xaml.cs">
+      <DependentUpon>SemanticZoomControl.xaml</DependentUpon>
+    </Compile>
     <Compile Include="ViewModel\HistoryVM.cs" />
     <Compile Include="ViewModel\ProgramVM.cs" />
     <Compile Include="ViewModel\SearchVM.cs" />
+    <Compile Include="ViewModel\SemanticZoomVM.cs" />
     <Compile Include="Views\Credits.xaml.cs">
       <DependentUpon>Credits.xaml</DependentUpon>
     </Compile>
@@ -136,6 +140,10 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
+    <Page Include="UserControls\SemanticZoomControl.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Views\Credits.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>

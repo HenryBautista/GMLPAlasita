@@ -67,3 +67,8 @@ C:\Users\Yolger\Documents\GitHub\GMLPAlasita\Alasita.App\Alasita.App\Alasita.App
 C:\Users\Yolger\Documents\GitHub\GMLPAlasita\Alasita.App\Alasita.App\Alasita.App.WindowsPhone\obj\Debug\qualifiers.txt.intermediate
 C:\Users\Yolger\Documents\GitHub\GMLPAlasita\Alasita.App\Alasita.App\Alasita.App.WindowsPhone\obj\Debug\MultipleQualifiersPerDimensionFound.txt
 C:\Users\Yolger\Documents\GitHub\GMLPAlasita\Alasita.App\Alasita.App\Alasita.App.WindowsPhone\obj\Debug\ProjectArchitectures.txt
+C:\Users\Yolger\Documents\GitHub\GMLPAlasita\Alasita.App\Alasita.App\Alasita.App.WindowsPhone\bin\Debug\UserControls\SemanticZoomControl.xbf
+C:\Users\Yolger\Documents\GitHub\GMLPAlasita\Alasita.App\Alasita.App\Alasita.App.WindowsPhone\obj\Debug\UserControls\SemanticZoomControl.g.i.cs
+C:\Users\Yolger\Documents\GitHub\GMLPAlasita\Alasita.App\Alasita.App\Alasita.App.WindowsPhone\obj\Debug\UserControls\SemanticZoomControl.g.cs
+C:\Users\Yolger\Documents\GitHub\GMLPAlasita\Alasita.App\Alasita.App\Alasita.App.WindowsPhone\obj\Debug\UserControls\SemanticZoomControl.xaml
+C:\Users\Yolger\Documents\GitHub\GMLPAlasita\Alasita.App\Alasita.App\Alasita.App.WindowsPhone\obj\Debug\UserControls\SemanticZoomControl.xbf

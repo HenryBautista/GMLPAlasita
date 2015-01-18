@@ -28,6 +28,12 @@
     <AppxPackagedFile Include="C:\Users\Yolger\Documents\GitHub\GMLPAlasita\Alasita.App\Alasita.App\Alasita.App.WindowsPhone\Assets\Image\logo_amarillo.jpg">
       <PackagePath>Assets\Image\logo_amarillo.jpg</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Yolger\Documents\GitHub\GMLPAlasita\Alasita.App\Alasita.App\Alasita.App.Shared\Images\Icons\Historia.jpg">
+      <PackagePath>Images\Icons\Historia.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Yolger\Documents\GitHub\GMLPAlasita\Alasita.App\Alasita.App\Alasita.App.Shared\Images\MapaLightColor.jpg">
+      <PackagePath>Images\MapaLightColor.jpg</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Yolger\Documents\GitHub\GMLPAlasita\Alasita.App\Alasita.App\Alasita.App.WindowsPhone\Assets\Image\Title_Title.png">
       <PackagePath>Assets\Image\Title_Title.png</PackagePath>
     </AppxPackagedFile>
@@ -76,8 +82,14 @@
     <AppxPackagedFile Include="C:\Users\Yolger\Documents\GitHub\GMLPAlasita\Alasita.App\Alasita.App\Alasita.App.Shared\Images\EkekoLigth.png">
       <PackagePath>Images\EkekoLigth.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Yolger\Documents\GitHub\GMLPAlasita\Alasita.App\Alasita.App\Alasita.App.Shared\Images\feria.png">
-      <PackagePath>Images\feria.png</PackagePath>
+    <AppxPackagedFile Include="C:\Users\Yolger\Documents\GitHub\GMLPAlasita\Alasita.App\Alasita.App\Alasita.App.Shared\Images\Icons\AlcaldiaLogo.png">
+      <PackagePath>Images\Icons\AlcaldiaLogo.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Yolger\Documents\GitHub\GMLPAlasita\Alasita.App\Alasita.App\Alasita.App.Shared\Images\Icons\Calendar.png">
+      <PackagePath>Images\Icons\Calendar.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Yolger\Documents\GitHub\GMLPAlasita\Alasita.App\Alasita.App\Alasita.App.Shared\Images\Icons\Web.png">
+      <PackagePath>Images\Icons\Web.png</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Yolger\Documents\GitHub\GMLPAlasita\Alasita.App\Alasita.App\Alasita.App.WindowsPhone\Common\ReadMe.txt">
       <PackagePath>Common\ReadMe.txt</PackagePath>
@@ -93,6 +105,9 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Yolger\Documents\GitHub\GMLPAlasita\Alasita.App\Alasita.App\Alasita.App.WindowsPhone\bin\Debug\UserControls\ShareFacebook.xbf">
       <PackagePath>UserControls\ShareFacebook.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Yolger\Documents\GitHub\GMLPAlasita\Alasita.App\Alasita.App\Alasita.App.WindowsPhone\bin\Debug\UserControls\SemanticZoomControl.xbf">
+      <PackagePath>UserControls\SemanticZoomControl.xbf</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Yolger\Documents\GitHub\GMLPAlasita\Alasita.App\Alasita.App\Alasita.App.WindowsPhone\bin\Debug\Views\Credits.xbf">
       <PackagePath>Views\Credits.xbf</PackagePath>
