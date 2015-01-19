@@ -35,6 +35,15 @@
             android:src="@drawable/abc_ic_go_search_api_mtrl_alpha"/>
     </LinearLayout>
 
+    <TextView
+        android:id="@+id/text_fragment_query"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp"
+        android:text="Sectores:"
+        android:textSize="12sp"/>
+
     <ListView
         android:id="@+id/list_results"
         android:layout_width="match_parent"

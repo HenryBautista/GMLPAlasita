@@ -11,6 +11,7 @@ import android.widget.ArrayAdapter;
 import android.widget.AutoCompleteTextView;
 import android.widget.ImageButton;
 import android.widget.ListView;
+import android.widget.TextView;
 
 import com.alasitaappdroid.R;
 import com.alasitaappdroid.controller.adapter.SectorAdapter;
@@ -22,6 +23,7 @@ import com.alasitaappdroid.model.Sector;
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
+import org.w3c.dom.Text;
 
 import java.io.InputStream;
 import java.util.ArrayList;
@@ -34,6 +36,7 @@ public class SearchFragment extends Fragment {
     private AutoCompleteTextView mTextQuery;
     private ArrayList<Sector> mSectors;
     private ImageButton mButtonSearch;
+    private TextView mTextResults;
     private Carnival mCarnival;
 
     private static final String[] TAGS = new String[]{
@@ -66,7 +69,8 @@ public class SearchFragment extends Fragment {
         mTextQuery = (AutoCompleteTextView) v.findViewById(R.id.text_fragment_search);
         ArrayAdapter<String> adapter = new ArrayAdapter<String>(getActivity(), android.R.layout.simple_dropdown_item_1line, TAGS);
         mTextQuery.setAdapter(adapter);
-
+        mTextResults = (TextView) v.findViewById(R.id.text_fragment_query);
+        mTextResults.setVisibility(View.INVISIBLE);
         mButtonSearch.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -74,6 +78,7 @@ public class SearchFragment extends Fragment {
                 searchSectors(query);
                 SectorAdapter sectorAdapter = new SectorAdapter(getActivity(), R.layout.adapter_sector, mSectors);
                 mListResult.setAdapter(sectorAdapter);
+                mTextResults.setVisibility(View.VISIBLE);
             }
         });
         mListResult.setOnItemClickListener(new AdapterView.OnItemClickListener() {

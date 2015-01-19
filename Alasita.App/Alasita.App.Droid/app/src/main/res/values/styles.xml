@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
 
     <!-- Base application theme. -->
@@ -18,7 +19,7 @@
     </style>
 
     <style name="SectorFragment.SectorKeyStyle">
-        <item name="android:background">#33b5e5</item>
+        <item name="android:background">#ffffbf01</item>
         <item name="android:textColor">#ffffff</item>
         <item name="android:textSize">20sp</item>
         <item name="android:paddingTop">5dp</item>
@@ -41,8 +42,7 @@
         <item name="android:textSize">15sp</item>
     </style>
 
-
-    <!--Adapter Association-->
+    <!-- Adapter Association -->
     <style name="AssociationAdapter">
         <item name="android:typeface">sans</item>
     </style>
@@ -55,7 +55,7 @@
         <item name="android:textSize">15sp</item>
     </style>
 
-    <!--AssociationActivity-->
+    <!-- AssociationActivity -->
     <style name="AssociationActivity">
         <item name="android:typeface">sans</item>
     </style>
