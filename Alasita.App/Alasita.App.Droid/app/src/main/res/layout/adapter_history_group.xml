@@ -5,17 +5,14 @@
               android:orientation="horizontal">
 
     <ImageView
-        android:id="@+id/image_adapter_product_image"
+        android:id="@+id/text_adapter_history_image"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_weight="1"/>
 
     <TextView
-        android:id="@+id/text_adapter_product_name"
+        android:id="@+id/text_adapter_history_name"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-
         android:layout_weight="7"/>
-
-
 </LinearLayout>

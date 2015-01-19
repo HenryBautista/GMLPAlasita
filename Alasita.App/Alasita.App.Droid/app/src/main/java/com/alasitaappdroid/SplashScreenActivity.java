@@ -1,24 +1,10 @@
 package com.alasitaappdroid;
 
-import com.alasitaappdroid.util.SystemUiHider;
-
-import android.annotation.TargetApi;
-import android.app.Activity;
 import android.content.Intent;
-import android.os.Build;
 import android.os.Bundle;
 import android.os.Handler;
 import android.support.v7.app.ActionBarActivity;
-import android.view.MotionEvent;
-import android.view.View;
 
-
-/**
- * An example full-screen activity that shows and hides the system UI (i.e.
- * status bar and navigation/system bar) with user interaction.
- *
- * @see SystemUiHider
- */
 public class SplashScreenActivity extends ActionBarActivity {
     // Splash screen timer
     private static int SPLASH_TIME_OUT = 3000;
@@ -38,12 +24,8 @@ public class SplashScreenActivity extends ActionBarActivity {
 
             @Override
             public void run() {
-                // This method will be executed once the timer is over
-                // Start your app main activity
                 Intent i = new Intent(SplashScreenActivity.this, MapActivity.class);
                 startActivity(i);
-
-                // close this activity
                 finish();
             }
         }, SPLASH_TIME_OUT);

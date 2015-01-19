@@ -16,7 +16,6 @@
         style="@style/AssociationAdapter.AssociationInfoStyle"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:minLines="2"
         android:text="(empty)"/>
 
 </LinearLayout>

@@ -4,5 +4,9 @@
     <string name="app_name">Alasitas</string>
     <string name="title_activity_association">Association</string>
     <string name="title_activity_splash_screen">Alasitas</string>
+    <string name="title_activity_history">HistoryActivity</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_schedule">ScheduleActivity</string>
 
 </resources>

@@ -1,7 +1,9 @@
 package com.alasitaappdroid;
 
+import android.content.Intent;
 import android.graphics.Bitmap;
 import android.graphics.Color;
+import android.graphics.drawable.ColorDrawable;
 import android.os.Build;
 import android.os.Bundle;
 import android.support.v7.app.ActionBarActivity;
@@ -19,6 +21,7 @@ import com.alasitaappdroid.model.Association;
 import com.alasitaappdroid.model.Carnival;
 import com.alasitaappdroid.model.Product;
 import com.alasitaappdroid.model.Sector;
+import com.matabii.dev.scaleimageview.ScaleImageView;
 
 import org.json.JSONArray;
 import org.json.JSONException;
@@ -29,7 +32,7 @@ import java.util.ArrayList;
 
 public class MapActivity extends ActionBarActivity {
 
-    private ImageView mImageMap;
+    private ScaleImageView mImageMap;
     private FrameLayout mFrameContainer;
     private boolean mTap;
     private MenuItem mBackMenu;
@@ -41,6 +44,7 @@ public class MapActivity extends ActionBarActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_map);
+        getSupportActionBar().setBackgroundDrawable(new ColorDrawable(Color.parseColor("#FFBF01")));
         try {
             loadSectors();
         } catch (Exception e) {
@@ -48,7 +52,7 @@ public class MapActivity extends ActionBarActivity {
         }
 
 
-        mImageMap = (ImageView) findViewById(R.id.image_map);
+        mImageMap = (ScaleImageView) findViewById(R.id.image_map);
         mFrameContainer = (FrameLayout) findViewById(R.id.container);
 
         mImageMap.setOnTouchListener(new View.OnTouchListener() {
@@ -119,6 +123,10 @@ public class MapActivity extends ActionBarActivity {
 
 
     private void hideMap() {
+        mImageMap.setScaleType(ImageView.ScaleType.FIT_CENTER);
+        mImageMap.setEnabled(false);
+
+        //mImageMap.setVisibility(View.INVISIBLE);
         try {
             if (Build.VERSION.SDK_INT > 11) {
                 mImageMap.setAlpha(0.2f);
@@ -166,20 +174,19 @@ public class MapActivity extends ActionBarActivity {
             return true;
         } else if (id == R.id.menu_search) {
             InflateSearchFragment();
-
-
+        } else if (id == R.id.menu_history) {
+            Intent intent = new Intent(getApplicationContext(), HistoryActivity.class);
+            startActivity(intent);
+        } else if (id == R.id.menu_schedule) {
+            Intent intent = new Intent(getApplicationContext(), ScheduleActivity.class);
+            startActivity(intent);
         }
         return super.onOptionsItemSelected(item);
     }
 
-    private void initSearch() {
-
-
-    }
-
     public void hideFragment() {
-
-        mImageMap.setClickable(true);
+        mImageMap.setEnabled(true);
+        mImageMap.setScaleType(ImageView.ScaleType.MATRIX );
         mFrameContainer.setVisibility(View.INVISIBLE);
         getSupportFragmentManager().beginTransaction().remove(getSupportFragmentManager().findFragmentById(R.id.container)).commit();
         try {

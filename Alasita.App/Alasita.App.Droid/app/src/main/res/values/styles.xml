@@ -48,11 +48,11 @@
     </style>
 
     <style name="AssociationAdapter.AssociationNameStyle">
-        <item name="android:textSize">18sp</item>
+        <item name="android:textSize">15sp</item>
     </style>
 
     <style name="AssociationAdapter.AssociationInfoStyle">
-        <item name="android:textSize">15sp</item>
+        <item name="android:textSize">14sp</item>
     </style>
 
     <!-- AssociationActivity -->

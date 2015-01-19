@@ -14,4 +14,14 @@
         android:title="Buscar"
         app:showAsAction="ifRoom"/>
 
+    <item
+        android:id="@+id/menu_schedule"
+        android:icon="@drawable/ic_action_schedule"
+        android:title="Cronograma"
+        app:showAsAction="ifRoom"/>
+    <item
+        android:id="@+id/menu_history"
+        android:title="Historia"
+        app:showAsAction="ifRoom"/>
+
 </menu>
