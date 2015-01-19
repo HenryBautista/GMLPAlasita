@@ -1,6 +1,7 @@
 package com.alasitaappdroid.controller.fragment;
 
 import android.content.Intent;
+import android.graphics.Color;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
@@ -31,8 +32,6 @@ public class SectorFragment extends Fragment {
     private TextView mTextAssociations;
     private ListView mListAssociations;
 
-
-
     private Sector mCurrentSector;
 
     public static final String ASSOCIATION_NAME = "association";
@@ -46,21 +45,16 @@ public class SectorFragment extends Fragment {
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-        //mCurrentSector = ((MapActivity) getActivity()).mCurrentSector;
-        View v;
-        if (getView() == null) {
-            v = inflater.inflate(R.layout.fragment_sector, container, false);
-        } else {
-            v = getView();
-        }
+        View v = inflater.inflate(R.layout.fragment_sector, container, false);
         mTextName = (TextView) v.findViewById(R.id.text_sector_name);
         mTextKey = (TextView) v.findViewById(R.id.text_sector_key);
         mTextDescription = (TextView) v.findViewById(R.id.text_sector_description);
         mTextAssociations = (TextView) v.findViewById(R.id.text_sector_associations);
         mListAssociations = (ListView) v.findViewById(R.id.list_associations);
 
-        mTextName.setText(mCurrentSector.getSectorName());
+        mTextKey.setBackgroundColor(getSectorColor());
         mTextKey.setText("Sector " + mCurrentSector.getSectorKey());
+        mTextName.setText("Sector " + mCurrentSector.getSectorName());
         mTextDescription.setText(mCurrentSector.getSectorDescription());
         mTextAssociations.setText("Asociaciones:");
 
@@ -75,14 +69,48 @@ public class SectorFragment extends Fragment {
                 Intent intent = new Intent(getActivity(), AssociationActivity.class);
                 intent.putExtra(ASSOCIATION_NAME, currentName);
                 startActivity(intent);
+                hideThisFragment();
             }
         });
         return v;
     }
 
-    private void hideThisFragment() {
-        getActivity().getSupportFragmentManager().beginTransaction().replace(R.id.container, null);
+    public void hideThisFragment() {
+        getActivity().getSupportFragmentManager().beginTransaction().remove(this).commit();
     }
 
+    private int getSectorColor() {
+        int color = 0;
+        switch (mCurrentSector.getSectorKey()) {
+            case "A":
+                color = Color.argb(255, 63, 84, 204);
+                break;
+            case "B":
+                color = Color.argb(255, 255, 44, 44);
+                break;
+            case "C":
+                color = Color.argb(255, 87, 79, 177);
+                break;
+            case "D":
+                color = Color.argb(255, 255, 88, 00);
+                break;
+            case "E":
+                color = Color.argb(255, 216, 255, 79);
+                break;
+            case "F":
+                color = Color.argb(255, 00, 255, 28);
+                break;
+            case "G":
+                color = Color.argb(255, 255, 204, 43);
+                break;
+            case "H":
+                color = Color.argb(255, 21, 181, 229);
+                break;
+            default:
+                color = Color.argb(255, 21, 181, 229);
+                break;
+        }
+        return color;
+    }
 
 }

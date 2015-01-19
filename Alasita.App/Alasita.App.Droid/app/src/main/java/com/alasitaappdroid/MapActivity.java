@@ -13,6 +13,7 @@ import android.view.View;
 import android.widget.FrameLayout;
 import android.widget.ImageView;
 
+import com.alasitaappdroid.controller.fragment.SearchFragment;
 import com.alasitaappdroid.controller.fragment.SectorFragment;
 import com.alasitaappdroid.model.Association;
 import com.alasitaappdroid.model.Carnival;
@@ -43,7 +44,7 @@ public class MapActivity extends ActionBarActivity {
         try {
             loadSectors();
         } catch (Exception e) {
-
+            e.printStackTrace();
         }
 
 
@@ -65,8 +66,8 @@ public class MapActivity extends ActionBarActivity {
                     String tappedSector = getTappedSector(redValue, greenValue, blueValue);
                     if (!tappedSector.equals("")) {
                         findSector(tappedSector);
-                        hideMap(v);
-                        InflateFragment();
+
+                        InflateSectorFragment();
                     }
 
                 }
@@ -117,27 +118,35 @@ public class MapActivity extends ActionBarActivity {
     }
 
 
-    private void hideMap(View v) {
+    private void hideMap() {
         try {
             if (Build.VERSION.SDK_INT > 11) {
-                v.setAlpha(0.2f);
+                mImageMap.setAlpha(0.2f);
             } else {
-                v.setVisibility(View.INVISIBLE);
+                mImageMap.setVisibility(View.INVISIBLE);
             }
         } catch (Exception e) {
             Log.d("Debug Error", e.getMessage());
         }
     }
 
-    private void InflateFragment() {
-        mImageMap.setClickable(false);
-        mBackMenu.setVisible(true);
+    private void InflateSectorFragment() {
+
+        hideMap();
         mFrameContainer.setVisibility(View.VISIBLE);
         SectorFragment sectorFragment = new SectorFragment();
         sectorFragment.setCurrentSector(mCurrentSector);
         getSupportFragmentManager().beginTransaction().replace(R.id.container, sectorFragment).commit();
+        mBackMenu.setVisible(true);
     }
 
+    private void InflateSearchFragment() {
+        hideMap();
+        mBackMenu.setVisible(true);
+        mFrameContainer.setVisibility(View.VISIBLE);
+        getSupportFragmentManager().beginTransaction().replace(R.id.container, new SearchFragment()).commit();
+
+    }
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
@@ -150,25 +159,29 @@ public class MapActivity extends ActionBarActivity {
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
-        // Handle action bar item clicks here. The action bar will
-        // automatically handle clicks on the Home/Up button, so long
-        // as you specify a parent activity in AndroidManifest.xml.
         int id = item.getItemId();
-
-        //noinspection SimplifiableIfStatement
         if (id == R.id.menu_back) {
             hideFragment();
             mBackMenu.setVisible(false);
             return true;
-        }
+        } else if (id == R.id.menu_search) {
+            InflateSearchFragment();
 
+
+        }
         return super.onOptionsItemSelected(item);
     }
 
-    public void hideFragment() {
-        mImageMap.setClickable(true);
+    private void initSearch() {
 
+
+    }
+
+    public void hideFragment() {
+
+        mImageMap.setClickable(true);
         mFrameContainer.setVisibility(View.INVISIBLE);
+        getSupportFragmentManager().beginTransaction().remove(getSupportFragmentManager().findFragmentById(R.id.container)).commit();
         try {
             if (Build.VERSION.SDK_INT > 11) {
                 mImageMap.setAlpha(1f);
@@ -201,7 +214,7 @@ public class MapActivity extends ActionBarActivity {
         String json = loadJSON();
         mCarnival = new Carnival();
 
-        JSONObject jsonObject = new JSONObject(json.toString());
+        JSONObject jsonObject = new JSONObject(json.substring(json.indexOf("{"), json.lastIndexOf("}") + 1));
 
         String CarnivalName = jsonObject.getString("CarnivalName");
         JSONArray array = jsonObject.getJSONArray("CarnivalSectors");
@@ -265,8 +278,8 @@ public class MapActivity extends ActionBarActivity {
 
     private int getColor(int x, int y) {
         mImageMap.setDrawingCacheEnabled(true);
-        Bitmap hotspots = Bitmap.createBitmap(mImageMap.getDrawingCache());
+        Bitmap hotspot = Bitmap.createBitmap(mImageMap.getDrawingCache());
         mImageMap.setDrawingCacheEnabled(false);
-        return hotspots.getPixel(x, y);
+        return hotspot.getPixel(x, y);
     }
 }

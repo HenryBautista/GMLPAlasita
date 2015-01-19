@@ -32,19 +32,10 @@
             android:text="Association Key"/>
 
         <TextView
-            android:id="@+id/text_association_info"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:paddingBottom="7.5dp"
-            android:paddingTop="7.5dp"
-            android:text="Association Info"/>
-
-        <TextView
             android:id="@+id/text_association_description"
             style="@style/AssociationActivity.Description"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:minLines="3"
             android:paddingBottom="3dp"
             android:paddingTop="3dp"
             android:text="Association Description"/>

@@ -5,10 +5,13 @@
     <item
         android:id="@+id/menu_back"
         android:icon="@drawable/abc_ic_ab_back_mtrl_am_alpha"
-        android:title="Back"
-        app:showAsAction="always">
-        <!--TODO String-->
+        android:title="Atrás"
+        app:showAsAction="ifRoom"/>
+    <!--TODO String-->
+    <item
+        android:id="@+id/menu_search"
+        android:icon="@drawable/abc_ic_search_api_mtrl_alpha"
+        android:title="Buscar"
+        app:showAsAction="ifRoom"/>
 
-
-    </item>
 </menu>

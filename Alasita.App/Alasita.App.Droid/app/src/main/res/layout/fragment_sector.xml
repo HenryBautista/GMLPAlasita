@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 
-<RelativeLayout
+<LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content">
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
 
     <!--Sector Key-->
     <TextView
@@ -13,40 +14,55 @@
         android:layout_height="wrap_content"
         android:text="Sector 01"/>
 
-    <!--Sector Name-->
-    <TextView
-        android:id="@+id/text_sector_name"
-        style="@style/SectorFragment.Sub.SectorNameStyle"
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/text_sector_key"
-        android:text="Name:"/>
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
 
-    <!--Sector Description-->
-    <TextView
-        android:id="@+id/text_sector_description"
-        style="@style/SectorFragment.Sub.SectorDescriptionStyle"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/text_sector_name"
-        android:minLines="2"
-        android:text="Description:"/>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
 
-    <!--Sector Associations-->
-    <TextView
-        android:id="@+id/text_sector_associations"
-        style="@style/SectorFragment.Sub.SectorAssociationsStyle"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/text_sector_description"
-        android:text="Associations:"/>
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+            <!--Sector Name-->
+            <TextView
+                android:id="@+id/text_sector_name"
+                style="@style/SectorFragment.Sub.SectorNameStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Name:"/>
 
-    <ListView
-        android:id="@+id/list_associations"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/text_sector_associations"
-        android:layout_marginLeft="10dp"/>
+            <!--Sector Description-->
+            <TextView
+                android:id="@+id/text_sector_description"
+                style="@style/SectorFragment.Sub.SectorDescriptionStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Description:"/>
+        </LinearLayout>
 
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+            <!--Sector Associations-->
+            <TextView
+                android:id="@+id/text_sector_associations"
+                style="@style/SectorFragment.Sub.SectorAssociationsStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/text_sector_description"
+                android:text="Associations:"/>
 
-</RelativeLayout>
+            <ListView
+                android:id="@+id/list_associations"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

@@ -6,7 +6,10 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.ListView;
+import android.widget.TextView;
 
+import com.alasitaappdroid.controller.adapter.ProductAdapter;
 import com.alasitaappdroid.controller.fragment.SectorFragment;
 import com.alasitaappdroid.model.Association;
 import com.alasitaappdroid.model.Carnival;
@@ -22,6 +25,11 @@ import java.util.ArrayList;
 
 
 public class AssociationActivity extends ActionBarActivity {
+
+    private TextView mTextAssociationName;
+    private TextView mTextAssociationDescription;
+    private ListView mListAssociationProducts;
+
 
     private Association mCurrentAssociation;
     private Carnival mCarnival;
@@ -39,9 +47,16 @@ public class AssociationActivity extends ActionBarActivity {
         if (intent.getExtras().containsKey(SectorFragment.ASSOCIATION_NAME)) {
             findAssociation(intent.getExtras().getString(SectorFragment.ASSOCIATION_NAME));
         }
-        getSupportActionBar().setTitle(mCurrentAssociation.getAssociationName());
+        getSupportActionBar().setTitle("Asociación " + mCurrentAssociation.getAssociationKey());
 
+        mTextAssociationName = (TextView) findViewById(R.id.text_association_key);
+        mTextAssociationDescription = (TextView) findViewById(R.id.text_association_description);
+        mListAssociationProducts = (ListView) findViewById(R.id.list_products);
+        ProductAdapter adapter = new ProductAdapter(this, R.layout.adapter_product, mCurrentAssociation.getAssociationProducts());
+        mListAssociationProducts.setAdapter(adapter);
 
+        mTextAssociationName.setText(mCurrentAssociation.getAssociationName());
+        mTextAssociationDescription.setText(mCurrentAssociation.getAssociationDescription());
     }
 
     private void findAssociation(String name) {
@@ -99,7 +114,7 @@ public class AssociationActivity extends ActionBarActivity {
         String json = loadJSON();
         mCarnival = new Carnival();
 
-        JSONObject jsonObject = new JSONObject(json.toString());
+        JSONObject jsonObject = new JSONObject(json.substring(json.indexOf("{"), json.lastIndexOf("}") + 1));
 
         String CarnivalName = jsonObject.getString("CarnivalName");
         JSONArray array = jsonObject.getJSONArray("CarnivalSectors");
@@ -160,5 +175,4 @@ public class AssociationActivity extends ActionBarActivity {
         mCarnival.setCarnivalName("CarnivalName");
         mCarnival.setCarnivalSectors(SectorList);
     }
-
 }
