@@ -12,9 +12,11 @@ public class Sector {
     private String mSectorDescription;
     private String mSectorMapImage;                         //If local this becomes an integer, moreover a color
     private ArrayList<Association> mSectorAssociations;
+    private ArrayList<String> mSectorTags;
 
     public Sector() {
         mSectorAssociations = new ArrayList<>();
+        mSectorTags = new ArrayList<String>();
     }
 
     public String getSectorName() {
@@ -55,5 +57,13 @@ public class Sector {
 
     public void setSectorAssociations(ArrayList<Association> sectorAssociations) {
         mSectorAssociations = sectorAssociations;
+    }
+
+    public ArrayList<String> getSectorTags() {
+        return mSectorTags;
+    }
+
+    public void setSectorTags(ArrayList<String> sectorTags) {
+        mSectorTags = sectorTags;
     }
 }

@@ -31,17 +31,22 @@ public class SectorFragment extends Fragment {
     private TextView mTextAssociations;
     private ListView mListAssociations;
 
+
+
     private Sector mCurrentSector;
 
     public static final String ASSOCIATION_NAME = "association";
 
     public SectorFragment() {
-        mCurrentSector = new Sector();
+    }
+
+    public void setCurrentSector(Sector currentSector) {
+        mCurrentSector = currentSector;
     }
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-        mCurrentSector = ((MapActivity) getActivity()).mCurrentSector;
+        //mCurrentSector = ((MapActivity) getActivity()).mCurrentSector;
         View v;
         if (getView() == null) {
             v = inflater.inflate(R.layout.fragment_sector, container, false);
@@ -66,11 +71,7 @@ public class SectorFragment extends Fragment {
         mListAssociations.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                //TODO get Association NAME from the view, add it to the Intent and Start AssociationActivity
-                //String currentName = ((Association) ((ListView) view).getItemAtPosition(position)).getAssociationName();
                 String currentName = parent.getItemAtPosition(position).toString();
-                // dummy content
-                currentName = "dummy 1";
                 Intent intent = new Intent(getActivity(), AssociationActivity.class);
                 intent.putExtra(ASSOCIATION_NAME, currentName);
                 startActivity(intent);
@@ -82,4 +83,6 @@ public class SectorFragment extends Fragment {
     private void hideThisFragment() {
         getActivity().getSupportFragmentManager().beginTransaction().replace(R.id.container, null);
     }
+
+
 }
