@@ -12,7 +12,8 @@ using Windows.UI.Xaml.Data;
 using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
-
+using Alasita.App.Core.Util;
+using Alasita.App.Core.Models;
 // The Blank Page item template is documented at http://go.microsoft.com/fwlink/?LinkId=234238
 
 namespace Alasita.App.Views
@@ -30,6 +31,11 @@ namespace Alasita.App.Views
         private void BackBotton_Click(object sender, RoutedEventArgs e)
         {
             Frame.Navigate(typeof(Main));
+        }
+        protected async override void OnNavigatedTo(NavigationEventArgs e)
+        {
+            
+            this.GridHistory.DataContext = await Utilities.LoadAnHistory(e.Parameter+"");
         }
     }
 }

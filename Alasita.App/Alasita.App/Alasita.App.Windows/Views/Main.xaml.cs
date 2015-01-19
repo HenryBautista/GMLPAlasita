@@ -65,7 +65,17 @@ namespace Alasita.App.Views
 
         private void GridHistoria_Tapped(object sender, TappedRoutedEventArgs e)
         {
-            Frame.Navigate(typeof(HistoryView));
+            Frame.Navigate(typeof(HistoryView),"HistoryResen.json");
+        }
+
+        private void GridBanner_Tapped(object sender, TappedRoutedEventArgs e)
+        {
+            Frame.Navigate(typeof(HistoryView), "HistoryEkeko.json");
+        }
+
+        private async void Grid_Tapped(object sender, TappedRoutedEventArgs e)
+        {
+            await Windows.System.Launcher.LaunchUriAsync(new Uri("http://www.lapaz.bo"));
         }
         
     }

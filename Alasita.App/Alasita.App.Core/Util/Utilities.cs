@@ -48,6 +48,16 @@ namespace Alasita.App.Core.Util
             Carnival hope = JsonConvert.DeserializeObject<Carnival>(json);
             return hope;
         }
+        public static async Task<History> LoadAnHistory(string filename)
+        {
+            var folder = Windows.ApplicationModel.Package.Current.InstalledLocation;
+            folder = await folder.GetFolderAsync("JsonFiles");
+            var file = await folder.GetFileAsync(filename);
+            var json = await Windows.Storage.FileIO.ReadTextAsync(file);
+            History hope = JsonConvert.DeserializeObject<History>(json);
+            return hope;
+        }
+
         public static async void SaveCarnivalToJson(string filename,Carnival carnival)
         {
             var folder = Windows.Storage.ApplicationData.Current.LocalFolder;
