@@ -63,8 +63,7 @@ namespace Alasita.App.Views
         private void Grid_Tapped(object sender, TappedRoutedEventArgs e)
         {
             Association asso = new Association();
-            asso.AssociationName = "Hola Se supone que esto funcione asi..";
-            //Data context Association 
+            asso = ((Grid)sender).DataContext as Association;
             this.GridDataAssociation.DataContext = asso;
 
         }
