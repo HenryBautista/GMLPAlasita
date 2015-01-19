@@ -1,0 +1,88 @@
+﻿{
+    "Actividades": [
+        {
+            "Fecha": "20 de Enero del 2015",
+            "Actividad": "Conferencia de Prensa Alasita 2015",
+            "Lugar": "Atrio Palacio Concistoral",
+            "Hora": "10:30",
+            "Organizador": "GAMLP - SMC - FENAENA"
+        },
+        {
+            "Fecha": "23 de Enero del 2015",
+            "Actividad": "Ritual al Ekeko",
+            "Lugar": "Campo Ferial - Sector del Monumento al Ekeko",
+            "Hora": "10:30",
+            "Organizador": "GAMLP - SMC - FENAENA"
+        },
+        {
+            "Fecha": "23 de Enero del 2015",
+            "Actividad": "Cerominia Ritual al Ekeko - Grupo de Musica Autócotona",
+            "Lugar": "Campo Ferial - Sector del Monumento al Ekeko",
+            "Hora": "21:00",
+            "Organizador": "GAMLP - SMC - FENAENA"
+        },
+        {
+            "Fecha": "24 de Enero del 2015",
+            "Actividad": "Inaguración de la Feria de Alasita 2015",
+            "Lugar": "Av. Del Ejército (Frente a la puerta princiapl del Campo Ferial del Bicentenario)",
+            "Hora": "10:30",
+            "Organizador": "GAMLP - SMC - FENAENA"
+        },
+        {
+            "Fecha": "26 de Enero del 2015",
+            "Actividad": "Desayuno Trabajo FENAENA - PRENSA",
+            "Lugar": "Ingreso Campo Ferial del Bicentenario",
+            "Hora": "07:00",
+            "Organizador": "FENAENA"
+        },
+        {
+            "Fecha": "26 de Enero al 01 de Maro del 2015",
+            "Actividad": "Inaguración Museo de Alasita y el Ekeko",
+            "Lugar": "Cúpula de Adobe",
+            "Hora": "10:30",
+            "Organizador": "GAMLP - SMC - FENAENA"
+        },
+        {
+            "Fecha": "29 de Enero del 2015",
+            "Actividad": "Elección del Ekeko 2015",
+            "Lugar": "Av. Del Ejército (Frente a la puerta princiapl del Campo Ferial del Bicentenario)",
+            "Hora": "10:30 a 13:00",
+            "Organizador": "GAMLP - SMC - FENAENA"
+        },
+        {
+            "Fecha": "06 de Febrero",
+            "Actividad": "Elección del Ekekito 2015",
+            "Lugar": "Plaza Eliodoro Camacho",
+            "Hora": "11:00 a 12:30",
+            "Organizador": "GAMLP - SMC - FENAENA"
+        },
+        {
+            "Fecha": "06 de Febrero del 2015",
+            "Actividad": "Ch'iti Feria de Alasita",
+            "Lugar": "Plaza Eliodoro Camacho",
+            "Hora": "10:30 a 15:00",
+            "Organizador": "GAMLP - SMC - FENAENA"
+        },
+        {
+            "Fecha": "13 de Febrero del 2015",
+            "Actividad": "Gastronimia en Miniatura de Alasita",
+            "Lugar": "Campo Ferial - Ingreso Principal",
+            "Hora": "10:00 a 13:00",
+            "Organizador": "FENAENA"
+        },
+        {
+            "Fecha": "19 de Febrero del 2015",
+            "Actividad": "Lota gratis en la Feria de la Alastia",
+            "Lugar": "Sector la Lota del Tigre y la lota del Bolivar (Playon C)",
+            "Hora": "16:00 a 17:00",
+            "Organizador": "ENAENA"
+        },
+        {
+            "Fecha": "20 de Febrero del 2015",
+            "Actividad": "Apis 2 x 1",
+            "Lugar": "Todos los Sectores de Apis",
+            "Hora": "10:00 a 13:00",
+            "Organizador": "FENAENA"
+        }
+    ]
+}

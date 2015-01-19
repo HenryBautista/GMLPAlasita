@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="bottom"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/EventAdapter.LabelStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Fecha:"/>
+
+        <TextView
+            android:id="@+id/text_adapter_schedule_date"
+            style="@style/EventAdapter.EventDataStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="20 de Enero del 2015"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="bottom"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/EventAdapter.LabelStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Actividad:"/>
+
+        <TextView
+            android:id="@+id/text_adapter_schedule_activity"
+            style="@style/EventAdapter.EventDataStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Conferencia de Prensa Alasita 2015"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="bottom"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/EventAdapter.LabelStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Lugar:"/>
+
+        <TextView
+            android:id="@+id/text_adapter_schedule_place"
+            style="@style/EventAdapter.EventDataStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Atrio Palacio Concistoral"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="bottom"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/EventAdapter.LabelStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hora:"/>
+
+        <TextView
+            android:id="@+id/text_adapter_schedule_time"
+            style="@style/EventAdapter.EventDataStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="10:00 a 12:00"/>
+    </LinearLayout>
+
+</LinearLayout>
