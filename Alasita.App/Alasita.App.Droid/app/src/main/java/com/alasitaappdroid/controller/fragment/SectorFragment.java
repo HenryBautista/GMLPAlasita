@@ -106,6 +106,15 @@ public class SectorFragment extends Fragment {
             case "H":
                 color = Color.argb(255, 21, 181, 229);
                 break;
+            case "K":
+                color = Color.argb(255, 135, 251, 11);
+                break;
+            case "N":
+                color = Color.argb(255, 146, 241, 255);
+                break;
+            case "R":
+                color = Color.argb(255, 255, 102, 115);
+                break;
             default:
                 color = Color.argb(255, 21, 181, 229);
                 break;

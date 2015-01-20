@@ -8,6 +8,7 @@ import android.os.Build;
 import android.os.Bundle;
 import android.support.v7.app.ActionBarActivity;
 import android.util.Log;
+import android.view.GestureDetector;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.MotionEvent;
@@ -29,16 +30,21 @@ import org.json.JSONObject;
 
 import java.io.InputStream;
 import java.util.ArrayList;
+import java.util.Calendar;
 
 public class MapActivity extends ActionBarActivity {
 
     private ScaleImageView mImageMap;
     private FrameLayout mFrameContainer;
-    private boolean mTap;
     private MenuItem mBackMenu;
 
     private Carnival mCarnival;
     public Sector mCurrentSector;
+
+    public static int LEVEL = 20;
+
+    private int mXPoint;
+    private int mYPoint;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -58,29 +64,37 @@ public class MapActivity extends ActionBarActivity {
         mImageMap.setOnTouchListener(new View.OnTouchListener() {
             @Override
             public boolean onTouch(View v, MotionEvent event) {
+
                 if (event.getAction() == MotionEvent.ACTION_DOWN) {
-                    mTap = true;
+                    mXPoint = (int) event.getX();
+                    mYPoint = (int) event.getY();
                 }
-                if (event.getAction() == MotionEvent.ACTION_UP && mTap == true) {
-                    mTap = false;
-                    int pixelColor = getColor((int) event.getX(), (int) event.getY());
-                    int redValue = Color.red(pixelColor);
-                    int greenValue = Color.green(pixelColor);
-                    int blueValue = Color.blue(pixelColor);
-                    String tappedSector = getTappedSector(redValue, greenValue, blueValue);
-                    if (!tappedSector.equals("")) {
-                        findSector(tappedSector);
 
-                        InflateSectorFragment();
+                if (event.getAction() == MotionEvent.ACTION_UP) {
+                    if (isInDragRange(event.getX(), event.getY())) {
+                        int pixelColor = getColor((int) event.getX(), (int) event.getY());
+                        int redValue = Color.red(pixelColor);
+                        int greenValue = Color.green(pixelColor);
+                        int blueValue = Color.blue(pixelColor);
+                        String tappedSector = getTappedSector(redValue, greenValue, blueValue);
+                        if (!tappedSector.equals("")) {
+                            findSector(tappedSector);
+                            InflateSectorFragment();
+                        }
                     }
-
-                }
-                if (event.getAction() == MotionEvent.ACTION_MOVE) {
-                    mTap = false;
                 }
                 return false;
             }
         });
+    }
+
+    private boolean isInDragRange(float x, float y) {
+        if (x >= mXPoint - LEVEL && x <= mXPoint + LEVEL) {
+            if (y >= mYPoint - LEVEL && y <= mYPoint + LEVEL) {
+                return true;
+            }
+        }
+        return false;
     }
 
     private void findSector(String tappedSector) {
@@ -110,6 +124,12 @@ public class MapActivity extends ActionBarActivity {
             sectorKey = "G";
         } else if (isInRange(redValue, 33) && isInRange(greenValue, 181) && isInRange(blueValue, 229)) {
             sectorKey = "H";
+        } else if (isInRange(redValue, 135) && isInRange(greenValue, 251) && isInRange(blueValue, 11)) {
+            sectorKey = "K";
+        } else if (isInRange(redValue, 146) && isInRange(greenValue, 241) && isInRange(blueValue, 255)) {
+            sectorKey = "N";
+        } else if (isInRange(redValue, 255) && isInRange(greenValue, 102) && isInRange(blueValue, 115)) {
+            sectorKey = "R";
         } else sectorKey = "";
 
         return sectorKey;
@@ -126,7 +146,6 @@ public class MapActivity extends ActionBarActivity {
         mImageMap.setScaleType(ImageView.ScaleType.FIT_CENTER);
         mImageMap.setEnabled(false);
 
-        //mImageMap.setVisibility(View.INVISIBLE);
         try {
             if (Build.VERSION.SDK_INT > 11) {
                 mImageMap.setAlpha(0.2f);
@@ -186,7 +205,7 @@ public class MapActivity extends ActionBarActivity {
 
     public void hideFragment() {
         mImageMap.setEnabled(true);
-        mImageMap.setScaleType(ImageView.ScaleType.MATRIX );
+        mImageMap.setScaleType(ImageView.ScaleType.MATRIX);
         mFrameContainer.setVisibility(View.INVISIBLE);
         getSupportFragmentManager().beginTransaction().remove(getSupportFragmentManager().findFragmentById(R.id.container)).commit();
         try {
@@ -208,7 +227,7 @@ public class MapActivity extends ActionBarActivity {
             byte[] buffer = new byte[size];
             inputStream.read(buffer);
             inputStream.close();
-            json = new String(buffer);     //tireishon aca
+            json = new String(buffer);
         } catch (Exception e) {
             Log.d("Json Error", e.getMessage());
             return null;
@@ -279,7 +298,7 @@ public class MapActivity extends ActionBarActivity {
             sector.setSectorMapImage(SectorMapImage);
             SectorList.add(i, sector);
         }
-        mCarnival.setCarnivalName("CarnivalName");
+        mCarnival.setCarnivalName(CarnivalName);
         mCarnival.setCarnivalSectors(SectorList);
     }
 
