@@ -45,6 +45,7 @@ public class MapActivity extends ActionBarActivity {
 
     private int mXPoint;
     private int mYPoint;
+    private boolean mFragmentOn;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -57,7 +58,7 @@ public class MapActivity extends ActionBarActivity {
             e.printStackTrace();
         }
 
-
+        mFragmentOn = false;
         mImageMap = (ScaleImageView) findViewById(R.id.image_map);
         mFrameContainer = (FrameLayout) findViewById(R.id.container);
 
@@ -70,7 +71,7 @@ public class MapActivity extends ActionBarActivity {
                     mYPoint = (int) event.getY();
                 }
 
-                if (event.getAction() == MotionEvent.ACTION_UP) {
+                if (event.getAction() == MotionEvent.ACTION_UP && !mFragmentOn) {
                     if (isInDragRange(event.getX(), event.getY())) {
                         int pixelColor = getColor((int) event.getX(), (int) event.getY());
                         int redValue = Color.red(pixelColor);
@@ -143,8 +144,8 @@ public class MapActivity extends ActionBarActivity {
 
 
     private void hideMap() {
+        mFragmentOn = true;
         mImageMap.setScaleType(ImageView.ScaleType.FIT_CENTER);
-        mImageMap.setEnabled(false);
 
         try {
             if (Build.VERSION.SDK_INT > 11) {
@@ -204,8 +205,7 @@ public class MapActivity extends ActionBarActivity {
     }
 
     public void hideFragment() {
-        mImageMap.setEnabled(true);
-        mImageMap.setScaleType(ImageView.ScaleType.MATRIX);
+        mFragmentOn = false;
         mFrameContainer.setVisibility(View.INVISIBLE);
         getSupportFragmentManager().beginTransaction().remove(getSupportFragmentManager().findFragmentById(R.id.container)).commit();
         try {

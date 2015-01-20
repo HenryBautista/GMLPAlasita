@@ -65,7 +65,7 @@ public class ScaleImageView extends ImageView implements OnTouchListener {
     }
 
     private void initialize() {
-        this.setScaleType(ScaleType.MATRIX);
+        //this.setScaleType(ScaleType.MATRIX);
         this.mMatrix = new Matrix();
         Drawable d = getDrawable();
         if (d != null) {
@@ -147,9 +147,11 @@ public class ScaleImageView extends ImageView implements OnTouchListener {
 
     public void zoomTo(float scale, int x, int y) {
         if (getScale() * scale < mMinScale) {
+            this.setScaleType(ScaleType.FIT_CENTER);
             return;
         }
         if (scale >= 1 && getScale() * scale > MAX_SCALE) {
+
             return;
         }
         mMatrix.postScale(scale, scale);
@@ -207,6 +209,7 @@ public class ScaleImageView extends ImageView implements OnTouchListener {
             case MotionEvent.ACTION_POINTER_1_DOWN:
             case MotionEvent.ACTION_POINTER_2_DOWN:
                 if (touchCount >= 2) {
+                    this.setScaleType(ScaleType.MATRIX);
                     float distance = distance(event.getX(0), event.getX(1), event.getY(0), event.getY(1));
                     mPrevDistance = distance;
                     isScaling = true;
