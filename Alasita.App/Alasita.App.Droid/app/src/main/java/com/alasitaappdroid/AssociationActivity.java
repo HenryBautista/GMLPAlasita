@@ -8,6 +8,7 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.TextView;
 
@@ -31,6 +32,7 @@ public class AssociationActivity extends ActionBarActivity {
     private TextView mTextAssociationName;
     private TextView mTextAssociationDescription;
     private ListView mListAssociationProducts;
+    private ImageView mImageLogo;
 
 
     private Association mCurrentAssociation;
@@ -56,9 +58,11 @@ public class AssociationActivity extends ActionBarActivity {
         mTextAssociationName = (TextView) findViewById(R.id.text_association_key);
         mTextAssociationDescription = (TextView) findViewById(R.id.text_association_description);
         mListAssociationProducts = (ListView) findViewById(R.id.list_products);
+        mImageLogo = (ImageView) findViewById(R.id.image_association_logo);
         ProductAdapter adapter = new ProductAdapter(this, R.layout.adapter_product, mCurrentAssociation.getAssociationProducts());
         mListAssociationProducts.setAdapter(adapter);
 
+        mImageLogo.setImageResource(mCurrentAssociation.getAssociationImage());
         mTextAssociationName.setText(mCurrentAssociation.getAssociationName());
         mTextAssociationDescription.setText(mCurrentAssociation.getAssociationDescription());
     }
@@ -148,7 +152,6 @@ public class AssociationActivity extends ActionBarActivity {
                 association.setAssociationName(AssociationName);
                 association.setAssociationKey(AssociationKey);
                 association.setAssociationDescription(AssociationDescription);
-                association.setAssociationImage(AssociationImage);
                 association.setAssociationExpoNumber(ExpoNumber);
                 association.setAssociationProducts(ProductList);
                 AssociationList.add(association);

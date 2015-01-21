@@ -65,17 +65,15 @@ public class ScheduleActivity extends ActionBarActivity {
         int id = item.getItemId();
 
         //noinspection SimplifiableIfStatement
-        if (id == R.id.action_settings) {
-            return true;
-        }
+
 
         return super.onOptionsItemSelected(item);
     }
 
-    public String loadJSON() {
+    public String loadJSON(String s) {
         String json;
         try {
-            InputStream inputStream = getAssets().open("schedule.json");
+            InputStream inputStream = getAssets().open(s);
             int size = inputStream.available();
             byte[] buffer = new byte[size];
             inputStream.read(buffer);
@@ -90,7 +88,7 @@ public class ScheduleActivity extends ActionBarActivity {
 
 
     public void loadEvents() throws JSONException {
-        String json = loadJSON();
+        String json = loadJSON("schedule.json");
         mActivityList = new ArrayList<>();
         JSONObject jsonObject = new JSONObject(json.substring(json.indexOf("{"), json.lastIndexOf("}") + 1));
         JSONArray events = jsonObject.getJSONArray("Actividades");
@@ -110,6 +108,26 @@ public class ScheduleActivity extends ActionBarActivity {
 
             mActivityList.add(event);
         }
+        json = loadJSON("schedule2.json");
+        jsonObject = new JSONObject(json.substring(json.indexOf("{"), json.lastIndexOf("}") + 1));
+        events = jsonObject.getJSONArray("Exposiciones");
+        EventList = new ArrayList<>();
+        for (int i = 0; i < events.length(); i++) {
+            Event event = new Event();
+            JSONObject jevent = events.getJSONObject(i);
+            String date = jevent.getString("Fecha");
+            String activity = jevent.getString("Actividad");
+            String place = jevent.getString("Lugar");
+            String time = jevent.getString("Hora");
+
+            event.setEventActivity(activity);
+            event.setEventDate(date);
+            event.setEventPlace(place);
+            event.setEventTime(time);
+
+            mActivityList.add(event);
+        }
+
 
     }
 

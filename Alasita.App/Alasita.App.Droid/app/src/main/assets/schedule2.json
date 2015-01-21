@@ -1,0 +1,123 @@
+{
+    "Exposiciones":
+            [
+                {
+                    "Fecha":"13 de Enero al 11 de Febrero del 2015",
+                    "Actividad":"Exposición Jisk'a Arte Alasita 2015 de Lucio Velasde",
+                    "Lugar":"Sala Cecilio Guzmán de Rojas (Casa de la Cultura)",
+                    "Hora":"18:30",
+                    "Organizador":"GAMLP - SMC"
+                },
+                {
+                    "Fecha":"20 de Enero del al 10 de Febrero del 2015",
+                    "Actividad":"Exposición de Arte en Miniatura",
+                    "Lugar":"Salón Arturo Borda (Primer Piso - Casa de la Cultura)",
+                    "Hora": "",
+                    "Organizador":"GAMLP - SMC"
+                },
+                {
+                    "Fecha":"20 de Enero al 10 de Febrero del 2015",
+                    "Actividad":"Exposición de Arte en Miniatura",
+                    "Lugar":"Salon Exter ballivian (Segundo Piso - Casa de la Cultura)",
+                    "Hora": ""
+                    ,
+                    "Organizador":""
+                },
+                {
+                    "Fecha":"20 de Enero al 10 de Febrero del 2015",
+                    "Actividad":"Exposición de Origami",
+                    "Lugar":"Salón Antonio Gonzales Bravo (Planta baja - Casa de la Cultura)",
+                    "Hora": ""
+                    ,
+                    "Organizador":"GAMLP - SMC"
+                },
+                {
+                    "Fecha":"24 de Enero al 1 de Marzo del 2015",
+                    "Actividad":"Inauguración Exposición Temporal 'Illas y Sueños para para La Paz'",
+                    "Lugar":"Museo Memoria y Futuro Pipiripi",
+                    "Hora":
+                    
+                        "09:30 a 12:30 - 15:00 a 18:00 (Miércoles a viernes) , 10:00 a 18:30 (Sábados y domingos)"
+                    ,
+                    "Organizador":"GAMLP - SMC - FENAENA"
+                },
+                {
+                    "Fecha":"24 de Enero al 1 de Marzo del 2015",
+                    "Actividad":"Las Illias de la Artes Plásticas",
+                    "Lugar":"Museo Costumbrista 'Juan de Vargas' (c/Sucre Esq. Jaén)",
+                    "Hora":
+                    
+                        "09:30 a 12:30 - 15:00 a 18:00 (Miércoles a Viernes) , 10:00 a 18:30 (Sábados y Domingos)"
+                    ,
+                    "Organizador":"GAMLP - SMC - FENAENA"
+                },
+                {
+                    "Fecha":"21 de enero al 14 de Febrero del 2015",
+                    "Actividad":"'Pequeño Arte' Exposición de mini estampas colectivo de grabadores bolivianos",
+                    "Lugar":"Salones de Exposición Casa de la Cultura Franz Tamayo",
+                    "Hora":
+                    
+                        "09:00 a 11:30 , 15:00 a 18:30"
+                    ,
+                    "Organizador":"GAMLP - SMC"
+                },
+                {
+                    "Fecha":"25 de Enero al 10 de Febrero del 2015",
+                    "Actividad":"Exposición de Paneles Informativos de Alasita",
+                    "Lugar":"Campo Ferial del Bicentenario",
+                    "Hora":
+                    
+                        "09:00 a 19:00"
+                    ,
+                    "Organizador":"GAMLP - SMC"
+                },
+                {
+                    "Fecha":"24 de Enero al 08 de Febrero del 2015",
+                    "Actividad":"Exposición Miniatura el Ekeko",
+                    "Lugar":"Museo Contemporáneo (Av. 16 de Julio esq. Reyes Ortiz)",
+                    "Hora":
+                    
+                        "09:00 a 21:00"
+                    ,
+                    "Organizador":"Museo Contemporáneo Plaza"
+                },
+                {
+                    "Fecha":"24 de Enero al 23 de Febrero del 2015",
+                    "Actividad":"Exposición al Ekeko (Galeria Chakana)",
+                    "Lugar":"Casa Museo Mamni - Mamani (c/Jaén)",
+                    "Hora":
+                    
+                        "09:00 a 19:00"
+                    ,
+                    "Organizador":"Casa Museo Mamani - Mamani"
+                },
+                {
+                    "Fecha":"Hasta al 10 de Febrero del 2015",
+                    "Actividad":"Concurso Municiapl de Miniaturas de Alasita 2015",
+                    "Lugar":"Recepción de Trabajos: Cine Teatro Municipal 6 de Agosto (Av. 6 de Agosto N° 2088)",
+                    "Hora":
+                    
+                        "09:00 a 11:30 , 15:00 a 18:30"
+                    ,
+                    "Organizador":"GAMLP - SMC"
+                },
+                {
+                    "Fecha":"13 de Febrero al 13 de Marzo del 2015",
+                    "Actividad":"Exposición Alasita de javier Fernandez",
+                    "Lugar":"Sala Cecilio Guzmán de rojas (Casa de la Cultura)",
+                    "Hora": ""
+                    ,
+                    "Organizador":"GAMLP - SMC"
+                },
+                {
+                    "Fecha":"13 de Febrero al 28 de Marzo del 2015",
+                    "Actividad":"Exposición 'Tradicional Concurso Miniaturas de Alasita' 2015",
+                    "Lugar":"Sala de Exposición Maria Juariste Eguino - Museo Tambo Quirquincho",
+                    "Hora":
+                    
+                        "09:00 a 11:30 , 15:00 a 18:30"
+                    ,
+                    "Organizador":"GAMLP - SMC"
+                }
+            ]
+}

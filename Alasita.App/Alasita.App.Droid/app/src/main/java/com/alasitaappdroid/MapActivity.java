@@ -285,7 +285,6 @@ public class MapActivity extends ActionBarActivity {
                 association.setAssociationName(AssociationName);
                 association.setAssociationKey(AssociationKey);
                 association.setAssociationDescription(AssociationDescription);
-                association.setAssociationImage(AssociationImage);
                 association.setAssociationExpoNumber(ExpoNumber);
                 association.setAssociationProducts(ProductList);
                 AssociationList.add(association);

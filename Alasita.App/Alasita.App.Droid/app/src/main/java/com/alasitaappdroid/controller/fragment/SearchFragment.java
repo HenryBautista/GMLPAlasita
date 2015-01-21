@@ -175,7 +175,6 @@ public class SearchFragment extends Fragment {
                 association.setAssociationName(AssociationName);
                 association.setAssociationKey(AssociationKey);
                 association.setAssociationDescription(AssociationDescription);
-                association.setAssociationImage(AssociationImage);
                 association.setAssociationExpoNumber(ExpoNumber);
                 association.setAssociationProducts(ProductList);
                 AssociationList.add(association);

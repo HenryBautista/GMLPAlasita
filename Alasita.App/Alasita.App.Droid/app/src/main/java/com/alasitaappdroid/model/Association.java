@@ -12,11 +12,12 @@ public class Association {
     private String mAssociationDescription;
     private ArrayList<Product> mAssociationProducts;
     private int mAssociationExpoNumber;
-    private String mAssociationImage;
+    private int mAssociationImage;
 
 
     public Association() {
         mAssociationProducts = new ArrayList<>();
+        mAssociationImage = setImage();
     }
 
     public String getAssociationName() {
@@ -59,16 +60,47 @@ public class Association {
         mAssociationExpoNumber = associationExpoNumber;
     }
 
-    public String getAssociationImage() {
+    public int getAssociationImage() {
         return mAssociationImage;
     }
 
-    public void setAssociationImage(String associationImage) {
+    public void setAssociationImage(int associationImage) {
         mAssociationImage = associationImage;
     }
 
     @Override
     public String toString() {
         return mAssociationName;
+    }
+
+    public int setImage() {
+        int path = 0;
+        int[] images = {
+                0x7f020033,
+                0x7f020034,
+                0x7f020035,
+                0x7f020036,
+                0x7f020037,
+                0x7f020038,
+                0x7f02003a,
+                0x7f02003b,
+                0x7f02003e,
+                0x7f02003f,
+                0x7f020040,
+                0x7f020041,
+                0x7f020042,
+                0x7f020043,
+                0x7f020044,
+                0x7f020045,
+                0x7f020046,
+                0x7f020047,
+                0x7f020049,
+                0x7f02004a,
+                0x7f02004b
+
+
+        };
+        path = images[(int) (Math.random() * 20)];
+        return path;
     }
 }
