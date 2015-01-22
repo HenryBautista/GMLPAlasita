@@ -26,11 +26,11 @@
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\Yolger\Documents\GitHub\GMLPAlasita\Alasita.App\Alasita.App\Alasita.App.Windows\bin\Debug\Alasita.App.Windows.exe">
       <PackagePath>Alasita.App.Windows.exe</PackagePath>
-      <Modified>2015-01-18T14:16:11.868</Modified>
+      <Modified>2015-01-21T22:56:07.975</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Yolger\Documents\GitHub\GMLPAlasita\Alasita.App\Alasita.App.Core\bin\Debug\Alasita.App.Core.dll">
       <PackagePath>Alasita.App.Core.dll</PackagePath>
-      <Modified>2015-01-18T13:04:13.465</Modified>
+      <Modified>2015-01-21T22:56:04.706</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Yolger\Documents\GitHub\GMLPAlasita\Alasita.App\Alasita.App.Core\bin\Debug\Newtonsoft.Json.dll">
       <PackagePath>Newtonsoft.Json.dll</PackagePath>
@@ -74,7 +74,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Yolger\Documents\GitHub\GMLPAlasita\Alasita.App\Alasita.App\Alasita.App.Shared\Images\Icons\Historia.jpg">
       <PackagePath>Images\Icons\Historia.jpg</PackagePath>
-      <Modified>2015-01-18T12:51:29.859</Modified>
+      <Modified>2015-01-21T22:44:46.133</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Yolger\Documents\GitHub\GMLPAlasita\Alasita.App\Alasita.App\Alasita.App.Shared\Images\MapaLightColor.jpg">
       <PackagePath>Images\MapaLightColor.jpg</PackagePath>
@@ -82,7 +82,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Yolger\Documents\GitHub\GMLPAlasita\Alasita.App\Alasita.App\Alasita.App.Shared\JsonFiles\Carnival.Json">
       <PackagePath>JsonFiles\Carnival.Json</PackagePath>
-      <Modified>2015-01-18T12:51:29.873</Modified>
+      <Modified>2015-01-21T22:44:46.138</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Yolger\Documents\GitHub\GMLPAlasita\Alasita.App\Alasita.App\Alasita.App.Shared\Temp\Alasita.json">
       <PackagePath>Temp\Alasita.json</PackagePath>
@@ -102,15 +102,15 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Yolger\Documents\GitHub\GMLPAlasita\Alasita.App\Alasita.App\Alasita.App.Windows\bin\Debug\Views\HistoryView.xbf">
       <PackagePath>Views\HistoryView.xbf</PackagePath>
-      <Modified>2015-01-18T13:04:15.415</Modified>
+      <Modified>2015-01-21T22:56:07.533</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Yolger\Documents\GitHub\GMLPAlasita\Alasita.App\Alasita.App\Alasita.App.Windows\bin\Debug\Views\Main.xbf">
       <PackagePath>Views\Main.xbf</PackagePath>
-      <Modified>2015-01-18T13:04:15.416</Modified>
+      <Modified>2015-01-21T22:56:07.540</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Yolger\Documents\GitHub\GMLPAlasita\Alasita.App\Alasita.App\Alasita.App.Windows\bin\Debug\Views\MapView.xbf">
       <PackagePath>Views\MapView.xbf</PackagePath>
-      <Modified>2015-01-18T13:04:15.418</Modified>
+      <Modified>2015-01-21T22:56:07.548</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Yolger\Documents\GitHub\GMLPAlasita\Alasita.App\Alasita.App\Alasita.App.Windows\bin\Debug\Views\ScheduleView.xbf">
       <PackagePath>Views\ScheduleView.xbf</PackagePath>
@@ -118,11 +118,11 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Yolger\Documents\GitHub\GMLPAlasita\Alasita.App\Alasita.App\Alasita.App.Windows\bin\Debug\Alasita.App.Windows.xr.xml">
       <PackagePath>Alasita.App.Windows.xr.xml</PackagePath>
-      <Modified>2015-01-18T12:51:30.356</Modified>
+      <Modified>2015-01-21T22:56:07.066</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Yolger\Documents\GitHub\GMLPAlasita\Alasita.App\Alasita.App\Alasita.App.Windows\bin\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2015-01-18T13:04:15.887</Modified>
+      <Modified>2015-01-21T22:56:09.519</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

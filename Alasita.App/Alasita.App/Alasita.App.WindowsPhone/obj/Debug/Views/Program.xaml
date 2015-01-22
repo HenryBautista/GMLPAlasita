@@ -58,33 +58,33 @@
             <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
 
-        <Border Background="#FFFFBF01" Margin="0,-30,0,0" Height="30" VerticalAlignment="Top"/>
+        <Border Background="#FFFFBF01" Margin="0,-30,0,0" Height="90" VerticalAlignment="Top"/>
         <!-- TitlePanel -->
-        <TextBlock Text="Programa" Typography.Capitals="SmallCaps" FontSize="33" Margin="20,10"/>
-        <ScrollViewer Grid.Row="1" ScrollViewer.VerticalScrollBarVisibility="Auto">
-            <Grid>
-                <Grid.RowDefinitions>
-                    <RowDefinition Height="Auto"/>
-                    <RowDefinition Height="Auto"/>
-                </Grid.RowDefinitions>
+        <TextBlock Text="Programa" Typography.Capitals="SmallCaps" FontSize="33" Margin="20,10" Foreground="White"/>
 
-                <ListView ItemsSource="{Binding Programa.Actividades}" SelectionMode="None" ScrollViewer.VerticalScrollBarVisibility="Disabled" ItemTemplate="{StaticResource DataTemplate}" Margin="20,0">
-                    <ListView.HeaderTemplate>
-                        <DataTemplate>
-                            <TextBlock Text="Actividades de Promoción y Valoración de la Tradicional Fiesta y Feria de Alasita 2015" TextWrapping="WrapWholeWords" Typography.Capitals="SmallCaps" FontWeight="Bold" FontSize="15" Margin="0,0,0,5"/>
-                        </DataTemplate>
-                    </ListView.HeaderTemplate>
-                </ListView>
+        <Hub Grid.Row="1" Margin="0,25,0,0">
+            <HubSection>
+                <HubSection.HeaderTemplate>
+                    <DataTemplate>
+                        <TextBlock Text="Actividades de Promoción y Valoración de la Tradicional Fiesta y Feria de Alasita 2015" TextWrapping="WrapWholeWords" Typography.Capitals="SmallCaps"/>
+                    </DataTemplate>
+                </HubSection.HeaderTemplate>
+                <DataTemplate>
+                    <ListView ItemsSource="{Binding Programa.Actividades}" ItemTemplate="{StaticResource DataTemplate}"/>
+                </DataTemplate>
+            </HubSection>
 
-                <ListView Grid.Row="1" ItemsSource="{Binding Programa.Exposiciones}" SelectionMode="None" Margin="20,0" ScrollViewer.VerticalScrollBarVisibility="Disabled" ItemTemplate="{StaticResource DataTemplate}">
-                    <ListView.HeaderTemplate>
-                        <DataTemplate>
-                            <TextBlock Text="Muestras y Exposiciones de Alasita" TextWrapping="WrapWholeWords" Typography.Capitals="SmallCaps" FontWeight="Bold" FontSize="15" Margin="0,0,0,5"/>
-                        </DataTemplate>
-                    </ListView.HeaderTemplate>
-                </ListView>
-            </Grid>
-        </ScrollViewer>
+            <HubSection>
+                <HubSection.HeaderTemplate>
+                    <DataTemplate>
+                        <TextBlock Text="Muestras y Exposiciones de Alasita" TextWrapping="WrapWholeWords" Typography.Capitals="SmallCaps"/>
+                    </DataTemplate>
+                </HubSection.HeaderTemplate>
+                <DataTemplate>
+                    <ListView ItemsSource="{Binding Programa.Exposiciones}" ItemTemplate="{StaticResource DataTemplate}"/>
+                </DataTemplate>
+            </HubSection>
+        </Hub>
 
 
         <!--TODO: Content should be placed within the following grid-->

@@ -45,6 +45,7 @@
     <Compile Include="Data\DataProvider.cs" />
     <Compile Include="Models\Association.cs" />
     <Compile Include="Models\Carnival.cs" />
+    <Compile Include="Models\History.cs" />
     <Compile Include="Models\Product.cs" />
     <Compile Include="Models\Sector.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

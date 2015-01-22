@@ -152,10 +152,10 @@
             <RowDefinition Height="Auto"/>
             <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
-
-        <Border Background="#FFFFBF01" Margin="0,-30,0,0" Height="30" VerticalAlignment="Top"/>
+        
+        <Border Background="#FFFFBF01" Margin="0,-30,0,0" Height="90" VerticalAlignment="Top"/>
         <!-- TitlePanel -->
-        <TextBlock Text="Buscador" Typography.Capitals="SmallCaps" FontSize="33" Margin="20,10"/>
+        <TextBlock Text="Buscador" Typography.Capitals="SmallCaps" FontSize="33" Margin="20,10" Foreground="White"/>
 
         <!--TODO: Content should be placed within the following grid-->
         <Grid Grid.Row="1" x:Name="ContentRoot" Margin="25,5">

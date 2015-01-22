@@ -3,31 +3,31 @@
     [
         {
             "Texto":"La Feria de Alasita de La Paz es una expresión cultural, social y económica, que se ha originado y  celebra en la ciudad de La Paz y su entorno metropolitano, que consiste en la comercialización de miniaturas de diversa índole: Dinero, automóviles, casas, materiales de construcción, ropa, electrodomésticos, comida, etc. que los asistentes encomiendan al Ekeko, para su conversión en realidad en el futuro.",
-            "Imagen":"ms-appx:///Assets/portada.JPG"
+            "Imagen":"ms-appx:///Images/Temp/image01.jpg"
         },
         {
             "Texto":"El 24 de enero a horas 12:00, se inicia la feria  que se caracteriza por la interacción entre compradores (creyentes) que van en busca de miniaturas y vendedores que ofrecen una diversidad de objetos pequeños como iconos de la prosperidad  que se someten a un ritual que consiste básicamente en una ch´alla, rito andino que incluye una rociada con alcohol o vino, pétalos de flores, sahumerio, adornos coloridos y oraciones que mezclan tradiciones prehispánicas y católicas. Alasita viene del vocablo aimara alasitay que significa 'cómprame pues'",
-            "Imagen":"ms-appx:///Assets/portada.JPG"
+            "Imagen":"ms-appx:///Images/Temp/image02.jpg"
         },
         {
             "Texto":"Por Ley N° 2797 de 5 de agosto de 2004, se declara  Patrimonio Cultural e Intangible, a la fiesta de 'LA ALASITA', como manifestación cultural, social y económica de origen paceño y que se celebra en la ciudad de La Paz, El Alto y otras ciudades de Bolivia. La protección establecida en la presente Ley comprende al símbolo de esta fiesta y deidad Aymara 'El Ekeko' y cualquier otra manifestación y representación simbólica o gráfica de esta fiesta.",
-            "Imagen":"ms-appx:///Assets/portada.JPG"
+            "Imagen":"ms-appx:///Images/Temp/image03.JPG"
         },
         {
             "Texto":"La Ordenanza Municipal Nº 084/98 HAM - HCM 075/98 de 18 de agosto de 1998,  declara Patrimonios Culturales Tradicionales de la ciudad de La Paz al 'Ekeko' y a la 'Feria de Alasita'.",
-            "Imagen":"ms-appx:///Assets/portada.JPG"
+            "Imagen":"ms-appx:///Images/Temp/image04.JPG"
         },
         {
             "Texto":"La celebración de la 'Tradicional Feria de Alasita' y del 'Ekeko', constituye un espacio de fomento a la creatividad y el desarrollo del arte popular por la diversidad de productos manufacturados en miniatura comercializados y  que simbolizan bienes materiales y espirituales. Asimismo la figura del 'Ekeko' considerada una divinidad de la mitología Kolla-Aymara, que representa la fertilidad, felicidad y reproducción, constituyendo una importante expresión de la cultura y tradición andina paceña y boliviana.",
-            "Imagen":"ms-appx:///Assets/portada.JPG"
+            "Imagen":"ms-appx:///Images/Temp/image05.JPG"
         },
         {
             "Texto":"Según registros que existen en la Unidad de Patrimonio Inmaterial e Investigación Cultural del Gobierno Autónomo Municipal de La Paz, el  origen  de  Alasita data de la época  precolombina,  donde se tenía la costumbre de intercambiar piedrecillas consideradas illas de la reproducción y la fertilidad, entendidas como fuerza regeneradora de la reproducción humana.",
-            "Imagen":"ms-appx:///Assets/portada.JPG"
+            "Imagen":"ms-appx:///Images/Temp/image06.JPG"
         },
         {
             "Texto":"Se dice que originalmente esta fiesta se celebraba el 21 de diciembre con el solsticio de verano, durante la festividad del Willka Kuti o Qhapaj Raymi en la que se acostumbraba el intercambio de Illas. Durante la Colonia, esta fecha de celebración fue cambiada primero al 20 de octubre y posteriormente al 24 de enero. La fiesta de Alasita se origina en la época prehispánica y se legitima en 1782, en plena época colonial, a través de un decreto del gobernador Segurola que restablece la fiesta de las miniaturas trasladándola del mes de octubre, cuando se celebra la fundación de la ciudad, al 24 de enero como parte del agradecimiento a la Virgen de Nuestra Señora de La Paz.",
-            "Imagen":"ms-appx:///Assets/portada.JPG"
+            "Imagen":"ms-appx:///Images/Temp/image07.JPG"
         }
     ],
     "Sectores":
@@ -758,310 +758,268 @@
     ],
     "Creditos":
     [
-        {
-            "Departamento":"Alcalde",
-            "Imagen":"",
-            "Nombres":
-            [
-                "Omar Rocha Rojo"
-            ]
-        },
-        {
-            "Departamento":"Gobierno Municiapal de La Paz",
-            "Imagen":"",
-            "Nombres":
-            [
-            ]
-        },
-        {
-            "Departamento":"Secretaria Municipal de Promoción Económica",
-            "Imagen":"",
-            "Nombres":
-            [
-            ]
-        },
-        {
-            "Departamento":"Dirección de Competitividad y Emprendimiento",
-            "Imagen":"",
-            "Nombres":
-            [
-            ]
-        },
-        {
-            "Departamento":"Programa de Inovación y Creatividad",
-            "Imagen":"",
-            "Nombres":
-            [
-            ]
-        },
-        {
-            "Departamento":"Grupo de Estudios Microsoft",
-            "Imagen":"",
-            "Nombres":
-            [
-            ]
-        }
+        "Gobierno Autono Municipal de La Paz",
+        "Secretaria Municipal de Promoción Económica",
+        "Dirección de Competitividad y Emprendimiento",
+        "Unidad de Fortalecimiento y Productividad",
+        "Program de Inovación y Mejora Competividad para MYPYMES",
+        "Con el Apoyo de la Unión Europea"
     ],
-    "Programa":
+    "Actividades":
     [
         {
-            "Actividades":
+            "Fecha":"20 de Enero del 2015",
+            "Actividad":"Conferencia de Prensa Alasita 2015",
+            "Lugar":"Atrio Palacio Concistoral",
+            "Hora":
             [
-                {
-                    "Fecha":"20 de Enero del 2015",
-                    "Actividad":"Conferencia de Prensa Alasita 2015",
-                    "Lugar":"Atrio Palacio Concistoral",
-                    "Hora":
-                    [
-                        "10:30"
-                    ],
-                    "Organizador":"GAMLP - SMC - FENAENA"
-                },
-                {
-                    "Fecha":"23 de Enero del 2015",
-                    "Actividad":"Ritual al Ekeko",
-                    "Lugar":"Campo Ferial - Sector del Monumento al Ekeko",
-                    "Hora":
-                    [
-                        "10:30"
-                    ],
-                    "Organizador":"GAMLP - SMC - FENAENA"
-                },
-                {
-                    "Fecha":"23 de Enero del 2015",
-                    "Actividad":"Cerominia Ritual al Ekeko - Grupo de Musica Autócotona",
-                    "Lugar":"Campo Ferial - Sector del Monumento al Ekeko",
-                    "Hora":
-                    [
-                        "21:00"
-                    ],
-                    "Organizador":"GAMLP - SMC - FENAENA"
-                },
-                {
-                    "Fecha":"24 de Enero del 2015",
-                    "Actividad":"Inaguración de la Feria de Alasita 2015",
-                    "Lugar":"Av. Del Ejército (Frente a la puerta princiapl del Campo Ferial del Bicentenario)",
-                    "Hora":
-                    [
-                        "10:30"
-                    ],
-                    "Organizador":"GAMLP - SMC - FENAENA"
-                },
-                {
-                    "Fecha":"26 de Enero del 2015",
-                    "Actividad":"Desayuno Trabajo FENAENA - PRENSA",
-                    "Lugar":"Ingreso Campo Ferial del Bicentenario",
-                    "Hora":
-                    [
-                        "07:00"
-                    ],
-                    "Organizador":"FENAENA"
-                },
-                {
-                    "Fecha":"26 de Enero al 01 de Maro del 2015",
-                    "Actividad":"Inaguración Museo de Alasita y el Ekeko",
-                    "Lugar":"Cúpula de Adobe",
-                    "Hora":
-                    [
-                        "10:30"
-                    ],
-                    "Organizador":"GAMLP - SMC - FENAENA"
-                },
-                {
-                    "Fecha":"29 de Enero del 2015",
-                    "Actividad":"Elección del Ekeko 2015",
-                    "Lugar":"Av. Del Ejército (Frente a la puerta princiapl del Campo Ferial del Bicentenario)",
-                    "Hora":
-                    [
-                        "10:30 a 13:00"
-                    ],
-                    "Organizador":"GAMLP - SMC - FENAENA"
-                },
-                {
-                    "Fecha":"06 de Febrero",
-                    "Actividad":"Elección del Ekekito 2015",
-                    "Lugar":"Plaza Eliodoro Camacho",
-                    "Hora":
-                    [
-                        "11:00 a 12:30"
-                    ],
-                    "Organizador":"GAMLP - SMC - FENAENA"
-                },
-                {
-                    "Fecha":"06 de Febrero del 2015",
-                    "Actividad":"Ch'iti Feria de Alasita",
-                    "Lugar":"Plaza Eliodoro Camacho",
-                    "Hora":
-                    [
-                        "10:30 a 15:00"
-                    ],
-                    "Organizador":"GAMLP - SMC - FENAENA"
-                },
-                {
-                    "Fecha":"13 de Febrero del 2015",
-                    "Actividad":"Gastronimia en Miniatura de Alasita",
-                    "Lugar":"Campo Ferial - Ingreso Principal",
-                    "Hora":
-                    [
-                        "10:00 a 13:00"
-                    ],
-                    "Organizador":"FENAENA"
-                },
-                {
-                    "Fecha":"19 de Febrero del 2015",
-                    "Actividad":"Lota gratis en la Feria de la Alastia",
-                    "Lugar":"Sector la Lota del Tigre y la lota del Bolivar (Playon C)",
-                    "Hora":
-                    [
-                        "16:00 a 17:00"
-                    ],
-                    "Organizador":"ENAENA"
-                },
-                {
-                    "Fecha":"20 de Febrero del 2015",
-                    "Actividad":"Apis 2 x 1",
-                    "Lugar":"Todos los Sectores de Apis",
-                    "Hora":
-                    [
-                        "10:00 a 13:00"
-                    ],
-                    "Organizador":"FENAENA"
-                }
+                "10:30"
             ],
-            "Exposiciones":
+            "Organizador":"GAMLP - SMC - FENAENA"
+        },
+        {
+            "Fecha":"23 de Enero del 2015",
+            "Actividad":"Ritual al Ekeko",
+            "Lugar":"Campo Ferial - Sector del Monumento al Ekeko",
+            "Hora":
             [
-                {
-                    "Fecha":"13 de Enero al 11 de Febrero del 2015",
-                    "Actividad":"Exposición Jisk'a Arte Alasita 2015 de Lucio Velasde",
-                    "Lugar":"Sala Cecilio Guzmán de Rojas (Casa de la Cultura)",
-                    "Hora":
-                    [
-                        "18:30"
-                    ],
-                    "Organizador":"GAMLP - SMC"
-                },
-                {
-                    "Fecha":"20 de Enero del al 10 de Febrero del 2015",
-                    "Actividad":"Exposición de Arte en Miniatura",
-                    "Lugar":"Salón Arturo Borda (Primer Piso - Casa de la Cultura)",
-                    "Hora":
-                    [
-                    ],
-                    "Organizador":"GAMLP - SMC"
-                },
-                {
-                    "Fecha":"20 de Enero al 10 de Febrero del 2015",
-                    "Actividad":"Exposición de Arte en Miniatura",
-                    "Lugar":"Salon Exter ballivian (Segundo Piso - Casa de la Cultura)",
-                    "Hora":
-                    [
-                    ],
-                    "Organizador":""
-                },
-                {
-                    "Fecha":"20 de Enero al 10 de Febrero del 2015",
-                    "Actividad":"Exposición de Origami",
-                    "Lugar":"Salón Antonio Gonzales Bravo (Planta baja - Casa de la Cultura)",
-                    "Hora":
-                    [
-                    ],
-                    "Organizador":"GAMLP - SMC"
-                },
-                {
-                    "Fecha":"24 de Enero al 1 de Marzo del 2015",
-                    "Actividad":"Inauguración Exposición Temporal 'Illas y Sueños para para La Paz'",
-                    "Lugar":"Museo Memoria y Futuro Pipiripi",
-                    "Hora":
-                    [
-                        "09:30 a 12:30 - 15:00 a 18:00 (Miércoles a viernes)",
-                        "10:00 a 18:30 (Sábados y domingos)"
-                    ],
-                    "Organizador":"GAMLP - SMC - FENAENA"
-                },
-                {
-                    "Fecha":"24 de Enero al 1 de Marzo del 2015",
-                    "Actividad":"Las Illias de la Artes Plásticas",
-                    "Lugar":"Museo Costumbrista 'Juan de Vargas' (c/Sucre Esq. Jaén)",
-                    "Hora":
-                    [
-                        "09:30 a 12:30 - 15:00 a 18:00 (Miércoles a Viernes)",
-                        "10:00 a 18:30 (Sábados y Domingos)"
-                    ],
-                    "Organizador":"GAMLP - SMC - FENAENA"
-                },
-                {
-                    "Fecha":"21 de enero al 14 de Febrero del 2015",
-                    "Actividad":"'Pequeño Arte' Exposición de mini estampas colectivo de grabadores bolivianos",
-                    "Lugar":"Salones de Exposición Casa de la Cultura Franz Tamayo",
-                    "Hora":
-                    [
-                        "09:00 a 11:30",
-                        "15:00 a 18:30"
-                    ],
-                    "Organizador":"GAMLP - SMC"
-                },
-                {
-                    "Fecha":"25 de Enero al 10 de Febrero del 2015",
-                    "Actividad":"Exposición de Paneles Infroamtivos de Alasita",
-                    "Lugar":"Campo Ferial del Bicentenario",
-                    "Hora":
-                    [
-                        "09:00 a 19:00"
-                    ],
-                    "Organizador":"GAMLP - SMC"
-                },
-                {
-                    "Fecha":"24 de Enero al 08 de Febrero del 2015",
-                    "Actividad":"Exposición Miniatura el Ekeko",
-                    "Lugar":"Museo Contemporáneo (Av. 16 de Julio esq. Reyes Ortiz)",
-                    "Hora":
-                    [
-                        "09:00 a 21:00"
-                    ],
-                    "Organizador":"Museo Contemporáneo Plaza"
-                },
-                {
-                    "Fecha":"24 de Enero al 23 de Febrero del 2015",
-                    "Actividad":"Exposición al Ekeko (Galeria Chakana)",
-                    "Lugar":"Casa Museo Mamni - Mamani (c/Jaén)",
-                    "Hora":
-                    [
-                        "09:00 a 19:00"
-                    ],
-                    "Organizador":"Casa Museo Mamani - Mamani"
-                },
-                {
-                    "Fecha":"Hasta al 10 de Febrero del 2015",
-                    "Actividad":"Concurso Municiapl de Miniaturas de Alasita 2015",
-                    "Lugar":"Recepción de Trabajos: Cine Teatro Municipal 6 de Agosto (Av. 6 de Agosto N° 2088)",
-                    "Hora":
-                    [
-                        "09:00 a 11:30",
-                        "15:00 a 18:30"
-                    ],
-                    "Organizador":"GAMLP - SMC"
-                },
-                {
-                    "Fecha":"13 de Febrero al 13 de Marzo del 2015",
-                    "Actividad":"Exposición Alasita de javier Fernandez",
-                    "Lugar":"Sala Cecilio Guzmán de rojas (Casa de la Cultura)",
-                    "Hora":
-                    [
-                    ],
-                    "Organizador":"GAMLP - SMC"
-                },
-                {
-                    "Fecha":"13 de Febrero al 28 de Marzo del 2015",
-                    "Actividad":"Exposición 'Tradicional Concurso Miniaturas de Alasita' 2015",
-                    "Lugar":"Sala de Exposición Maria Juariste Eguino - Museo Tambo Quirquincho",
-                    "Hora":
-                    [
-                        "09:00 a 11:30",
-                        "15:00 a 18:30"
-                    ],
-                    "Organizador":"GAMLP - SMC"
-                }
-            ]
+                "10:30"
+            ],
+            "Organizador":"GAMLP - SMC - FENAENA"
+        },
+        {
+            "Fecha":"23 de Enero del 2015",
+            "Actividad":"Cerominia Ritual al Ekeko - Grupo de Musica Autócotona",
+            "Lugar":"Campo Ferial - Sector del Monumento al Ekeko",
+            "Hora":
+            [
+                "21:00"
+            ],
+            "Organizador":"GAMLP - SMC - FENAENA"
+        },
+        {
+            "Fecha":"24 de Enero del 2015",
+            "Actividad":"Inaguración de la Feria de Alasita 2015",
+            "Lugar":"Av. Del Ejército (Frente a la puerta princiapl del Campo Ferial del Bicentenario)",
+            "Hora":
+            [
+                "10:30"
+            ],
+            "Organizador":"GAMLP - SMC - FENAENA"
+        },
+        {
+            "Fecha":"26 de Enero del 2015",
+            "Actividad":"Desayuno Trabajo FENAENA - PRENSA",
+            "Lugar":"Ingreso Campo Ferial del Bicentenario",
+            "Hora":
+            [
+                "07:00"
+            ],
+            "Organizador":"FENAENA"
+        },
+        {
+            "Fecha":"26 de Enero al 01 de Maro del 2015",
+            "Actividad":"Inaguración Museo de Alasita y el Ekeko",
+            "Lugar":"Cúpula de Adobe",
+            "Hora":
+            [
+                "10:30"
+            ],
+            "Organizador":"GAMLP - SMC - FENAENA"
+        },
+        {
+            "Fecha":"29 de Enero del 2015",
+            "Actividad":"Elección del Ekeko 2015",
+            "Lugar":"Av. Del Ejército (Frente a la puerta princiapl del Campo Ferial del Bicentenario)",
+            "Hora":
+            [
+                "10:30 a 13:00"
+            ],
+            "Organizador":"GAMLP - SMC - FENAENA"
+        },
+        {
+            "Fecha":"06 de Febrero",
+            "Actividad":"Elección del Ekekito 2015",
+            "Lugar":"Plaza Eliodoro Camacho",
+            "Hora":
+            [
+                "11:00 a 12:30"
+            ],
+            "Organizador":"GAMLP - SMC - FENAENA"
+        },
+        {
+            "Fecha":"06 de Febrero del 2015",
+            "Actividad":"Ch'iti Feria de Alasita",
+            "Lugar":"Plaza Eliodoro Camacho",
+            "Hora":
+            [
+                "10:30 a 15:00"
+            ],
+            "Organizador":"GAMLP - SMC - FENAENA"
+        },
+        {
+            "Fecha":"13 de Febrero del 2015",
+            "Actividad":"Gastronimia en Miniatura de Alasita",
+            "Lugar":"Campo Ferial - Ingreso Principal",
+            "Hora":
+            [
+                "10:00 a 13:00"
+            ],
+            "Organizador":"FENAENA"
+        },
+        {
+            "Fecha":"19 de Febrero del 2015",
+            "Actividad":"Lota gratis en la Feria de la Alastia",
+            "Lugar":"Sector la Lota del Tigre y la lota del Bolivar (Playon C)",
+            "Hora":
+            [
+                "16:00 a 17:00"
+            ],
+            "Organizador":"ENAENA"
+        },
+        {
+            "Fecha":"20 de Febrero del 2015",
+            "Actividad":"Apis 2 x 1",
+            "Lugar":"Todos los Sectores de Apis",
+            "Hora":
+            [
+                "10:00 a 13:00"
+            ],
+            "Organizador":"FENAENA"
+        }
+    ],
+    "Exposiciones":
+    [
+        {
+            "Fecha":"13 de Enero al 11 de Febrero del 2015",
+            "Actividad":"Exposición Jisk'a Arte Alasita 2015 de Lucio Velasde",
+            "Lugar":"Sala Cecilio Guzmán de Rojas (Casa de la Cultura)",
+            "Hora":
+            [
+                "18:30"
+            ],
+            "Organizador":"GAMLP - SMC"
+        },
+        {
+            "Fecha":"20 de Enero del al 10 de Febrero del 2015",
+            "Actividad":"Exposición de Arte en Miniatura",
+            "Lugar":"Salón Arturo Borda (Primer Piso - Casa de la Cultura)",
+            "Hora":
+            [
+            ],
+            "Organizador":"GAMLP - SMC"
+        },
+        {
+            "Fecha":"20 de Enero al 10 de Febrero del 2015",
+            "Actividad":"Exposición de Arte en Miniatura",
+            "Lugar":"Salon Exter ballivian (Segundo Piso - Casa de la Cultura)",
+            "Hora":
+            [
+            ],
+            "Organizador":""
+        },
+        {
+            "Fecha":"20 de Enero al 10 de Febrero del 2015",
+            "Actividad":"Exposición de Origami",
+            "Lugar":"Salón Antonio Gonzales Bravo (Planta baja - Casa de la Cultura)",
+            "Hora":
+            [
+            ],
+            "Organizador":"GAMLP - SMC"
+        },
+        {
+            "Fecha":"24 de Enero al 1 de Marzo del 2015",
+            "Actividad":"Inauguración Exposición Temporal 'Illas y Sueños para para La Paz'",
+            "Lugar":"Museo Memoria y Futuro Pipiripi",
+            "Hora":
+            [
+                "09:30 a 12:30 - 15:00 a 18:00 (Miércoles a viernes)",
+                "10:00 a 18:30 (Sábados y domingos)"
+            ],
+            "Organizador":"GAMLP - SMC - FENAENA"
+        },
+        {
+            "Fecha":"24 de Enero al 1 de Marzo del 2015",
+            "Actividad":"Las Illias de la Artes Plásticas",
+            "Lugar":"Museo Costumbrista 'Juan de Vargas' (c/Sucre Esq. Jaén)",
+            "Hora":
+            [
+                "09:30 a 12:30 - 15:00 a 18:00 (Miércoles a Viernes)",
+                "10:00 a 18:30 (Sábados y Domingos)"
+            ],
+            "Organizador":"GAMLP - SMC - FENAENA"
+        },
+        {
+            "Fecha":"21 de enero al 14 de Febrero del 2015",
+            "Actividad":"'Pequeño Arte' Exposición de mini estampas colectivo de grabadores bolivianos",
+            "Lugar":"Salones de Exposición Casa de la Cultura Franz Tamayo",
+            "Hora":
+            [
+                "09:00 a 11:30",
+                "15:00 a 18:30"
+            ],
+            "Organizador":"GAMLP - SMC"
+        },
+        {
+            "Fecha":"25 de Enero al 10 de Febrero del 2015",
+            "Actividad":"Exposición de Paneles Infroamtivos de Alasita",
+            "Lugar":"Campo Ferial del Bicentenario",
+            "Hora":
+            [
+                "09:00 a 19:00"
+            ],
+            "Organizador":"GAMLP - SMC"
+        },
+        {
+            "Fecha":"24 de Enero al 08 de Febrero del 2015",
+            "Actividad":"Exposición Miniatura el Ekeko",
+            "Lugar":"Museo Contemporáneo (Av. 16 de Julio esq. Reyes Ortiz)",
+            "Hora":
+            [
+                "09:00 a 21:00"
+            ],
+            "Organizador":"Museo Contemporáneo Plaza"
+        },
+        {
+            "Fecha":"24 de Enero al 23 de Febrero del 2015",
+            "Actividad":"Exposición al Ekeko (Galeria Chakana)",
+            "Lugar":"Casa Museo Mamni - Mamani (c/Jaén)",
+            "Hora":
+            [
+                "09:00 a 19:00"
+            ],
+            "Organizador":"Casa Museo Mamani - Mamani"
+        },
+        {
+            "Fecha":"Hasta al 10 de Febrero del 2015",
+            "Actividad":"Concurso Municiapl de Miniaturas de Alasita 2015",
+            "Lugar":"Recepción de Trabajos: Cine Teatro Municipal 6 de Agosto (Av. 6 de Agosto N° 2088)",
+            "Hora":
+            [
+                "09:00 a 11:30",
+                "15:00 a 18:30"
+            ],
+            "Organizador":"GAMLP - SMC"
+        },
+        {
+            "Fecha":"13 de Febrero al 13 de Marzo del 2015",
+            "Actividad":"Exposición Alasita de javier Fernandez",
+            "Lugar":"Sala Cecilio Guzmán de rojas (Casa de la Cultura)",
+            "Hora":
+            [
+            ],
+            "Organizador":"GAMLP - SMC"
+        },
+        {
+            "Fecha":"13 de Febrero al 28 de Marzo del 2015",
+            "Actividad":"Exposición 'Tradicional Concurso Miniaturas de Alasita' 2015",
+            "Lugar":"Sala de Exposición Maria Juariste Eguino - Museo Tambo Quirquincho",
+            "Hora":
+            [
+                "09:00 a 11:30",
+                "15:00 a 18:30"
+            ],
+            "Organizador":"GAMLP - SMC"
         }
     ]
 }

@@ -16,7 +16,7 @@
             </StackPanel>
         </AppBar>
     </Page.TopAppBar>
-    <Grid Background="#FFFFBF01">
+    <Grid Background="#FFFFBF01" Name="GridHistory">
         <Grid.RowDefinitions>
             <RowDefinition Height="*"/>
             <RowDefinition Height="6*"/>
@@ -25,21 +25,18 @@
             <ColumnDefinition/>
             <ColumnDefinition/>
         </Grid.ColumnDefinitions>
-        <TextBlock Text="Historia" Style="{StaticResource HeaderTextBlockStyle}" Grid.Column="0" Grid.Row="0"
-                        IsHitTestVisible="false" TextWrapping="NoWrap" VerticalAlignment="Bottom" Margin="60,0,30,40"
-                   RequestedTheme="Light"
-                   />
+
         <Grid Grid.Row="0" Grid.RowSpan="2" Grid.Column="1" Background="White" >
             <ScrollViewer ScrollViewer.VerticalScrollBarVisibility="Auto" ZoomMode="Disabled">
                 <StackPanel Style="{StaticResource SettingsFlyoutSectionStyle}" Margin="30">
-                    <TextBlock Text="Reseña de la feria de Alasita" FontSize="40" FontWeight="Bold"
+                    <TextBlock Text="{Binding Title}" FontSize="40" FontWeight="Bold"
                        HorizontalAlignment="Center" Style="{StaticResource HeaderTextBlockStyle}"
                                RequestedTheme="Light"/>
                     <Line Height="10"/>
                     <TextBlock Margin="15,10,40,0" FontSize="20" TextWrapping="WrapWholeWords"
                                TextAlignment="Justify" FontStretch="UltraCondensed"
-                               RequestedTheme="Light">
-                <Run>
+                               RequestedTheme="Light" Text="{Binding Description}">
+                <!--<Run>
                     La Feria de Alasita de La Paz es una expresión cultural, social y económica, que se ha originado y  celebra en la ciudad de La Paz y su entorno metropolitano, que consiste en la comercialización de miniaturas de diversa índole: Dinero, automóviles, casas, materiales de construcción, ropa, electrodomésticos, comida, etc. que los asistentes encomiendan al Ekeko, para su conversión en realidad en el futuro.
                 </Run>
                     <LineBreak/>
@@ -73,7 +70,7 @@
                     <LineBreak/>
                         <Run>
                             Se dice que originalmente esta fiesta se celebraba el 21 de diciembre con el solsticio de verano, durante la festividad del Willka Kuti o Qhapaj Raymi en la que se acostumbraba el intercambio de Illas. Durante la Colonia, esta fecha de celebración fue cambiada primero al 20 de octubre y posteriormente al 24 de enero. La fiesta de Alasita se origina en la época prehispánica y se legitima en 1782, en plena época colonial, a través de un decreto del gobernador Segurola que restablece la fiesta de las miniaturas trasladándola del mes de octubre, cuando se celebra la fundación de la ciudad, al 24 de enero como parte del agradecimiento a la Virgen de Nuestra Señora de La Paz.
-                        </Run>
+                        </Run>-->
                     </TextBlock>
                 </StackPanel>
             </ScrollViewer>
@@ -104,30 +101,30 @@
                     <ColumnDefinition/>
                 </Grid.ColumnDefinitions>
 
-                <Image Source="https://farm8.staticflickr.com/7539/16110277690_29f50a43a0_m.jpg" 
+                <Image Source="{Binding Images[0]}" 
                    Grid.RowSpan="2" Stretch="UniformToFill" Grid.ColumnSpan="3" Grid.Row="5"
                        Grid.Column="3" Margin="1"/>
-                <Image Source="https://farm8.staticflickr.com/7523/16110154988_426f9b053b_m.jpg"
+            <Image Source="{Binding Images[1]}"
                    Grid.RowSpan="2" Grid.ColumnSpan="7" Grid.Row="0" Grid.Column="4" 
                        Stretch="UniformToFill"  Margin="1"/>
-                <Image Source="https://farm9.staticflickr.com/8600/16297699105_06e262eb8d_m.jpg"
+            <Image Source="{Binding Images[2]}"
                    Grid.Row="3" Grid.RowSpan="2" Grid.ColumnSpan="4" 
                        Margin="1"
                        Stretch="UniformToFill" Grid.Column="2"/>
-            <Image Source="http://farm8.staticflickr.com/7523/16111553619_ac4a441e3c_b.jpg"
+            <Image Source="{Binding Images[3]}"
                    Grid.Row="2" Margin="1" Grid.Column="5" Stretch="UniformToFill"/>
-            <Image Source="http://farm9.staticflickr.com/8636/15675240694_dde12c85f8_b.jpg"
+            <Image Source="{Binding Images[4]}"
                    Grid.Row="0" Margin="1" 
                    Grid.ColumnSpan="4" Grid.RowSpan="3" Stretch="UniformToFill"/>
 
-                <Image Source="http://farm9.staticflickr.com/8650/16110147768_7a91b6528c_b.jpg"
+            <Image Source="{Binding Images[5]}"
                    Grid.Row="2" Grid.RowSpan="1" Margin="1"
                        Grid.Column="4" Stretch="UniformToFill"/>
 
-                <Image Source="http://farm8.staticflickr.com/7537/16295909551_e51fd5a2c7_b.jpg"
+            <Image Source="{Binding Images[6]}"
                    Grid.Row="5" Grid.ColumnSpan="3" Grid.Column="0" 
                       Margin="1" Grid.RowSpan="2" Stretch="Fill"/>
-                <Image Source="http://farm8.staticflickr.com/7469/16111848477_643edfe53c_b.jpg"
+            <Image Source="{Binding Images[7]}"
                    Grid.Row="3" Grid.RowSpan="2" Margin="1" 
                        Grid.ColumnSpan="2" Grid.Column="0" Stretch="UniformToFill"/>
             <Grid.ChildrenTransitions>

@@ -27,19 +27,21 @@
             <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
 
-        <Border Background="#FFFFBF00" Margin="0,-30,0,0" Height="30" VerticalAlignment="Top"/>
+        <Border Background="#FFFFBF01" Margin="0,-30,0,0" Height="90" VerticalAlignment="Top"/>
 
-        <TextBlock Typography.Capitals="SmallCaps" FontSize="30" Margin="20,10">
-            <Run Text="Sector "/>
-            <Run Text="{Binding Sector.Inicial}"/>
-        </TextBlock>
+        <Grid Background="#FFFFBF01">
+            <TextBlock Typography.Capitals="SmallCaps" FontSize="30" Margin="20,10" Foreground="White" TextWrapping="WrapWholeWords">
+                <Run Text="Sector "/>
+                <Run Text="{Binding Sector.Inicial}"/>
+            </TextBlock>
+        </Grid>
 
         <!--TODO: Content should be placed within the following grid-->
         <Grid Grid.Row="1" x:Name="ContentRoot">
-            <ListView x:Name="lst" ItemsSource="{Binding Sector.Asociaciones}" Margin="30,0" SelectionChanged="ListView_SelectionChanged">
+            <ListView x:Name="lst" ItemsSource="{Binding Sector.Asociaciones}" Margin="30,10" SelectionChanged="ListView_SelectionChanged">
                 <ListView.ItemTemplate>
                     <DataTemplate>
-                        <TextBlock Text="{Binding Nombre}"/>
+                        <TextBlock Text="{Binding Nombre}" FontSize="25" TextWrapping="WrapWholeWords"/>
                     </DataTemplate>
                 </ListView.ItemTemplate>
             </ListView>

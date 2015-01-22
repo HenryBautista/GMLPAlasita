@@ -15,6 +15,7 @@ using Windows.UI.Xaml.Controls.Primitives;
 using Windows.UI.Xaml.Data;
 using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
+using Windows.UI.Xaml.Media.Imaging;
 using Windows.UI.Xaml.Navigation;
 
 // The Basic Page item template is documented at http://go.microsoft.com/fwlink/?LinkID=390556
@@ -111,18 +112,20 @@ namespace Alasita.App.Views
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
+            var brush = new ImageBrush();
             if (Mapa.Visibility == Visibility.Collapsed)
             {
                 Mapa.Visibility = Visibility.Visible;
                 Semantic.Visibility = Visibility.Collapsed;
-                btn.Content = "Lista";
+                brush.ImageSource = new BitmapImage(new Uri("ms-appx:///Assets/Image/Table-of-Contents.png"));
             }
             else
             {
                 Mapa.Visibility = Visibility.Collapsed;
                 Semantic.Visibility = Visibility.Visible;
-                btn.Content = "Mapa";
+                brush.ImageSource = new BitmapImage(new Uri("ms-appx:///Assets/Image/Maps.png"));
             }
+            btn.Background = brush;
         }
 
         private void Button_Click_1(object sender, RoutedEventArgs e)

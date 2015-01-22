@@ -124,7 +124,7 @@ namespace Alasita.App.Alasita_App_WindowsPhone_XamlTypeInfo
 
         private void InitTypeTables()
         {
-            _typeNameTable = new string[39];
+            _typeNameTable = new string[40];
             _typeNameTable[0] = "Alasita.App.ViewModel.SemanticZoomVM";
             _typeNameTable[1] = "Alasita.App.Services.NotificationService";
             _typeNameTable[2] = "Object";
@@ -147,25 +147,26 @@ namespace Alasita.App.Alasita_App_WindowsPhone_XamlTypeInfo
             _typeNameTable[19] = "Alasita.App.Common.NavigationHelper";
             _typeNameTable[20] = "Windows.UI.Xaml.DependencyObject";
             _typeNameTable[21] = "Alasita.App.Common.ObservableDictionary";
-            _typeNameTable[22] = "Alasita.App.Views.Credits";
-            _typeNameTable[23] = "Alasita.App.ViewModel.HistoryVM";
-            _typeNameTable[24] = "System.Collections.Generic.List`1<Alasita.App.Temp.Class.Parrafo>";
-            _typeNameTable[25] = "Alasita.App.Temp.Class.Parrafo";
-            _typeNameTable[26] = "Alasita.App.Views.History";
-            _typeNameTable[27] = "Alasita.App.Views.Main";
-            _typeNameTable[28] = "Windows.UI.Text.FontWeight";
-            _typeNameTable[29] = "System.ValueType";
-            _typeNameTable[30] = "Alasita.App.Views.Map";
-            _typeNameTable[31] = "Alasita.App.ViewModel.ProgramVM";
-            _typeNameTable[32] = "Alasita.App.Temp.Class.Programa";
-            _typeNameTable[33] = "Alasita.App.Views.Program";
-            _typeNameTable[34] = "Alasita.App.ViewModel.SearchVM";
-            _typeNameTable[35] = "Alasita.App.Views.Search";
-            _typeNameTable[36] = "Alasita.App.ViewModel.SectorsVM";
-            _typeNameTable[37] = "Alasita.App.Views.Sectors";
-            _typeNameTable[38] = "Alasita.App.UserControls.ShareFacebook";
+            _typeNameTable[22] = "Alasita.App.ViewModel.CreditsVM";
+            _typeNameTable[23] = "Alasita.App.Views.Credits";
+            _typeNameTable[24] = "Alasita.App.ViewModel.HistoryVM";
+            _typeNameTable[25] = "System.Collections.Generic.List`1<Alasita.App.Temp.Class.Parrafo>";
+            _typeNameTable[26] = "Alasita.App.Temp.Class.Parrafo";
+            _typeNameTable[27] = "Alasita.App.Views.History";
+            _typeNameTable[28] = "Alasita.App.Views.Main";
+            _typeNameTable[29] = "Windows.UI.Text.FontWeight";
+            _typeNameTable[30] = "System.ValueType";
+            _typeNameTable[31] = "Alasita.App.Views.Map";
+            _typeNameTable[32] = "Alasita.App.ViewModel.ProgramVM";
+            _typeNameTable[33] = "Alasita.App.Temp.Class.Programa";
+            _typeNameTable[34] = "Alasita.App.Views.Program";
+            _typeNameTable[35] = "Alasita.App.ViewModel.SearchVM";
+            _typeNameTable[36] = "Alasita.App.Views.Search";
+            _typeNameTable[37] = "Alasita.App.ViewModel.SectorsVM";
+            _typeNameTable[38] = "Alasita.App.Views.Sectors";
+            _typeNameTable[39] = "Alasita.App.UserControls.ShareFacebook";
 
-            _typeTable = new global::System.Type[39];
+            _typeTable = new global::System.Type[40];
             _typeTable[0] = typeof(global::Alasita.App.ViewModel.SemanticZoomVM);
             _typeTable[1] = typeof(global::Alasita.App.Services.NotificationService);
             _typeTable[2] = typeof(global::System.Object);
@@ -188,23 +189,24 @@ namespace Alasita.App.Alasita_App_WindowsPhone_XamlTypeInfo
             _typeTable[19] = typeof(global::Alasita.App.Common.NavigationHelper);
             _typeTable[20] = typeof(global::Windows.UI.Xaml.DependencyObject);
             _typeTable[21] = typeof(global::Alasita.App.Common.ObservableDictionary);
-            _typeTable[22] = typeof(global::Alasita.App.Views.Credits);
-            _typeTable[23] = typeof(global::Alasita.App.ViewModel.HistoryVM);
-            _typeTable[24] = typeof(global::System.Collections.Generic.List<global::Alasita.App.Temp.Class.Parrafo>);
-            _typeTable[25] = typeof(global::Alasita.App.Temp.Class.Parrafo);
-            _typeTable[26] = typeof(global::Alasita.App.Views.History);
-            _typeTable[27] = typeof(global::Alasita.App.Views.Main);
-            _typeTable[28] = typeof(global::Windows.UI.Text.FontWeight);
-            _typeTable[29] = typeof(global::System.ValueType);
-            _typeTable[30] = typeof(global::Alasita.App.Views.Map);
-            _typeTable[31] = typeof(global::Alasita.App.ViewModel.ProgramVM);
-            _typeTable[32] = typeof(global::Alasita.App.Temp.Class.Programa);
-            _typeTable[33] = typeof(global::Alasita.App.Views.Program);
-            _typeTable[34] = typeof(global::Alasita.App.ViewModel.SearchVM);
-            _typeTable[35] = typeof(global::Alasita.App.Views.Search);
-            _typeTable[36] = typeof(global::Alasita.App.ViewModel.SectorsVM);
-            _typeTable[37] = typeof(global::Alasita.App.Views.Sectors);
-            _typeTable[38] = typeof(global::Alasita.App.UserControls.ShareFacebook);
+            _typeTable[22] = typeof(global::Alasita.App.ViewModel.CreditsVM);
+            _typeTable[23] = typeof(global::Alasita.App.Views.Credits);
+            _typeTable[24] = typeof(global::Alasita.App.ViewModel.HistoryVM);
+            _typeTable[25] = typeof(global::System.Collections.Generic.List<global::Alasita.App.Temp.Class.Parrafo>);
+            _typeTable[26] = typeof(global::Alasita.App.Temp.Class.Parrafo);
+            _typeTable[27] = typeof(global::Alasita.App.Views.History);
+            _typeTable[28] = typeof(global::Alasita.App.Views.Main);
+            _typeTable[29] = typeof(global::Windows.UI.Text.FontWeight);
+            _typeTable[30] = typeof(global::System.ValueType);
+            _typeTable[31] = typeof(global::Alasita.App.Views.Map);
+            _typeTable[32] = typeof(global::Alasita.App.ViewModel.ProgramVM);
+            _typeTable[33] = typeof(global::Alasita.App.Temp.Class.Programa);
+            _typeTable[34] = typeof(global::Alasita.App.Views.Program);
+            _typeTable[35] = typeof(global::Alasita.App.ViewModel.SearchVM);
+            _typeTable[36] = typeof(global::Alasita.App.Views.Search);
+            _typeTable[37] = typeof(global::Alasita.App.ViewModel.SectorsVM);
+            _typeTable[38] = typeof(global::Alasita.App.Views.Sectors);
+            _typeTable[39] = typeof(global::Alasita.App.UserControls.ShareFacebook);
         }
 
         private int LookupTypeIndexByName(string typeName)
@@ -252,21 +254,22 @@ namespace Alasita.App.Alasita_App_WindowsPhone_XamlTypeInfo
         private object Activate_16_AsociationVM() { return new global::Alasita.App.ViewModel.AsociationVM(); }
         private object Activate_17_Asociation() { return new global::Alasita.App.Views.Asociation(); }
         private object Activate_21_ObservableDictionary() { return new global::Alasita.App.Common.ObservableDictionary(); }
-        private object Activate_22_Credits() { return new global::Alasita.App.Views.Credits(); }
-        private object Activate_23_HistoryVM() { return new global::Alasita.App.ViewModel.HistoryVM(); }
-        private object Activate_24_List() { return new global::System.Collections.Generic.List<global::Alasita.App.Temp.Class.Parrafo>(); }
-        private object Activate_25_Parrafo() { return new global::Alasita.App.Temp.Class.Parrafo(); }
-        private object Activate_26_History() { return new global::Alasita.App.Views.History(); }
-        private object Activate_27_Main() { return new global::Alasita.App.Views.Main(); }
-        private object Activate_30_Map() { return new global::Alasita.App.Views.Map(); }
-        private object Activate_31_ProgramVM() { return new global::Alasita.App.ViewModel.ProgramVM(); }
-        private object Activate_32_Programa() { return new global::Alasita.App.Temp.Class.Programa(); }
-        private object Activate_33_Program() { return new global::Alasita.App.Views.Program(); }
-        private object Activate_34_SearchVM() { return new global::Alasita.App.ViewModel.SearchVM(); }
-        private object Activate_35_Search() { return new global::Alasita.App.Views.Search(); }
-        private object Activate_36_SectorsVM() { return new global::Alasita.App.ViewModel.SectorsVM(); }
-        private object Activate_37_Sectors() { return new global::Alasita.App.Views.Sectors(); }
-        private object Activate_38_ShareFacebook() { return new global::Alasita.App.UserControls.ShareFacebook(); }
+        private object Activate_22_CreditsVM() { return new global::Alasita.App.ViewModel.CreditsVM(); }
+        private object Activate_23_Credits() { return new global::Alasita.App.Views.Credits(); }
+        private object Activate_24_HistoryVM() { return new global::Alasita.App.ViewModel.HistoryVM(); }
+        private object Activate_25_List() { return new global::System.Collections.Generic.List<global::Alasita.App.Temp.Class.Parrafo>(); }
+        private object Activate_26_Parrafo() { return new global::Alasita.App.Temp.Class.Parrafo(); }
+        private object Activate_27_History() { return new global::Alasita.App.Views.History(); }
+        private object Activate_28_Main() { return new global::Alasita.App.Views.Main(); }
+        private object Activate_31_Map() { return new global::Alasita.App.Views.Map(); }
+        private object Activate_32_ProgramVM() { return new global::Alasita.App.ViewModel.ProgramVM(); }
+        private object Activate_33_Programa() { return new global::Alasita.App.Temp.Class.Programa(); }
+        private object Activate_34_Program() { return new global::Alasita.App.Views.Program(); }
+        private object Activate_35_SearchVM() { return new global::Alasita.App.ViewModel.SearchVM(); }
+        private object Activate_36_Search() { return new global::Alasita.App.Views.Search(); }
+        private object Activate_37_SectorsVM() { return new global::Alasita.App.ViewModel.SectorsVM(); }
+        private object Activate_38_Sectors() { return new global::Alasita.App.Views.Sectors(); }
+        private object Activate_39_ShareFacebook() { return new global::Alasita.App.UserControls.ShareFacebook(); }
         private void VectorAdd_3_List(object instance, object item)
         {
             var collection = (global::System.Collections.Generic.ICollection<global::Alasita.App.ViewModel.SemanticZoomVM.GroupInfoList<global::System.Object>>)instance;
@@ -310,7 +313,7 @@ namespace Alasita.App.Alasita_App_WindowsPhone_XamlTypeInfo
             var newItem = (global::System.Object)item;
             collection.Add(newKey, newItem);
         }
-        private void VectorAdd_24_List(object instance, object item)
+        private void VectorAdd_25_List(object instance, object item)
         {
             var collection = (global::System.Collections.Generic.ICollection<global::Alasita.App.Temp.Class.Parrafo>)instance;
             var newItem = (global::Alasita.App.Temp.Class.Parrafo)item;
@@ -477,103 +480,112 @@ namespace Alasita.App.Alasita_App_WindowsPhone_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 22:   //  Alasita.App.Views.Credits
+            case 22:   //  Alasita.App.ViewModel.CreditsVM
+                userType = new global::Alasita.App.Alasita_App_WindowsPhone_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Alasita.App.Services.NotificationService"));
+                userType.Activator = Activate_22_CreditsVM;
+                userType.AddMemberName("Creditos");
+                userType.SetIsLocalType();
+                xamlType = userType;
+                break;
+
+            case 23:   //  Alasita.App.Views.Credits
                 userType = new global::Alasita.App.Alasita_App_WindowsPhone_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_22_Credits;
+                userType.Activator = Activate_23_Credits;
                 userType.AddMemberName("NavigationHelper");
                 userType.AddMemberName("DefaultViewModel");
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 23:   //  Alasita.App.ViewModel.HistoryVM
+            case 24:   //  Alasita.App.ViewModel.HistoryVM
                 userType = new global::Alasita.App.Alasita_App_WindowsPhone_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Alasita.App.Services.NotificationService"));
-                userType.Activator = Activate_23_HistoryVM;
+                userType.Activator = Activate_24_HistoryVM;
                 userType.AddMemberName("Historia");
+                userType.AddMemberName("Image");
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 24:   //  System.Collections.Generic.List`1<Alasita.App.Temp.Class.Parrafo>
+            case 25:   //  System.Collections.Generic.List`1<Alasita.App.Temp.Class.Parrafo>
                 userType = new global::Alasita.App.Alasita_App_WindowsPhone_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
-                userType.CollectionAdd = VectorAdd_24_List;
+                userType.CollectionAdd = VectorAdd_25_List;
                 userType.SetIsReturnTypeStub();
                 xamlType = userType;
                 break;
 
-            case 25:   //  Alasita.App.Temp.Class.Parrafo
+            case 26:   //  Alasita.App.Temp.Class.Parrafo
                 userType = new global::Alasita.App.Alasita_App_WindowsPhone_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
-                userType.Activator = Activate_25_Parrafo;
+                userType.Activator = Activate_26_Parrafo;
                 userType.AddMemberName("texto");
                 userType.AddMemberName("imagen");
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 26:   //  Alasita.App.Views.History
+            case 27:   //  Alasita.App.Views.History
                 userType = new global::Alasita.App.Alasita_App_WindowsPhone_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_26_History;
+                userType.Activator = Activate_27_History;
                 userType.AddMemberName("NavigationHelper");
                 userType.AddMemberName("DefaultViewModel");
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 27:   //  Alasita.App.Views.Main
+            case 28:   //  Alasita.App.Views.Main
                 userType = new global::Alasita.App.Alasita_App_WindowsPhone_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_27_Main;
+                userType.Activator = Activate_28_Main;
                 userType.AddMemberName("NavigationHelper");
                 userType.AddMemberName("DefaultViewModel");
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 28:   //  Windows.UI.Text.FontWeight
+            case 29:   //  Windows.UI.Text.FontWeight
                 userType = new global::Alasita.App.Alasita_App_WindowsPhone_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.ValueType"));
                 xamlType = userType;
                 break;
 
-            case 29:   //  System.ValueType
+            case 30:   //  System.ValueType
                 userType = new global::Alasita.App.Alasita_App_WindowsPhone_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
                 xamlType = userType;
                 break;
 
-            case 30:   //  Alasita.App.Views.Map
+            case 31:   //  Alasita.App.Views.Map
                 userType = new global::Alasita.App.Alasita_App_WindowsPhone_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_30_Map;
+                userType.Activator = Activate_31_Map;
                 userType.AddMemberName("NavigationHelper");
                 userType.AddMemberName("DefaultViewModel");
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 31:   //  Alasita.App.ViewModel.ProgramVM
+            case 32:   //  Alasita.App.ViewModel.ProgramVM
                 userType = new global::Alasita.App.Alasita_App_WindowsPhone_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Alasita.App.Services.NotificationService"));
-                userType.Activator = Activate_31_ProgramVM;
+                userType.Activator = Activate_32_ProgramVM;
                 userType.AddMemberName("Programa");
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 32:   //  Alasita.App.Temp.Class.Programa
+            case 33:   //  Alasita.App.Temp.Class.Programa
                 userType = new global::Alasita.App.Alasita_App_WindowsPhone_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
                 userType.SetIsReturnTypeStub();
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 33:   //  Alasita.App.Views.Program
+            case 34:   //  Alasita.App.Views.Program
                 userType = new global::Alasita.App.Alasita_App_WindowsPhone_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_33_Program;
+                userType.Activator = Activate_34_Program;
                 userType.AddMemberName("NavigationHelper");
                 userType.AddMemberName("DefaultViewModel");
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 34:   //  Alasita.App.ViewModel.SearchVM
+            case 35:   //  Alasita.App.ViewModel.SearchVM
                 userType = new global::Alasita.App.Alasita_App_WindowsPhone_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Alasita.App.Services.NotificationService"));
-                userType.Activator = Activate_34_SearchVM;
+                userType.Activator = Activate_35_SearchVM;
                 userType.AddMemberName("Asociacion");
                 userType.AddMemberName("Producto");
                 userType.AddMemberName("Search");
@@ -581,36 +593,36 @@ namespace Alasita.App.Alasita_App_WindowsPhone_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 35:   //  Alasita.App.Views.Search
+            case 36:   //  Alasita.App.Views.Search
                 userType = new global::Alasita.App.Alasita_App_WindowsPhone_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_35_Search;
+                userType.Activator = Activate_36_Search;
                 userType.AddMemberName("NavigationHelper");
                 userType.AddMemberName("DefaultViewModel");
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 36:   //  Alasita.App.ViewModel.SectorsVM
+            case 37:   //  Alasita.App.ViewModel.SectorsVM
                 userType = new global::Alasita.App.Alasita_App_WindowsPhone_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Alasita.App.Services.NotificationService"));
-                userType.Activator = Activate_36_SectorsVM;
+                userType.Activator = Activate_37_SectorsVM;
                 userType.AddMemberName("Sector");
                 userType.AddMemberName("Name");
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 37:   //  Alasita.App.Views.Sectors
+            case 38:   //  Alasita.App.Views.Sectors
                 userType = new global::Alasita.App.Alasita_App_WindowsPhone_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_37_Sectors;
+                userType.Activator = Activate_38_Sectors;
                 userType.AddMemberName("NavigationHelper");
                 userType.AddMemberName("DefaultViewModel");
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 38:   //  Alasita.App.UserControls.ShareFacebook
+            case 39:   //  Alasita.App.UserControls.ShareFacebook
                 userType = new global::Alasita.App.Alasita_App_WindowsPhone_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.UserControl"));
-                userType.Activator = Activate_38_ShareFacebook;
+                userType.Activator = Activate_39_ShareFacebook;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
@@ -769,162 +781,182 @@ namespace Alasita.App.Alasita_App_WindowsPhone_XamlTypeInfo
             var that = (global::Alasita.App.Views.Asociation)instance;
             return that.DefaultViewModel;
         }
-        private object get_16_Credits_NavigationHelper(object instance)
+        private object get_16_CreditsVM_Creditos(object instance)
+        {
+            var that = (global::Alasita.App.ViewModel.CreditsVM)instance;
+            return that.Creditos;
+        }
+        private void set_16_CreditsVM_Creditos(object instance, object Value)
+        {
+            var that = (global::Alasita.App.ViewModel.CreditsVM)instance;
+            that.Creditos = (global::System.Collections.Generic.List<global::System.String>)Value;
+        }
+        private object get_17_Credits_NavigationHelper(object instance)
         {
             var that = (global::Alasita.App.Views.Credits)instance;
             return that.NavigationHelper;
         }
-        private object get_17_Credits_DefaultViewModel(object instance)
+        private object get_18_Credits_DefaultViewModel(object instance)
         {
             var that = (global::Alasita.App.Views.Credits)instance;
             return that.DefaultViewModel;
         }
-        private object get_18_HistoryVM_Historia(object instance)
+        private object get_19_HistoryVM_Historia(object instance)
         {
             var that = (global::Alasita.App.ViewModel.HistoryVM)instance;
             return that.Historia;
         }
-        private void set_18_HistoryVM_Historia(object instance, object Value)
+        private void set_19_HistoryVM_Historia(object instance, object Value)
         {
             var that = (global::Alasita.App.ViewModel.HistoryVM)instance;
             that.Historia = (global::System.Collections.Generic.List<global::Alasita.App.Temp.Class.Parrafo>)Value;
         }
-        private object get_19_Parrafo_texto(object instance)
+        private object get_20_Parrafo_texto(object instance)
         {
             var that = (global::Alasita.App.Temp.Class.Parrafo)instance;
             return that.texto;
         }
-        private void set_19_Parrafo_texto(object instance, object Value)
+        private void set_20_Parrafo_texto(object instance, object Value)
         {
             var that = (global::Alasita.App.Temp.Class.Parrafo)instance;
             that.texto = (global::System.String)Value;
         }
-        private object get_20_Parrafo_imagen(object instance)
+        private object get_21_Parrafo_imagen(object instance)
         {
             var that = (global::Alasita.App.Temp.Class.Parrafo)instance;
             return that.imagen;
         }
-        private void set_20_Parrafo_imagen(object instance, object Value)
+        private void set_21_Parrafo_imagen(object instance, object Value)
         {
             var that = (global::Alasita.App.Temp.Class.Parrafo)instance;
             that.imagen = (global::System.String)Value;
         }
-        private object get_21_History_NavigationHelper(object instance)
+        private object get_22_HistoryVM_Image(object instance)
+        {
+            var that = (global::Alasita.App.ViewModel.HistoryVM)instance;
+            return that.Image;
+        }
+        private void set_22_HistoryVM_Image(object instance, object Value)
+        {
+            var that = (global::Alasita.App.ViewModel.HistoryVM)instance;
+            that.Image = (global::System.Collections.Generic.List<global::System.String>)Value;
+        }
+        private object get_23_History_NavigationHelper(object instance)
         {
             var that = (global::Alasita.App.Views.History)instance;
             return that.NavigationHelper;
         }
-        private object get_22_History_DefaultViewModel(object instance)
+        private object get_24_History_DefaultViewModel(object instance)
         {
             var that = (global::Alasita.App.Views.History)instance;
             return that.DefaultViewModel;
         }
-        private object get_23_Main_NavigationHelper(object instance)
+        private object get_25_Main_NavigationHelper(object instance)
         {
             var that = (global::Alasita.App.Views.Main)instance;
             return that.NavigationHelper;
         }
-        private object get_24_Main_DefaultViewModel(object instance)
+        private object get_26_Main_DefaultViewModel(object instance)
         {
             var that = (global::Alasita.App.Views.Main)instance;
             return that.DefaultViewModel;
         }
-        private object get_25_Map_NavigationHelper(object instance)
+        private object get_27_Map_NavigationHelper(object instance)
         {
             var that = (global::Alasita.App.Views.Map)instance;
             return that.NavigationHelper;
         }
-        private object get_26_Map_DefaultViewModel(object instance)
+        private object get_28_Map_DefaultViewModel(object instance)
         {
             var that = (global::Alasita.App.Views.Map)instance;
             return that.DefaultViewModel;
         }
-        private object get_27_ProgramVM_Programa(object instance)
+        private object get_29_ProgramVM_Programa(object instance)
         {
             var that = (global::Alasita.App.ViewModel.ProgramVM)instance;
             return that.Programa;
         }
-        private void set_27_ProgramVM_Programa(object instance, object Value)
+        private void set_29_ProgramVM_Programa(object instance, object Value)
         {
             var that = (global::Alasita.App.ViewModel.ProgramVM)instance;
             that.Programa = (global::Alasita.App.Temp.Class.Programa)Value;
         }
-        private object get_28_Program_NavigationHelper(object instance)
+        private object get_30_Program_NavigationHelper(object instance)
         {
             var that = (global::Alasita.App.Views.Program)instance;
             return that.NavigationHelper;
         }
-        private object get_29_Program_DefaultViewModel(object instance)
+        private object get_31_Program_DefaultViewModel(object instance)
         {
             var that = (global::Alasita.App.Views.Program)instance;
             return that.DefaultViewModel;
         }
-        private object get_30_SearchVM_Asociacion(object instance)
+        private object get_32_SearchVM_Asociacion(object instance)
         {
             var that = (global::Alasita.App.ViewModel.SearchVM)instance;
             return that.Asociacion;
         }
-        private void set_30_SearchVM_Asociacion(object instance, object Value)
+        private void set_32_SearchVM_Asociacion(object instance, object Value)
         {
             var that = (global::Alasita.App.ViewModel.SearchVM)instance;
             that.Asociacion = (global::System.Collections.Generic.List<global::Alasita.App.Temp.Class.Asociacion>)Value;
         }
-        private object get_31_SearchVM_Producto(object instance)
+        private object get_33_SearchVM_Producto(object instance)
         {
             var that = (global::Alasita.App.ViewModel.SearchVM)instance;
             return that.Producto;
         }
-        private void set_31_SearchVM_Producto(object instance, object Value)
+        private void set_33_SearchVM_Producto(object instance, object Value)
         {
             var that = (global::Alasita.App.ViewModel.SearchVM)instance;
             that.Producto = (global::System.Collections.Generic.List<global::System.String>)Value;
         }
-        private object get_32_SearchVM_Search(object instance)
+        private object get_34_SearchVM_Search(object instance)
         {
             var that = (global::Alasita.App.ViewModel.SearchVM)instance;
             return that.Search;
         }
-        private void set_32_SearchVM_Search(object instance, object Value)
+        private void set_34_SearchVM_Search(object instance, object Value)
         {
             var that = (global::Alasita.App.ViewModel.SearchVM)instance;
             that.Search = (global::System.String)Value;
         }
-        private object get_33_Search_NavigationHelper(object instance)
+        private object get_35_Search_NavigationHelper(object instance)
         {
             var that = (global::Alasita.App.Views.Search)instance;
             return that.NavigationHelper;
         }
-        private object get_34_Search_DefaultViewModel(object instance)
+        private object get_36_Search_DefaultViewModel(object instance)
         {
             var that = (global::Alasita.App.Views.Search)instance;
             return that.DefaultViewModel;
         }
-        private object get_35_SectorsVM_Sector(object instance)
+        private object get_37_SectorsVM_Sector(object instance)
         {
             var that = (global::Alasita.App.ViewModel.SectorsVM)instance;
             return that.Sector;
         }
-        private void set_35_SectorsVM_Sector(object instance, object Value)
+        private void set_37_SectorsVM_Sector(object instance, object Value)
         {
             var that = (global::Alasita.App.ViewModel.SectorsVM)instance;
             that.Sector = (global::Alasita.App.Temp.Class.Sector)Value;
         }
-        private object get_36_SectorsVM_Name(object instance)
+        private object get_38_SectorsVM_Name(object instance)
         {
             var that = (global::Alasita.App.ViewModel.SectorsVM)instance;
             return that.Name;
         }
-        private void set_36_SectorsVM_Name(object instance, object Value)
+        private void set_38_SectorsVM_Name(object instance, object Value)
         {
             var that = (global::Alasita.App.ViewModel.SectorsVM)instance;
             that.Name = (global::System.String)Value;
         }
-        private object get_37_Sectors_NavigationHelper(object instance)
+        private object get_39_Sectors_NavigationHelper(object instance)
         {
             var that = (global::Alasita.App.Views.Sectors)instance;
             return that.NavigationHelper;
         }
-        private object get_38_Sectors_DefaultViewModel(object instance)
+        private object get_40_Sectors_DefaultViewModel(object instance)
         {
             var that = (global::Alasita.App.Views.Sectors)instance;
             return that.DefaultViewModel;
@@ -1033,142 +1065,154 @@ namespace Alasita.App.Alasita_App_WindowsPhone_XamlTypeInfo
                 xamlMember.Getter = get_15_Asociation_DefaultViewModel;
                 xamlMember.SetIsReadOnly();
                 break;
+            case "Alasita.App.ViewModel.CreditsVM.Creditos":
+                userType = (global::Alasita.App.Alasita_App_WindowsPhone_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Alasita.App.ViewModel.CreditsVM");
+                xamlMember = new global::Alasita.App.Alasita_App_WindowsPhone_XamlTypeInfo.XamlMember(this, "Creditos", "System.Collections.Generic.List`1<String>");
+                xamlMember.Getter = get_16_CreditsVM_Creditos;
+                xamlMember.Setter = set_16_CreditsVM_Creditos;
+                break;
             case "Alasita.App.Views.Credits.NavigationHelper":
                 userType = (global::Alasita.App.Alasita_App_WindowsPhone_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Alasita.App.Views.Credits");
                 xamlMember = new global::Alasita.App.Alasita_App_WindowsPhone_XamlTypeInfo.XamlMember(this, "NavigationHelper", "Alasita.App.Common.NavigationHelper");
-                xamlMember.Getter = get_16_Credits_NavigationHelper;
+                xamlMember.Getter = get_17_Credits_NavigationHelper;
                 xamlMember.SetIsReadOnly();
                 break;
             case "Alasita.App.Views.Credits.DefaultViewModel":
                 userType = (global::Alasita.App.Alasita_App_WindowsPhone_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Alasita.App.Views.Credits");
                 xamlMember = new global::Alasita.App.Alasita_App_WindowsPhone_XamlTypeInfo.XamlMember(this, "DefaultViewModel", "Alasita.App.Common.ObservableDictionary");
-                xamlMember.Getter = get_17_Credits_DefaultViewModel;
+                xamlMember.Getter = get_18_Credits_DefaultViewModel;
                 xamlMember.SetIsReadOnly();
                 break;
             case "Alasita.App.ViewModel.HistoryVM.Historia":
                 userType = (global::Alasita.App.Alasita_App_WindowsPhone_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Alasita.App.ViewModel.HistoryVM");
                 xamlMember = new global::Alasita.App.Alasita_App_WindowsPhone_XamlTypeInfo.XamlMember(this, "Historia", "System.Collections.Generic.List`1<Alasita.App.Temp.Class.Parrafo>");
-                xamlMember.Getter = get_18_HistoryVM_Historia;
-                xamlMember.Setter = set_18_HistoryVM_Historia;
+                xamlMember.Getter = get_19_HistoryVM_Historia;
+                xamlMember.Setter = set_19_HistoryVM_Historia;
                 break;
             case "Alasita.App.Temp.Class.Parrafo.texto":
                 userType = (global::Alasita.App.Alasita_App_WindowsPhone_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Alasita.App.Temp.Class.Parrafo");
                 xamlMember = new global::Alasita.App.Alasita_App_WindowsPhone_XamlTypeInfo.XamlMember(this, "texto", "String");
-                xamlMember.Getter = get_19_Parrafo_texto;
-                xamlMember.Setter = set_19_Parrafo_texto;
+                xamlMember.Getter = get_20_Parrafo_texto;
+                xamlMember.Setter = set_20_Parrafo_texto;
                 break;
             case "Alasita.App.Temp.Class.Parrafo.imagen":
                 userType = (global::Alasita.App.Alasita_App_WindowsPhone_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Alasita.App.Temp.Class.Parrafo");
                 xamlMember = new global::Alasita.App.Alasita_App_WindowsPhone_XamlTypeInfo.XamlMember(this, "imagen", "String");
-                xamlMember.Getter = get_20_Parrafo_imagen;
-                xamlMember.Setter = set_20_Parrafo_imagen;
+                xamlMember.Getter = get_21_Parrafo_imagen;
+                xamlMember.Setter = set_21_Parrafo_imagen;
+                break;
+            case "Alasita.App.ViewModel.HistoryVM.Image":
+                userType = (global::Alasita.App.Alasita_App_WindowsPhone_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Alasita.App.ViewModel.HistoryVM");
+                xamlMember = new global::Alasita.App.Alasita_App_WindowsPhone_XamlTypeInfo.XamlMember(this, "Image", "System.Collections.Generic.List`1<String>");
+                xamlMember.Getter = get_22_HistoryVM_Image;
+                xamlMember.Setter = set_22_HistoryVM_Image;
                 break;
             case "Alasita.App.Views.History.NavigationHelper":
                 userType = (global::Alasita.App.Alasita_App_WindowsPhone_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Alasita.App.Views.History");
                 xamlMember = new global::Alasita.App.Alasita_App_WindowsPhone_XamlTypeInfo.XamlMember(this, "NavigationHelper", "Alasita.App.Common.NavigationHelper");
-                xamlMember.Getter = get_21_History_NavigationHelper;
+                xamlMember.Getter = get_23_History_NavigationHelper;
                 xamlMember.SetIsReadOnly();
                 break;
             case "Alasita.App.Views.History.DefaultViewModel":
                 userType = (global::Alasita.App.Alasita_App_WindowsPhone_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Alasita.App.Views.History");
                 xamlMember = new global::Alasita.App.Alasita_App_WindowsPhone_XamlTypeInfo.XamlMember(this, "DefaultViewModel", "Alasita.App.Common.ObservableDictionary");
-                xamlMember.Getter = get_22_History_DefaultViewModel;
+                xamlMember.Getter = get_24_History_DefaultViewModel;
                 xamlMember.SetIsReadOnly();
                 break;
             case "Alasita.App.Views.Main.NavigationHelper":
                 userType = (global::Alasita.App.Alasita_App_WindowsPhone_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Alasita.App.Views.Main");
                 xamlMember = new global::Alasita.App.Alasita_App_WindowsPhone_XamlTypeInfo.XamlMember(this, "NavigationHelper", "Alasita.App.Common.NavigationHelper");
-                xamlMember.Getter = get_23_Main_NavigationHelper;
+                xamlMember.Getter = get_25_Main_NavigationHelper;
                 xamlMember.SetIsReadOnly();
                 break;
             case "Alasita.App.Views.Main.DefaultViewModel":
                 userType = (global::Alasita.App.Alasita_App_WindowsPhone_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Alasita.App.Views.Main");
                 xamlMember = new global::Alasita.App.Alasita_App_WindowsPhone_XamlTypeInfo.XamlMember(this, "DefaultViewModel", "Alasita.App.Common.ObservableDictionary");
-                xamlMember.Getter = get_24_Main_DefaultViewModel;
+                xamlMember.Getter = get_26_Main_DefaultViewModel;
                 xamlMember.SetIsReadOnly();
                 break;
             case "Alasita.App.Views.Map.NavigationHelper":
                 userType = (global::Alasita.App.Alasita_App_WindowsPhone_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Alasita.App.Views.Map");
                 xamlMember = new global::Alasita.App.Alasita_App_WindowsPhone_XamlTypeInfo.XamlMember(this, "NavigationHelper", "Alasita.App.Common.NavigationHelper");
-                xamlMember.Getter = get_25_Map_NavigationHelper;
+                xamlMember.Getter = get_27_Map_NavigationHelper;
                 xamlMember.SetIsReadOnly();
                 break;
             case "Alasita.App.Views.Map.DefaultViewModel":
                 userType = (global::Alasita.App.Alasita_App_WindowsPhone_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Alasita.App.Views.Map");
                 xamlMember = new global::Alasita.App.Alasita_App_WindowsPhone_XamlTypeInfo.XamlMember(this, "DefaultViewModel", "Alasita.App.Common.ObservableDictionary");
-                xamlMember.Getter = get_26_Map_DefaultViewModel;
+                xamlMember.Getter = get_28_Map_DefaultViewModel;
                 xamlMember.SetIsReadOnly();
                 break;
             case "Alasita.App.ViewModel.ProgramVM.Programa":
                 userType = (global::Alasita.App.Alasita_App_WindowsPhone_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Alasita.App.ViewModel.ProgramVM");
                 xamlMember = new global::Alasita.App.Alasita_App_WindowsPhone_XamlTypeInfo.XamlMember(this, "Programa", "Alasita.App.Temp.Class.Programa");
-                xamlMember.Getter = get_27_ProgramVM_Programa;
-                xamlMember.Setter = set_27_ProgramVM_Programa;
+                xamlMember.Getter = get_29_ProgramVM_Programa;
+                xamlMember.Setter = set_29_ProgramVM_Programa;
                 break;
             case "Alasita.App.Views.Program.NavigationHelper":
                 userType = (global::Alasita.App.Alasita_App_WindowsPhone_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Alasita.App.Views.Program");
                 xamlMember = new global::Alasita.App.Alasita_App_WindowsPhone_XamlTypeInfo.XamlMember(this, "NavigationHelper", "Alasita.App.Common.NavigationHelper");
-                xamlMember.Getter = get_28_Program_NavigationHelper;
+                xamlMember.Getter = get_30_Program_NavigationHelper;
                 xamlMember.SetIsReadOnly();
                 break;
             case "Alasita.App.Views.Program.DefaultViewModel":
                 userType = (global::Alasita.App.Alasita_App_WindowsPhone_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Alasita.App.Views.Program");
                 xamlMember = new global::Alasita.App.Alasita_App_WindowsPhone_XamlTypeInfo.XamlMember(this, "DefaultViewModel", "Alasita.App.Common.ObservableDictionary");
-                xamlMember.Getter = get_29_Program_DefaultViewModel;
+                xamlMember.Getter = get_31_Program_DefaultViewModel;
                 xamlMember.SetIsReadOnly();
                 break;
             case "Alasita.App.ViewModel.SearchVM.Asociacion":
                 userType = (global::Alasita.App.Alasita_App_WindowsPhone_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Alasita.App.ViewModel.SearchVM");
                 xamlMember = new global::Alasita.App.Alasita_App_WindowsPhone_XamlTypeInfo.XamlMember(this, "Asociacion", "System.Collections.Generic.List`1<Alasita.App.Temp.Class.Asociacion>");
-                xamlMember.Getter = get_30_SearchVM_Asociacion;
-                xamlMember.Setter = set_30_SearchVM_Asociacion;
+                xamlMember.Getter = get_32_SearchVM_Asociacion;
+                xamlMember.Setter = set_32_SearchVM_Asociacion;
                 break;
             case "Alasita.App.ViewModel.SearchVM.Producto":
                 userType = (global::Alasita.App.Alasita_App_WindowsPhone_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Alasita.App.ViewModel.SearchVM");
                 xamlMember = new global::Alasita.App.Alasita_App_WindowsPhone_XamlTypeInfo.XamlMember(this, "Producto", "System.Collections.Generic.List`1<String>");
-                xamlMember.Getter = get_31_SearchVM_Producto;
-                xamlMember.Setter = set_31_SearchVM_Producto;
+                xamlMember.Getter = get_33_SearchVM_Producto;
+                xamlMember.Setter = set_33_SearchVM_Producto;
                 break;
             case "Alasita.App.ViewModel.SearchVM.Search":
                 userType = (global::Alasita.App.Alasita_App_WindowsPhone_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Alasita.App.ViewModel.SearchVM");
                 xamlMember = new global::Alasita.App.Alasita_App_WindowsPhone_XamlTypeInfo.XamlMember(this, "Search", "String");
-                xamlMember.Getter = get_32_SearchVM_Search;
-                xamlMember.Setter = set_32_SearchVM_Search;
+                xamlMember.Getter = get_34_SearchVM_Search;
+                xamlMember.Setter = set_34_SearchVM_Search;
                 break;
             case "Alasita.App.Views.Search.NavigationHelper":
                 userType = (global::Alasita.App.Alasita_App_WindowsPhone_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Alasita.App.Views.Search");
                 xamlMember = new global::Alasita.App.Alasita_App_WindowsPhone_XamlTypeInfo.XamlMember(this, "NavigationHelper", "Alasita.App.Common.NavigationHelper");
-                xamlMember.Getter = get_33_Search_NavigationHelper;
+                xamlMember.Getter = get_35_Search_NavigationHelper;
                 xamlMember.SetIsReadOnly();
                 break;
             case "Alasita.App.Views.Search.DefaultViewModel":
                 userType = (global::Alasita.App.Alasita_App_WindowsPhone_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Alasita.App.Views.Search");
                 xamlMember = new global::Alasita.App.Alasita_App_WindowsPhone_XamlTypeInfo.XamlMember(this, "DefaultViewModel", "Alasita.App.Common.ObservableDictionary");
-                xamlMember.Getter = get_34_Search_DefaultViewModel;
+                xamlMember.Getter = get_36_Search_DefaultViewModel;
                 xamlMember.SetIsReadOnly();
                 break;
             case "Alasita.App.ViewModel.SectorsVM.Sector":
                 userType = (global::Alasita.App.Alasita_App_WindowsPhone_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Alasita.App.ViewModel.SectorsVM");
                 xamlMember = new global::Alasita.App.Alasita_App_WindowsPhone_XamlTypeInfo.XamlMember(this, "Sector", "Alasita.App.Temp.Class.Sector");
-                xamlMember.Getter = get_35_SectorsVM_Sector;
-                xamlMember.Setter = set_35_SectorsVM_Sector;
+                xamlMember.Getter = get_37_SectorsVM_Sector;
+                xamlMember.Setter = set_37_SectorsVM_Sector;
                 break;
             case "Alasita.App.ViewModel.SectorsVM.Name":
                 userType = (global::Alasita.App.Alasita_App_WindowsPhone_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Alasita.App.ViewModel.SectorsVM");
                 xamlMember = new global::Alasita.App.Alasita_App_WindowsPhone_XamlTypeInfo.XamlMember(this, "Name", "String");
-                xamlMember.Getter = get_36_SectorsVM_Name;
-                xamlMember.Setter = set_36_SectorsVM_Name;
+                xamlMember.Getter = get_38_SectorsVM_Name;
+                xamlMember.Setter = set_38_SectorsVM_Name;
                 break;
             case "Alasita.App.Views.Sectors.NavigationHelper":
                 userType = (global::Alasita.App.Alasita_App_WindowsPhone_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Alasita.App.Views.Sectors");
                 xamlMember = new global::Alasita.App.Alasita_App_WindowsPhone_XamlTypeInfo.XamlMember(this, "NavigationHelper", "Alasita.App.Common.NavigationHelper");
-                xamlMember.Getter = get_37_Sectors_NavigationHelper;
+                xamlMember.Getter = get_39_Sectors_NavigationHelper;
                 xamlMember.SetIsReadOnly();
                 break;
             case "Alasita.App.Views.Sectors.DefaultViewModel":
                 userType = (global::Alasita.App.Alasita_App_WindowsPhone_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Alasita.App.Views.Sectors");
                 xamlMember = new global::Alasita.App.Alasita_App_WindowsPhone_XamlTypeInfo.XamlMember(this, "DefaultViewModel", "Alasita.App.Common.ObservableDictionary");
-                xamlMember.Getter = get_38_Sectors_DefaultViewModel;
+                xamlMember.Getter = get_40_Sectors_DefaultViewModel;
                 xamlMember.SetIsReadOnly();
                 break;
             }
@@ -1496,5 +1540,16 @@ namespace Alasita.App.Alasita_App_WindowsPhone_XamlTypeInfo
         }
     }
 }
+
+
+
+
+
+
+
+
+
+
+
 
 

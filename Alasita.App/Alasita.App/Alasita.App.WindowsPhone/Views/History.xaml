@@ -9,6 +9,38 @@
     mc:Ignorable="d"
     Background="LightGray"
      RequestedTheme="Light">
+    <Page.Resources>
+        <Storyboard x:Name="Storyboard">
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="image">
+                <EasingDoubleKeyFrame KeyTime="0" Value="1"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:5" Value="0"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="image1">
+                <EasingDoubleKeyFrame KeyTime="0:0:5" Value="1"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:10" Value="0"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="image2">
+                <EasingDoubleKeyFrame KeyTime="0:0:10" Value="1"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:15" Value="0"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="image3">
+                <EasingDoubleKeyFrame KeyTime="0:0:15" Value="1"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:20" Value="0"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="image4">
+                <EasingDoubleKeyFrame KeyTime="0:0:20" Value="1"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:25" Value="0"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="image5">
+                <EasingDoubleKeyFrame KeyTime="0:0:25" Value="1"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:30" Value="0"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="image6">
+                <EasingDoubleKeyFrame KeyTime="0:0:30" Value="1"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:35" Value="0"/>
+            </DoubleAnimationUsingKeyFrames>
+        </Storyboard>
+    </Page.Resources>
 
     <Page.DataContext>
         <vm:HistoryVM/>
@@ -25,14 +57,16 @@
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto"/>
             <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
         </Grid.RowDefinitions>
 
-        <Border Background="#FFFFBF01" Margin="0,-30,0,0" Height="30" VerticalAlignment="Top"/>
+        <Border Background="#FFFFBF01" Margin="0,-30,0,0" Height="90" VerticalAlignment="Top"/>
         <!-- TitlePanel -->
-        <TextBlock Text="Historia y Antecedentes" Typography.Capitals="SmallCaps" FontSize="33" Margin="20,10"/>
+        <TextBlock Text="Historia y Antecedentes" Typography.Capitals="SmallCaps" FontSize="33" Margin="20,10" Foreground="White"/>
 
         <Grid Grid.Row="1" x:Name="ContentRoot">
-            <ListView ItemsSource="{Binding Historia}" Background="{x:Null}" SelectionMode="None">
+            <ListView ItemsSource="{Binding Historia}" Background="{x:Null}" SelectionMode="None" Margin="0,0,0,10">
                 <ListView.ItemTemplate>
                     <DataTemplate>
                         <Grid Margin="25,5">
@@ -45,6 +79,18 @@
                     </DataTemplate>
                 </ListView.ItemTemplate>
             </ListView>
+        </Grid>
+
+        <Rectangle Grid.Row="2" Height="7" Fill="#FFFFBF01"/>
+        <Grid Grid.Row="3" Height="230" Margin="-5,0,-5,-5">
+            <Image x:Name="image7" Source="{Binding Image[0]}" Stretch="UniformToFill"/>
+            <Image x:Name="image6" Source="{Binding Image[1]}" Stretch="UniformToFill"/>
+            <Image x:Name="image5" Source="{Binding Image[2]}" Stretch="UniformToFill"/>
+            <Image x:Name="image4" Source="{Binding Image[3]}" Stretch="UniformToFill"/>
+            <Image x:Name="image3" Source="{Binding Image[4]}" Stretch="UniformToFill"/>
+            <Image x:Name="image2" Source="{Binding Image[5]}" Stretch="UniformToFill"/>
+            <Image x:Name="image1" Source="{Binding Image[6]}" Stretch="UniformToFill"/>
+            <Image x:Name="image" Source="{Binding Image[7]}" Stretch="UniformToFill"/>
         </Grid>
     </Grid>
 </Page>

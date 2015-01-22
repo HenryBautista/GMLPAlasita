@@ -51,13 +51,13 @@
                            Foreground="White" Margin="25,10" Name="TextBlockHistoria"/>
                 
             </Grid>
-            <Grid Name="GridBanner" Grid.Column="3" Grid.ColumnSpan="2" 
+            <Grid x:ConnectionId='4' Name="GridBanner" Grid.Column="3" Grid.ColumnSpan="2" 
                   Grid.Row="1" Grid.RowSpan="2"  Background="DarkOrange"
-                  Margin="5" HorizontalAlignment="Center">
+                  Margin="5" HorizontalAlignment="Center"                           >
                 <Image Source="ms-appx:///Images/EkekoLigth.png" Stretch="UniformToFill"
                        HorizontalAlignment="Center"/>
             </Grid>
-            <Grid Grid.Column="3" Grid.Row="0" Background="DarkRed" Margin="5">
+            <Grid x:ConnectionId='5' Grid.Column="3" Grid.Row="0" Background="DarkRed" Margin="5"                     >
                 <Grid Margin="10">
                     <Grid.RowDefinitions>
                         <RowDefinition Height="1*"/>

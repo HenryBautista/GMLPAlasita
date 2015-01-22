@@ -42,6 +42,14 @@
     <Content Include="$(MSBuildThisFileDirectory)Images\Icons\Historia.jpg" />
     <Content Include="$(MSBuildThisFileDirectory)Images\Icons\Web.png" />
     <Content Include="$(MSBuildThisFileDirectory)Images\MapaLightColor.jpg" />
+    <Content Include="$(MSBuildThisFileDirectory)Images\Temp\image01.jpg" />
+    <Content Include="$(MSBuildThisFileDirectory)Images\Temp\image02.jpg" />
+    <Content Include="$(MSBuildThisFileDirectory)Images\Temp\image03.JPG" />
+    <Content Include="$(MSBuildThisFileDirectory)Images\Temp\image04.JPG" />
+    <Content Include="$(MSBuildThisFileDirectory)Images\Temp\image05.JPG" />
+    <Content Include="$(MSBuildThisFileDirectory)Images\Temp\image06.JPG" />
+    <Content Include="$(MSBuildThisFileDirectory)Images\Temp\image07.JPG" />
+    <Content Include="$(MSBuildThisFileDirectory)Images\Temp\path3014.png" />
     <Content Include="$(MSBuildThisFileDirectory)JsonFiles\Carnival.Json" />
     <Content Include="$(MSBuildThisFileDirectory)Temp\Alasita.json" />
   </ItemGroup>

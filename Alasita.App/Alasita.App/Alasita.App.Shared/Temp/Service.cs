@@ -48,6 +48,12 @@ namespace Alasita.App.Temp
             return null;
         }
 
+        public static async Task<List<string>> GetCredits()
+        {
+            await service.GetServiceAsync();
+            return service.alasita.Creditos;
+        }
+
         // Obtiene una lista de Parrafos
         public static async Task<List<Parrafo>> GetHistory()
         {
@@ -160,8 +166,7 @@ namespace Alasita.App.Temp
             Programa programa = new Programa();
             programa.Actividades = new List<Evento>();
             programa.Exposiciones = new List<Evento>();
-            JsonObject obj = jsonObject["Programa"].GetArray().First().GetObject();
-            foreach (var act in obj["Actividades"].GetArray())
+            foreach (var act in jsonObject["Actividades"].GetArray())
             {
                 JsonObject eve = act.GetObject();
                 Evento _evento = new Evento();
@@ -176,7 +181,7 @@ namespace Alasita.App.Temp
                 }
                 programa.Actividades.Add(_evento);
             }
-            foreach (var act in obj["Exposiciones"].GetArray())
+            foreach (var act in jsonObject["Exposiciones"].GetArray())
             {
                 JsonObject eve = act.GetObject();
                 Evento _evento = new Evento();
@@ -192,6 +197,12 @@ namespace Alasita.App.Temp
                 programa.Exposiciones.Add(_evento);
             }
             _alasita.Programa = programa;
+            // Define Creditos
+            _alasita.Creditos = new List<string>();
+            foreach (var creditos in jsonObject["Creditos"].GetArray())
+            {
+                _alasita.Creditos.Add(creditos.GetString());
+            }
         }
     }
 }

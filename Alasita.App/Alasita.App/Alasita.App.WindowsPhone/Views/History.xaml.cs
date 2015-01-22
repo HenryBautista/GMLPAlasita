@@ -14,6 +14,7 @@ using Windows.UI.Xaml.Controls.Primitives;
 using Windows.UI.Xaml.Data;
 using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
+using Windows.UI.Xaml.Media.Animation;
 using Windows.UI.Xaml.Navigation;
 
 // The Basic Page item template is documented at http://go.microsoft.com/fwlink/?LinkID=390556
@@ -67,8 +68,12 @@ namespace Alasita.App.Views
         /// <see cref="Frame.Navigate(Type, Object)"/> when this page was initially requested and
         /// a dictionary of state preserved by this page during an earlier
         /// session.  The state will be null the first time a page is visited.</param>
+
         private void NavigationHelper_LoadState(object sender, LoadStateEventArgs e)
         {
+            Storyboard.Begin();
+            Storyboard.AutoReverse = true;
+            Storyboard.RepeatBehavior = RepeatBehavior.Forever;
         }
 
         /// <summary>

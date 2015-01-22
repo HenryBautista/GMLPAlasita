@@ -8,78 +8,130 @@
     mc:Ignorable="d"
     Background="LightGray"
     RequestedTheme="Light">
-	<Page.Resources>
-		<Thickness x:Key="PhoneBorderThickness">2.5</Thickness>
-		<FontFamily x:Key="PhoneFontFamilyNormal">Segoe WP</FontFamily>
-		<FontWeight x:Key="PhoneButtonFontWeight">Semibold</FontWeight>
-		<x:Double x:Key="TextStyleLargeFontSize">18.14</x:Double>
-		<x:Double x:Key="PhoneButtonMinHeight">57.5</x:Double>
-		<x:Double x:Key="PhoneButtonMinWidth">109</x:Double>
-		<Thickness x:Key="PhoneTouchTargetOverhang">0,9.5</Thickness>
-		<SolidColorBrush x:Key="ButtonDisabledBackgroundThemeBrush" Color="Transparent"/>
-		<Style x:Key="ButtonStyle" TargetType="Button">
-			<Setter Property="Background" Value="Transparent"/>
-			<Setter Property="BorderBrush" Value="{ThemeResource PhoneForegroundBrush}"/>
-			<Setter Property="Foreground" Value="{ThemeResource PhoneForegroundBrush}"/>
-			<Setter Property="BorderThickness" Value="{ThemeResource PhoneBorderThickness}"/>
-			<Setter Property="FontFamily" Value="{ThemeResource PhoneFontFamilyNormal}"/>
-			<Setter Property="FontWeight" Value="{ThemeResource PhoneButtonFontWeight}"/>
-			<Setter Property="FontSize" Value="{ThemeResource TextStyleLargeFontSize}"/>
-			<Setter Property="Padding" Value="9.5,0"/>
-			<Setter Property="MinHeight" Value="{ThemeResource PhoneButtonMinHeight}"/>
-			<Setter Property="MinWidth" Value="{ThemeResource PhoneButtonMinWidth}"/>
-			<Setter Property="HorizontalAlignment" Value="Left"/>
-			<Setter Property="VerticalAlignment" Value="Center"/>
-			<Setter Property="Template">
-				<Setter.Value>
-					<ControlTemplate TargetType="Button">
-						<Grid x:Name="Grid" Background="Transparent" Width="50" Height="50">
-							<VisualStateManager.VisualStateGroups>
-								<VisualStateGroup x:Name="CommonStates">
-									<VisualStateGroup.Transitions>
-										<VisualTransition From="Pressed" To="PointerOver">
-											<Storyboard>
-												<PointerUpThemeAnimation Storyboard.TargetName="Grid"/>
-											</Storyboard>
-										</VisualTransition>
-										<VisualTransition From="PointerOver" To="Normal">
-											<Storyboard>
-												<PointerUpThemeAnimation Storyboard.TargetName="Grid"/>
-											</Storyboard>
-										</VisualTransition>
-										<VisualTransition From="Pressed" To="Normal">
-											<Storyboard>
-												<PointerUpThemeAnimation Storyboard.TargetName="Grid"/>
-											</Storyboard>
-										</VisualTransition>
-									</VisualStateGroup.Transitions>
-									<VisualState x:Name="Normal"/>
-									<VisualState x:Name="PointerOver"/>
-									<VisualState x:Name="Pressed">
-										<Storyboard>
-											<PointerDownThemeAnimation Storyboard.TargetName="Grid"/>
-											<ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="Foreground" Storyboard.TargetName="ContentPresenter">
-												<DiscreteObjectKeyFrame KeyTime="0" Value="{ThemeResource ButtonPressedForegroundThemeBrush}"/>
-											</ObjectAnimationUsingKeyFrames>
-										</Storyboard>
-									</VisualState>
-									<VisualState x:Name="Disabled">
-										<Storyboard>
-											<ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="Foreground" Storyboard.TargetName="ContentPresenter">
-												<DiscreteObjectKeyFrame KeyTime="0" Value="{ThemeResource ButtonDisabledForegroundThemeBrush}"/>
-											</ObjectAnimationUsingKeyFrames>
-										</Storyboard>
-									</VisualState>
-								</VisualStateGroup>
-							</VisualStateManager.VisualStateGroups>
-							<Ellipse Fill="#FFFFBF00" HorizontalAlignment="Left" Height="50" VerticalAlignment="Top" Width="50"/>
-							<ContentPresenter x:Name="ContentPresenter" AutomationProperties.AccessibilityView="Raw" ContentTemplate="{TemplateBinding ContentTemplate}" Content="{TemplateBinding Content}" Foreground="{TemplateBinding Foreground}" HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}" VerticalAlignment="{TemplateBinding VerticalContentAlignment}" FontWeight="Bold"/>
-						</Grid>
-					</ControlTemplate>
-				</Setter.Value>
-			</Setter>
-		</Style>
-	</Page.Resources>
+    <Page.Resources>
+        <Thickness x:Key="PhoneBorderThickness">2.5</Thickness>
+        <FontFamily x:Key="PhoneFontFamilyNormal">Segoe WP</FontFamily>
+        <FontWeight x:Key="PhoneButtonFontWeight">Semibold</FontWeight>
+        <x:Double x:Key="TextStyleLargeFontSize">18.14</x:Double>
+        <x:Double x:Key="PhoneButtonMinHeight">57.5</x:Double>
+        <x:Double x:Key="PhoneButtonMinWidth">109</x:Double>
+        <Thickness x:Key="PhoneTouchTargetOverhang">0,9.5</Thickness>
+        <SolidColorBrush x:Key="ButtonDisabledBackgroundThemeBrush" Color="Transparent"/>
+        <Style x:Key="ButtonStyle" TargetType="Button">
+            <Setter Property="Background" Value="Transparent"/>
+            <Setter Property="BorderBrush" Value="{ThemeResource PhoneForegroundBrush}"/>
+            <Setter Property="Foreground" Value="{ThemeResource PhoneForegroundBrush}"/>
+            <Setter Property="BorderThickness" Value="{ThemeResource PhoneBorderThickness}"/>
+            <Setter Property="FontFamily" Value="{ThemeResource PhoneFontFamilyNormal}"/>
+            <Setter Property="FontWeight" Value="{ThemeResource PhoneButtonFontWeight}"/>
+            <Setter Property="FontSize" Value="{ThemeResource TextStyleLargeFontSize}"/>
+            <Setter Property="Padding" Value="9.5,0"/>
+            <Setter Property="MinHeight" Value="{ThemeResource PhoneButtonMinHeight}"/>
+            <Setter Property="MinWidth" Value="{ThemeResource PhoneButtonMinWidth}"/>
+            <Setter Property="HorizontalAlignment" Value="Left"/>
+            <Setter Property="VerticalAlignment" Value="Center"/>
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="Button">
+                        <Grid x:Name="Grid" Background="Transparent" Width="40" Height="40">
+                            <VisualStateManager.VisualStateGroups>
+                                <VisualStateGroup x:Name="CommonStates">
+                                    <VisualStateGroup.Transitions>
+                                        <VisualTransition From="Pressed" To="PointerOver">
+                                            <Storyboard>
+                                                <PointerUpThemeAnimation Storyboard.TargetName="Grid"/>
+                                            </Storyboard>
+                                        </VisualTransition>
+                                        <VisualTransition From="PointerOver" To="Normal">
+                                            <Storyboard>
+                                                <PointerUpThemeAnimation Storyboard.TargetName="Grid"/>
+                                            </Storyboard>
+                                        </VisualTransition>
+                                        <VisualTransition From="Pressed" To="Normal">
+                                            <Storyboard>
+                                                <PointerUpThemeAnimation Storyboard.TargetName="Grid"/>
+                                            </Storyboard>
+                                        </VisualTransition>
+                                    </VisualStateGroup.Transitions>
+                                    <VisualState x:Name="Normal"/>
+                                    <VisualState x:Name="PointerOver"/>
+                                    <VisualState x:Name="Pressed">
+                                        <Storyboard>
+                                            <PointerDownThemeAnimation Storyboard.TargetName="Grid"/>
+                                            <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="Foreground" Storyboard.TargetName="ContentPresenter">
+                                                <DiscreteObjectKeyFrame KeyTime="0" Value="{ThemeResource ButtonPressedForegroundThemeBrush}"/>
+                                            </ObjectAnimationUsingKeyFrames>
+                                        </Storyboard>
+                                    </VisualState>
+                                    <VisualState x:Name="Disabled">
+                                        <Storyboard>
+                                            <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="Foreground" Storyboard.TargetName="ContentPresenter">
+                                                <DiscreteObjectKeyFrame KeyTime="0" Value="{ThemeResource ButtonDisabledForegroundThemeBrush}"/>
+                                            </ObjectAnimationUsingKeyFrames>
+                                        </Storyboard>
+                                    </VisualState>
+                                </VisualStateGroup>
+                            </VisualStateManager.VisualStateGroups>
+                            <Ellipse Fill="#FFFFBF00" HorizontalAlignment="Left" Height="40" VerticalAlignment="Top" Width="40"/>
+                            <ContentPresenter x:Name="ContentPresenter" AutomationProperties.AccessibilityView="Raw" ContentTemplate="{TemplateBinding ContentTemplate}" Content="{TemplateBinding Content}" Foreground="{TemplateBinding Foreground}" HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}" VerticalAlignment="{TemplateBinding VerticalContentAlignment}" FontWeight="Bold"/>
+                        </Grid>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+        <Style x:Key="SwichButton" TargetType="Button">
+            <Setter Property="Background" Value="Transparent"/>
+            <Setter Property="BorderBrush" Value="{ThemeResource PhoneForegroundBrush}"/>
+            <Setter Property="Foreground" Value="{ThemeResource PhoneForegroundBrush}"/>
+            <Setter Property="BorderThickness" Value="{ThemeResource PhoneBorderThickness}"/>
+            <Setter Property="FontFamily" Value="{ThemeResource PhoneFontFamilyNormal}"/>
+            <Setter Property="FontWeight" Value="{ThemeResource PhoneButtonFontWeight}"/>
+            <Setter Property="FontSize" Value="{ThemeResource TextStyleLargeFontSize}"/>
+            <Setter Property="Padding" Value="9.5,0"/>
+            <Setter Property="MinHeight" Value="{ThemeResource PhoneButtonMinHeight}"/>
+            <Setter Property="MinWidth" Value="{ThemeResource PhoneButtonMinWidth}"/>
+            <Setter Property="HorizontalAlignment" Value="Left"/>
+            <Setter Property="VerticalAlignment" Value="Center"/>
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="Button">
+                        <Grid x:Name="Grid" Background="#FFFFBF01">
+                            <VisualStateManager.VisualStateGroups>
+                                <VisualStateGroup x:Name="CommonStates">
+                                    <VisualStateGroup.Transitions>
+                                        <VisualTransition From="Pressed" To="PointerOver">
+                                            <Storyboard>
+                                                <PointerUpThemeAnimation Storyboard.TargetName="Grid"/>
+                                            </Storyboard>
+                                        </VisualTransition>
+                                        <VisualTransition From="PointerOver" To="Normal">
+                                            <Storyboard>
+                                                <PointerUpThemeAnimation Storyboard.TargetName="Grid"/>
+                                            </Storyboard>
+                                        </VisualTransition>
+                                        <VisualTransition From="Pressed" To="Normal">
+                                            <Storyboard>
+                                                <PointerUpThemeAnimation Storyboard.TargetName="Grid"/>
+                                            </Storyboard>
+                                        </VisualTransition>
+                                    </VisualStateGroup.Transitions>
+                                    <VisualState x:Name="Normal"/>
+                                    <VisualState x:Name="PointerOver"/>
+                                    <VisualState x:Name="Pressed">
+                                        <Storyboard>
+                                            <PointerDownThemeAnimation Storyboard.TargetName="Grid"/>
+                                        </Storyboard>
+                                    </VisualState>
+                                    <VisualState x:Name="Disabled"/>
+                                </VisualStateGroup>
+                            </VisualStateManager.VisualStateGroups>
+                            <Rectangle Fill="{TemplateBinding Background}" HorizontalAlignment="Right" Height="40" StrokeThickness="5" VerticalAlignment="Center" Width="40" Margin="0,8,20,8"/>
+                        </Grid>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+    </Page.Resources>
 
     <Grid x:Name="LayoutRoot">
 
@@ -94,28 +146,35 @@
             <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
 
-        <Border Background="#FFFFBF00" Margin="0,-30,0,0" Height="30" VerticalAlignment="Top"/>
-
-        <TextBlock Text="Mapa" Typography.Capitals="SmallCaps" FontSize="33" Margin="20,10"/>
-        <Button x:ConnectionId='1' x:Name="btn" HorizontalAlignment="Right" Content="Lista" Margin="20,0"                     />
+        <Border Background="#FFFFBF01" Margin="0,-30,0,0" Height="90" VerticalAlignment="Top"/>
+        <!-- TitlePanel -->
+        <TextBlock Text="Mapa" Typography.Capitals="SmallCaps" FontSize="33" Margin="20,10" Foreground="White"/>
+        <Button x:ConnectionId='1' x:Name="btn" HorizontalAlignment="Right" Content="Lista"                      Style="{StaticResource SwichButton}" Width="30" Height="30" BorderThickness="0" Margin="0,-15,0,0">
+            <Button.Background>
+                <ImageBrush Stretch="Fill" ImageSource="ms-appx:///Assets/Image/Table-of-Contents.png"/>
+            </Button.Background>
+        </Button>
         <!-- TitlePanel -->
 
         <!--TODO: Content should be placed within the following grid-->
         <Grid Grid.Row="1" x:Name="ContentRoot" Margin="20,0">
-            <Grid Visibility="Visible" x:Name="Mapa">
-                <Button x:ConnectionId='2' Content="A" Style="{StaticResource ButtonStyle}" Margin="24,383,0,122"                       />
-                <Button x:ConnectionId='3' Content="B" Style="{StaticResource ButtonStyle}" Margin="51,299,0,430"                       />
-                <Button x:ConnectionId='4' Content="C" Style="{StaticResource ButtonStyle}" Margin="131,149,0,580"                       />
-                <Button x:ConnectionId='5' Content="D" Style="{StaticResource ButtonStyle}" Margin="201,295,0,434"                       />
-                <Button x:ConnectionId='6' Content="E" Style="{StaticResource ButtonStyle}" Margin="297,338,0,391"                       />
-                <Button x:ConnectionId='7' Content="F" Style="{StaticResource ButtonStyle}" Margin="216,351,0,378"                       />
-                <Button x:ConnectionId='8' Content="G" Style="{StaticResource ButtonStyle}" Margin="143,537,0,192"                       />
-                <Button x:ConnectionId='9' Content="H" Style="{StaticResource ButtonStyle}" Margin="205,438,0,291"                       />
-                <Button x:ConnectionId='10' Content="I" Style="{StaticResource ButtonStyle}" Margin="256,276,0,453"                       />
-                <Button x:ConnectionId='11' Content="K" Style="{StaticResource ButtonStyle}" Margin="105,665,0,64"                       />
-                <Button x:ConnectionId='12' Content="R" Style="{StaticResource ButtonStyle}" Margin="285,488,0,241"                       />
-                <Button x:ConnectionId='13' Content="N" Style="{StaticResource ButtonStyle}" Margin="323,134,0,595"                       />
-            </Grid>
+            <Viewbox>
+                <Canvas Visibility="Visible" x:Name="Mapa" Height="580" Width="360">
+                    <Image Source="ms-appx:///Images/Temp/path3014.png" Height="580" Width="360"/>
+                    <Button x:ConnectionId='2' Content="A" Style="{StaticResource ButtonStyle}"                        Canvas.Left="2" Canvas.Top="361"/>
+                    <Button x:ConnectionId='3' Content="B" Style="{StaticResource ButtonStyle}"                        Canvas.Left="4" Canvas.Top="268"/>
+                    <Button x:ConnectionId='4' Content="C" Style="{StaticResource ButtonStyle}"                        Canvas.Left="-2" Canvas.Top="166"/>
+                    <Button x:ConnectionId='5' Content="D" Style="{StaticResource ButtonStyle}"                        Canvas.Left="50" Canvas.Top="220"/>
+                    <Button x:ConnectionId='6' Content="E" Style="{StaticResource ButtonStyle}"                        Canvas.Left="107" Canvas.Top="243"/>
+                    <Button x:ConnectionId='7' Content="F" Style="{StaticResource ButtonStyle}"                        Canvas.Left="73" Canvas.Top="278"/>
+                    <Button x:ConnectionId='8' Content="G" Style="{StaticResource ButtonStyle}"                        Canvas.Left="76" Canvas.Top="341"/>
+                    <Button x:ConnectionId='9' Content="H" Style="{StaticResource ButtonStyle}"                        Canvas.Left="162" Canvas.Top="345"/>
+                    <Button x:ConnectionId='10' Content="I" Style="{StaticResource ButtonStyle}"                        Canvas.Left="99" Canvas.Top="166"/>
+                    <Button x:ConnectionId='11' Content="K" Style="{StaticResource ButtonStyle}"                        Canvas.Left="269" Canvas.Top="438"/>
+                    <Button x:ConnectionId='12' Content="R" Style="{StaticResource ButtonStyle}"                        Canvas.Left="209" Canvas.Top="289"/>
+                    <Button x:ConnectionId='13' Content="N" Style="{StaticResource ButtonStyle}"                        Canvas.Left="6" Canvas.Top="76"/>
+                </Canvas>
+            </Viewbox>
             <Grid Visibility="Collapsed" x:Name="Semantic">
                 <UserControls:SemanticZoomControl/>
             </Grid>

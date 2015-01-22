@@ -34,6 +34,33 @@
     <AppxPackagedFile Include="C:\Users\Yolger\Documents\GitHub\GMLPAlasita\Alasita.App\Alasita.App\Alasita.App.Shared\Images\MapaLightColor.jpg">
       <PackagePath>Images\MapaLightColor.jpg</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Yolger\Documents\GitHub\GMLPAlasita\Alasita.App\Alasita.App\Alasita.App.Shared\Images\Temp\image01.jpg">
+      <PackagePath>Images\Temp\image01.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Yolger\Documents\GitHub\GMLPAlasita\Alasita.App\Alasita.App\Alasita.App.Shared\Images\Temp\image02.jpg">
+      <PackagePath>Images\Temp\image02.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Yolger\Documents\GitHub\GMLPAlasita\Alasita.App\Alasita.App\Alasita.App.Shared\Images\Temp\image03.JPG">
+      <PackagePath>Images\Temp\image03.JPG</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Yolger\Documents\GitHub\GMLPAlasita\Alasita.App\Alasita.App\Alasita.App.Shared\Images\Temp\image04.JPG">
+      <PackagePath>Images\Temp\image04.JPG</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Yolger\Documents\GitHub\GMLPAlasita\Alasita.App\Alasita.App\Alasita.App.Shared\Images\Temp\image05.JPG">
+      <PackagePath>Images\Temp\image05.JPG</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Yolger\Documents\GitHub\GMLPAlasita\Alasita.App\Alasita.App\Alasita.App.Shared\Images\Temp\image06.JPG">
+      <PackagePath>Images\Temp\image06.JPG</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Yolger\Documents\GitHub\GMLPAlasita\Alasita.App\Alasita.App\Alasita.App.Shared\Images\Temp\image07.JPG">
+      <PackagePath>Images\Temp\image07.JPG</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Yolger\Documents\GitHub\GMLPAlasita\Alasita.App\Alasita.App\Alasita.App.WindowsPhone\Assets\Image\Maps.png">
+      <PackagePath>Assets\Image\Maps.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Yolger\Documents\GitHub\GMLPAlasita\Alasita.App\Alasita.App\Alasita.App.WindowsPhone\Assets\Image\Table-of-Contents.png">
+      <PackagePath>Assets\Image\Table-of-Contents.png</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Yolger\Documents\GitHub\GMLPAlasita\Alasita.App\Alasita.App\Alasita.App.WindowsPhone\Assets\Image\Title_Title.png">
       <PackagePath>Assets\Image\Title_Title.png</PackagePath>
     </AppxPackagedFile>
@@ -90,6 +117,9 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Yolger\Documents\GitHub\GMLPAlasita\Alasita.App\Alasita.App\Alasita.App.Shared\Images\Icons\Web.png">
       <PackagePath>Images\Icons\Web.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Yolger\Documents\GitHub\GMLPAlasita\Alasita.App\Alasita.App\Alasita.App.Shared\Images\Temp\path3014.png">
+      <PackagePath>Images\Temp\path3014.png</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Yolger\Documents\GitHub\GMLPAlasita\Alasita.App\Alasita.App\Alasita.App.WindowsPhone\Common\ReadMe.txt">
       <PackagePath>Common\ReadMe.txt</PackagePath>

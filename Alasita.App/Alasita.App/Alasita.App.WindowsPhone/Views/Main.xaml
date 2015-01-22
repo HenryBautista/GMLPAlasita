@@ -153,7 +153,6 @@
         <Grid.RowDefinitions>
             <RowDefinition Height="*"/>
             <RowDefinition Height="6*"/>
-            <RowDefinition Height="Auto"/>
         </Grid.RowDefinitions>
 
         <Border Background="#FFFFBF00" Margin="0,-30,0,0" Height="30" VerticalAlignment="Top"/>

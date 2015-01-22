@@ -27,16 +27,18 @@
             <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
 
-        <Border Background="#FFFFBF00" Margin="0,-30,0,0" Height="30" VerticalAlignment="Top"/>
+        <Border Background="#FFFFBF01" Margin="0,-30,0,0" Height="90" VerticalAlignment="Top"/>
         <!-- TitlePanel -->
-        <TextBlock Text="{Binding Asociacion.Nombre}" Typography.Capitals="SmallCaps" FontSize="30" Margin="20,10"/>
+        <Grid Background="#FFFFBF01">
+            <TextBlock Text="{Binding Asociacion.Nombre}" Typography.Capitals="SmallCaps" FontSize="33" Margin="20,10" Foreground="White" TextWrapping="WrapWholeWords"/>
+        </Grid>
 
         <!--TODO: Content should be placed within the following grid-->
         <Grid Grid.Row="1" x:Name="ContentRoot">
-            <ListView ItemsSource="{Binding Asociacion.Productos}" Margin="30,0">
+            <ListView ItemsSource="{Binding Asociacion.Productos}" Margin="30,10">
                 <ListView.ItemTemplate>
                     <DataTemplate>
-                        <TextBlock Text="{Binding}"/>
+                        <TextBlock Text="{Binding}" FontSize="25" TextWrapping="WrapWholeWords"/>
                     </DataTemplate>
                 </ListView.ItemTemplate>
             </ListView>

@@ -20,7 +20,7 @@
 
     <SemanticZoom x:Name="SemanticZoom">
         <SemanticZoom.ZoomedInView>
-            <ListView x:Name="lst" ItemsSource="{Binding Source={StaticResource cv}}">
+            <ListView x:Name="lst" ItemsSource="{Binding Source={StaticResource cv}}" Margin="0,20">
                 <ListView.ItemTemplate>
                     <DataTemplate>
                         <TextBlock x:ConnectionId='1' Text="{Binding}" Margin="20,0,0,0" FontSize="15" TextWrapping="WrapWholeWords"                          />
