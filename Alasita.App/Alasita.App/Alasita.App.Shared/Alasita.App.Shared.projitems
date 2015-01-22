@@ -51,6 +51,7 @@
     <Content Include="$(MSBuildThisFileDirectory)Images\Temp\image07.JPG" />
     <Content Include="$(MSBuildThisFileDirectory)Images\Temp\path3014.png" />
     <Content Include="$(MSBuildThisFileDirectory)JsonFiles\Carnival.Json" />
+    <Content Include="$(MSBuildThisFileDirectory)Sound\AlasitaMusic.mp3" />
     <Content Include="$(MSBuildThisFileDirectory)Temp\Alasita.json" />
   </ItemGroup>
 </Project>

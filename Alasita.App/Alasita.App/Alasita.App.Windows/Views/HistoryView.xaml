@@ -16,7 +16,7 @@
             </StackPanel>
         </AppBar>
     </Page.TopAppBar>
-    <Grid Background="#FFFFBF01" Name="GridHistory">
+    <Grid Background="#f58220" Name="GridHistory">
         <Grid.RowDefinitions>
             <RowDefinition Height="*"/>
             <RowDefinition Height="6*"/>

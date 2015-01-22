@@ -31,7 +31,7 @@
                         <GroupStyle.HeaderTemplate>
                             <DataTemplate>
                                 <Grid Margin="0,0,0,10">
-                                    <Ellipse Fill="#FFFFBF00" Width="50" Height="50"/>
+                                    <Ellipse Fill="#f58220" Width="50" Height="50"/>
                                     <TextBlock Text="{Binding Key}" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="22" FontWeight="Bold"/>
                                 </Grid>
                             </DataTemplate>
@@ -45,7 +45,7 @@
                 <GridView.ItemTemplate>
                     <DataTemplate>
                         <Grid>
-                            <Ellipse Width="100" Height="100" Fill="#FFFFBF00"/>
+                            <Ellipse Width="100" Height="100" Fill="#f58220"/>
                             <TextBlock Text="{Binding Group.Key}" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="25" FontWeight="Bold"/>
                         </Grid>
                     </DataTemplate>

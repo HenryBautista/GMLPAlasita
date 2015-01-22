@@ -127,10 +127,12 @@
     </AppxManifest>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Assets\Image\AlcaldiaLogo2015.png" />
+    <Content Include="Assets\Image\Logos_Title.png" />
     <Content Include="Assets\Image\logo_amarillo.jpg" />
     <Content Include="Assets\Image\Maps.png" />
+    <Content Include="Assets\Image\MPSLogo.jpg" />
     <Content Include="Assets\Image\Table-of-Contents.png" />
-    <Content Include="Assets\Image\Title_Title.png" />
     <Content Include="Assets\Logo.scale-240.png" />
     <Content Include="Assets\Logos_Logo.png" />
     <Content Include="Assets\Logos_SmallLogo.png" />

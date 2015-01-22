@@ -27,9 +27,9 @@
             <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
 
-        <Border Background="#FFFFBF01" Margin="0,-30,0,0" Height="90" VerticalAlignment="Top"/>
+        <Border Background="#f58220" Margin="0,-30,0,0" Height="90" VerticalAlignment="Top"/>
 
-        <Grid Background="#FFFFBF01">
+        <Grid Background="#f58220">
             <TextBlock Typography.Capitals="SmallCaps" FontSize="30" Margin="20,10" Foreground="White" TextWrapping="WrapWholeWords">
                 <Run Text="Sector "/>
                 <Run Text="{Binding Sector.Inicial}"/>

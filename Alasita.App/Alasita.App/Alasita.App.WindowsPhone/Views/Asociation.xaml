@@ -27,9 +27,9 @@
             <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
 
-        <Border Background="#FFFFBF01" Margin="0,-30,0,0" Height="90" VerticalAlignment="Top"/>
+        <Border Background="#f58220" Margin="0,-30,0,0" Height="90" VerticalAlignment="Top"/>
         <!-- TitlePanel -->
-        <Grid Background="#FFFFBF01">
+        <Grid Background="#f58220">
             <TextBlock Text="{Binding Asociacion.Nombre}" Typography.Capitals="SmallCaps" FontSize="33" Margin="20,10" Foreground="White" TextWrapping="WrapWholeWords"/>
         </Grid>
 

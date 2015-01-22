@@ -27,22 +27,38 @@
             <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
 
-        <Border Background="#FFFFBF01" Margin="0,-30,0,0" Height="90" VerticalAlignment="Top"/>
+        <Border Background="#f58220" Margin="0,-30,0,0" Height="90" VerticalAlignment="Top"/>
         <!-- TitlePanel -->
         <TextBlock Text="Creditos" Typography.Capitals="SmallCaps" FontSize="33" Margin="20,10" Foreground="White"/>
 
         <!--TODO: Content should be placed within the following grid-->
         <Grid Grid.Row="1" x:Name="ContentRoot">
-            <ListView ItemsSource="{Binding Creditos}" Margin="25,10">
-                <ListView.ItemTemplate>
-                    <DataTemplate>
-                        <Grid Margin="0,5">
-                            <Ellipse Height="15" Width="15" Fill="#FFFFBF00" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="0,5,0,0"/>
-                            <TextBlock Text="{Binding}" Typography.Capitals="SmallCaps" FontWeight="Bold" Margin="25,0" TextWrapping="WrapWholeWords" FontSize="18"/>
-                        </Grid>
-                    </DataTemplate>
-                </ListView.ItemTemplate>
-            </ListView>
+            <ScrollViewer>
+                <StackPanel Margin="20">
+                    <Image Source="ms-appx:///Assets/Image/AlcaldiaLogo2015.png" Height="200" Margin="10" HorizontalAlignment="Center"/>
+                    <TextBlock Text="Promotores" Style="{StaticResource TitleTextBlockStyle}" Margin="0,10" Typography.Capitals="SmallCaps"/>
+                    <TextBlock Text="GOBIERNO AUTONOMO MUNICIPAL DE LA PAZ" Margin="0,2" Typography.Capitals="SmallCaps"/>
+                    <TextBlock Text="SECRETARIA MUNICIPAL DE PROMOCIÓN ECONÓMICA" Margin="0,2" Typography.Capitals="SmallCaps"/>
+                    <TextBlock Text="DIRECCIÓN DE COMPETITIVIDAD Y EMPRENDIMIENTO" Margin="0,2" Typography.Capitals="SmallCaps"/>
+                    <TextBlock Text="UNIDAD DE FORTALECIMIENTO PRODUCTIVO" Margin="0,2" Typography.Capitals="SmallCaps"/>
+                    <TextBlock Text="PROGRAMA DE INNOVACIÓN Y MEJORA COMPETITIVA PARA MIPYME" Margin="0,2" TextWrapping="Wrap" Typography.Capitals="SmallCaps"/>
+                    <TextBlock Text="CON EL APOYO DE  LA UNIÓN EUROPEA" Margin="0,2" Typography.Capitals="SmallCaps"/>
+                    <Image Source="https://www.comercioexterior.gob.ec/wp-content/uploads/2013/07/union_europea.jpg" Height="80" Margin="0,10,0,0"/>
+                    <TextBlock Text="Desarrollado por" Style="{StaticResource TitleTextBlockStyle}" Margin="0,10" Typography.Capitals="SmallCaps"/>
+                    <Image Source="ms-appx:///Assets/Image/MPSLogo.jpg" Margin="0,5"/>
+                    <TextBlock Text="Henry Bautista" Margin="0,2" Typography.Capitals="SmallCaps"/>
+                    <TextBlock Text="Yolger Perez" Margin="0,2" Typography.Capitals="SmallCaps"/>
+                    <TextBlock Text="Alison Parisaca" Margin="0,2" Typography.Capitals="SmallCaps"/>
+                    <TextBlock Text="Jonathan Villanueva" Margin="0,2" Typography.Capitals="SmallCaps"/>
+                    <TextBlock Text="Arun Limachi" Margin="0,2" Typography.Capitals="SmallCaps"/>
+                    <TextBlock Text="Jose Campero" Margin="0,2" Typography.Capitals="SmallCaps"/>
+                    <TextBlock Text="Rodrigo Quispe" Margin="0,2" Typography.Capitals="SmallCaps"/>
+                    <TextBlock Text="Alejandro Aguirre" Margin="0,2" Typography.Capitals="SmallCaps"/>
+                    <TextBlock Text="Contactenos" Style="{StaticResource TitleTextBlockStyle}" Margin="0,10" Typography.Capitals="SmallCaps"/>
+                    <TextBlock Text="mspsbolivia@outlook.com" Margin="0,2"/>
+                    <TextBlock Text="t-jocupi@microsoft.com" Margin="0,2"/>
+                </StackPanel>
+            </ScrollViewer>
         </Grid>
     </Grid>
 </Page>

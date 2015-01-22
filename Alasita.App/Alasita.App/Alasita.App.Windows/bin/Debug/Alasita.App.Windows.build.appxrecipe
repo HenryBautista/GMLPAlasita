@@ -53,6 +53,9 @@
     <AppxPackagedFile Include="C:\Users\Yolger\Documents\GitHub\GMLPAlasita\Alasita.App\Alasita.App\Alasita.App.Shared\Images\Icons\Web.png">
       <PackagePath>Images\Icons\Web.png</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Yolger\Documents\GitHub\GMLPAlasita\Alasita.App\Alasita.App\Alasita.App.Shared\Images\Temp\path3014.png">
+      <PackagePath>Images\Temp\path3014.png</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Yolger\Documents\GitHub\GMLPAlasita\Alasita.App\Alasita.App\Alasita.App.Shared\Images\Icons\Historia.jpg">
       <PackagePath>Images\Icons\Historia.jpg</PackagePath>
     </AppxPackagedFile>
@@ -85,6 +88,9 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Yolger\Documents\GitHub\GMLPAlasita\Alasita.App\Alasita.App\Alasita.App.Shared\Temp\Alasita.json">
       <PackagePath>Temp\Alasita.json</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Yolger\Documents\GitHub\GMLPAlasita\Alasita.App\Alasita.App\Alasita.App.Shared\Sound\AlasitaMusic.mp3">
+      <PackagePath>Sound\AlasitaMusic.mp3</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Yolger\Documents\GitHub\GMLPAlasita\Alasita.App\Alasita.App\Alasita.App.Windows\bin\Debug\App.xbf">
       <PackagePath>App.xbf</PackagePath>

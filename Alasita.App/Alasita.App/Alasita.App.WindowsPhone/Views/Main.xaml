@@ -64,7 +64,7 @@
                                             <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="Background" Storyboard.TargetName="InnerGrid">
                                                 <DiscreteObjectKeyFrame KeyTime="0">
                                                     <DiscreteObjectKeyFrame.Value>
-                                                        <SolidColorBrush Color="#FFFFBF01"/>
+                                                        <SolidColorBrush Color="#f58220"/>
                                                     </DiscreteObjectKeyFrame.Value>
                                                 </DiscreteObjectKeyFrame>
                                             </ObjectAnimationUsingKeyFrames>
@@ -78,7 +78,7 @@
                                             <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="Background" Storyboard.TargetName="InnerGrid">
                                                 <DiscreteObjectKeyFrame KeyTime="0">
                                                     <DiscreteObjectKeyFrame.Value>
-                                                        <SolidColorBrush Color="#FFFFBF01"/>
+                                                        <SolidColorBrush Color="#f58220"/>
                                                     </DiscreteObjectKeyFrame.Value>
                                                 </DiscreteObjectKeyFrame>
                                             </ObjectAnimationUsingKeyFrames>
@@ -106,7 +106,7 @@
                                             <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="Background" Storyboard.TargetName="InnerGrid">
                                                 <DiscreteObjectKeyFrame KeyTime="0">
                                                     <DiscreteObjectKeyFrame.Value>
-                                                        <SolidColorBrush Color="#FFFFBF01"/>
+                                                        <SolidColorBrush Color="#f58220"/>
                                                     </DiscreteObjectKeyFrame.Value>
                                                 </DiscreteObjectKeyFrame>
                                             </ObjectAnimationUsingKeyFrames>
@@ -120,7 +120,7 @@
                                             <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="Background" Storyboard.TargetName="InnerGrid">
                                                 <DiscreteObjectKeyFrame KeyTime="0">
                                                     <DiscreteObjectKeyFrame.Value>
-                                                        <SolidColorBrush Color="#FFFFBF01"/>
+                                                        <SolidColorBrush Color="#f58220"/>
                                                     </DiscreteObjectKeyFrame.Value>
                                                 </DiscreteObjectKeyFrame>
                                             </ObjectAnimationUsingKeyFrames>
@@ -132,7 +132,7 @@
                                 </VisualStateGroup>
                             </VisualStateManager.VisualStateGroups>
                             <Grid x:Name="InnerGrid" Background="Transparent">
-                                <Rectangle x:Name="PressedBackground" Fill="#FFFFBF01" Opacity="0"/>
+                                <Rectangle x:Name="PressedBackground" Fill="#f58220" Opacity="0"/>
                                 <ContentPresenter x:Name="ContentPresenter" ContentTemplate="{TemplateBinding ContentTemplate}" ContentTransitions="{TemplateBinding ContentTransitions}" Content="{TemplateBinding Content}" HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}" Margin="{TemplateBinding Padding}" VerticalAlignment="{TemplateBinding VerticalContentAlignment}"/>
                             </Grid>
                         </Border>
@@ -155,34 +155,35 @@
             <RowDefinition Height="6*"/>
         </Grid.RowDefinitions>
 
-        <Border Background="#FFFFBF00" Margin="0,-30,0,0" Height="30" VerticalAlignment="Top"/>
+        <Border Background="#f58220" Margin="0,-30,0,0" Height="30" VerticalAlignment="Top"/>
 
-        <Grid Background="#FFFFBF01">
+        <Grid Background="#f58220">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="Auto"/>
                 <ColumnDefinition Width="*"/>
             </Grid.ColumnDefinitions>
-            <Image Source="ms-appx:///Assets/Image/logo_amarillo.jpg" Margin="20,5"/>
-            <Image Source="ms-appx:///Assets/Image/Title_Title.png" Grid.Column="1" Margin="0,0,25,0"/>
+            <Image Source="ms-appx:///Assets/Image/AlcaldiaLogo2015.png" Margin="20,5"/>
+            <Image Source="ms-appx:///Assets/Image/Logos_Title.png" Grid.Column="1" Margin="0,0,25,0"/>
         </Grid>
         <Grid Grid.Row="1">
             <ListBox x:Name="list" Background="{x:Null}"  Margin="25,10" SelectionChanged="list_SelectionChanged" ScrollViewer.VerticalScrollMode="Disabled" ItemContainerStyle="{StaticResource ListBoxStyle}">
-                <Border Padding="20" Width="{Binding ActualWidth, ElementName=list}" Background="#FFFFBF00">
-                    <TextBlock Text="Historia y Antecedentes" Style="{StaticResource TextBlockStyle}"/>
+                <Border Padding="20" Width="{Binding ActualWidth, ElementName=list}" Background="#f58220">
+                    <TextBlock Text="Historia y Antecedentes" Style="{StaticResource TextBlockStyle}" Foreground="White" FontWeight="Bold"/>
                 </Border>
-                <Border Padding="20" Width="{Binding ActualWidth, ElementName=list}" Background="#FFFFBF00">
-                    <TextBlock Text="Mapa" Style="{StaticResource TextBlockStyle}"/>
+                <Border Padding="20" Width="{Binding ActualWidth, ElementName=list}" Background="#f58220">
+                    <TextBlock Text="Mapa Recorrido" Style="{StaticResource TextBlockStyle}" Foreground="White" FontWeight="Bold"/>
                 </Border>
-                <Border Padding="20" Width="{Binding ActualWidth, ElementName=list}" Background="#FFFFBF00">
-                    <TextBlock Text="Buscador" Style="{StaticResource TextBlockStyle}"/>
+                <Border Padding="20" Width="{Binding ActualWidth, ElementName=list}" Background="#f58220">
+                    <TextBlock Text="Buscador" Style="{StaticResource TextBlockStyle}" Foreground="White" FontWeight="Bold"/>
                 </Border>
-                <Border Padding="20" Width="{Binding ActualWidth, ElementName=list}" Background="#FFFFBF00">
-                    <TextBlock Text="Programa" Style="{StaticResource TextBlockStyle}"/>
+                <Border Padding="20" Width="{Binding ActualWidth, ElementName=list}" Background="#f58220">
+                    <TextBlock Text="Cronograma" Style="{StaticResource TextBlockStyle}" Foreground="White" FontWeight="Bold"/>
                 </Border>
-                <Border Padding="20" Width="{Binding ActualWidth, ElementName=list}" Background="#FFFFBF00">
-                    <TextBlock Text="Creditos" Style="{StaticResource TextBlockStyle}"/>
+                <Border Padding="20" Width="{Binding ActualWidth, ElementName=list}" Background="#f58220">
+                    <TextBlock Text="Creditos" Style="{StaticResource TextBlockStyle}" Foreground="White" FontWeight="Bold"/>
                 </Border>
             </ListBox>
         </Grid>
+        <MediaElement x:Name="SoundPapiri" Source="ms-appx:///Sound/AlasitaMusic.mp3" IsLooping="True" AudioCategory="BackgroundCapableMedia"/>
     </Grid>
 </Page>

@@ -132,7 +132,7 @@
             </DoubleAnimationUsingKeyFrames>
         </Storyboard>
     </Page.Resources>
-    <Grid Background="#FFFFBF01" RequestedTheme="Light">
+    <Grid Background="#f58220" RequestedTheme="Light">
 
         <Grid.RowDefinitions>
             <RowDefinition Height="1*"/>

@@ -58,22 +58,13 @@
                                     <VisualState x:Name="Pressed">
                                         <Storyboard>
                                             <PointerDownThemeAnimation Storyboard.TargetName="Grid"/>
-                                            <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="Foreground" Storyboard.TargetName="ContentPresenter">
-                                                <DiscreteObjectKeyFrame KeyTime="0" Value="{ThemeResource ButtonPressedForegroundThemeBrush}"/>
-                                            </ObjectAnimationUsingKeyFrames>
                                         </Storyboard>
                                     </VisualState>
-                                    <VisualState x:Name="Disabled">
-                                        <Storyboard>
-                                            <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="Foreground" Storyboard.TargetName="ContentPresenter">
-                                                <DiscreteObjectKeyFrame KeyTime="0" Value="{ThemeResource ButtonDisabledForegroundThemeBrush}"/>
-                                            </ObjectAnimationUsingKeyFrames>
-                                        </Storyboard>
-                                    </VisualState>
+                                    <VisualState x:Name="Disabled"/>
                                 </VisualStateGroup>
                             </VisualStateManager.VisualStateGroups>
-                            <Ellipse Fill="#FFFFBF00" HorizontalAlignment="Left" Height="40" VerticalAlignment="Top" Width="40"/>
-                            <ContentPresenter x:Name="ContentPresenter" AutomationProperties.AccessibilityView="Raw" ContentTemplate="{TemplateBinding ContentTemplate}" Content="{TemplateBinding Content}" Foreground="{TemplateBinding Foreground}" HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}" VerticalAlignment="{TemplateBinding VerticalContentAlignment}" FontWeight="Bold"/>
+                            <Ellipse Fill="#f58220" HorizontalAlignment="Left" Height="40" VerticalAlignment="Top" Width="40" Stroke="White" StrokeThickness="3"/>
+                            <TextBlock HorizontalAlignment="Center" Margin="0,0,0,4" TextWrapping="Wrap" Text="{TemplateBinding Content}" VerticalAlignment="Center" Foreground="White" FontSize="20"/>
                         </Grid>
                     </ControlTemplate>
                 </Setter.Value>
@@ -95,7 +86,7 @@
             <Setter Property="Template">
                 <Setter.Value>
                     <ControlTemplate TargetType="Button">
-                        <Grid x:Name="Grid" Background="#FFFFBF01">
+                        <Grid x:Name="Grid" Background="#f58220">
                             <VisualStateManager.VisualStateGroups>
                                 <VisualStateGroup x:Name="CommonStates">
                                     <VisualStateGroup.Transitions>
@@ -146,9 +137,9 @@
             <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
 
-        <Border Background="#FFFFBF01" Margin="0,-30,0,0" Height="90" VerticalAlignment="Top"/>
+        <Border Background="#f58220" Margin="0,-30,0,0" Height="90" VerticalAlignment="Top"/>
         <!-- TitlePanel -->
-        <TextBlock Text="Mapa" Typography.Capitals="SmallCaps" FontSize="33" Margin="20,10" Foreground="White"/>
+        <TextBlock Text="Mapa Recorrido" Typography.Capitals="SmallCaps" FontSize="33" Margin="20,10" Foreground="White"/>
         <Button x:ConnectionId='1' x:Name="btn" HorizontalAlignment="Right" Content="Lista"                      Style="{StaticResource SwichButton}" Width="30" Height="30" BorderThickness="0" Margin="0,-15,0,0">
             <Button.Background>
                 <ImageBrush Stretch="Fill" ImageSource="ms-appx:///Assets/Image/Table-of-Contents.png"/>

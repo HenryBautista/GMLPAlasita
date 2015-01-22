@@ -41,6 +41,7 @@ C:\Users\Yolger\Documents\GitHub\GMLPAlasita\Alasita.App\Alasita.App.Core\bin\De
 C:\Users\Yolger\Documents\GitHub\GMLPAlasita\Alasita.App\Alasita.App.Core\bin\Debug\Alasita.App.Core.pri
 C:\Users\Yolger\Documents\GitHub\GMLPAlasita\Alasita.App\Alasita.App.Core\bin\Debug\Newtonsoft.Json.dll
 C:\Users\Yolger\Documents\GitHub\GMLPAlasita\Alasita.App\Alasita.App.Core\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Yolger\Documents\GitHub\GMLPAlasita\Alasita.App\Alasita.App.Core\obj\Debug\Alasita.App.Core.csprojResolveAssemblyReference.cache
 C:\Users\Yolger\Documents\GitHub\GMLPAlasita\Alasita.App\Alasita.App.Core\obj\Debug\Alasita.App.Core.dll
 C:\Users\Yolger\Documents\GitHub\GMLPAlasita\Alasita.App\Alasita.App.Core\obj\Debug\Alasita.App.Core.pdb
 C:\Users\Yolger\Documents\GitHub\GMLPAlasita\Alasita.App\Alasita.App.Core\obj\Debug\priconfig.xml
