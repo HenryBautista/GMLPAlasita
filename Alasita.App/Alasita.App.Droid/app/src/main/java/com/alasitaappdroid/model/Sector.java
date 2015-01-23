@@ -16,7 +16,7 @@ public class Sector {
 
     public Sector() {
         mSectorAssociations = new ArrayList<>();
-        mSectorTags = new ArrayList<String>();
+        mSectorTags = new ArrayList<>();
     }
 
     public String getSectorName() {

@@ -8,7 +8,6 @@ import android.widget.ArrayAdapter;
 import android.widget.TextView;
 
 import com.alasitaappdroid.R;
-import com.alasitaappdroid.model.Association;
 import com.alasitaappdroid.model.Sector;
 
 import java.util.ArrayList;
@@ -18,11 +17,8 @@ import java.util.ArrayList;
  */
 public class SectorAdapter extends ArrayAdapter<Sector> {
 
-    private TextView mTextSectorName;
-    private TextView mTextSectorDescription;
-
-    public SectorAdapter(Context context, int resource, ArrayList<Sector> objects) {
-        super(context, resource, objects);
+    public SectorAdapter(Context context, ArrayList<Sector> objects) {
+        super(context, R.layout.adapter_sector, objects);
     }
 
     @Override
@@ -33,10 +29,10 @@ public class SectorAdapter extends ArrayAdapter<Sector> {
         } else {
             v = convertView;
         }
-        mTextSectorName = (TextView) v.findViewById(R.id.text_adapter_sector_name);
-        mTextSectorDescription = (TextView) v.findViewById(R.id.text_adapter_sector_description);
-        mTextSectorName.setText(getItem(position).getSectorName());
-        mTextSectorDescription.setText(getItem(position).getSectorDescription());
+        TextView textSectorName = (TextView) v.findViewById(R.id.text_adapter_sector_name);
+        TextView textSectorDescription = (TextView) v.findViewById(R.id.text_adapter_sector_description);
+        textSectorName.setText(getItem(position).getSectorName());
+        textSectorDescription.setText(getItem(position).getSectorDescription());
         return v;
     }
 

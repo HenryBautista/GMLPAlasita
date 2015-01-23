@@ -17,13 +17,8 @@ import java.util.ArrayList;
  */
 public class EventAdapter extends ArrayAdapter<Event> {
 
-    private TextView mTextEventDate;
-    private TextView mTextEventActivity;
-    private TextView mTextEventPlace;
-    private TextView mTextEventTime;
-
-    public EventAdapter(Context context, int resource, ArrayList<Event> objects) {
-        super(context, resource, objects);
+    public EventAdapter(Context context, ArrayList<Event> objects) {
+        super(context, R.layout.adapter_schedule, objects);
     }
 
     @Override
@@ -35,15 +30,15 @@ public class EventAdapter extends ArrayAdapter<Event> {
             v = convertView;
         }
 
-        mTextEventActivity = (TextView) v.findViewById(R.id.text_adapter_schedule_activity);
-        mTextEventDate = (TextView) v.findViewById(R.id.text_adapter_schedule_date);
-        mTextEventPlace = (TextView) v.findViewById(R.id.text_adapter_schedule_place);
-        mTextEventTime = (TextView) v.findViewById(R.id.text_adapter_schedule_time);
+        TextView textEventActivity = (TextView) v.findViewById(R.id.text_adapter_schedule_activity);
+        TextView textEventDate = (TextView) v.findViewById(R.id.text_adapter_schedule_date);
+        TextView textEventPlace = (TextView) v.findViewById(R.id.text_adapter_schedule_place);
+        TextView textEventTime = (TextView) v.findViewById(R.id.text_adapter_schedule_time);
 
-        mTextEventActivity.setText(getItem(position).getEventActivity());
-        mTextEventDate.setText(getItem(position).getEventDate());
-        mTextEventPlace.setText(getItem(position).getEventPlace());
-        mTextEventTime.setText(getItem(position).getEventTime());
+        textEventActivity.setText(getItem(position).getEventActivity());
+        textEventDate.setText(getItem(position).getEventDate());
+        textEventPlace.setText(getItem(position).getEventPlace());
+        textEventTime.setText(getItem(position).getEventTime());
 
         return v;
     }

@@ -3,6 +3,7 @@ package com.alasitaappdroid.controller.fragment;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.util.Log;
+import android.view.KeyEvent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -23,7 +24,6 @@ import com.alasitaappdroid.model.Sector;
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
-import org.w3c.dom.Text;
 
 import java.io.InputStream;
 import java.util.ArrayList;
@@ -35,7 +35,6 @@ public class SearchFragment extends Fragment {
     private ListView mListResult;
     private AutoCompleteTextView mTextQuery;
     private ArrayList<Sector> mSectors;
-    private ImageButton mButtonSearch;
     private TextView mTextResults;
     private Carnival mCarnival;
 
@@ -65,20 +64,26 @@ public class SearchFragment extends Fragment {
             e.printStackTrace();
         }
         mListResult = (ListView) v.findViewById(R.id.list_results);
-        mButtonSearch = (ImageButton) v.findViewById(R.id.button_fragment_go);
+        ImageButton buttonSearch = (ImageButton) v.findViewById(R.id.button_fragment_go);
         mTextQuery = (AutoCompleteTextView) v.findViewById(R.id.text_fragment_search);
-        ArrayAdapter<String> adapter = new ArrayAdapter<String>(getActivity(), android.R.layout.simple_dropdown_item_1line, TAGS);
+        ArrayAdapter<String> adapter = new ArrayAdapter<>(getActivity(), android.R.layout.simple_dropdown_item_1line, TAGS);
         mTextQuery.setAdapter(adapter);
         mTextResults = (TextView) v.findViewById(R.id.text_fragment_query);
         mTextResults.setVisibility(View.INVISIBLE);
-        mButtonSearch.setOnClickListener(new View.OnClickListener() {
+        buttonSearch.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 String query = mTextQuery.getText() + "";
                 searchSectors(query);
-                SectorAdapter sectorAdapter = new SectorAdapter(getActivity(), R.layout.adapter_sector, mSectors);
-                mListResult.setAdapter(sectorAdapter);
-                mTextResults.setVisibility(View.VISIBLE);
+                if (!mSectors.isEmpty()) {
+                    SectorAdapter sectorAdapter = new SectorAdapter(getActivity(), mSectors);
+                    mListResult.setAdapter(sectorAdapter);
+                    mTextResults.setVisibility(View.VISIBLE);
+                    mTextResults.setVisibility(View.VISIBLE);
+                    mTextResults.setText("Resultados:");
+                } else {
+                    mTextResults.setText("No se encontro el producto");
+                }
             }
         });
         mListResult.setOnItemClickListener(new AdapterView.OnItemClickListener() {
@@ -87,6 +92,22 @@ public class SearchFragment extends Fragment {
                 SectorFragment sectorFragment = new SectorFragment();
                 sectorFragment.setCurrentSector((Sector) parent.getItemAtPosition(position));
                 getActivity().getSupportFragmentManager().beginTransaction().replace(R.id.container, sectorFragment).commit();
+            }
+        });
+        mTextQuery.setOnEditorActionListener(new TextView.OnEditorActionListener() {
+            @Override
+            public boolean onEditorAction(TextView v, int actionId, KeyEvent event) {
+                String query = mTextQuery.getText() + "";
+                searchSectors(query);
+                if (!mSectors.isEmpty()) {
+                    SectorAdapter sectorAdapter = new SectorAdapter(getActivity(), mSectors);
+                    mListResult.setAdapter(sectorAdapter);
+                    mTextResults.setVisibility(View.VISIBLE);
+                    mTextResults.setText("Resultados:");
+                } else {
+                    mTextResults.setText("No se encontro el producto");
+                }
+                return false;
             }
         });
         return v;
@@ -105,12 +126,8 @@ public class SearchFragment extends Fragment {
         }
     }
 
-    private void hideThisFragment() {
-        getActivity().getSupportFragmentManager().beginTransaction().replace(R.id.container, null);
-    }
-
-    public String loadJSON() {
-        String json = "";
+    String loadJSON() {
+        String json;
         try {
             InputStream inputStream = getActivity().getAssets().open("carnival.json");
             int size = inputStream.available();
@@ -126,15 +143,14 @@ public class SearchFragment extends Fragment {
     }
 
 
-    public void loadSectors() throws JSONException {
+    void loadSectors() throws JSONException {
         String json = loadJSON();
         mCarnival = new Carnival();
 
         JSONObject jsonObject = new JSONObject(json.substring(json.indexOf("{"), json.lastIndexOf("}") + 1));
 
-        String CarnivalName = jsonObject.getString("CarnivalName");
         JSONArray array = jsonObject.getJSONArray("CarnivalSectors");
-        ArrayList<Sector> SectorList = new ArrayList<Sector>();
+        ArrayList<Sector> SectorList = new ArrayList<>();
         for (int i = 0; i < array.length(); i++) {
             Sector sector = new Sector();
             JSONObject jsector = array.getJSONObject(i);
@@ -156,7 +172,6 @@ public class SearchFragment extends Fragment {
                 String AssociationName = jAssociation.getString("AssociationName");
                 int AssociationKey = jAssociation.getInt("AssociationKey");
                 String AssociationDescription = jAssociation.getString("AssociationDescription");
-                String AssociationImage = jAssociation.getString("AssociationImage");
                 int ExpoNumber = jAssociation.getInt("ExpoNumber");
 
                 JSONArray ProductArray = jAssociation.getJSONArray("AssociationProducts");

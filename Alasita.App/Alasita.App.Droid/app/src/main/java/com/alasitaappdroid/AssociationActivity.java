@@ -7,7 +7,6 @@ import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.Menu;
-import android.view.MenuItem;
 import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.TextView;
@@ -29,11 +28,6 @@ import java.util.ArrayList;
 
 public class AssociationActivity extends ActionBarActivity {
 
-    private TextView mTextAssociationName;
-    private TextView mTextAssociationDescription;
-    private ListView mListAssociationProducts;
-    private ImageView mImageLogo;
-
 
     private Association mCurrentAssociation;
     private Carnival mCarnival;
@@ -42,8 +36,7 @@ public class AssociationActivity extends ActionBarActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_association);
-        getSupportActionBar().setBackgroundDrawable(new ColorDrawable(Color.parseColor("#FFBF01")));
-
+        getSupportActionBar().setBackgroundDrawable(new ColorDrawable(Color.parseColor("#f58220")));
         try {
             loadSectors();
         } catch (Exception e) {
@@ -55,16 +48,16 @@ public class AssociationActivity extends ActionBarActivity {
         }
         getSupportActionBar().setTitle("Asociación " + mCurrentAssociation.getAssociationKey());
 
-        mTextAssociationName = (TextView) findViewById(R.id.text_association_key);
-        mTextAssociationDescription = (TextView) findViewById(R.id.text_association_description);
-        mListAssociationProducts = (ListView) findViewById(R.id.list_products);
-        mImageLogo = (ImageView) findViewById(R.id.image_association_logo);
-        ProductAdapter adapter = new ProductAdapter(this, R.layout.adapter_product, mCurrentAssociation.getAssociationProducts());
-        mListAssociationProducts.setAdapter(adapter);
+        TextView textAssociationName = (TextView) findViewById(R.id.text_association_key);
+        TextView textAssociationDescription = (TextView) findViewById(R.id.text_association_description);
+        ListView listAssociationProducts = (ListView) findViewById(R.id.list_products);
+        ImageView imageLogo = (ImageView) findViewById(R.id.image_association_logo);
+        ProductAdapter adapter = new ProductAdapter(this, mCurrentAssociation.getAssociationProducts());
+        listAssociationProducts.setAdapter(adapter);
 
-        mImageLogo.setImageResource(mCurrentAssociation.getAssociationImage());
-        mTextAssociationName.setText(mCurrentAssociation.getAssociationName());
-        mTextAssociationDescription.setText(mCurrentAssociation.getAssociationDescription());
+        imageLogo.setImageResource(mCurrentAssociation.getAssociationImage());
+        textAssociationName.setText(mCurrentAssociation.getAssociationName());
+        textAssociationDescription.setText(mCurrentAssociation.getAssociationDescription());
     }
 
     private void findAssociation(String name) {
@@ -86,7 +79,7 @@ public class AssociationActivity extends ActionBarActivity {
         return true;
     }
 
-    public String loadJSON() {
+    String loadJSON() {
         String json;
         try {
             InputStream inputStream = getAssets().open("carnival.json");
@@ -103,15 +96,14 @@ public class AssociationActivity extends ActionBarActivity {
     }
 
 
-    public void loadSectors() throws JSONException {
+    void loadSectors() throws JSONException {
         String json = loadJSON();
         mCarnival = new Carnival();
 
         JSONObject jsonObject = new JSONObject(json.substring(json.indexOf("{"), json.lastIndexOf("}") + 1));
 
-        String CarnivalName = jsonObject.getString("CarnivalName");
         JSONArray array = jsonObject.getJSONArray("CarnivalSectors");
-        ArrayList<Sector> SectorList = new ArrayList<Sector>();
+        ArrayList<Sector> SectorList = new ArrayList<>();
         for (int i = 0; i < array.length(); i++) {
             Sector sector = new Sector();
             JSONObject jsector = array.getJSONObject(i);
@@ -133,7 +125,6 @@ public class AssociationActivity extends ActionBarActivity {
                 String AssociationName = jAssociation.getString("AssociationName");
                 int AssociationKey = jAssociation.getInt("AssociationKey");
                 String AssociationDescription = jAssociation.getString("AssociationDescription");
-                String AssociationImage = jAssociation.getString("AssociationImage");
                 int ExpoNumber = jAssociation.getInt("ExpoNumber");
 
                 JSONArray ProductArray = jAssociation.getJSONArray("AssociationProducts");

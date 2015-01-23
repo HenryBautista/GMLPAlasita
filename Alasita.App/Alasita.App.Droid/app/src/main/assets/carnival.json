@@ -4,74 +4,75 @@
     {"SectorName": "Pedro Domingo Murillo","SectorKey": "A","SectorDescription": "Entrada Av. Ejercito","SectorMapImage": "appx:///Images",
      "Tags": ["joyeria", "tejido", "billetito", "billetes", "cuero", "billete", "billetito", "bromas", "comida", "cuadro", "flores", "fruta", "tejido", "yesos", "masitas", "masita", "capuchino", "cereales", "churros", "confites", "helados", "palomitas", "pipocas", "refresco","mermelada", "tallado", "piedra", "planta", "plantas","tallado en piedra", "miniaturas", "gallito","alcancia", "canchitas", "futbolines", "tiro al blanco", "suerte", "pronostico"],
      "SectorAssociations": [
-         {"AssociationName": "SECTOR DE EXPOSITORES DE JOYERIA Y PLATERIA", "AssociationKey": 1,"AssociationDescription":"Artesanos realizan articulos en joyeria y tejido a mano","AssociationImage": "appx:///Images","ExpoNumber":43,
+         {"AssociationName": "SECTOR DE EXPOSITORES DE JOYERIA Y PLATERIA", "AssociationKey": 1,"AssociationDescription":"Artesanos realizan articulos en joyeria y tejido a mano","AssociationImage": "https://farm8.staticflickr.com/7556/16314842875_a4a001a299_o.jpg",ExpoNumber:43,
           "AssociationProducts": [
-              {"ProductName": "joyeria","ProductImage": "appx:///Images"},
-              {"ProductName": "tejido a mano","ProductImage": "appx:///Images"}
+              {"ProductName": "joyeria","ProductImage": "https://farm8.staticflickr.com/7556/16314842875_a4a001a299_o.jpg"},
+              {"ProductName": "tejido a mano","ProductImage": "https://farm9.staticflickr.com/8679/16313058171_30d6411650_o.jpg"}
+          
+              ]
+         },
+         {"AssociationName": "ASOCIACION DE VENDEDORES DE BILLETITOS DE ALASITA", "AssociationKey": 1, "AssociationDescription":"Billetitos de la fortuna","AssociationImage": "https://farm9.staticflickr.com/8678/16313056481_fb2c315d52_o.jpg","ExpoNumber":52,
+          "AssociationProducts": [
+              {"ProductName": "Billetitos","ProductImage": "https://farm9.staticflickr.com/8678/16313056481_fb2c315d52_o.jpg"}
           ]
          },
-         {"AssociationName": "ASOCIACION DE VENDEDORES DE BILLETITOS DE ALASITA", "AssociationKey": 1, "AssociationDescription":"Billetitos de la fortuna","AssociationImage": "appx:///Images","ExpoNumber":52,
+         {"AssociationName": "ASOC PROD EXPOSITORES EN MINIATURA UNION ARTESANAL", "AssociationKey": 2, "AssociationDescription":"Artesanos realizan billetes","AssociationImage": "https://farm9.staticflickr.com/8676/15694965453_4d5a4a9c23_o.jpg","ExpoNumber":87,
           "AssociationProducts": [
-              {"ProductName": "Billetitos","ProductImage": "appx:///Images"}
+              {"ProductName": "Articulos en Cuero","ProductImage": "https://farm8.staticflickr.com/7495/16313055171_399a168ee8_o.jpg"},
+              {"ProductName": "Billetitos","ProductImage": "https://farm9.staticflickr.com/8618/16313056581_7e0415a478_o.jpg"},
+              {"ProductName": "Bromas y Magia","ProductImage": "https://farm8.staticflickr.com/7500/16127465770_a77f990853_o.jpg"},
+              {"ProductName": "Comida","ProductImage": "https://farm8.staticflickr.com/7572/16127295768_f34aba7b3c_o.jpg"},
+              {"ProductName": "Cuadros","ProductImage": "https://farm8.staticflickr.com/7583/16128985777_cc18227415_o.jpg"},
+              {"ProductName": "Fruta Acaramelada","ProductImage": "https://farm9.staticflickr.com/8594/16288905836_92deb6a78a_o.jpg"},
+              {"ProductName": "tejido a mano","ProductImage": "https://farm9.staticflickr.com/8679/16313058171_30d6411650_o.jpg"},
+              {"ProductName": "Yeso","ProductImage": "https://farm9.staticflickr.com/8676/15694965453_4d5a4a9c23_o.jpg"}
           ]
          },
-         {"AssociationName": "ASOC PROD EXPOSITORES EN MINIATURA UNION ARTESANAL", "AssociationKey": 2, "AssociationDescription":"Artesanos realizan","AssociationImage": "appx:///Images","ExpoNumber":87,
+          {"AssociationName": "ASOC.EXPOSITORES SECTOR MASITAS", "AssociationKey": 3, "AssociationDescription":"Artesanos realizan miniaturas","AssociationImage": "appx:///Images","ExpoNumber":86,
           "AssociationProducts": [
-              {"ProductName": "Articulos en Cuero","ProductImage": "appx:///Images"},
-              {"ProductName": "Billetitos","ProductImage": "appx:///Images"},
-              {"ProductName": "Bromas y Magia","ProductImage": "appx:///Images"},
-              {"ProductName": "Comida","ProductImage": "appx:///Images"},
-              {"ProductName": "Cuadros","ProductImage": "appx:///Images"},
-              {"ProductName": "Fruta Acaramelada","ProductImage": "appx:///Images"},
-              {"ProductName": "Tejido a Mano","ProductImage": "appx:///Images"},
-              {"ProductName": "Yeso","ProductImage": "appx:///Images"}
-          ]
-         },
-          {"AssociationName": "ASOC.EXPOSITORES SECTOR MASITAS", "AssociationKey": 3, "AssociationDescription":"Artesanos realizan","AssociationImage": "appx:///Images","ExpoNumber":86,
-          "AssociationProducts": [
-              {"ProductName": "MASITAS","ProductImage": "appx:///Images"},
-              {"ProductName": "Capuchino","ProductImage": "appx:///Images"},
-              {"ProductName": "Cereales","ProductImage": "appx:///Images"},
-              {"ProductName": "Churros","ProductImage": "appx:///Images"},
-              {"ProductName": "Confites","ProductImage": "appx:///Images"},
-              {"ProductName": "Helado","ProductImage": "appx:///Images"},
+              {"ProductName": "MASITAS","ProductImage": "https://farm8.staticflickr.com/7518/16288904846_869b5d2a32_o.jpg"},
+              {"ProductName": "Capuchino","ProductImage": "https://farm9.staticflickr.com/8592/16313984392_63df496b7d_o.jpg"},
+              {"ProductName": "Cereales","ProductImage": "https://farm8.staticflickr.com/7462/15694963343_5ac5aeef72_o.jpg"},
+              {"ProductName": "Churros","ProductImage": "https://farm9.staticflickr.com/8624/16127295848_1f131d1a86_o.jpg"},
+              {"ProductName": "Confites","ProductImage": "https://farm9.staticflickr.com/8594/16288905836_92deb6a78a_o.jpg"},
+              {"ProductName": "Helado","ProductImage": "https://farm8.staticflickr.com/7577/16127296618_339d26c6f7_o.jpg"},
               {"ProductName": "Palomitas de Maiz","ProductImage": "appx:///Images"},
               {"ProductName": "Refrescos","ProductImage": "appx:///Images"}
           ]
          },
-          {"AssociationName": "ASOC.EXPOSITORES SECTOR MASITAS", "AssociationKey": 3, "AssociationDescription":"Artesanos realizan","AssociationImage": "appx:///Images","ExpoNumber":86,
+          {"AssociationName": "ASOC.EXPOSITORES SECTOR MASITAS", "AssociationKey": 3, "AssociationDescription":"Artesanos realizan masitas","AssociationImage": "https://farm8.staticflickr.com/7518/16288904846_869b5d2a32_o.jpg","ExpoNumber":86,
           "AssociationProducts": [
-              {"ProductName": "MASITAS","ProductImage": "appx:///Images"},
-              {"ProductName": "Capuchino","ProductImage": "appx:///Images"},
-              {"ProductName": "Cereales","ProductImage": "appx:///Images"},
-              {"ProductName": "Churros","ProductImage": "appx:///Images"},
-              {"ProductName": "Confites","ProductImage": "appx:///Images"},
-              {"ProductName": "Helado","ProductImage": "appx:///Images"},
-              {"ProductName": "Palomitas de Maiz","ProductImage": "appx:///Images"},
-              {"ProductName": "Refrescos","ProductImage": "appx:///Images"}
+              {"ProductName": "MASITAS","ProductImage": "https://farm8.staticflickr.com/7462/15694963343_5ac5aeef72_o.jpg"},
+              {"ProductName": "Capuchino","ProductImage": "https://farm9.staticflickr.com/8592/16313984392_63df496b7d_o.jpg"},
+              {"ProductName": "Cereales","ProductImage": "https://farm9.staticflickr.com/8592/16313984392_63df496b7d_o.jpg"},
+              {"ProductName": "Churros","ProductImage": "https://farm9.staticflickr.com/8624/16127295848_1f131d1a86_o.jpg"},
+              {"ProductName": "Confites","ProductImage": "https://farm9.staticflickr.com/8594/16288905836_92deb6a78a_o.jpg"},
+              {"ProductName": "Helado","ProductImage": "https://farm8.staticflickr.com/7577/16127296618_339d26c6f7_o.jpg"},
+              {"ProductName": "Palomitas de Maiz","ProductImage": "https://farm8.staticflickr.com/7471/16314841675_ddabfc9d9e_o.jpg"},
+              {"ProductName": "Refrescos","ProductImage": "https://farm8.staticflickr.com/7514/16313053151_38828da099_o.jpg"}
           ]
          },
-          {"AssociationName": "ASOC.DE EXPOSITORES SECTOR 20 DE ENERO YESO", "AssociationKey": 4, "AssociationDescription":"Artesanos realizan esculturas en yeso","AssociationImage": "appx:///Images","ExpoNumber":104,
+          {"AssociationName": "ASOC.DE EXPOSITORES SECTOR 20 DE ENERO YESO", "AssociationKey": 4, "AssociationDescription":"Artesanos realizan esculturas en yeso","AssociationImage": "https://farm9.staticflickr.com/8676/15694965453_4d5a4a9c23_o.jpg","ExpoNumber":104,
           "AssociationProducts": [
-              {"ProductName": "Artesania en miniatura","ProductImage": "appx:///Images"}
+              {"ProductName": "Artesania en miniatura","ProductImage": "https://farm8.staticflickr.com/7500/16128987757_7d3ba3e75b_o.jpg"}
           ]
          },
-           {"AssociationName": "ASOCIACION DE EXPOSITORES SECTOR POTOSI", "AssociationKey": 5, "AssociationDescription":"Artesanos realizan miniaturas juguetes y frutas fermentadas","AssociationImage": "appx:///Images","ExpoNumber":46,
+           {"AssociationName": "ASOCIACION DE EXPOSITORES SECTOR POTOSI", "AssociationKey": 5, "AssociationDescription":"Artesanos realizan miniaturas juguetes y frutas fermentadas","AssociationImage": "https://farm8.staticflickr.com/7507/15694962453_85f6ebd987_o.jpg","ExpoNumber":46,
           "AssociationProducts": [
-              {"ProductName": "Artesania en miniatura","ProductImage": "appx:///Images"},
-              {"ProductName": "Fotos en minuatura","ProductImage": "appx:///Images"},
-              {"ProductName": "Juguetes","ProductImage": "appx:///Images"},
-              {"ProductName": "Mermeladas","ProductImage": "appx:///Images"},
-              {"ProductName": "Plantas","ProductImage": "appx:///Images"},
-              {"ProductName": "Tejido a Mano","ProductImage": "appx:///Images"}
+              {"ProductName": "Artesania en miniatura","ProductImage": "https://farm8.staticflickr.com/7500/16128987757_7d3ba3e75b_o.jpg"},
+              {"ProductName": "Fotos en minuatura","ProductImage": "https://farm8.staticflickr.com/7500/16128987757_7d3ba3e75b_o.jpg"},
+              {"ProductName": "Juguetes","ProductImage": "https://farm8.staticflickr.com/7507/15694962453_85f6ebd987_o.jpg"},
+              {"ProductName": "Mermeladas","ProductImage": "https://farm9.staticflickr.com/8663/16127299948_538fc68a6b_o.jpg"},
+              {"ProductName": "Plantas","ProductImage": "https://farm9.staticflickr.com/8637/16288909626_d0827a54d6_o.jpg"},
+              {"ProductName": "Tejido a Mano","ProductImage": "https://farm9.staticflickr.com/8679/16313058171_30d6411650_o.jpg"}
           ]
          },
-            {"AssociationName": "ASOCIACION DE EXPOSITORES EN YESO", "AssociationKey": 6, "AssociationDescription":"Artesanos realizan miniaturas, juegos, pronosticos","AssociationImage": "appx:///Images","ExpoNumber":143,
+            {"AssociationName": "ASOCIACION DE EXPOSITORES EN YESO", "AssociationKey": 6, "AssociationDescription":"Artesanos realizan miniaturas, juegos, pronosticos","AssociationImage": "https://farm9.staticflickr.com/8676/15694965453_4d5a4a9c23_o.jpg","ExpoNumber":143,
           "AssociationProducts": [
-              {"ProductName": "Artesania en miniatura","ProductImage": "appx:///Images"},
-              {"ProductName": "Churros","ProductImage": "appx:///Images"},
-              {"ProductName": "Juegos","ProductImage": "appx:///Images"},
-              {"ProductName": "Mermeladas","ProductImage": "appx:///Images"},
+              {"ProductName": "Artesania en miniatura","ProductImage": "https://farm8.staticflickr.com/7500/16128987757_7d3ba3e75b_o.jpg"},
+              {"ProductName": "Churros","ProductImage": "https://farm9.staticflickr.com/8624/16127295848_1f131d1a86_o.jpg"},
+              {"ProductName": "Juegos","ProductImage": "https://farm9.staticflickr.com/8604/16128670459_cf186eb4c0_o.jpg"},
+              {"ProductName": "Mermeladas","ProductImage": "https://farm9.staticflickr.com/8663/16127299948_538fc68a6b_o.jpg"},
               {"ProductName": "Pronosticos","ProductImage": "appx:///Images"},
               {"ProductName": "Tallado en piedra","ProductImage": "appx:///Images"}
           ]
@@ -82,61 +83,61 @@
     {"SectorName": "Juan Antonio Figueroa","SectorKey": "B","SectorDescription": "Entrada Av. Ejercito","SectorMapImage": "appx:///Images",
      "Tags": ["periodico", "periodiquito","aluminio", "madera","cuero", "bisuteria", "biyuteria", "churros", "hojalateria","lampara", "carrito","cochecito","camion","camioncito","llavero", "bordado", "flores", "flor", "marmol", "ceramica", "plateria","cafe","chocolate", "instrumentos","instrumento","joyeria","oleo","pintura","pinturas","porcelana","taraceado","utencillos","yesos","alcancia","ropa","tapete","titere","titeres"],
      "SectorAssociations": [
-          {"AssociationName": "ASOCIACION EXPOS. FERIA ALASITA SECTOR B", "AssociationKey": 1, "AssociationDescription":"Artesanos realizan aluminio, cuero","AssociationImage": "appx:///Images","ExpoNumber":64,
+          {"AssociationName": "ASOCIACION EXPOS. FERIA ALASITA SECTOR B", "AssociationKey": 1, "AssociationDescription":"Artesanos realizan aluminio, cuero","AssociationImage": "https://farm8.staticflickr.com/7495/16313055171_399a168ee8_o.jpg","ExpoNumber":64,
           "AssociationProducts": [
               {"ProductName": "Artesania en Aluminio","ProductImage": "appx:///Images"},
-              {"ProductName": "Artesania en Cuero","ProductImage": "appx:///Images"},
+              {"ProductName": "Artesania en Cuero","ProductImage": "https://farm8.staticflickr.com/7495/16313055171_399a168ee8_o.jpg"},
               {"ProductName": "Artesania en Madera","ProductImage": "appx:///Images"},
-              {"ProductName": "miniatura","ProductImage": "appx:///Images"},
-              {"ProductName": "Bisuteria","ProductImage": "appx:///Images"},
-              {"ProductName": "Hojalateria","ProductImage": "appx:///Images"},
+              {"ProductName": "miniatura","ProductImage": "https://farm8.staticflickr.com/7500/16128987757_7d3ba3e75b_o.jpg"},
+              {"ProductName": "Bisuteria","ProductImage": "https://farm9.staticflickr.com/8620/16128670929_dd998d1dbc_o.jpg"},
+              {"ProductName": "Hojalateria","ProductImage": "https://farm8.staticflickr.com/7547/16127464630_7ac9cc1749_o.jpg"},
               {"ProductName": "Lampara","ProductImage": "appx:///Images"},
-              {"ProductName": "Llavero con tu fotografia","ProductImage": "appx:///Images"},
-              {"ProductName": "Ropa de Bebe","ProductImage": "appx:///Images"}
+              {"ProductName": "Llavero con tu fotografia","ProductImage": "https://farm9.staticflickr.com/8610/15692430084_961d7a2418_o.jpg"},
+              {"ProductName": "Ropa de Bebe","ProductImage": "https://farm9.staticflickr.com/8619/16313984982_b9dbbe92a8_o.jpg"}
           ]
          },
-          {"AssociationName": "ASOCIACION EXPOSITORES MINIATURA SECTOR A", "AssociationKey": 2, "AssociationDescription":"Artesanos realizan aluminio, cuero","AssociationImage": "appx:///Images","ExpoNumber":128,
+          {"AssociationName": "ASOCIACION EXPOSITORES MINIATURA SECTOR A", "AssociationKey": 2, "AssociationDescription":"Artesanos realizan aluminio, cuero","AssociationImage": "https://farm9.staticflickr.com/8594/16127465810_ffafea6a5f_o.jpg","ExpoNumber":128,
           "AssociationProducts": [
-              {"ProductName": "Artesania en miniatura","ProductImage": "appx:///Images"},
-              {"ProductName": "Artesania en bordados","ProductImage": "appx:///Images"},
-              {"ProductName": "Artesania en cuero","ProductImage": "appx:///Images"},
-              {"ProductName": "Artesania en flores","ProductImage": "appx:///Images"},
-              {"ProductName": "Artesania en Marmol","ProductImage": "appx:///Images"},
-              {"ProductName": "Artesania en tejidos","ProductImage": "appx:///Images"},
-              {"ProductName": "Artesania en cuero","ProductImage": "appx:///Images"},
-              {"ProductName": "Biyuteria y Plateria","ProductImage": "appx:///Images"},
-              {"ProductName": "Cafe","ProductImage": "appx:///Images"},
-              {"ProductName": "Cuero","ProductImage": "appx:///Images"},
-              {"ProductName": "Dulces y Confite","ProductImage": "appx:///Images"},
-              {"ProductName": "Holateria","ProductImage": "appx:///Images"},
-              {"ProductName": "Intrumentos","ProductImage": "appx:///Images"},
+              {"ProductName": "Artesania en miniatura","ProductImage": "https://farm8.staticflickr.com/7500/16128987757_7d3ba3e75b_o.jpg"},
+              {"ProductName": "Artesania en bordados","ProductImage": "https://farm9.staticflickr.com/8594/16127465810_ffafea6a5f_o.jpg"},
+              {"ProductName": "Artesania en flores","ProductImage": "https://farm8.staticflickr.com/7564/15694962893_c5bc4970d1_o.jpg"},
+              {"ProductName": "Artesania en Marmol","ProductImage": "https://farm9.staticflickr.com/8681/16313057151_784420e115_o.jpg"},
+              {"ProductName": "Artesania en tejidos","ProductImage": "https://farm9.staticflickr.com/8679/16313058171_30d6411650_o.jpg"},
+              {"ProductName": "Artesania en cuero","ProductImage": "https://farm8.staticflickr.com/7495/16313055171_399a168ee8_o.jpg"},
+              {"ProductName": "Artesania en cuero","ProductImage": "https://farm8.staticflickr.com/7495/16313055171_399a168ee8_o.jpg"},
+              {"ProductName": "Biyuteria y Plateria","ProductImage": "https://farm9.staticflickr.com/8620/16128670929_dd998d1dbc_o.jpg"},
+              {"ProductName": "Cafe","ProductImage": "https://farm9.staticflickr.com/8592/16313984392_63df496b7d_o.jpg"},
+              {"ProductName": "Cuero","ProductImage": "https://farm8.staticflickr.com/7495/16313055171_399a168ee8_o.jpg"},
+              {"ProductName": "Dulces y Confite","ProductImage": "https://farm9.staticflickr.com/8594/16288905836_92deb6a78a_o.jpg"},
+              {"ProductName": "Hojalateria","ProductImage": "https://farm8.staticflickr.com/7547/16127464630_7ac9cc1749_o.jpg"},
+              {"ProductName": "Intrumentos","ProductImage": "https://farm8.staticflickr.com/7555/16313054781_f4f33f8483_o.jpg"},
               {"ProductName": "Lamparas","ProductImage": "appx:///Images"},
-              {"ProductName": "Peloteria","ProductImage": "appx:///Images"},
+              {"ProductName": "Peloteria","ProductImage": "https://farm9.staticflickr.com/8578/16313053781_b0d49513e1_o.jpg"},
               {"ProductName": "Pines","ProductImage": "appx:///Images"},
-              {"ProductName": "Pinturas al Oleo","ProductImage": "appx:///Images"},
+              {"ProductName": "Pinturas al Oleo","ProductImage": "https://farm8.staticflickr.com/7491/16128984597_b621bab7eb_o.jpg"},
               {"ProductName": "Porcelana Fria","ProductImage": "appx:///Images"},
               {"ProductName": "Utensillos de Madera","ProductImage": "appx:///Images"}
           ]
          },
-          {"AssociationName": "ASOC. DE EXPOSITORES SECTOR MINIATURA E", "AssociationKey": 3, "AssociationDescription":"Artesanos realizan yesos","AssociationImage": "appx:///Images","ExpoNumber":60,
+          {"AssociationName": "ASOC. DE EXPOSITORES SECTOR MINIATURA E", "AssociationKey": 3, "AssociationDescription":"Artesanos realizan yesos","AssociationImage": "https://farm9.staticflickr.com/8676/15694965453_4d5a4a9c23_o.jpg","ExpoNumber":60,
           "AssociationProducts": [
-              {"ProductName": "Yesos","ProductImage": "appx:///Images"}
+              {"ProductName": "Yesos","ProductImage": "https://farm9.staticflickr.com/8676/15694965453_4d5a4a9c23_o.jpg"}
           ]
          },
-          {"AssociationName": "ASOC. SECTOR CENTRAL D", "AssociationKey": 4, "AssociationDescription":"Artesanos realizan yesos","AssociationImage": "appx:///Images","ExpoNumber":184,
+          {"AssociationName": "ASOC. SECTOR CENTRAL D", "AssociationKey": 4, "AssociationDescription":"Artesanos realizan yesos","AssociationImage": "https://farm9.staticflickr.com/8676/15694965453_4d5a4a9c23_o.jpg","ExpoNumber":184,
           "AssociationProducts": [
-              {"ProductName": "Yesos","ProductImage": "appx:///Images"}
+              {"ProductName": "Yesos","ProductImage": "https://farm9.staticflickr.com/8676/15694965453_4d5a4a9c23_o.jpg"}
           ]
          },
-          {"AssociationName": "ASOC. DE EXPOSITORES SECTOR CENTRAL LITORAL", "AssociationKey": 3, "AssociationDescription":"Artesanos realizan yesos","AssociationImage": "appx:///Images","ExpoNumber":163,
+          {"AssociationName": "ASOC. DE EXPOSITORES SECTOR CENTRAL LITORAL", "AssociationKey": 3, "AssociationDescription":"Artesanos realizan yesos","AssociationImage": "https://farm8.staticflickr.com/7560/15694961413_c9909a34de_o.jpg","ExpoNumber":163,
           "AssociationProducts": [
-              {"ProductName": "Periodico en miniaturas","ProductImage": "appx:///Images"},
-              {"ProductName": "Hojalateria","ProductImage": "appx:///Images"},
-              {"ProductName": "Refrigerio","ProductImage": "appx:///Images"},
-              {"ProductName": "Revistas","ProductImage": "appx:///Images"},
+              {"ProductName": "Periodico en miniaturas","ProductImage": "https://farm8.staticflickr.com/7560/15694961413_c9909a34de_o.jpg"},
+              {"ProductName": "Hojalateria","ProductImage": "https://farm8.staticflickr.com/7547/16127464630_7ac9cc1749_o.jpg"},
+              {"ProductName": "Refrigerio","ProductImage": "https://farm9.staticflickr.com/8586/16314841385_9db69b9000_o.jpg"},
+              {"ProductName": "Revistas","ProductImage": "https://farm8.staticflickr.com/7502/16127462440_eb0d4abb7f_o.jpg"},
               {"ProductName": "Ropa","ProductImage": "appx:///Images"},
               {"ProductName": "Tapetes y mateles","ProductImage": "appx:///Images"},
-              {"ProductName": "Titeres","ProductImage": "appx:///Images"}
+              {"ProductName": "Titeres","ProductImage": "https://farm8.staticflickr.com/7499/16313057881_1f79a93381_o.jpg"}
           ]
          }
 
@@ -145,51 +146,51 @@
     {"SectorName": "Basilio Catacora","SectorKey": "C","SectorDescription": "Entrada Av. Ejercito","SectorMapImage": "appx:///Images",
      "Tags": ["loteria","juegos","zapato","tatuaje","tatuajes","salchipapa","hamburguesa","registro civil","ruleta","arco","raspadillo","magia","mandiles","mandil","libros","libro","fantasia","flan","suerte sin blanca","argollas","futbolines","canchitas","futbolin","tiro alblanco","te","cafe","mate","billar","comida","api"],
      "SectorAssociations": [
-         {"AssociationName": "ASOC. DE FUTBOLINES, AUTODROMOS, MINI BILLARES", "AssociationKey": 1, "AssociationDescription":"Juegos y refrigerios","AssociationImage": "appx:///Images","ExpoNumber":66,
+         {"AssociationName": "ASOC. DE FUTBOLINES, AUTODROMOS, MINI BILLARES", "AssociationKey": 1, "AssociationDescription":"Juegos y refrigerios","AssociationImage": "https://farm9.staticflickr.com/8667/16313055051_a200552301_o.jpg","ExpoNumber":66,
           "AssociationProducts": [
-              {"ProductName": "Futbolines","ProductImage": "appx:///Images"},
-              {"ProductName": "Apis","ProductImage": "appx:///Images"},
-              {"ProductName": "Suerte sin blanca","ProductImage": "appx:///Images"},
-              {"ProductName": "Comida","ProductImage": "appx:///Images"},
-              {"ProductName": "juegos","ProductImage": "appx:///Images"},
-              {"ProductName": "Cafe te Mate","ProductImage": "appx:///Images"},
+              {"ProductName": "Futbolines","ProductImage": "https://farm9.staticflickr.com/8667/16313055051_a200552301_o.jpg"},
+              {"ProductName": "Apis","ProductImage": "https://farm9.staticflickr.com/8597/16127466940_1fcd7afe58_o.jpg"},
+              {"ProductName": "Suerte sin blanca","ProductImage": "https://farm8.staticflickr.com/7465/15694966733_8ac5199a00_o.jpg"},
+              {"ProductName": "Comida","ProductImage": "https://farm8.staticflickr.com/7572/16127295768_f34aba7b3c_o.jpg"},
+              {"ProductName": "juegos","ProductImage": "https://farm9.staticflickr.com/8604/16128670459_cf186eb4c0_o.jpg"},
+              {"ProductName": "Cafe te Mate","ProductImage": "https://farm9.staticflickr.com/8592/16313984392_63df496b7d_o.jpg"},
               {"ProductName": "Autodromo","ProductImage": "appx:///Images"},
-              {"ProductName": "minibillares","ProductImage": "appx:///Images"},
+              {"ProductName": "minibillares","ProductImage": "https://farm8.staticflickr.com/7549/16128984927_ebd102de46_o.jpg"},
               {"ProductName": "salchipapa","ProductImage": "appx:///Images"}
           ]
          },
-         {"AssociationName": "ASOC. DE EXP. EN DISTRACCION 24 DE ENERO", "AssociationKey": 2, "AssociationDescription":"Ruleta tiro al blanco","AssociationImage": "appx:///Images","ExpoNumber":39,
+         {"AssociationName": "ASOC. DE EXP. EN DISTRACCION 24 DE ENERO", "AssociationKey": 2, "AssociationDescription":"Ruleta tiro al blanco","AssociationImage": "https://farm8.staticflickr.com/7512/16288908336_5bf1817c1b_o.jpg","ExpoNumber":39,
           "AssociationProducts": [
               {"ProductName": "Ruleta","ProductImage": "appx:///Images"},
-              {"ProductName": "Tiro al Blanco","ProductImage": "appx:///Images"}
+              {"ProductName": "Tiro al Blanco","ProductImage": "https://farm8.staticflickr.com/7512/16288908336_5bf1817c1b_o.jpg"}
           ]
          },
-         {"AssociationName": "EXPOSITORES SECTOR FUTBOLINES 24 DE ENERO", "AssociationKey": 3, "AssociationDescription":"Futbolines","AssociationImage": "appx:///Images","ExpoNumber":17,
+         {"AssociationName": "EXPOSITORES SECTOR FUTBOLINES 24 DE ENERO", "AssociationKey": 3, "AssociationDescription":"Futbolines","AssociationImage": "https://farm9.staticflickr.com/8667/16313055051_a200552301_o.jpg","ExpoNumber":17,
           "AssociationProducts": [
-              {"ProductName": "Futbolines","ProductImage": "appx:///Images"}
+              {"ProductName": "Futbolines","ProductImage": "https://farm9.staticflickr.com/8667/16313055051_a200552301_o.jpg"}
           ]
          },
          {"AssociationName": "Union de Artesanos 20 Octubre", "AssociationKey": 4, "AssociationDescription":"Juegos y refrigerios","AssociationImage": "appx:///Images","ExpoNumber":37,
           "AssociationProducts": [
-              {"ProductName": "Billetitos","ProductImage": "appx:///Images"},
-              {"ProductName": "Futbolines","ProductImage": "appx:///Images"},
-              {"ProductName": "Joyeria","ProductImage": "appx:///Images"},
+              {"ProductName": "Billetitos","ProductImage": "https://farm9.staticflickr.com/8618/16313056581_7e0415a478_o.jpg"},
+              {"ProductName": "Futbolines","ProductImage": "https://farm9.staticflickr.com/8667/16313055051_a200552301_o.jpg"},
+              {"ProductName": "Joyeria","ProductImage": "https://farm8.staticflickr.com/7556/16314842875_a4a001a299_o.jpg"},
               {"ProductName": "Juegos de mesa","ProductImage": "appx:///Images"},
               {"ProductName": "Magia","ProductImage": "appx:///Images"}
           ]
          },
-         {"AssociationName": "ASOC. DE JUEGOS POPULARES Y OFICIOS VARIOS", "AssociationKey": 5, "AssociationDescription":"Juegos y refrigerios","AssociationImage": "appx:///Images","ExpoNumber":29,
+         {"AssociationName": "ASOC. DE JUEGOS POPULARES Y OFICIOS VARIOS", "AssociationKey": 5, "AssociationDescription":"Juegos y refrigerios","AssociationImage": "https://farm8.staticflickr.com/7512/16288908336_5bf1817c1b_o.jpg","ExpoNumber":29,
           "AssociationProducts": [
-              {"ProductName": "Juegos y diversion","ProductImage": "appx:///Images"},
+              {"ProductName": "Juegos y diversion","ProductImage": "https://farm9.staticflickr.com/8604/16128670459_cf186eb4c0_o.jpg"},
               {"ProductName": "argollas","ProductImage": "appx:///Images"},
               {"ProductName": "Arco","ProductImage": "appx:///Images"},
-              {"ProductName": "Suerte sin Blanca","ProductImage": "appx:///Images"},
-              {"ProductName": "Tiro al Blanco","ProductImage": "appx:///Images"}
+              {"ProductName": "Suerte sin Blanca","ProductImage": "https://farm8.staticflickr.com/7465/15694966733_8ac5199a00_o.jpg"},
+              {"ProductName": "Tiro al Blanco","ProductImage": "https://farm8.staticflickr.com/7512/16288908336_5bf1817c1b_o.jpg"}
           ]
          },
          {"AssociationName": "ARTESANOS ARTE POPULAR SAN PEDRO ", "AssociationKey": 6, "AssociationDescription":"Juegos y refrigerios","AssociationImage": "appx:///Images","ExpoNumber":66,
           "AssociationProducts": [
-              {"ProductName": "dulces","ProductImage": "appx:///Images"},
+              {"ProductName": "dulces","ProductImage": "https://farm9.staticflickr.com/8594/16288905836_92deb6a78a_o.jpg"},
               {"ProductName": "fantasias","ProductImage": "appx:///Images"},
               {"ProductName": "Flan en Miniatura","ProductImage": "appx:///Images"},
               {"ProductName": "Juegos Didacticos","ProductImage": "appx:///Images"},
@@ -199,18 +200,18 @@
               {"ProductName": "Perfumes","ProductImage": "appx:///Images"},
               {"ProductName": "Quinua, yogurt y miel","ProductImage": "appx:///Images"},
               {"ProductName": "Raspadillo","ProductImage": "appx:///Images"},
-              {"ProductName": "Refrescos","ProductImage": "appx:///Images"},
-              {"ProductName": "Registro civil","ProductImage": "appx:///Images"},
-              {"ProductName": "Ropa para perros","ProductImage": "appx:///Images"},
-              {"ProductName": "Tatuajes","ProductImage": "appx:///Images"},
+              {"ProductName": "Refrescos","ProductImage": "https://farm8.staticflickr.com/7514/16313053151_38828da099_o.jpg"},
+              {"ProductName": "Registro civil","ProductImage": "https://farm9.staticflickr.com/8619/16127293378_d118b4216a_o.jpg"},
+              {"ProductName": "Ropa para perros","ProductImage": "https://farm9.staticflickr.com/8630/15694960023_385dd413ae_o.jpg"},
+              {"ProductName": "Tatuajes","ProductImage": "http://marcianosmx.com/wp-content/uploads/2013/07/tatuajes_increibles_23.jpg"},
               {"ProductName": "Hamburguesas","ProductImage": "appx:///Images"},
               {"ProductName": "Videos Agropecuarios","ProductImage": "appx:///Images"},
               {"ProductName": "Zapatos","ProductImage": "appx:///Images"}
               ]
          },
-         {"AssociationName": "Loteria Bolivar", "AssociationKey": 7, "AssociationDescription":"Futbolines","AssociationImage": "appx:///Images","ExpoNumber":17,
+         {"AssociationName": "Loteria Bolivar", "AssociationKey": 7, "AssociationDescription":"Futbolines","AssociationImage": "http://www.mplus.es/wordpress/wp-content/uploads/2014/12/loteria.png","ExpoNumber":17,
           "AssociationProducts": [
-              {"ProductName": "loteria","ProductImage": "appx:///Images"}
+              {"ProductName": "loteria","ProductImage": "http://www.mplus.es/wordpress/wp-content/uploads/2014/12/loteria.png"}
           ]
          }
      ]
@@ -218,16 +219,16 @@
     {"SectorName": "Apolina Jaen","SectorKey": "D","SectorDescription": "Entrada Av. Ejercito","SectorMapImage": "appx:///Images",
     "Tags": ["comida","api","pollo","plato paceño","sajta","api","buñuelo","vivadera","suerte"],
       "SectorAssociations": [
-        {"AssociationName": "SECTOR COMIDAS", "AssociationKey": 1, "AssociationDescription":"Deliziosa comida zuculenta...","AssociationImage": "appx:///Images","ExpoNumber":24,
+        {"AssociationName": "SECTOR COMIDAS", "AssociationKey": 1, "AssociationDescription":"Comida","AssociationImage": "https://farm8.staticflickr.com/7572/16127295768_f34aba7b3c_o.jpg","ExpoNumber":24,
           "AssociationProducts": [
-              {"ProductName": "Vivandera","ProductImage": "appx:///Images"}
+              {"ProductName": "Vivandera","ProductImage": "https://farm8.staticflickr.com/7572/16127295768_f34aba7b3c_o.jpg"}
           ]
          },
-        {"AssociationName": "ASOCIACION DE APERAS DE ORURO", "AssociationKey": 2, "AssociationDescription":"Delizioso y zuculento... Api","AssociationImage": "appx:///Images","ExpoNumber":17,
+        {"AssociationName": "ASOCIACION DE APERAS DE ORURO", "AssociationKey": 2, "AssociationDescription":"Api","AssociationImage": "https://farm9.staticflickr.com/8597/16127466940_1fcd7afe58_o.jpg","ExpoNumber":17,
           "AssociationProducts": [
-              {"ProductName": "Api y pasteles","ProductImage": "appx:///Images"},
-              {"ProductName": "Vivandera","ProductImage": "appx:///Images"},
-              {"ProductName": "Suertes y pronostico","ProductImage": "appx:///Images"}
+              {"ProductName": "Api y pasteles","ProductImage": "https://farm9.staticflickr.com/8597/16127466940_1fcd7afe58_o.jpg"},
+              {"ProductName": "Vivandera","ProductImage": "https://farm8.staticflickr.com/7572/16127295768_f34aba7b3c_o.jpg"},
+              {"ProductName": "Suertes y pronostico","ProductImage": "https://farm8.staticflickr.com/7536/16128672519_294ab484a1_o.jpg"}
           ]
          }
      ]
@@ -235,27 +236,27 @@
     {"SectorName": "Buenaventura Bueno","SectorKey": "E","SectorDescription": "Entrada Av. Ejercito","SectorMapImage": "appx:///Images",
      "Tags": ["juegos","futbolines","cuadros","refrigerios","suerte sin blanca"],
      "SectorAssociations": [
-        {"AssociationName": "ASOCIACION DE EXPOSITORES JUEGOS DE DIVERSION", "AssociationKey": 1, "AssociationDescription":"Juegos de azar","AssociationImage": "appx:///Images","ExpoNumber":46,
+        {"AssociationName": "ASOCIACION DE EXPOSITORES JUEGOS DE DIVERSION", "AssociationKey": 1, "AssociationDescription":"Juegos de azar","AssociationImage": "https://farm9.staticflickr.com/8604/16128670459_cf186eb4c0_o.jpg","ExpoNumber":46,
           "AssociationProducts": [
-              {"ProductName": "Juegos y diversion","ProductImage": "appx:///Images"}
+              {"ProductName": "Juegos y diversion","ProductImage": "https://farm9.staticflickr.com/8604/16128670459_cf186eb4c0_o.jpg"}
           ]
          },
-        {"AssociationName": "ASOCIACION DE ARTESANOS ANDRES BELLO", "AssociationKey": 2, "AssociationDescription":"Artesanias","AssociationImage": "appx:///Images","ExpoNumber":13,
+        {"AssociationName": "ASOCIACION DE ARTESANOS ANDRES BELLO", "AssociationKey": 2, "AssociationDescription":"Artesanias","AssociationImage": "https://farm8.staticflickr.com/7567/15694965083_0b51cf5eff_o.jpg","ExpoNumber":13,
           "AssociationProducts": [
-              {"ProductName": "Artesanias","ProductImage": "appx:///Images"}
+              {"ProductName": "Artesanias","ProductImage": "https://farm8.staticflickr.com/7567/15694965083_0b51cf5eff_o.jpg"}
           ]
          },
-         {"AssociationName": "ASOCIACION FUTBOLINES LA PAZ", "AssociationKey": 3, "AssociationDescription":"futbolines","AssociationImage": "appx:///Images","ExpoNumber":3,
+         {"AssociationName": "ASOCIACION FUTBOLINES LA PAZ", "AssociationKey": 3, "AssociationDescription":"futbolines","AssociationImage": "https://farm9.staticflickr.com/8667/16313055051_a200552301_o.jpg","ExpoNumber":3,
           "AssociationProducts": [
-              {"ProductName": "Futbolines","ProductImage": "appx:///Images"}
+              {"ProductName": "Futbolines","ProductImage": "https://farm9.staticflickr.com/8667/16313055051_a200552301_o.jpg"}
           ]
          },
-        {"AssociationName": "ASOIACION DE EXPOSITORES SECTOR C", "AssociationKey": 4, "AssociationDescription":"Varios","AssociationImage": "appx:///Images","ExpoNumber":148,
+        {"AssociationName": "ASOIACION DE EXPOSITORES SECTOR C", "AssociationKey": 4, "AssociationDescription":"Varios","AssociationImage": "https://farm8.staticflickr.com/7500/16128987757_7d3ba3e75b_o.jpg","ExpoNumber":148,
           "AssociationProducts": [
-              {"ProductName": "Artesania en miniatura","ProductImage": "appx:///Images"},
-              {"ProductName": "Cuadros","ProductImage": "appx:///Images"},
-              {"ProductName": "Refrigerio","ProductImage": "appx:///Images"},
-              {"ProductName": "Suerte sin blanca","ProductImage": "appx:///Images"}
+              {"ProductName": "Artesania en miniatura","ProductImage": "https://farm8.staticflickr.com/7500/16128987757_7d3ba3e75b_o.jpg"},
+              {"ProductName": "Cuadros","ProductImage": "https://farm8.staticflickr.com/7583/16128985777_cc18227415_o.jpg"},
+              {"ProductName": "Refrigerio","ProductImage": "https://farm9.staticflickr.com/8586/16314841385_9db69b9000_o.jpg"},
+              {"ProductName": "Suerte sin blanca","ProductImage": "https://farm8.staticflickr.com/7465/15694966733_8ac5199a00_o.jpg"}
           ]
          }
      ]
@@ -263,29 +264,29 @@
     {"SectorName": "Juan Bautista Samaga","SectorKey": "F","SectorDescription": "Entrada Av. Ejercito","SectorMapImage": "appx:///Images",
      "Tags": ["madera","bisuteria","churros","comida","confite","hojalata","carrito","cochecito","camion","camioncito","billetito","fantasia","cuadro"],
      "SectorAssociations": [
-        {"AssociationName": "ASOCIACION DE EXPOS. ARTESANOS SECTOR DECANO", "AssociationKey": 1, "AssociationDescription":"hojalateria artesania y comida","AssociationImage": "appx:///Images","ExpoNumber":244,
+        {"AssociationName": "ASOCIACION DE EXPOS. ARTESANOS SECTOR DECANO", "AssociationKey": 1, "AssociationDescription":"hojalateria artesania y comida","AssociationImage": "https://farm8.staticflickr.com/7567/15694965083_0b51cf5eff_o.jpg","ExpoNumber":244,
           "AssociationProducts": [
-              {"ProductName": "Artesania en ceramica","ProductImage": "appx:///Images"},
+              {"ProductName": "Artesania en ceramica","ProductImage": "https://farm8.staticflickr.com/7567/15694965083_0b51cf5eff_o.jpg"},
               {"ProductName": "Artesania en Madera","ProductImage": "appx:///Images"},
-              {"ProductName": "Minuaturas","ProductImage": "appx:///Images"},
-              {"ProductName": "Bisuteria","ProductImage": "appx:///Images"},
-              {"ProductName": "Churros","ProductImage": "appx:///Images"},
-              {"ProductName": "Comida","ProductImage": "appx:///Images"},
-              {"ProductName": "Confites","ProductImage": "appx:///Images"},
-              {"ProductName": "Futbolines","ProductImage": "appx:///Images"},
-              {"ProductName": "Hojalata","ProductImage": "appx:///Images"},
+              {"ProductName": "Minuaturas","ProductImage": "https://farm8.staticflickr.com/7500/16128987757_7d3ba3e75b_o.jpg"},
+              {"ProductName": "Bisuteria","ProductImage": "https://farm9.staticflickr.com/8620/16128670929_dd998d1dbc_o.jpg"},
+              {"ProductName": "Churros","ProductImage": "https://farm9.staticflickr.com/8624/16127295848_1f131d1a86_o.jpg"},
+              {"ProductName": "Comida","ProductImage": "https://farm8.staticflickr.com/7572/16127295768_f34aba7b3c_o.jpg"},
+              {"ProductName": "Confites","ProductImage": "https://farm9.staticflickr.com/8594/16288905836_92deb6a78a_o.jpg"},
+              {"ProductName": "Futbolines","ProductImage": "https://farm9.staticflickr.com/8667/16313055051_a200552301_o.jpg"},
+              {"ProductName": "Hojalata","ProductImage": "https://farm8.staticflickr.com/7547/16127464630_7ac9cc1749_o.jpg"},
               {"ProductName": "Ropa en Minuatura","ProductImage": "appx:///Images"},
               {"ProductName": "Suerte en Blanco","ProductImage": "appx:///Images"},
-              {"ProductName": "Tejido","ProductImage": "appx:///Images"}
+              {"ProductName": "Tejido","ProductImage": "https://farm9.staticflickr.com/8679/16313058171_30d6411650_o.jpg"}
           ]
          },
-          {"AssociationName": "KORI AMPARA", "AssociationKey": 2, "AssociationDescription":"Billetitos Juegos y Artesania","AssociationImage": "appx:///Images","ExpoNumber":94,
+          {"AssociationName": "KORI AMPARA", "AssociationKey": 2, "AssociationDescription":"Billetitos Juegos y Artesania","AssociationImage": "https://farm9.staticflickr.com/8678/16313056481_fb2c315d52_o.jpg","ExpoNumber":94,
           "AssociationProducts": [
               {"ProductName": "Artesania en miniatura","ProductImage": "appx:///Images"},
-              {"ProductName": "Billetitos","ProductImage": "appx:///Images"},
+              {"ProductName": "Billetitos","ProductImage": "https://farm9.staticflickr.com/8678/16313056481_fb2c315d52_o.jpg"},
               {"ProductName": "Fantasia","ProductImage": "appx:///Images"},
-              {"ProductName": "Juegos","ProductImage": "appx:///Images"},
-              {"ProductName": "Tejidos","ProductImage": "appx:///Images"}
+              {"ProductName": "Juegos","ProductImage": "https://farm8.staticflickr.com/7512/16288908336_5bf1817c1b_o.jpg"},
+              {"ProductName": "Tejidos","ProductImage": "https://farm9.staticflickr.com/8679/16313058171_30d6411650_o.jpg"}
           ]
          },
            {"AssociationName": "ASOC.DE VIAJEROS TRES DE MAYO PUNO-PERU", "AssociationKey": 3, "AssociationDescription":"Chucherias","AssociationImage": "appx:///Images","ExpoNumber":94,
@@ -293,39 +294,39 @@
               {"ProductName": "Varios","ProductImage": "appx:///Images"}
           ]
          },
-        {"AssociationName": "ASOSIACION DE EXPOSITORES SECTOR C", "AssociationKey": 4, "AssociationDescription":"Artesania, suerte y cuadros","AssociationImage": "appx:///Images","ExpoNumber":94,
+        {"AssociationName": "ASOSIACION DE EXPOSITORES SECTOR C", "AssociationKey": 4, "AssociationDescription":"Artesania, suerte y cuadros","AssociationImage": "https://farm8.staticflickr.com/7583/16128985777_cc18227415_o.jpg","ExpoNumber":94,
           "AssociationProducts": [
-              {"ProductName": "Artesania en miniatura","ProductImage": "appx:///Images"},
-              {"ProductName": "Cuadros","ProductImage": "appx:///Images"},
-              {"ProductName": "Refrijerios","ProductImage": "appx:///Images"},
-              {"ProductName": "Suerte sin blanca","ProductImage": "appx:///Images"}
+              {"ProductName": "Artesania en miniatura","ProductImage": "https://farm8.staticflickr.com/7500/16128987757_7d3ba3e75b_o.jpg"},
+              {"ProductName": "Cuadros","ProductImage": "https://farm8.staticflickr.com/7583/16128985777_cc18227415_o.jpg"},
+              {"ProductName": "Refrijerios","ProductImage": "https://farm9.staticflickr.com/8586/16314841385_9db69b9000_o.jpg"},
+              {"ProductName": "Suerte sin blanca","ProductImage": "https://farm8.staticflickr.com/7465/15694966733_8ac5199a00_o.jpg"}
           ]
          }
 
      ]
     },
     {"SectorName": "Melchor Jimenez","SectorKey": "G","SectorDescription": "Entrada Av. Ejercito","SectorMapImage": "appx:///Images",
-     "Tags": ["ceramica","madera","miniatura","bisuteria","churros","comida","confites","butbolines","hojalata","ropa","suerte","tejido"],
+     "Tags": ["ceramica","madera","miniatura","bisuteria","churros","comida","confites","futbolines","hojalata","ropa","suerte","tejido"],
      "SectorAssociations": [
         {
             "AssociationName": "ASOC.EXPO. ARTESANOS SECTOR DECADO",
             "AssociationKey": 3,
             "AssociationDescription": "Artesania",
-            "AssociationImage": "appx:///Images",
+            "AssociationImage": "https://farm8.staticflickr.com/7567/15694965083_0b51cf5eff_o.jpg",
             "ExpoNumber": 244,
             "AssociationProducts": [
-                { "ProductName": "Artesania en ceramica", "ProductImage": "appx:///Images" },
+                { "ProductName": "Artesania en ceramica", "ProductImage": "https://farm8.staticflickr.com/7567/15694965083_0b51cf5eff_o.jpg" },
                 { "ProductName": "Artesania en madera", "ProductImage": "appx:///Images" },
-                { "ProductName": "Artesania miniatura", "ProductImage": "appx:///Images" },
-                { "ProductName": "Bisuteria", "ProductImage": "appx:///Images" },
-                { "ProductName": "Churros", "ProductImage": "appx:///Images" },
-                { "ProductName": "Comida", "ProductImage": "appx:///Images" },
-                { "ProductName": "Confites", "ProductImage": "appx:///Images" },
-                { "ProductName": "Futbolines", "ProductImage": "appx:///Images" },
-                { "ProductName": "Hojalata", "ProductImage": "appx:///Images" },
+                { "ProductName": "Artesania miniatura", "ProductImage": "https://farm8.staticflickr.com/7500/16128987757_7d3ba3e75b_o.jpg" },
+                { "ProductName": "Bisuteria", "ProductImage": "https://farm9.staticflickr.com/8620/16128670929_dd998d1dbc_o.jpg" },
+                { "ProductName": "Churros", "ProductImage": "https://farm9.staticflickr.com/8624/16127295848_1f131d1a86_o.jpg" },
+                { "ProductName": "Comida", "ProductImage": "https://farm8.staticflickr.com/7572/16127295768_f34aba7b3c_o.jpg" },
+                { "ProductName": "Confites", "ProductImage": "https://farm9.staticflickr.com/8594/16288905836_92deb6a78a_o.jpg" },
+                { "ProductName": "Futbolines", "ProductImage": "https://farm9.staticflickr.com/8667/16313055051_a200552301_o.jpg" },
+                { "ProductName": "Hojalata", "ProductImage": "https://farm8.staticflickr.com/7547/16127464630_7ac9cc1749_o.jpg" },
                 { "ProductName": "Ropa en miniatura", "ProductImage": "appx:///Images" },
-                { "ProductName": "Suertes en blanco", "ProductImage": "appx:///Images" },
-                { "ProductName": "Tejido", "ProductImage": "appx:///Images" }
+                { "ProductName": "Suertes en blanco", "ProductImage": "https://farm8.staticflickr.com/7465/15694966733_8ac5199a00_o.jpg" },
+                { "ProductName": "Tejido", "ProductImage": "https://farm9.staticflickr.com/8679/16313058171_30d6411650_o.jpg" }
             ]
         },
         {"AssociationName": "ASOC.EXPO. SECTOR HUMINTAS Y PAN EN MINIATURA", "AssociationKey": 3, "AssociationDescription":"Artesania","AssociationImage": "appx:///Images","ExpoNumber":22,
@@ -338,53 +339,53 @@
     {"SectorName": "Mariano Graneros","SectorKey": "H","SectorDescription": "Entrada Av. Ejercito","SectorMapImage": "appx:///Images",
      "Tags": ["suertes","algodon","artesanias","canchitas","carrusel","comida","juegos","foto","refrigerio","miniatura","cuadros"],
      "SectorAssociations": [
-         {"AssociationName": "SUERTES Y PRONOSTICOS EN PLOMO 24 DE JUNIO", "AssociationKey": 3, "AssociationDescription":"Artesanos realizan","AssociationImage": "appx:///Images","ExpoNumber":52,
+         {"AssociationName": "SUERTES Y PRONOSTICOS EN PLOMO 24 DE JUNIO", "AssociationKey": 3, "AssociationDescription":"Artesanos realizan suertes","AssociationImage": "https://farm9.staticflickr.com/8586/16314841385_9db69b9000_o.jpg","ExpoNumber":52,
           "AssociationProducts": [
-            { "ProductName": "Suertes y pronosticos", "ProductImage": "appx:///Images" }
-          ]
+            { "ProductName": "Suertes y pronosticos", "ProductImage": "https://farm8.staticflickr.com/7536/16128672519_294ab484a1_o.jpg"}
+            ]
          },
-         {"AssociationName": "ASOC. SAGRADO CORAZON DE JESUS MIXTOS ARTESANOS", "AssociationKey": 3, "AssociationDescription":"Artesanos realizan","AssociationImage": "appx:///Images","ExpoNumber":42,
+         {"AssociationName": "ASOC. SAGRADO CORAZON DE JESUS MIXTOS ARTESANOS", "AssociationKey": 3, "AssociationDescription":"Artesanias","AssociationImage": "https://farm8.staticflickr.com/7572/16127295768_f34aba7b3c_o.jpg","ExpoNumber":42,
           "AssociationProducts": [
             { "ProductName": "Algodon", "ProductImage": "appx:///Images" },
             { "ProductName": "Artesanias", "ProductImage": "appx:///Images" },
-            { "ProductName": "Canchitas", "ProductImage": "appx:///Images" },
-            { "ProductName": "Carrusel", "ProductImage": "appx:///Images" },
-            { "ProductName": "Comida", "ProductImage": "appx:///Images" },
+            { "ProductName": "Canchitas", "ProductImage": "https://farm9.staticflickr.com/8667/16313055051_a200552301_o.jpg" },
+            { "ProductName": "Carrusel", "ProductImage": "https://farm9.staticflickr.com/8604/16128670459_cf186eb4c0_o.jpg" },
+            { "ProductName": "Comida", "ProductImage": "https://farm8.staticflickr.com/7572/16127295768_f34aba7b3c_o.jpg" },
             { "ProductName": "Juego foto", "ProductImage": "appx:///Images" },
-            { "ProductName": "Refrigerio", "ProductImage": "appx:///Images" }
+            { "ProductName": "Refrigerio", "ProductImage": "https://farm9.staticflickr.com/8586/16314841385_9db69b9000_o.jpg" }
           ]
          },
-         {"AssociationName": "ASOC. EXPO. SECTOR C", "AssociationKey": 3, "AssociationDescription":"Artesanos realizan","AssociationImage": "appx:///Images","ExpoNumber":148,
+         {"AssociationName": "ASOC. EXPO. SECTOR C", "AssociationKey": 3, "AssociationDescription":"Cuadros","AssociationImage": "appx:///Images","ExpoNumber":148,
           "AssociationProducts": [
-            { "ProductName": "Artesania en miniatura", "ProductImage": "appx:///Images" },
-            { "ProductName": "Cuadros", "ProductImage": "appx:///Images" },
-            { "ProductName": "Refrigerio", "ProductImage": "appx:///Images" },
-            { "ProductName": "Suerte sin blanca", "ProductImage": "appx:///Images" }
+            { "ProductName": "Artesania en miniatura", "ProductImage": "https://farm8.staticflickr.com/7500/16128987757_7d3ba3e75b_o.jpg" },
+            { "ProductName": "Cuadros", "ProductImage": "https://farm8.staticflickr.com/7583/16128985777_cc18227415_o.jpg" },
+            { "ProductName": "Refrigerio", "ProductImage": "https://farm9.staticflickr.com/8586/16314841385_9db69b9000_o.jpg" },
+            { "ProductName": "Suerte sin blanca", "ProductImage": "https://farm8.staticflickr.com/7465/15694966733_8ac5199a00_o.jpg" }
           ]
          }
      ]
     },
     {"SectorName": "Gregorio Garcia Lanza","SectorKey": "I","SectorDescription": "Entrada Av. Ejercito","SectorMapImage": "appx:///Images",
-     "Tags": ["anticuchos","artesanias","futbolines"],
+     "Tags": ["anticuchos","artesanias","futbolines","anticucho"],
      "SectorAssociations": [
-        {"AssociationName": "ASOC. DE ANTICUCHERAS Y CHORICERAS 25 DE DICIEMBRE", "AssociationKey": 3, "AssociationDescription":"Artesanos realizan","AssociationImage": "appx:///Images","ExpoNumber":42,
+        {"AssociationName": "ASOC. DE ANTICUCHERAS Y CHORICERAS 25 DE DICIEMBRE", "AssociationKey": 3, "AssociationDescription":"Comida","AssociationImage": "https://farm8.staticflickr.com/7525/16288907956_f6d41862ec_o.jpg","ExpoNumber":42,
           "AssociationProducts": [
-              {"ProductName": "Anticuchos","ProductImage": "appx:///Images"}
+              {"ProductName": "Anticuchos","ProductImage": "https://farm8.staticflickr.com/7525/16288907956_f6d41862ec_o.jpg"}
           ]
         },
-        {"AssociationName": "ASOC. DE ARTESANOS UNION CENTRAL", "AssociationKey": 3, "AssociationDescription":"Artesanos realizan","AssociationImage": "appx:///Images","ExpoNumber":14,
+        {"AssociationName": "ASOC. DE ARTESANOS UNION CENTRAL", "AssociationKey": 3, "AssociationDescription":"Artesanias","AssociationImage": "https://farm8.staticflickr.com/7500/16128987757_7d3ba3e75b_o.jpg","ExpoNumber":14,
           "AssociationProducts": [
-              {"ProductName": "Antesanias","ProductImage": "appx:///Images"}
+              {"ProductName": "Antesanias","ProductImage": "https://farm8.staticflickr.com/7500/16128987757_7d3ba3e75b_o.jpg"}
           ]
         },
-        {"AssociationName": "EXP. SECTOR FUTBOLINES 24 DE ENERO", "AssociationKey": 3, "AssociationDescription":"Artesanos realizan","AssociationImage": "appx:///Images","ExpoNumber":17,
+        {"AssociationName": "EXP. SECTOR FUTBOLINES 24 DE ENERO", "AssociationKey": 3, "AssociationDescription":"Futbolines","AssociationImage": "https://farm9.staticflickr.com/8667/16313055051_a200552301_o.jpg","ExpoNumber":17,
           "AssociationProducts": [
-              {"ProductName": "Futbolines","ProductImage": "appx:///Images"}
+              {"ProductName": "Futbolines","ProductImage": "https://farm9.staticflickr.com/8667/16313055051_a200552301_o.jpg"}
           ]
         },
-        {"AssociationName": "ASOC. SECTOR CENTRAL D", "AssociationKey": 3, "AssociationDescription":"Artesanos realizan","AssociationImage": "appx:///Images","ExpoNumber":184,
+        {"AssociationName": "ASOC. SECTOR CENTRAL D", "AssociationKey": 3, "AssociationDescription":"Artesanias","AssociationImage": "https://farm8.staticflickr.com/7500/16128987757_7d3ba3e75b_o.jpg","ExpoNumber":184,
           "AssociationProducts": [
-              {"ProductName": " ","ProductImage": "appx:///Images"}
+              {"ProductName": "artesania ","ProductImage": "https://farm8.staticflickr.com/7500/16128987757_7d3ba3e75b_o.jpg"}
           ]
         }
      ]
@@ -393,23 +394,23 @@
     {"SectorName": "Parque Roosevelt","SectorKey": "R","SectorDescription": "Entrada Av. Simón Bolivar","SectorMapImage": "appx:///Images",
      "Tags": ["orfebreria","orfebre","tejido","tejidos","miniatura","miniaturas","fantasia","juegos","billetito","billetitos"],
      "SectorAssociations": [
-        {"AssociationName": "ASOC. DE ARTESANOS ORFEBRES SAN ELOY", "AssociationKey": 1, "AssociationDescription":"Manejo de Orfebreria y tejidos","AssociationImage": "appx:///Images","ExpoNumber":20,
+        {"AssociationName": "ASOC. DE ARTESANOS ORFEBRES SAN ELOY", "AssociationKey": 1, "AssociationDescription":"Manejo de Orfebreria y tejidos","AssociationImage": "https://farm8.staticflickr.com/7567/15694965083_0b51cf5eff_o.jpg","ExpoNumber":20,
           "AssociationProducts": [
-              {"ProductName": "Orfebreria","ProductImage": "appx:///Images"},
-              {"ProductName": "Tejidos","ProductImage": "appx:///Images"}
+              {"ProductName": "Orfebreria","ProductImage": "https://farm8.staticflickr.com/7567/15694965083_0b51cf5eff_o.jpg"},
+              {"ProductName": "Tejidos","ProductImage": "https://farm9.staticflickr.com/8679/16313058171_30d6411650_o.jpg"}
           ]
          },
-		 {"AssociationName": "ASOCIACION CREATIVOS LA PAZ", "AssociationKey": 2, "AssociationDescription":"Artesanias en miniaturas","AssociationImage": "appx:///Images","ExpoNumber":23,
+     {"AssociationName": "ASOCIACION CREATIVOS LA PAZ", "AssociationKey": 2, "AssociationDescription":"Artesanias en miniaturas","AssociationImage": "https://farm8.staticflickr.com/7500/16128987757_7d3ba3e75b_o.jpg","ExpoNumber":23,
           "AssociationProducts": [
-              {"ProductName": "Artesania en miniaturas","ProductImage": "appx:///Images"}
+              {"ProductName": "Artesania en miniaturas","ProductImage": "https://farm8.staticflickr.com/7500/16128987757_7d3ba3e75b_o.jpg"}
           ]
-         },{"AssociationName": "KORI AMPARA", "AssociationKey": 3, "AssociationDescription":"Artesanias, Billetes, juegos","AssociationImage": "appx:///Images","ExpoNumber":94,
+         },{"AssociationName": "KORI AMPARA", "AssociationKey": 3, "AssociationDescription":"Artesanias, Billetes, juegos","AssociationImage": "https://farm9.staticflickr.com/8679/16313058171_30d6411650_o.jpg","ExpoNumber":94,
           "AssociationProducts": [
               {"ProductName": "Artesanias en miniaturas","ProductImage": "appx:///Images"},
-			  {"ProductName": "Billetitos","ProductImage": "appx:///Images"},
-			  {"ProductName": "Fantasia","ProductImage": "appx:///Images"},
-			  {"ProductName": "Juegos","ProductImage": "appx:///Images"},
-              {"ProductName": "Tejidos","ProductImage": "appx:///Images"}
+        {"ProductName": "Billetitos","ProductImage": "https://farm9.staticflickr.com/8678/16313056481_fb2c315d52_o.jpg"},
+        {"ProductName": "Fantasia","ProductImage": "appx:///Images"},
+        {"ProductName": "Juegos","ProductImage": "appx:///Images"},
+              {"ProductName": "Tejidos","ProductImage": "https://farm9.staticflickr.com/8679/16313058171_30d6411650_o.jpg"}
           ]
          }
      ]
@@ -422,26 +423,26 @@
               {"ProductName": "Juegos","ProductImage": "appx:///Images"}
           ]
          },
-		 {"AssociationName": "NUESTRA SEÑORA DE LA PAZ", "AssociationKey": 2, "AssociationDescription":"Comercialización de Artesanias en miniatura","AssociationImage": "appx:///Images","ExpoNumber":72,
+     {"AssociationName": "NUESTRA SEÑORA DE LA PAZ", "AssociationKey": 2, "AssociationDescription":"Comercialización de Artesanias en miniatura","AssociationImage": "https://farm8.staticflickr.com/7500/16128987757_7d3ba3e75b_o.jpg","ExpoNumber":72,
           "AssociationProducts": [
-              {"ProductName": "Artesanias en Miniatura","ProductImage": "appx:///Images"},
-			  {"ProductName": "Refrescos","ProductImage": "appx:///Images"}
+              {"ProductName": "Artesanias en Miniatura","ProductImage": "https://farm8.staticflickr.com/7500/16128987757_7d3ba3e75b_o.jpg"},
+        {"ProductName": "Refrescos","ProductImage": "https://farm8.staticflickr.com/7514/16313053151_38828da099_o.jpg"}
           ]
          },
-		 {"AssociationName": "FUTBOLINES DECANOS", "AssociationKey": 3, "AssociationDescription":"Futbolines para jugar","AssociationImage": "appx:///Images","ExpoNumber":1,
+     {"AssociationName": "FUTBOLINES DECANOS", "AssociationKey": 3, "AssociationDescription":"Futbolines para jugar","AssociationImage": "appx:///Images","ExpoNumber":1,
           "AssociationProducts": [
               {"ProductName": "Futbolines","ProductImage": "appx:///Images"}
           ]
          },
-		 {"AssociationName": "UNION DE ARTESANOS 20 DE OCTUBRE", "AssociationKey": 4, "AssociationDescription":"Juegos recreativos y refrigerios","AssociationImage": "appx:///Images","ExpoNumber":37,
+     {"AssociationName": "UNION DE ARTESANOS 20 DE OCTUBRE", "AssociationKey": 4, "AssociationDescription":"Juegos recreativos y refrigerios","AssociationImage": "https://farm9.staticflickr.com/8667/16313055051_a200552301_o.jpg","ExpoNumber":37,
           "AssociationProducts": [
               {"ProductName": "Billetitos","ProductImage": "appx:///Images"},
-			  {"ProductName": "Futbolines","ProductImage": "appx:///Images"},
-			  {"ProductName": "Joyeria","ProductImage": "appx:///Images"},
-			  {"ProductName": "Juegos de mesa","ProductImage": "appx:///Images"},
-			  {"ProductName": "Magia","ProductImage": "appx:///Images"},
-			  {"ProductName": "Pipocas","ProductImage": "appx:///Images"},
-			  {"ProductName": "Tejidos","ProductImage": "appx:///Images"}
+        {"ProductName": "Futbolines","ProductImage": "https://farm9.staticflickr.com/8667/16313055051_a200552301_o.jpg"},
+        {"ProductName": "Joyeria","ProductImage": "https://farm8.staticflickr.com/7556/16314842875_a4a001a299_o.jpg"},
+        {"ProductName": "Juegos de mesa","ProductImage": "appx:///Images"},
+        {"ProductName": "Magia","ProductImage": "appx:///Images"},
+        {"ProductName": "Pipocas","ProductImage": "https://farm8.staticflickr.com/7471/16314841675_ddabfc9d9e_o.jpg"},
+        {"ProductName": "Tejidos","ProductImage": "https://farm9.staticflickr.com/8679/16313058171_30d6411650_o.jpg"}
           ]
          }
      ]
@@ -451,49 +452,49 @@
      "SectorAssociations": [
         {"AssociationName": "ASOC. ARTESANOS FLORICULTORES URKUPIÑA", "AssociationKey": 1, "AssociationDescription":"Comercialización de Plantas","AssociationImage": "appx:///Images","ExpoNumber":91,
           "AssociationProducts": [
-              {"ProductName": "Plantas y Macetas","ProductImage": "appx:///Images"},
-              {"ProductName": "Artesanias en miniatura","ProductImage": "appx:///Images"},
-              {"ProductName": "Cafe, Te, Mate y similares","ProductImage": "appx:///Images"},
-              {"ProductName": "Carruseles","ProductImage": "appx:///Images"},
-              {"ProductName": "Futbolines","ProductImage": "appx:///Images"},
-              {"ProductName": "Refrigerio","ProductImage": "appx:///Images"},
-              {"ProductName": "Refrescos","ProductImage": "appx:///Images"},
-              {"ProductName": "Vivandera","ProductImage": "appx:///Images"}
+              {"ProductName": "Plantas y Macetas","ProductImage": "https://farm9.staticflickr.com/8637/16288909626_d0827a54d6_o.jpg"},
+              {"ProductName": "Artesanias en miniatura","ProductImage": "https://farm8.staticflickr.com/7500/16128987757_7d3ba3e75b_o.jpg"},
+              {"ProductName": "Cafe, Te, Mate y similares","ProductImage": "https://farm8.staticflickr.com/7489/15694966193_a3481c4070_o.jpg"},
+              {"ProductName": "Carruseles","ProductImage": "https://farm9.staticflickr.com/8604/16128670459_cf186eb4c0_o.jpg"},
+              {"ProductName": "Futbolines","ProductImage": "https://farm9.staticflickr.com/8667/16313055051_a200552301_o.jpg"},
+              {"ProductName": "Refrigerio","ProductImage": "https://farm9.staticflickr.com/8586/16314841385_9db69b9000_o.jpg"},
+              {"ProductName": "Refrescos","ProductImage": "https://farm8.staticflickr.com/7514/16313053151_38828da099_o.jpg"},
+              {"ProductName": "Vivandera","ProductImage": "https://farm8.staticflickr.com/7572/16127295768_f34aba7b3c_o.jpg"}
           ]
          },
-		 {"AssociationName": "ASOC. DE INSTRUMENTOS DE VIENTOS WALATA", "AssociationKey": 2, "AssociationDescription":"Comercialización de Artesanias en miniatura","AssociationImage": "appx:///Images","ExpoNumber":17,
+     {"AssociationName": "ASOC. DE INSTRUMENTOS DE VIENTOS WALATA", "AssociationKey": 2, "AssociationDescription":"Comercialización de Artesanias en miniatura","AssociationImage": "appx:///Images","ExpoNumber":17,
           "AssociationProducts": [
-              {"ProductName": "Artesanias en miniatura","ProductImage": "appx:///Images"}
+              {"ProductName": "Artesanias en miniatura","ProductImage": "https://farm8.staticflickr.com/7500/16128987757_7d3ba3e75b_o.jpg"}
           ]
          },
-		 {"AssociationName": "ASOC. FLORICULTORES 24 DE ENERO", "AssociationKey": 3, "AssociationDescription":"Comercialización de Plantas","AssociationImage": "appx:///Images","ExpoNumber":78,
+     {"AssociationName": "ASOC. FLORICULTORES 24 DE ENERO", "AssociationKey": 3, "AssociationDescription":"Comercialización de Plantas","AssociationImage": "https://farm9.staticflickr.com/8637/16288909626_d0827a54d6_o.jpg","ExpoNumber":78,
           "AssociationProducts": [
-              {"ProductName": "Plantas y Macetas","ProductImage": "appx:///Images"},
-              {"ProductName": "Comidas","ProductImage": "appx:///Images"}
+              {"ProductName": "Plantas y Macetas","ProductImage": "https://farm9.staticflickr.com/8637/16288909626_d0827a54d6_o.jpg"},
+              {"ProductName": "Comidas","ProductImage": "https://farm8.staticflickr.com/7572/16127295768_f34aba7b3c_o.jpg"}
           ]
          },
-		 {"AssociationName": "SECTOR APIS 10 DE FEBRERO", "AssociationKey": 4, "AssociationDescription":"Venta de Apis y pasteles","AssociationImage": "appx:///Images","ExpoNumber":17,
+     {"AssociationName": "SECTOR APIS 10 DE FEBRERO", "AssociationKey": 4, "AssociationDescription":"Venta de Apis y pasteles","AssociationImage": "https://farm9.staticflickr.com/8597/16127466940_1fcd7afe58_o.jpg","ExpoNumber":17,
           "AssociationProducts": [
-              {"ProductName": "Apis y Pasteles","ProductImage": "appx:///Images"}
+              {"ProductName": "Apis y Pasteles","ProductImage": "https://farm9.staticflickr.com/8597/16127466940_1fcd7afe58_o.jpg"}
           ]
          },
-		 {"AssociationName": "ASOC. DE EXPOSITORES SECTOR COCHABAMBA", "AssociationKey": 5, "AssociationDescription":"Comercialización de artesanías y refrigerios","AssociationImage": "appx:///Images","ExpoNumber":154,
+     {"AssociationName": "ASOC. DE EXPOSITORES SECTOR COCHABAMBA", "AssociationKey": 5, "AssociationDescription":"Comercialización de artesanías y refrigerios","AssociationImage": "https://farm8.staticflickr.com/7489/15694966193_a3481c4070_o.jpg","ExpoNumber":154,
           "AssociationProducts": [
-              {"ProductName": "Artesanias en miniatura","ProductImage": "appx:///Images"},
-              {"ProductName": "Refrigerio","ProductImage": "appx:///Images"},
-              {"ProductName": "Comidas","ProductImage": "appx:///Images"},
-              {"ProductName": "Cafe, Te, Mate","ProductImage": "appx:///Images"}
+              {"ProductName": "Artesanias en miniatura","ProductImage": "https://farm8.staticflickr.com/7500/16128987757_7d3ba3e75b_o.jpg"},
+              {"ProductName": "Refrigerio","ProductImage": "https://farm9.staticflickr.com/8586/16314841385_9db69b9000_o.jpg"},
+              {"ProductName": "Comidas","ProductImage": "https://farm8.staticflickr.com/7572/16127295768_f34aba7b3c_o.jpg"},
+              {"ProductName": "Cafe, Te, Mate","ProductImage": "https://farm8.staticflickr.com/7489/15694966193_a3481c4070_o.jpg"}
           ]
          },
-		 {"AssociationName": "ASOC. DE FLORICULTORES 'LA PAZ'", "AssociationKey": 6, "AssociationDescription":"Comercialización de Plantas y flores","AssociationImage": "appx:///Images","ExpoNumber":89,
+     {"AssociationName": "ASOC. DE FLORICULTORES 'LA PAZ'", "AssociationKey": 6, "AssociationDescription":"Comercialización de Plantas y flores","AssociationImage": "https://farm8.staticflickr.com/7572/16127295768_f34aba7b3c_o.jpg","ExpoNumber":89,
           "AssociationProducts": [
-              {"ProductName": "Plantas y Macetas","ProductImage": "appx:///Images"},
-              {"ProductName": "Comidas","ProductImage": "appx:///Images"}
+              {"ProductName": "Plantas y Macetas","ProductImage": "https://farm9.staticflickr.com/8637/16288909626_d0827a54d6_o.jpg"},
+              {"ProductName": "Comidas","ProductImage": "https://farm8.staticflickr.com/7572/16127295768_f34aba7b3c_o.jpg"}
           ]
          },
-		 {"AssociationName": "ASOC. DE ARTESANOS Y EXPOSITORES LISTA DE CARRUSEL", "AssociationKey": 7, "AssociationDescription":"Juegos Recreativos y Carruseles","AssociationImage": "appx:///Images","ExpoNumber":25,
+     {"AssociationName": "ASOC. DE ARTESANOS Y EXPOSITORES LISTA DE CARRUSEL", "AssociationKey": 7, "AssociationDescription":"Juegos Recreativos y Carruseles","AssociationImage": "https://farm8.staticflickr.com/7507/15694962453_85f6ebd987_o.jpg","ExpoNumber":25,
           "AssociationProducts": [
-              {"ProductName": "Juegos","ProductImage": "appx:///Images"}
+              {"ProductName": "Juegos","ProductImage": "https://farm8.staticflickr.com/7507/15694962453_85f6ebd987_o.jpg"}
           ]
          }
      ]

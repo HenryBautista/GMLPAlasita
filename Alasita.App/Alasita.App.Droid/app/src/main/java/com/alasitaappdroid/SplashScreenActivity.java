@@ -6,8 +6,6 @@ import android.os.Handler;
 import android.support.v7.app.ActionBarActivity;
 
 public class SplashScreenActivity extends ActionBarActivity {
-    // Splash screen timer
-    private static int SPLASH_TIME_OUT = 3000;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -15,6 +13,7 @@ public class SplashScreenActivity extends ActionBarActivity {
         setContentView(R.layout.activity_splash_screen);
         getSupportActionBar().hide();
 
+        int SPLASH_TIME_OUT = 3000;
         new Handler().postDelayed(new Runnable() {
 
             /*

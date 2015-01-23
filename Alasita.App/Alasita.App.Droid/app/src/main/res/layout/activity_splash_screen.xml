@@ -2,14 +2,14 @@
               xmlns:tools="http://schemas.android.com/tools"
               android:layout_width="match_parent"
               android:layout_height="match_parent"
-              android:background="#ffbf01"
+              android:background="#000000"
               tools:context="com.alasitaappdroid.SplashScreenActivity">
 
     <ImageView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:scaleType="fitCenter"
-        android:src="@drawable/widesplash"/>
+        android:src="@drawable/logo_wide"/>
 
 </LinearLayout>
 

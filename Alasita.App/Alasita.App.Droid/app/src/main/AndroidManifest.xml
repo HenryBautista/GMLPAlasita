@@ -3,6 +3,7 @@
     package="com.alasitaappdroid"
     xmlns:android="http://schemas.android.com/apk/res/android">
 
+    <supports-screens android:xlargeScreens="false"/>
     <application
         android:allowBackup="true"
         android:icon="@drawable/ic_launcher"
@@ -44,6 +45,15 @@
         <activity
             android:name=".ScheduleActivity"
             android:label="@string/title_activity_schedule"
+            android:parentActivityName=".MapActivity"
+            android:screenOrientation="landscape">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.alasitaappdroid.MapActivity"/>
+        </activity>
+        <activity
+            android:name=".CreditActivity"
+            android:label="@string/title_activity_credit"
             android:parentActivityName=".MapActivity"
             android:screenOrientation="landscape">
             <meta-data

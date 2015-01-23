@@ -7,16 +7,10 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.widget.Adapter;
-import android.widget.ArrayAdapter;
 import android.widget.ListView;
 
 import com.alasitaappdroid.controller.adapter.EventAdapter;
-import com.alasitaappdroid.model.Association;
-import com.alasitaappdroid.model.Carnival;
 import com.alasitaappdroid.model.Event;
-import com.alasitaappdroid.model.Product;
-import com.alasitaappdroid.model.Sector;
 
 import org.json.JSONArray;
 import org.json.JSONException;
@@ -28,7 +22,6 @@ import java.util.ArrayList;
 
 public class ScheduleActivity extends ActionBarActivity {
 
-    private ListView mScheduleListView;
     private ArrayList<Event> mActivityList;
 
 
@@ -36,17 +29,16 @@ public class ScheduleActivity extends ActionBarActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_schedule);
-        getSupportActionBar().setBackgroundDrawable(new ColorDrawable(Color.parseColor("#FFBF01")));
-
+        getSupportActionBar().setBackgroundDrawable(new ColorDrawable(Color.parseColor("#f58220")));
         try {
             loadEvents();
         } catch (Exception e) {
             e.printStackTrace();
         }
 
-        mScheduleListView = (ListView) findViewById(R.id.list_schedule);
-        EventAdapter adapter = new EventAdapter(this, R.layout.adapter_schedule, mActivityList);
-        mScheduleListView.setAdapter(adapter);
+        ListView scheduleListView = (ListView) findViewById(R.id.list_schedule);
+        EventAdapter adapter = new EventAdapter(this, mActivityList);
+        scheduleListView.setAdapter(adapter);
     }
 
 
@@ -59,18 +51,10 @@ public class ScheduleActivity extends ActionBarActivity {
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
-        // Handle action bar item clicks here. The action bar will
-        // automatically handle clicks on the Home/Up button, so long
-        // as you specify a parent activity in AndroidManifest.xml.
-        int id = item.getItemId();
-
-        //noinspection SimplifiableIfStatement
-
-
         return super.onOptionsItemSelected(item);
     }
 
-    public String loadJSON(String s) {
+    String loadJSON(String s) {
         String json;
         try {
             InputStream inputStream = getAssets().open(s);
@@ -87,7 +71,7 @@ public class ScheduleActivity extends ActionBarActivity {
     }
 
 
-    public void loadEvents() throws JSONException {
+    void loadEvents() throws JSONException {
         String json = loadJSON("schedule.json");
         mActivityList = new ArrayList<>();
         JSONObject jsonObject = new JSONObject(json.substring(json.indexOf("{"), json.lastIndexOf("}") + 1));

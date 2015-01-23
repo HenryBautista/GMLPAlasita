@@ -1,7 +1,5 @@
 package com.alasitaappdroid.model;
 
-import java.util.ArrayList;
-
 /**
  * Created by Arun on 01/19/2015.
  */

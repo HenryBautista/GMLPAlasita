@@ -17,11 +17,8 @@ import java.util.ArrayList;
  */
 public class AssociationAdapter extends ArrayAdapter<Association> {
 
-    private TextView mTextName;
-    private TextView mTextDescription;
-
-    public AssociationAdapter(Context context, int resource, ArrayList<Association> objects) {
-        super(context, resource, objects);
+    public AssociationAdapter(Context context, ArrayList<Association> objects) {
+        super(context, R.layout.adapter_association, objects);
     }
 
     @Override
@@ -33,11 +30,11 @@ public class AssociationAdapter extends ArrayAdapter<Association> {
             v = convertView;
         }
 
-        mTextName = (TextView) v.findViewById(R.id.text_adapter_association_name);
-        mTextDescription = (TextView) v.findViewById(R.id.text_adapter_association_description);
+        TextView textName = (TextView) v.findViewById(R.id.text_adapter_association_name);
+        TextView textDescription = (TextView) v.findViewById(R.id.text_adapter_association_description);
 
-        mTextName.setText(getItem(position).getAssociationName());
-        mTextDescription.setText(getItem(position).getAssociationDescription());
+        textName.setText(getItem(position).getAssociationName());
+        textDescription.setText(getItem(position).getAssociationDescription());
 
         return v;
     }

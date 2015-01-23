@@ -8,7 +8,6 @@ import android.os.Build;
 import android.os.Bundle;
 import android.support.v7.app.ActionBarActivity;
 import android.util.Log;
-import android.view.GestureDetector;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.MotionEvent;
@@ -30,18 +29,16 @@ import org.json.JSONObject;
 
 import java.io.InputStream;
 import java.util.ArrayList;
-import java.util.Calendar;
 
 public class MapActivity extends ActionBarActivity {
 
     private ScaleImageView mImageMap;
     private FrameLayout mFrameContainer;
-    private MenuItem mBackMenu;
 
     private Carnival mCarnival;
-    public Sector mCurrentSector;
+    private Sector mCurrentSector;
 
-    public static int LEVEL = 20;
+    private static final int LEVEL = 20;
 
     private int mXPoint;
     private int mYPoint;
@@ -51,7 +48,7 @@ public class MapActivity extends ActionBarActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_map);
-        getSupportActionBar().setBackgroundDrawable(new ColorDrawable(Color.parseColor("#FFBF01")));
+        getSupportActionBar().setBackgroundDrawable(new ColorDrawable(Color.parseColor("#f58220")));
         try {
             loadSectors();
         } catch (Exception e) {
@@ -107,7 +104,7 @@ public class MapActivity extends ActionBarActivity {
     }
 
     private String getTappedSector(int redValue, int greenValue, int blueValue) {
-        String sectorKey = "";
+        String sectorKey;
         Log.d("Color", redValue + " " + greenValue + " " + blueValue);
         if (isInRange(redValue, 63) && isInRange(greenValue, 132) && isInRange(blueValue, 204)) {
             sectorKey = "A";
@@ -137,16 +134,21 @@ public class MapActivity extends ActionBarActivity {
     }
 
     private boolean isInRange(int color, int trueValue) {
-        if (color >= trueValue - 5 && color <= trueValue + 5)
-            return true;
-        return false;
+        return color >= trueValue - 5 && color <= trueValue + 5;
     }
 
+    @Override
+    public void onBackPressed() {
+        if (mFragmentOn) {
+            hideFragment();
+        } else {
+            super.onBackPressed();
+        }
+    }
 
     private void hideMap() {
         mFragmentOn = true;
         mImageMap.setScaleType(ImageView.ScaleType.FIT_CENTER);
-
         try {
             if (Build.VERSION.SDK_INT > 11) {
                 mImageMap.setAlpha(0.2f);
@@ -159,18 +161,15 @@ public class MapActivity extends ActionBarActivity {
     }
 
     private void InflateSectorFragment() {
-
         hideMap();
         mFrameContainer.setVisibility(View.VISIBLE);
         SectorFragment sectorFragment = new SectorFragment();
         sectorFragment.setCurrentSector(mCurrentSector);
         getSupportFragmentManager().beginTransaction().replace(R.id.container, sectorFragment).commit();
-        mBackMenu.setVisible(true);
     }
 
     private void InflateSearchFragment() {
         hideMap();
-        mBackMenu.setVisible(true);
         mFrameContainer.setVisibility(View.VISIBLE);
         getSupportFragmentManager().beginTransaction().replace(R.id.container, new SearchFragment()).commit();
 
@@ -180,31 +179,36 @@ public class MapActivity extends ActionBarActivity {
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
         getMenuInflater().inflate(R.menu.menu_map, menu);
-        mBackMenu = menu.getItem(0);
-        mBackMenu.setVisible(false);
         return true;
     }
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         int id = item.getItemId();
-        if (id == R.id.menu_back) {
-            hideFragment();
-            mBackMenu.setVisible(false);
-            return true;
-        } else if (id == R.id.menu_search) {
+        if (id == R.id.menu_search) {
             InflateSearchFragment();
-        } else if (id == R.id.menu_history) {
+        } else if (id == R.id.menu_history)
+
+        {
             Intent intent = new Intent(getApplicationContext(), HistoryActivity.class);
             startActivity(intent);
-        } else if (id == R.id.menu_schedule) {
+        } else if (id == R.id.menu_schedule)
+
+        {
             Intent intent = new Intent(getApplicationContext(), ScheduleActivity.class);
             startActivity(intent);
+        } else if (id == R.id.menu_credit) {
+            Intent intent = new Intent(this, CreditActivity.class);
+            startActivity(intent);
         }
-        return super.onOptionsItemSelected(item);
+
+        return super.
+
+                onOptionsItemSelected(item);
+
     }
 
-    public void hideFragment() {
+    void hideFragment() {
         mFragmentOn = false;
         mFrameContainer.setVisibility(View.INVISIBLE);
         getSupportFragmentManager().beginTransaction().remove(getSupportFragmentManager().findFragmentById(R.id.container)).commit();
@@ -219,8 +223,8 @@ public class MapActivity extends ActionBarActivity {
         }
     }
 
-    public String loadJSON() {
-        String json = "";
+    String loadJSON() {
+        String json;
         try {
             InputStream inputStream = getAssets().open("carnival.json");
             int size = inputStream.available();
@@ -236,7 +240,7 @@ public class MapActivity extends ActionBarActivity {
     }
 
 
-    public void loadSectors() throws JSONException {
+    void loadSectors() throws JSONException {
         String json = loadJSON();
         mCarnival = new Carnival();
 
@@ -244,7 +248,7 @@ public class MapActivity extends ActionBarActivity {
 
         String CarnivalName = jsonObject.getString("CarnivalName");
         JSONArray array = jsonObject.getJSONArray("CarnivalSectors");
-        ArrayList<Sector> SectorList = new ArrayList<Sector>();
+        ArrayList<Sector> SectorList = new ArrayList<>();
         for (int i = 0; i < array.length(); i++) {
             Sector sector = new Sector();
             JSONObject jsector = array.getJSONObject(i);
@@ -266,7 +270,6 @@ public class MapActivity extends ActionBarActivity {
                 String AssociationName = jAssociation.getString("AssociationName");
                 int AssociationKey = jAssociation.getInt("AssociationKey");
                 String AssociationDescription = jAssociation.getString("AssociationDescription");
-                String AssociationImage = jAssociation.getString("AssociationImage");
                 int ExpoNumber = jAssociation.getInt("ExpoNumber");
 
                 JSONArray ProductArray = jAssociation.getJSONArray("AssociationProducts");
